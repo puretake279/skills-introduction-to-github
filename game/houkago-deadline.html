@@ -129,6 +129,7 @@ button{font:inherit;color:inherit}
 .stext{white-space:pre-wrap} .snx{position:absolute;right:1.2rem;bottom:.5rem;color:var(--acc);animation:bl .8s steps(2) infinite}
 .sbox.narr{--cc:#8b97ab;padding-left:1.8rem;text-align:center;color:#dfe6f0;font-style:italic;display:flex;align-items:center;justify-content:center}
 .s-result{background:rgba(5,7,11,.86)} .result{flex:1;display:flex;flex-direction:column;padding:1rem 2.4rem 1.2rem;min-height:0}
+.asave{display:inline-block;margin:.3rem auto 0;padding:.1rem .9rem;border-radius:1rem;background:rgba(123,224,123,.14);color:var(--green);font-size:1.05rem;animation:tin .4s .5s both} .asave.ng{background:rgba(255,92,106,.14);color:var(--red)}
 .rhead{text-align:center} .rhead h2{font-size:3.2rem;letter-spacing:.5rem;font-weight:normal;color:var(--acc);text-shadow:.3rem .3rem 0 #000;line-height:1.1} .lose .rhead h2{color:var(--red)} .rsub{color:#c5cedd} .rsub b{color:var(--pink);font-size:2rem}
 .rstars{display:flex;justify-content:center;gap:2.4rem;margin:.2rem 0} .rstars>div{text-align:center;color:#3a4354;animation:pop .4s both} .rstars i{font-style:normal;font-size:3.4rem;line-height:1;display:block} .rstars .y{color:#ffd23f} .rstars .y small{color:#fff} @keyframes pop{0%{transform:scale(2.4);opacity:0}100%{transform:scale(1);opacity:1}}
 .rbody{flex:1;display:flex;gap:1.6rem;min-height:0;margin-top:.5rem} .rl,.rr{flex:1;min-width:0}
@@ -175,28 +176,28 @@ const CHARS = {
     uniq:{ name:'バースト延長', desc:'フルバーストの時間 +0.6秒' } },
   rei: { id:'rei', name:'黒瀬 レイ', short:'レイ', role:'マークスマン / 副部長', main:'HG', sub:'SR',
     hp:95, spd:1.0, color:'#6f8cff', w0:'hg1.0',
-    art:{ rc:[['body',['2f4273','1b2650','0c1539'],19,36],['skirt',['2f4273','1b2650','0c1539'],37,46],['sock',['f9fafb','c0ccd9','5d6376'],50,58],['shoe',['905b54','68423e','41231f'],57,62],['leg',['faccb7','dda596','bf7f73'],45,52]], tf:[1,-7], img:'rei', cx:25, feet:63, legY:46, hx:10, hy:-1, back:[5,-2], idle:0, shoot:[1,2], mz:[53,16] },
+    art:{ rc:[['body',['2f4273','1b2650','0c1539'],19,36],['skirt',['2f4273','1b2650','0c1539'],37,46],['sock',['f9fafb','c0ccd9','5d6376'],50,58],['shoe',['905b54','68423e','41231f'],57,62],['leg',['faccb7','dda596','bf7f73'],45,52]], tf:[1,-7], shirt:['ad1529','4e081d','290b22'], img:'rei', cx:25, feet:63, legY:46, hx:10, hy:-1, back:[5,-2], idle:0, shoot:[1,2], mz:[53,16] },
     prof:'転校してきたばかりで、まだ前の学校のセーラー服。学年一位の頭脳と、一発で急所を撃ち抜く拳銃の腕を持つ。父は市立病院の医師。',
     passive:'精密射撃：会心率+12%・会心ダメージ+30%',
     skill:{ id:'deadeye', name:'デッドアイ', cd:30, desc:'画面内の敵を最大8体ロックし、貫通弾で撃ち抜く' },
     uniq:{ name:'鷹の目', desc:'デッドアイの威力 +15%' } },
   haru: { id:'haru', name:'日向 ハル', short:'ハル', role:'制圧射撃 / 突撃担当', main:'LMG', sub:'AR',
     hp:150, spd:1.03, color:'#ffcf5a', w0:'lmg0.0',
-    art:{ rc:[['body',['31343a','1c1e22'],20,38,11,26],['body',['31343a','1c1e22'],29,38,27,34],['skirt',['717882','5b5d64','47494f','31343a'],37,46,12,33],['sock',['31343a','1c1e22'],46,58],['shoe',['634338','3e261c'],58,62],['leg',['fbd1b9','e9ac96','ca8378'],44,47,13,32]], tf:[-1,-6], skull:[-5,6], img:'haru', cx:23, feet:63, legY:46, hx:9, hy:1, back:[3,-1], idle:0, shoot:[2,3], mz:[62,21] },
+    art:{ rc:[['body',['31343a','1c1e22'],20,38,11,26],['body',['31343a','1c1e22'],29,38,27,34],['skirt',['717882','5b5d64','47494f','31343a'],37,46,12,33],['sock',['31343a','1c1e22'],46,58],['shoe',['634338','3e261c'],58,62],['leg',['fbd1b9','e9ac96','ca8378'],44,47,13,32]], tf:[-1,-6], skull:[-5,6], shirt:['bc203e','71131b','1f0708','d7d7d7'], img:'haru', cx:23, feet:63, legY:46, hx:9, hy:1, back:[3,-1], idle:0, shoot:[2,3], mz:[62,21] },
     prof:'金髪ツインテールの元ソフトボール部エース。考えるより先に引き金を引く。弟思いで、コロッケが大好物。',
     passive:'タフネス：被ダメージ-15%・近距離の与ダメージ+15%',
     skill:{ id:'charge', name:'ブレイクチャージ', cd:20, desc:'無敵の突進で敵をなぎ倒して気絶させ、止まった場所で衝撃波。その後7秒間、被ダメージ半減・与ダメージ+35%・弾薬全回復' },
     uniq:{ name:'鉄壁', desc:'チャージ後の強化時間 +0.8秒' } },
   mio: { id:'mio', name:'白雪 ミオ', short:'ミオ', role:'ガジェット / 遊撃', main:'SMG', sub:'HG',
     hp:100, spd:1.12, color:'#d07bff', w0:'smg1.0',
-    art:{ rc:[['body',['5a565e','41403f','292829'],21,38,18,52],['skirt',['303346','101122'],38,46],['sock',['41403f','292829'],49,58],['shoe',['81645a','4b312b','413019'],57,62],['leg',['fad7c7','e5b2a8','ca8981'],45,52,26,47]], tf:[14,-6], img:'mio', cx:35, feet:63, legY:46, hx:23, hy:2, back:[18,-1], idle:0, shoot:[3,4], gunAt:[52,39] },
+    art:{ rc:[['body',['5a565e','41403f','292829'],21,38,18,52],['skirt',['303346','101122'],38,46],['sock',['41403f','292829'],49,58],['shoe',['81645a','4b312b','413019'],57,62],['leg',['fad7c7','e5b2a8','ca8981'],45,52,26,47]], tf:[14,-6], shirt:['d7d6da','a09ea4','7a797f','f6c138','c99439'], img:'mio', cx:35, feet:63, legY:46, hx:23, hy:2, back:[18,-1], idle:0, shoot:[3,4], gunAt:[52,39] },
     prof:'風紀委員の腕章をつけたまま校則を破る銀髪の一年生。片手は撃ち、片手は予備。自作ドローン「ぽち」は部の備品扱い。',
     passive:'すばしっこい：移動速度+10%・武器箱とアーマー箱のドロップ率+15%',
     skill:{ id:'drone', name:'ドローン「ぽち」', cd:32, desc:'10秒間、自動で敵を撃つ支援ドローンを呼ぶ' },
     uniq:{ name:'大容量バッテリー', desc:'ドローンの稼働時間 +1.5秒' } },
   nana: { id:'nana', name:'桃井 ナナ', short:'ナナ', role:'重火器 / 新入部員', main:'GL', sub:'SG',
     hp:115, spd:0.94, color:'#ff7ea8', w0:'gl0.0',
-    art:{ rc:[['body',['383f6d','1d2249'],23,41],['skirt',['3a5478','383f6d','1d2249','222631'],42,48],['sock',['f5f3f1','b5bdc2'],53,59],['shoe',['533a36'],59,63],['leg',['f7bfaa','d3917d'],46,55,20,39]], tf:[9,-2], img:'nana', cx:29, feet:64, legY:47, hx:16, hy:1, back:[9,0], idle:0, shoot:[4,5], mz:[63,23] },
+    art:{ rc:[['body',['383f6d','1d2249'],23,41],['skirt',['3a5478','383f6d','1d2249','222631'],42,48],['sock',['f5f3f1','b5bdc2'],53,59],['shoe',['533a36'],59,63],['leg',['f7bfaa','d3917d'],46,55,20,39]], tf:[9,-2], shirt:['8c3242','db6c83','b84d65'], img:'nana', cx:29, feet:64, legY:47, hx:16, hy:1, back:[9,0], idle:0, shoot:[4,5], mz:[63,23] },
     prof:'「火力は正義です、先輩！」が口ぐせの新入部員。文化祭の倉庫から対戦車バズーカを担いできた。小柄なのに力持ち。',
     passive:'爆破マニア：爆発の範囲+20%・爆発ダメージ+10%',
     skill:{ id:'barrage', name:'メガトンバスター', cd:30, desc:'ロケット弾を5連射。装備中の武器に関係なく大爆発を起こす' },
@@ -498,15 +499,17 @@ const ARMOR = {
   b_dawn:{ slot:'body', sty:'dawn', c2:'#ffd23f', name:'夜明けのコート', price:20000, need:{ ach:'ch5' }, how:'第5章クリアで入荷', st:{ def:12, dmg:6, hp:10 }, col:'#f4efe2', collar:GD, ov:{ tf:[[14,42,14,1,GD],[23,36,1,6,GD],[10,24,4,2,GD]] } },
 
   b_nurse:{ slot:'body', sty:'nurse', c2:'#ff7eb6', suitSkirt:1, name:'夜勤のナース服', price:15000, need:[4,'h'], how:'第4章をハードで全クリアで入荷', st:{ regen:1.5, def:8, heal:20 }, col:'#f6dfe6', collar:'#ff7eb6', ov:{ tf:[[19,38,3,1,'#e03a3a'],[20,37,1,3,'#e03a3a']] } },
-  h_veil:{ slot:'head', hsty:'veil', col:'#1c1c22', c2:'#f4f4f4', name:'シスターのベール', price:20000, need:{ ach:'allclr' }, how:'全ステージクリアで入手', st:{ heal:15, def:4 }, ov:{ hf:[[8,-3,12,2,'#1c1c22'],[5,-1,18,2,'#1c1c22'],[3,1,22,3,'#1c1c22'],[5,3,19,2,'#f4f4f4'],[2,4,4,15,'#1c1c22']], hb:[[-1,3,8,27,'#1c1c22',1],[-3,12,5,17,'#1c1c22',1]] } },
-  b_sister:{ slot:'body', sty:'sister', c2:'#f4f4f4', suitSkirt:1, name:'シスター服', price:20000, need:{ ach:'allclr' }, how:'全ステージクリアで入手', st:{ regen:0.8, def:6, heal:10 }, col:'#2a2a34', collar:'#f4f4f4', ov:{ tf:[[19,38,3,1,'#e6b422'],[20,37,1,4,'#e6b422']] } },
-  l_sister:{ slot:'legs', name:'シスター服（スカート）', price:20000, need:{ ach:'allclr' }, how:'全ステージクリアで入手', st:{ def:5, spd:3 }, skirt:'#2a2a34', tights:'#2a2a34', sock:'#2a2a34', shoe:'#4a3528' },
-  b_nun:{ slot:'body', name:'シスター服（ナナ専用）', price:1, need:{ ach:'allclr' }, how:'全ステージクリアで入手', only:'nana', skin:{ img:'nun', dx:1, dy:2, legY:56 }, st:{ heal:15, regen:0.8, def:5 } },
-  b_nun_yui:{ slot:'body', name:'シスター服（ユイ専用）', price:1, need:{ ach:'allclr' }, how:'全ステージクリアで入手', only:'yui', skin:{ img:'nun_yui', art:{ cx:17, feet:64, legY:58, hx:3, hy:1, back:[-3,-1], mz:[53,29] } }, st:{ heal:15, regen:0.8, def:5 } },
-  b_nun_rei:{ slot:'body', name:'シスター服（レイ専用）', price:1, need:{ ach:'allclr' }, how:'全ステージクリアで入手', only:'rei', skin:{ img:'nun_rei', art:{ cx:14, feet:63, legY:58, hx:0, hy:1, back:[-6,-1], mz:[44,16] } }, st:{ heal:15, regen:0.8, def:5 } },
-  b_nun_haru:{ slot:'body', name:'シスター服（ハル専用）', price:1, need:{ ach:'allclr' }, how:'全ステージクリアで入手', only:'haru', skin:{ img:'nun_haru', art:{ cx:21, feet:62, legY:56, hx:7, hy:1, back:[1,-1], mz:[62,20] } }, st:{ heal:15, regen:0.8, def:5 } },
-  b_nun_mio:{ slot:'body', name:'シスター服（ミオ専用）', price:1, need:{ ach:'allclr' }, how:'全ステージクリアで入手', only:'mio', skin:{ img:'nun_mio', art:{ cx:27, feet:63, legY:57, hx:13, hy:1, back:[7,-1], gunAt:[41,40] } }, st:{ heal:15, regen:0.8, def:5 } },
+  h_veil:{ slot:'head', hsty:'veil', col:'#1c1c22', c2:'#f4f4f4', name:'シスターのベール', price:20000, need:{ ach:'allclr' }, how:'第1部の全ステージクリアで入手', st:{ heal:15, def:4 }, ov:{ hf:[[8,-3,12,2,'#1c1c22'],[5,-1,18,2,'#1c1c22'],[3,1,22,3,'#1c1c22'],[5,3,19,2,'#f4f4f4'],[2,4,4,15,'#1c1c22']], hb:[[-1,3,8,27,'#1c1c22',1],[-3,12,5,17,'#1c1c22',1]] } },
+  b_sister:{ slot:'body', sty:'sister', c2:'#f4f4f4', suitSkirt:1, name:'シスター服', price:20000, need:{ ach:'allclr' }, how:'第1部の全ステージクリアで入手', st:{ regen:0.8, def:6, heal:10 }, col:'#2a2a34', collar:'#f4f4f4', ov:{ tf:[[19,38,3,1,'#e6b422'],[20,37,1,4,'#e6b422']] } },
+  l_sister:{ slot:'legs', name:'シスター服（スカート）', price:20000, need:{ ach:'allclr' }, how:'第1部の全ステージクリアで入手', st:{ def:5, spd:3 }, skirt:'#2a2a34', tights:'#2a2a34', sock:'#2a2a34', shoe:'#4a3528' },
+  b_nun:{ slot:'body', name:'シスター服（ナナ専用）', price:1, need:{ ach:'allclr' }, how:'第1部の全ステージクリアで入手', only:'nana', skin:{ img:'nun', dx:1, dy:2, legY:56 }, st:{ heal:15, regen:0.8, def:5 } },
+  b_nun_yui:{ slot:'body', name:'シスター服（ユイ専用）', price:1, need:{ ach:'allclr' }, how:'第1部の全ステージクリアで入手', only:'yui', skin:{ img:'nun_yui', art:{ cx:17, feet:64, legY:58, hx:3, hy:1, back:[-3,-1], mz:[53,29] } }, st:{ heal:15, regen:0.8, def:5 } },
+  b_nun_rei:{ slot:'body', name:'シスター服（レイ専用）', price:1, need:{ ach:'allclr' }, how:'第1部の全ステージクリアで入手', only:'rei', skin:{ img:'nun_rei', art:{ cx:14, feet:63, legY:58, hx:0, hy:1, back:[-6,-1], mz:[44,16] } }, st:{ heal:15, regen:0.8, def:5 } },
+  b_nun_haru:{ slot:'body', name:'シスター服（ハル専用）', price:1, need:{ ach:'allclr' }, how:'第1部の全ステージクリアで入手', only:'haru', skin:{ img:'nun_haru', art:{ cx:21, feet:62, legY:56, hx:7, hy:1, back:[1,-1], mz:[62,20] } }, st:{ heal:15, regen:0.8, def:5 } },
+  b_nun_mio:{ slot:'body', name:'シスター服（ミオ専用）', price:1, need:{ ach:'allclr' }, how:'第1部の全ステージクリアで入手', only:'mio', skin:{ img:'nun_mio', art:{ cx:27, feet:63, legY:57, hx:13, hy:1, back:[7,-1], gunAt:[41,40] } }, st:{ heal:15, regen:0.8, def:5 } },
+  b_bikini:{ slot:'body', sty:'swim', charCol:1, c2:'#ffffff', name:'スポーツビキニ（トップス）', price:1, need:{ ach:'ch6' }, how:'第2部の全10ステージクリアで入手', col:'#ff6fa8', st:{ spd:8, dash:15, regen:0.6, def:2 } },
   l_std:{ slot:'legs', name:'制服スカート', price:0, st:{} },
+  l_bikini:{ slot:'legs', charCol:1, bare:1, name:'スポーツビキニ（ボトムス）', price:1, need:{ ach:'ch6' }, how:'第2部の全10ステージクリアで入手', skirt:'#ff6fa8', shoe:'#f2d16b', st:{ spd:6, dash:10, def:2 } },
   l_spats:{ slot:'legs', name:'スパッツ＆スニーカー', price:500, st:{ spd:6 }, skirt:'#33333c', sock:'#f1f1f1', shoe:'#d8433a' },
   l_knee:{ slot:'legs', name:'ニーパッド', price:1400, st:{ def:4 }, sock:'#5a616b', shoe:'#3a3a3a' },
   l_tights:{ slot:'legs', name:'黒タイツ', price:2600, st:{ dash:20 }, tights:'#3a3644', sock:'#3a3644', shoe:'#6a4630' },
@@ -607,6 +610,10 @@ const BOSSES = {
   b5:{ name:'ペイシェント・ゼロ', title:'発生炉の心臓 ― 最初の一人', hp:38000, dmg:33, spd:36, cr:4000, xp:2600, scale:2.9, pal:{ hood:'#17121f', skin:'#d6cfe8', jeans:'#0f0c16', eye:'#ff3df0' },
     atk:['swipe','charge','slam','spit','summon','rain'], sum:['ogre','bomber','wolf','witch','eagle'], desc:'霧を生み続ける最初の被験者。すべての攻撃を使い、体力が減るほど凶暴になる。' },
 };
+BOSSES.b6 = { name:'監視塔の主', title:'潮見浜 海水浴場 ライフセーバー', hp:30000, dmg:31, spd:40, cr:2400, xp:1800, scale:2.6, pal:{ hood:'#e8472f', skin:'#8fc4c0', jeans:'#f2c94c', eye:'#fff1a0' },
+  atk:['swipe','charge','charge','slam','summon'], sum:['runner','zwoman','leaper','crow'], desc:'「遊泳区域から出ないでください」。浜の端から端まで一瞬で駆けてくる。' };
+BOSSES.b7 = { name:'霧の母', title:'ヘリオス製薬 第四研究所 所長 潮見サヨコ', hp:52000, dmg:36, spd:34, cr:5200, xp:3400, scale:3.0, pal:{ hood:'#2b6f8a', skin:'#d8e8f0', jeans:'#123040', eye:'#7af0ff' }, helmet:{ col:'#3fa6c4', rim:'#1d5a70', visor:null },
+  atk:['swipe','spit','charge','slam','summon','rain'], sum:['witch','lady','shroom','eagle','ogre','bear'], desc:'霧の薬を最初に作った研究者。海の霧そのものを纏い、すべての攻撃を使う。' };
 Object.keys(BOSSES).forEach(k => { BOSSES[k].id = k; BOSSES[k].boss = true; BOSSES[k].cost = 0; });
 
 /* ---------- stages ---------- */
@@ -616,9 +623,11 @@ const CHAPTERS = [
   { id:3, name:'地下鉄・霧ヶ丘線', sub:'終電のあとに来るもの', bg:'subway' },
   { id:4, name:'市立総合病院', sub:'緑の非常灯の下で', bg:'hospital' },
   { id:5, name:'港湾・ヘリオス第三研究所', sub:'霧の心臓', bg:'harbor' },
+  { id:6, name:'潮見島 臨海合宿', sub:'第2部・夏の霧は海から', bg:'beach', part:2 },
 ];
 const P1={ walker:6, runner:2, zwoman:2 }, P2={ walker:4, zwoman:2, runner:3, bomber:2, spitter:2, pigeon:4, crow:1.5, fat:0.4 }, P3={ walker:3, zwoman:2, runner:2, leaper:2, armored:2, bomber:1, shroom:2, wolf:2.5, crow:2 },
   P4={ walker:3, zwoman:3, spitter:2, shroom:2, screamer:1, lady:1.5, witch:2.5, armored:2, runner:2, bomber:2, fat:0.6 }, P5={ walker:2, zwoman:2, runner:2, spitter:1, shroom:1.5, bomber:2, leaper:1, armored:2, screamer:1, lady:1, witch:2, wolf:2.5, eagle:2, pigeon:3, brute:0.6, ogre:0.8, bear:0.5 };
+const P6={ walker:2, zwoman:3, runner:3, leaper:1.5, bomber:2, spitter:1.5, shroom:1, armored:1.5, screamer:1, witch:1.5, lady:1, wolf:2, crow:2.5, pigeon:3, eagle:1.5, fat:0.6, brute:0.5, ogre:0.5 };
 const STAGES = [
   { id:'1-1', ch:1, name:'放課後の異変', type:'advance', lv:1, zones:3, budget:9, pool:{ walker:1 }, par:120, story:'prologue', tut:1 },
   { id:'1-2', ch:1, name:'渡り廊下を抜けて', type:'advance', lv:2, zones:4, budget:12, pool:P1, par:150 },
@@ -647,6 +656,16 @@ const STAGES = [
   { id:'5-X', ch:5, name:'部長と副部長', type:'advance', lv:19, zones:5, budget:22, pool:P5, par:260, fixed:['yui','rei'], story:'s5x' },
   { id:'5-3', ch:5, name:'発生炉前・最終防衛', type:'defend', lv:19, time:100, budget:22, pool:P5, par:100 },
   { id:'5-4', ch:5, name:'ペイシェント・ゼロ', type:'boss', lv:20, zones:2, budget:24, pool:P5, boss:'b5', par:300, after:'ending' },
+  { id:'6-1', ch:6, name:'桟橋に降る霧', type:'advance', lv:21, zones:4, budget:22, pool:P6, par:200, story:'ch6' },
+  { id:'6-2', ch:6, name:'海の家通り', type:'advance', lv:22, zones:5, budget:24, pool:P6, par:230 },
+  { id:'6-3', ch:6, name:'海の家バリケード', type:'defend', lv:22, time:90, budget:22, pool:Object.assign({ brute:0.7 }, P6), par:90 },
+  { id:'6-4', ch:6, name:'灯台からの援護射撃', type:'snipe', lv:23, solo:'mio', par:150, story:'s6s', sn:{ count:36, dur:95, pool:{ walker:3, zwoman:3, runner:3, bomber:2, leaper:1.5, crow:2, pigeon:1.5, witch:1, armored:1, ogre:0.5 } } },
+  { id:'6-5', ch:6, name:'監視塔の主', type:'boss', lv:24, zones:2, budget:24, pool:P6, boss:'b6', par:240, after:'after6' },
+  { id:'6-6', ch:6, name:'夜の漁港', type:'advance', lv:25, zones:5, budget:25, pool:P6, par:250, fixed:['haru','nana'], story:'s6x' },
+  { id:'6-7', ch:6, name:'冷凍倉庫の生存者', type:'defend', lv:26, time:95, budget:25, pool:Object.assign({ brute:0.8 }, P6), par:95 },
+  { id:'6-8', ch:6, name:'ひとりで、灯台へ', type:'advance', lv:27, zones:4, budget:12, pool:P6, par:220, solo:'yui', story:'s6y' },
+  { id:'6-9', ch:6, name:'海上プラント連絡橋', type:'advance', lv:28, zones:6, budget:28, pool:P6, par:290 },
+  { id:'6-10', ch:6, name:'霧の母', type:'boss', lv:30, zones:2, budget:28, pool:P6, boss:'b7', par:330, after:'ending2' },
 ];
 /* third star: time limit, or a kill quota on timed defence stages (their clock always runs the full length) */
 function star2(st) { return st.type === 'snipe' ? 'バリケード耐久50%以上' : 'ダウンなし'; }
@@ -705,6 +724,40 @@ const STORY = {
     ['rei','もし父が“向こう側”になっていたら、撃つのは私でなければいけない。誰にも、背負わせたくないの。'], ['yui','……わかった。でも約束して。必ず戻ること。部長命令だよ。'], ['rei','了解。——すぐ戻るわ、部長。'] ],
   s5x:[ ['narr','発生炉へ続く連絡橋は、二人分の幅しかなかった。'], ['yui','ここはわたしとレイで行く。三人は退路を確保して。'],
     ['mio','えー、最後の見せ場なのに！'], ['rei','橋が落ちたら全員終わり。先に渡って、向こう側から扉を開ける。部長、背中は任せるわ。'], ['yui','うん。入部した日から、ずっとそうだったでしょ。'] ],
+  ch6:[ ['narr','八月。あの霧の夜から、十か月が過ぎた。'], ['narr','サバゲー部は夏合宿で、フェリーに揺られて離島・潮見島へ向かっていた。'],
+    ['mio','見て見て、海！ 部費で離島合宿なんて、霧ヶ丘始まって以来の快挙じゃない？'], ['rei','部費じゃないわ。父が「娘の命の恩人たちに」って、民宿を押さえてくれたの。'],
+    ['haru','レイのお父さん最高！ 着いたらまず泳ぐ！ そんでかき氷！'], ['nana','先輩、ナナは花火を持ってきました！ 打ち上げのやつです！'], ['yui','……ナナちゃん、それ、どこで手に入れたの？'],
+    ['narr','フェリーが桟橋に着いた瞬間、沖のほうから白い壁がせり上がってきた。夏の夕方に、ありえないはずの濃い霧。'],
+    ['rei','この色……あの夜と同じ。でも発生炉は止めたはず。'], ['mio','沖にでっかい建物あるよ。ヘリオスのロゴ……「第四研究所」って書いてある。'],
+    ['yui','……合宿は中止。サバゲー部、状況開始。全員で生きて、夏休みを取り返そう！'] ],
+  'i6-2':[ ['haru','うそでしょ、海の家が全部ゾンビ屋台になってる……。焼きそばの匂いだけ残ってるのがキツい。'], ['mio','浮き輪つけたまま走ってくるのいるんだけど！？ 速くない！？'],
+    ['rei','水着の観光客まで……。島ぜんぶが霧に飲まれたのね。'], ['yui','民宿の人たちが桟橋の先に避難してるはず。通りを抜けて合流しよう！'] ],
+  'i6-3':[ ['narr','海の家「しおさい」。避難していた島の子どもたちが、カウンターの奥に隠れていた。'], ['nana','先輩、フェリーが戻ってくるまで90秒だそうです！'],
+    ['haru','ビーチパラソルとベンチでバリケード！ ……あたし、こういうの得意になっちゃったな。'], ['yui','子どもたちには指一本触れさせない。両側、来るよ！'] ],
+  s6s:[ ['narr','子どもたちをフェリーへ送り出した仲間が、桟橋の木箱の陰で囲まれかけている。灯台の上から、ミオが見下ろしていた。'], ['mio','ぽち、カメラ同期。……よし、照準補正オッケー。ミオちゃん、今日は狙撃手やるよ。'],
+    ['rei','ミオ、あなたが狙撃？ 大丈夫なの？'], ['mio','風紀委員はね、遠くから違反者を見つけるのが仕事なの。——浜辺で走ってるやつ、全員違反！'],
+    ['yui','フェリーが出るまで95秒、ここを動けない。ミオ、援護お願い！'] ],
+  'i6-5':[ ['narr','子どもたちを乗せたフェリーが離れていく。その汽笛に応えるように、監視塔の上で、何かが笛を吹いた。'], ['haru','あのホイッスル……ライフセーバーの人だ。去年の夏、溺れかけた子を助けてたって。'],
+    ['rei','浜の端から端まで一瞬で詰めてくる。突進のあと、砂に足を取られる瞬間を狙って。'], ['yui','……もう誰も、この浜で溺れさせない。行くよ！'] ],
+  after6:[ ['narr','倒れたライフセーバーの防水ポーチから、ヘリオスの社員証が出てきた。裏に、手書きのメモ。'], ['rei','「第四研究所は霧の“原液”を海水で培養している。発生炉は囮だった」……！'],
+    ['mio','囮って……じゃあ、あの夜止めたのは本体じゃなかったってこと？'], ['nana','じゃあ本体も爆破すればいいんですね！ 花火、まだあります！'],
+    ['yui','沖の研究所へ渡るには船が要る。島の漁港へ行こう。'] ],
+  s6x:[ ['narr','夜の漁港。動く船は一隻だけ、燃料タンクは冷凍倉庫の向こう側にある。'], ['haru','燃料はあたしが担ぐ。で、邪魔なやつは——'], ['nana','ナナが吹き飛ばします！'],
+    ['yui','……この二人だけで行かせるの、配電室のときより不安なんだけど。'], ['rei','力と火力。合理的な人選よ。——港ごと吹き飛ばさないで。'], ['haru','わかってるって！ たぶん！'] ],
+  'i6-7':[ ['narr','冷凍倉庫の中に、生き残った漁師たちが立てこもっていた。'], ['mio','船のエンジン、かかるまで95秒！ 古い型だから、ミオちゃんでもちょっと時間かかる！'],
+    ['haru','95秒なら楽勝……って言いたいけど、外の数、やばくない？'], ['rei','霧が港に流れ込んでる。数はこれからもっと増えるわ。'], ['yui','扉の前で迎え撃つ。誰も、倉庫の中には入れない！'] ],
+  s6y:[ ['yui','研究所の制御信号は、灯台のアンテナから出てる。誰かが切らないと、船は近づけない。'], ['rei','なら全員で——'],
+    ['yui','ううん。灯台の階段は一人分の幅しかない。それに、みんなには船を守ってほしい。'], ['haru','ユイ、それ前にレイが言ってたやつじゃん。「ひとりで行かせて」って。'],
+    ['yui','うん。だからわたしも、ちゃんと戻ってくる。部長命令は、自分にも出せるんだよ。'], ['rei','……了解、部長。帰ってこなかったら、許さないから。'] ],
+  'i6-9':[ ['narr','灯台の信号が途絶え、霧の向こうに研究所への連絡橋が浮かび上がった。'], ['mio','研究所の警備ドローン、全部止まった！ ユイちゃん、ナイス！'],
+    ['yui','ただいま。……みんな、待たせてごめん。'], ['haru','おかえり！ 遅いっての！'], ['rei','橋は六区画。海から上がってくる個体もいる。足を止めないで。'], ['nana','最後の花火、温存しておきます！'] ],
+  'i6-10':[ ['narr','研究所の最深部。海水で満たされた巨大な水槽の前に、白衣の女性が立っていた。'], ['rei','潮見サヨコ所長……。父の論文の、共同研究者。霧の薬を最初に作った人。'],
+    ['narr','女性がゆっくりと振り返る。その体から、霧が、波のようにあふれ出した。'], ['mio','この人、霧そのものになってる……！'], ['haru','でかっ！ 教頭先生の三倍くらいあるんだけど！？'],
+    ['nana','花火、ぜんぶ持ってきました！'], ['yui','終わらせよう、今度こそ。——サバゲー部、夏休み最後の状況、開始！'] ],
+  ending2:[ ['narr','水槽が砕け、研究所に朝の光が差し込む。海の霧が、潮風にほどけていく。'], ['rei','……霧の原液、全部、海水に戻った。今度こそ、本当に終わり。'],
+    ['narr','救助のヘリの音が近づいてくる。その中に、白衣を着たレイの父の姿があった。'], ['haru','終わったーっ！ よし、泳ごう！ 今すぐ！'], ['mio','その前に寝たい……。合宿、二日連続で徹夜なんだけど……。'],
+    ['nana','先輩、民宿の人が「お礼に」って、水着を用意してくれたそうです！'], ['yui','……うん。今日だけは、部活お休み。みんなで海に行こう！'],
+    ['narr','放課後デッドライン 第2部 ― 完 ―\n報酬：全員分の水着が手に入った。'] ],
   prologue:[ ['narr','十月、放課後。霧ヶ丘の街に、灰色の霧が降りた。'], ['narr','霧を吸った人間は、三十分で「人」をやめた。'],
     ['haru','ちょ、ちょっと！ 校庭のあれ、陸上部じゃないよね！？'], ['rei','瞳孔散大、呼びかけに反応なし。……噛んでる。確定ね、ゾンビよ。'],
     ['mio','わーお。じゃあアレ開けちゃう？ 顧問の「絶対さわるな」ロッカー。'], ['yui','……鬼塚先生、ごめんなさい。サバゲー部、今日だけは本物を使います。'], ['nana','先輩っ！ 文化祭の倉庫にバズーカありました！ 「出し物」って書いてあります！'], ['rei','……どんな文化祭よ。'],
@@ -729,14 +782,15 @@ const STORY = {
   ending:[ ['narr','発生炉が沈黙し、塔が崩れる。霧が、朝の風にほどけていく。'], ['rei','……父さん。止めたよ。'],
     ['narr','瓦礫のそばで、白衣の男が咳き込みながら、かすかに手を上げた。'], ['haru','生きてる！ レイ、お父さん生きてるよ！！'],
     ['mio','見て見て、朝日。うわ、まぶし……。あたしたち、徹夜じゃん。'], ['nana','えへへ……塔、ちょっと壊しすぎちゃいましたかね？'], ['yui','目標達成。全員、生きて朝を迎えました。'],
-    ['yui','——サバゲー部、状況終了！ ……帰って、寝よう。'], ['narr','放課後デッドライン ― 完 ―\nハード以上の難易度とサバイバルで、霧の夜はまだ続く。'] ],
+    ['yui','——サバゲー部、状況終了！ ……帰って、寝よう。'], ['narr','放課後デッドライン ― 完 ―\nハード以上の難易度とサバイバルで、霧の夜はまだ続く。'], ['narr','……そして、夏。\n第2部「潮見島 臨海合宿」が解放された。'] ],
 };
 
 /* ---------- achievements ---------- */
 function totalKills(s){ let n=0; for(const k in s.stats.kills) n+=s.stats.kills[k]; return n; }
 function chClear(s,ch,d){ return STAGES.filter(st=>st.ch===ch).every(st=>s.stages[st.id] && s.stages[st.id][d||'n'] && s.stages[st.id][d||'n'].clear); }
-function allClear(s,d){ return STAGES.every(st=>s.stages[st.id] && s.stages[st.id][d] && s.stages[st.id][d].clear); }
-function starCount(s,d){ let n=0; STAGES.forEach(st=>{ const r=s.stages[st.id]&&s.stages[st.id][d]; if(r) n+=r.stars.filter(Boolean).length; }); return n; }
+const PART1 = STAGES.filter(st => st.ch <= 5);
+function allClear(s,d){ return PART1.every(st=>s.stages[st.id] && s.stages[st.id][d] && s.stages[st.id][d].clear); }
+function starCount(s,d,list){ let n=0; (list||STAGES).forEach(st=>{ const r=s.stages[st.id]&&s.stages[st.id][d]; if(r) n+=r.stars.filter(Boolean).length; }); return n; }
 const ACHS = [
   { id:'start', name:'部活動開始', desc:'1-1をクリアする', ok:s=>!!(s.stages['1-1']&&s.stages['1-1'].n&&s.stages['1-1'].n.clear), rw:{ ap:2 } },
   { id:'k100', name:'はじめての百体', desc:'ゾンビを累計100体倒す', ok:s=>totalKills(s)>=100, prog:s=>[totalKills(s),100], rw:{ ap:2 } },
@@ -748,10 +802,11 @@ const ACHS = [
   { id:'ch3', name:'終点', desc:'第3章をクリアする', ok:s=>chClear(s,3), rw:{ ap:13 } },
   { id:'ch4', name:'夜勤明け', desc:'第4章をクリアする', ok:s=>chClear(s,4), rw:{ ap:13, armor:'h_nurse' } },
   { id:'ch5', name:'夜明け', desc:'第5章をクリアする', ok:s=>chClear(s,5), rw:{ ap:25, armor:'b_dawn' } },
-  { id:'allclr', name:'祈りの朝', desc:'ノーマルで全ステージをクリア', ok:s=>allClear(s,'n'), rw:{ armors:['h_veil','b_sister','l_sister','b_nun','b_nun_yui','b_nun_rei','b_nun_haru','b_nun_mio'] } },
-  { id:'stars', name:'完全下校', desc:'ノーマル全ステージで★3を獲得', ok:s=>starCount(s,'n')>=STAGES.length*3, prog:s=>[starCount(s,'n'),STAGES.length*3], rw:{ ap:17, armor:'h_crown' } },
-  { id:'hard', name:'ハードモード制覇', desc:'ハードで全ステージをクリア', ok:s=>allClear(s,'h'), rw:{ ap:75 } },
-  { id:'night', name:'悪夢を越えて', desc:'ナイトメアで全ステージをクリア', ok:s=>allClear(s,'x'), rw:{ ap:158, armor:'a_wing' } },
+  { id:'ch6', name:'夏休みを取り返せ', desc:'第2部「潮見島」の全10ステージをクリアする', ok:s=>chClear(s,6), rw:{ ap:30, armors:['b_bikini','l_bikini'], set:'水着セット' } },
+  { id:'allclr', name:'祈りの朝', desc:'ノーマルで第1部（第1〜5章）の全ステージをクリア', ok:s=>allClear(s,'n'), rw:{ armors:['h_veil','b_sister','l_sister','b_nun','b_nun_yui','b_nun_rei','b_nun_haru','b_nun_mio'] } },
+  { id:'stars', name:'完全下校', desc:'ノーマル第1部の全ステージで★3を獲得', ok:s=>starCount(s,'n',PART1)>=PART1.length*3, prog:s=>[starCount(s,'n',PART1),PART1.length*3], rw:{ ap:17, armor:'h_crown' } },
+  { id:'hard', name:'ハードモード制覇', desc:'ハードで第1部の全ステージをクリア', ok:s=>allClear(s,'h'), rw:{ ap:75 } },
+  { id:'night', name:'悪夢を越えて', desc:'ナイトメアで第1部の全ステージをクリア', ok:s=>allClear(s,'x'), rw:{ ap:158, armor:'a_wing' } },
   { id:'h1', name:'ハード：下校完了', desc:'第1章をハードで全クリア', ok:s=>chClear(s,1,'h'), rw:{ ap:25 } },
   { id:'h2', name:'ハード：おかわりコロッケ', desc:'第2章をハードで全クリア', ok:s=>chClear(s,2,'h'), rw:{ armor:'h_chef' } },
   { id:'h3', name:'ハード：終点', desc:'第3章をハードで全クリア', ok:s=>chClear(s,3,'h'), rw:{ ap:25 } },
@@ -878,6 +933,8 @@ const GFX = (() => {
     ctx.putImageData(im, 0, 0);
   }
 
+  /* swimsuits come in the wearer's own colour */
+  function tintChar(a, ch) { if (!a) return {}; if (!a.charCol) return a; const c = ch.color, o = Object.assign({}, a, { col: c }); if (a.skirt) o.skirt = c; return o; }
   /* ---- character palette ---- */
   function charPal(ch, eq) {
     const p = ASSETS.pal.slice();
@@ -885,13 +942,14 @@ const GFX = (() => {
     set(1, ramp(ch.hair, [1.16, 1, 0.8, 0.62, 0.5, 0.4, 0.24]));
     if (ch.band) set(8, ramp(ch.band, [1.25, 1, 0.6])); else if (!ch.bandKeep) set(8, [p[2], p[3], p[4]]);
     if (ch.skin) { const s = ramp(ch.skin, [1, 0.86, 0.66]); set(11, s); set(27, s); }
-    const b = ARMOR[eq.body] || {}, l = ARMOR[eq.legs] || {};
+    const b = tintChar(ARMOR[eq.body], ch), l = tintChar(ARMOR[eq.legs], ch);
     set(18, ramp((!b.sty && b.col) || ch.outfit, [1, 0.72, 0.55, 0.3]));
     if (b.collar) p[22] = b.collar;
     if (l.skirt) { set(23, ramp(l.skirt, [1.3, 1, 0.62])); p[26] = shade(l.skirt, 0.35); }
     if (l.tights) set(27, ramp(l.tights, [1.15, 1, 0.75]));
     if (l.sock) { set(30, ramp(l.sock, [1, 0.72, 1.18])); p[33] = shade(l.sock, 1.4); }
     if (l.shoe) set(34, ramp(l.shoe, [1, 1.45, 1.25]));
+    if (l.bare) { set(30, [p[27], p[28], p[29], p[27]]); }
     return p;
   }
   const HAIR_OV = {
@@ -1030,6 +1088,22 @@ const GFX = (() => {
       plus(nx + 3, jTop + 5, [224, 58, 58]);
       cuffPaint(C2[1]);
       each((x, y) => { if (T(x, y) && jl(x, y) >= 0 && jl(x, y - 1) < 0) put(x, y, C2[1]); });
+    } else if (sty === 'swim') {   // swimsuit: skin where jacket, shirt and tie were; a sporty top with halter straps
+      const SC = M.SKC; if (SC) {
+        const SH = M.SH, sh = (x, y) => inb(x, y) && SH && SH[y * N + x] > 0 && T(x, y), skn = (x, y) => jl(x, y) >= 0 || sh(x, y);
+        // flat skin, shadow on the back edge and along the outline, so no jacket folds show through
+        const px2 = []; each((x, y) => { if (skn(x, y)) px2.push([x, y]); });
+        for (const [x, y] of px2) { const e = !skn(x - 1, y) || !skn(x, y + 1); put(x, y, e ? SC[1] : SC[0]); }
+        const dk = (x, y) => { if (!op(x, y)) return false; const i = at(x, y); return d[i] + d[i + 1] + d[i + 2] < 120; };
+        const inner = (x, y) => dk(x, y) && [1, 2].some(k => skn(x - k, y)) && [1, 2].some(k => skn(x + k, y));   // jacket seams between body pixels
+        const bod = (x, y) => T(x, y) && (skn(x, y) || inner(x, y)), b0 = jTop + 1, b1 = Math.max(jTop + 5, skTop - 4);
+        for (let y = b1 + 1; y < skTop; y++) for (let x = wx0; x <= wx1; x++) if (T(x, y) && inner(x, y)) put(x, y, SC[1]);
+        for (let y = b0; y <= b1; y++) for (let x = wx0; x <= wx1; x++) { if (!bod(x, y)) continue;
+          const e = !bod(x - 1, y) || !bod(x + 1, y); put(x, y, y === b1 ? C[3] : e ? C[2] : y === b0 ? C[0] : x === nx ? C[2] : C[x < nx - 1 ? 2 : 1]); }
+        for (let x = wx0; x <= wx1; x++) { if (bod(x, b1 + 1)) put(x, b1 + 1, C2[1]); if (bod(x, b1 + 2)) put(x, b1 + 2, SC[1]); }
+        for (let y = jTop; y < b0; y++) for (const x of [nx - 3, nx + 2]) if (bod(x, y) || jl(x, y) >= 0) put(x, y, C[1]);
+        dot(nx, b0 + 1, C2[0]);
+      }
     } else if (sty === 'sister') { // habit: floor-length skirt, wide white collar, gold cross
       coat(10, null, false, true, true);
       each((x, y) => { const l = jl(x, y); if (l >= 0 && y <= jTop + 2 && x >= wx0 - 2 && x <= wx1 + 2) put(x, y, y === jTop + 2 || (y > jTop && jl(x, y + 1) < 0) ? [150, 150, 160] : [244, 244, 244]); });
@@ -1202,7 +1276,7 @@ const GFX = (() => {
     const HA = ARMOR[eq.head] || {};
     ['acc', 'body', 'legs', 'head'].forEach(s => { const a = ARMOR[eq[s]] || {}; if (s === 'body' && a.sty) return; if (s === 'head' && a.hsty && a.ov) { if (a.ov.hb) groups.hb.push(a.ov.hb); return; } add(a.ov); });
     const hHf = HA.ov && HA.ov.hf; let hdy = 0;
-    const BA = ARMOR[eq.body] || {}, hpal = BA.sty && BA.glove ? (() => { const q = pal.slice(), G = R5(BA.glove); q[11] = G[1]; q[12] = G[2]; q[13] = G[3]; q[15] = G[4]; return q; })() : pal;
+    const BA = tintChar(ARMOR[eq.body], ch), hpal = BA.sty && BA.glove ? (() => { const q = pal.slice(), G = R5(BA.glove); q[11] = G[1]; q[12] = G[2]; q[13] = G[3]; q[15] = G[4]; return q; })() : pal;
     for (let f = 0; f < 8; f++) {
       const m = ASSETS.frames[f], hx = OX + m.hx, hy = OY + m.hy, t0x = OX + m.ax - 24, t0y = OY + m.ay - 26;
       const layer = (hk, tk) => {
@@ -1217,7 +1291,8 @@ const GFX = (() => {
       if (BA.sty || HA.hsty || HA.sit) {
         const J = new Int8Array(4096).fill(-1), K = new Uint8Array(4096), SK = new Uint8Array(4096);
         for (let i = 0; i < 4096; i++) { const c = girlCls[(i >> 6) * 512 + f * 64 + (i & 63)]; if (c >= 18 && c <= 21) J[i] = c - 17; else if (c >= 23 && c <= 26) K[i] = c - 22; else if ((c >= 11 && c <= 13) || (c >= 27 && c <= 29)) SK[i] = (c - 10) % 16; }
-        const im = t6.getImageData(0, 0, 64, 64), dd = im.data; dressFrame(dd, 64, 0, { J, K, SK }, BA, ch.tor); dressHead(dd, 64, 0, { SK, HR: Uint8Array.from({ length: 4096 }, (_, i) => { const c = girlCls[(i >> 6) * 512 + f * 64 + (i & 63)]; return c >= 1 && c <= 7 ? 1 : 0; }) }, HA, m.hx, m.hy);
+        const SH = new Uint8Array(4096); if (BA.sty === 'swim') for (let i = 0; i < 4096; i++) if (girlCls[(i >> 6) * 512 + f * 64 + (i & 63)] === 22) SH[i] = 1;
+        const im = t6.getImageData(0, 0, 64, 64), dd = im.data; dressFrame(dd, 64, 0, { J, K, SK, SH, SKC: [pal[11], pal[12], pal[13]] }, BA, ch.tor); dressHead(dd, 64, 0, { SK, HR: Uint8Array.from({ length: 4096 }, (_, i) => { const c = girlCls[(i >> 6) * 512 + f * 64 + (i & 63)]; return c >= 1 && c <= 7 ? 1 : 0; }) }, HA, m.hx, m.hy);
         hdy = sitShift((x, y) => x >= 0 && x < 64 && y >= 0 && y < 64 && dd[(y * 64 + x) * 4 + 3] > 127, HA, m.hx, m.hy); t6.putImageData(im, 0, 0);
       }
       bx.drawImage(t64, f * FW + OX, OY);
@@ -1230,10 +1305,11 @@ const GFX = (() => {
   }
   /* outfit recolouring for the fixed-art characters: per-region colour sets are remapped to the armour's colours */
   function recolorArt(ch, eq) {
-    const a = ch.art, src = chImg[a.img], b = ARMOR[eq.body] || {}, l = ARMOR[eq.legs] || {}, hA = ARMOR[eq.head] || {}, tgt = {};
+    const a = ch.art, src = chImg[a.img], b = tintChar(ARMOR[eq.body], ch), l = tintChar(ARMOR[eq.legs], ch), hA = ARMOR[eq.head] || {}, tgt = {};
     if (b.col && !b.sty) tgt.body = ramp(b.col, [1.12, 0.8, 0.55, 0.36]);
     if (l.skirt) tgt.skirt = ramp(l.skirt, [1.2, 0.95, 0.7, 0.48]);
     if (l.sock) tgt.sock = ramp(l.sock, [1, 0.8, 0.6]); if (l.shoe) tgt.shoe = ramp(l.shoe, [1.2, 0.95, 0.7]); if (l.tights) tgt.leg = ramp(l.tights, [1.15, 0.95, 0.75]);
+    if (l.bare) { const lg = a.rc.find(r => r[0] === 'leg'); if (lg) tgt.sock = lg[1].map(h => '#' + h); }
     if (!a.rc || (!Object.keys(tgt).length && !b.sty && !hA.hsty)) return src;
     const cv = mk(src.width, src.height), x = cv.getContext('2d', { willReadFrequently: true }); x.drawImage(src, 0, 0);
     const im = x.getImageData(0, 0, cv.width, cv.height), d = im.data, W = cv.width, rules = a.rc.filter(r => tgt[r[0]]).map(r => ({ t: tgt[r[0]].map(h2r), m: r[1].map(h => parseInt(h, 16)), y0: r[2], y1: r[3], x0: r[4] == null ? 0 : r[4], x1: r[5] == null ? 63 : r[5] }));
@@ -1245,15 +1321,17 @@ const GFX = (() => {
       const sd = (() => { const c2 = mk(W, cv.height), x2 = c2.getContext('2d', { willReadFrequently: true }); x2.drawImage(src, 0, 0); return x2.getImageData(0, 0, W, cv.height).data; })();
       const all = a.rc.map(r => ({ k: r[0], m: r[1].map(h => parseInt(h, 16)), y0: r[2], y1: r[3], x0: r[4] == null ? 0 : r[4], x1: r[5] == null ? 63 : r[5] }));
       const skin = new Map(); all.filter(r => r.k === 'leg').forEach(r => r.m.forEach((c, k) => skin.set(c, k + 1)));
+      const lgR = a.rc.find(r => r[0] === 'leg'), SKC = lgR ? lgR[1].map(h => h2r('#' + h)) : null, shirt = (a.shirt || []).map(h => parseInt(h, 16));
       const LV = n => n === 2 ? [1, 3] : n === 3 ? [1, 2, 3] : [0, 1, 2, 3, 4];
       for (let f = 0; f * 64 < W; f++) {
-        const J = new Int8Array(4096).fill(-1), K = new Uint8Array(4096), SK = new Uint8Array(4096);
+        const J = new Int8Array(4096).fill(-1), K = new Uint8Array(4096), SK = new Uint8Array(4096), SH = new Uint8Array(4096);
         for (let y = 0; y < Math.min(64, cv.height); y++) for (let fx = 0; fx < 64; fx++) {
           const i = (y * W + f * 64 + fx) * 4; if (sd[i + 3] < 128) continue; const c = (sd[i] << 16) | (sd[i + 1] << 8) | sd[i + 2], j = y * 64 + fx;
           for (const r of all) { if (r.k === 'leg' || y < r.y0 || y > r.y1 || fx < r.x0 || fx > r.x1) continue; const k = r.m.indexOf(c); if (k < 0) continue; if (r.k === 'body') J[j] = LV(r.m.length)[k]; else if (r.k === 'skirt') K[j] = k + 1; break; }
           if (skin.has(c)) SK[j] = skin.get(c);
+          const si = shirt.indexOf(c); if (si >= 0) { const lu = (sd[i] * 0.3 + sd[i + 1] * 0.59 + sd[i + 2] * 0.11); SH[j] = lu > 170 ? 1 : lu > 90 ? 2 : 3; }
         }
-        dressFrame(d, W, f * 64, { J, K, SK }, b, a.tor);
+        dressFrame(d, W, f * 64, { J, K, SK, SH, SKC }, b, a.tor);
         dressHead(d, W, f * 64, { SK }, hA, a.hx, a.hy, a.skull);
       }
     }
@@ -1620,6 +1698,47 @@ const GFX = (() => {
       for (const bx of [330, 770]) { n.fillStyle = '#20242e'; n.fillRect(bx, 226, 10, 14); n.fillRect(bx - 2, 224, 14, 4); }
       return { layers: [{ cv: sky, par: 0.03 }, { cv: mid, par: 0.45 }, { cv: near, par: 1 }], fog: 'rgba(170,230,190,1)', fogA: 0.5, tint: 'rgba(60,160,100,0.06)', dust: '#5a6070' };
     },
+    beach(seed) {   // 潮見島: summer dusk, sea fog rolling in from the offshore lab
+      const r = rng(seed);
+      const sky = mk(SW, BH), s = sky.getContext('2d');
+      s.fillStyle = grad(s, 0, 170, [[0, '#2a2f5e'], [0.45, '#7a5a8e'], [0.75, '#f08a6a'], [1, '#ffd59a']]); s.fillRect(0, 0, SW, 170);
+      s.globalCompositeOperation = 'lighter'; glow(s, 690, 150, 150, '#ffb070', 0.55); s.globalCompositeOperation = 'source-over';
+      s.fillStyle = '#ffe2a8'; s.beginPath(); s.arc(690, 154, 26, Math.PI, 0); s.fill();
+      for (let i = 0; i < 6; i++) { const cx = r() * SW, cy = 30 + r() * 80, w = 60 + r() * 120; s.fillStyle = 'rgba(255,190,170,' + (0.18 + r() * 0.2) + ')'; s.fillRect(cx, cy, w, 3); s.fillRect(cx + 14, cy - 3, w * 0.6, 3); }
+      s.fillStyle = grad(s, 154, BH, [[0, '#3a5d8a'], [0.4, '#24406a'], [1, '#0f2038']]); s.fillRect(0, 154, SW, BH - 154);
+      for (let i = 0; i < 140; i++) { const y = 156 + Math.floor(r() * 90), w = 3 + r() * 16; s.fillStyle = Math.abs(r() * SW - 690) < 90 ? 'rgba(255,214,150,0.55)' : 'rgba(170,200,240,' + (0.12 + r() * 0.2) + ')'; s.fillRect(Math.floor(690 - 80 + r() * 160) * (i % 3 === 0 ? 1 : 0) || Math.floor(r() * SW), y, w, 1); }
+      // island ridge, lighthouse and the offshore lab glowing green in the fog
+      s.fillStyle = '#1e2a40'; s.beginPath(); s.moveTo(0, 156); for (let x = 0; x <= 360; x += 20) s.lineTo(x, 150 - Math.sin(x / 60) * 16 - (x > 120 && x < 240 ? 18 : 0)); s.lineTo(360, 156); s.fill();
+      s.fillStyle = '#e8e4dc'; s.fillRect(176, 92, 10, 40); s.fillStyle = '#c0392b'; for (let y = 98; y < 132; y += 10) s.fillRect(176, y, 10, 4); s.fillStyle = '#2b2f3a'; s.fillRect(173, 86, 16, 6); s.fillRect(178, 80, 6, 6);
+      s.globalCompositeOperation = 'lighter'; glow(s, 181, 83, 50, '#fff3c0', 0.5); s.globalCompositeOperation = 'source-over';
+      s.fillStyle = '#16233a'; s.fillRect(860, 118, 70, 38); s.fillRect(872, 96, 16, 22); s.fillRect(902, 104, 10, 14); s.fillRect(840, 150, 110, 6);
+      for (let wy = 124; wy < 152; wy += 7) for (let wx = 864; wx < 926; wx += 9) { s.fillStyle = r() < 0.6 ? '#7dffb0' : '#22344e'; s.fillRect(wx, wy, 4, 2); }
+      s.globalCompositeOperation = 'lighter'; glow(s, 895, 120, 110, '#7dffb0', 0.35); s.globalCompositeOperation = 'source-over';
+      const mid = mk(900, BH), m = mid.getContext('2d');
+      // 海の家 row: plank huts with awnings and signs, parasols between them
+      const aw = ['#e8472f', '#2f7fc4', '#f2c94c', '#3fa66b'], sg = ['海の家', 'かき氷', 'やきそば', '貸ボート'];
+      for (let i = 0, px = 20; px < 860; px += 210, i++) {
+        const c = aw[i % 4]; m.fillStyle = '#b08a5a'; m.fillRect(px, 168, 150, 46); m.fillStyle = '#8a6a42'; for (let x = px; x < px + 150; x += 8) m.fillRect(x, 168, 1, 46);
+        m.fillStyle = '#3a2a1c'; m.fillRect(px + 12, 186, 126, 28);
+        for (let x = px - 6; x < px + 156; x += 12) { m.fillStyle = (x / 12 | 0) % 2 ? c : '#f4f0e6'; m.fillRect(x, 160, 12, 10); m.beginPath(); m.moveTo(x, 170); m.lineTo(x + 12, 170); m.lineTo(x + 6, 175); m.fill(); }
+        label(m, sg[i % 4], px + 40, 150, 10, '#3a2a1c', '#f4f0e6', 3);
+        const ux = px + 175; m.fillStyle = '#d8d0c0'; m.fillRect(ux, 186, 2, 30); m.fillStyle = aw[(i + 1) % 4]; m.beginPath(); m.moveTo(ux - 22, 190); m.quadraticCurveTo(ux + 1, 168, ux + 24, 190); m.fill(); m.fillStyle = 'rgba(255,255,255,0.35)'; m.fillRect(ux - 4, 178, 10, 3);
+      }
+      m.fillStyle = 'rgba(30,40,80,0.28)'; m.fillRect(0, 0, 900, BH);
+      const near = mk(1024, BH), n = near.getContext('2d');
+      // boardwalk rail, palms, lamp posts, then sand with a foam line
+      n.fillStyle = '#6a4e34'; n.fillRect(0, 214, 1024, 4); n.fillRect(0, 226, 1024, 3); for (let x = 0; x < 1024; x += 32) n.fillRect(x, 210, 4, 30);
+      for (const tx of [130, 470, 820]) { n.fillStyle = '#5a4030'; for (let k = 0; k < 9; k++) n.fillRect(tx + Math.round(Math.sin(k / 3) * 4), 150 + k * 10, 7, 11); n.fillStyle = '#2f6b3f';
+        for (const [dx, dy] of [[-30, 4], [-18, -6], [6, -8], [26, 2], [-26, 12], [24, 14]]) { n.beginPath(); n.moveTo(tx + 3, 148); n.quadraticCurveTo(tx + dx * 0.5, 136 + dy, tx + dx, 152 + dy); n.lineTo(tx + dx + 2, 155 + dy); n.quadraticCurveTo(tx + dx * 0.5, 142 + dy, tx + 4, 152); n.fill(); }
+        n.fillStyle = '#4a8a52'; n.fillRect(tx - 2, 144, 10, 5); }
+      for (const lx of [300, 650, 990]) lamp(n, lx, 120, 240, '#2a2a34', '#ffe9b0');
+      n.fillStyle = grad(n, GTOP, BH, [[0, '#e8d3a2'], [1, '#b89a68']]); n.fillRect(0, GTOP, 1024, 60);
+      n.fillStyle = 'rgba(255,255,255,0.55)'; for (let x = 0; x < 1024; x += 6) n.fillRect(x, GTOP + (Math.sin(x / 23) > 0 ? 0 : 1), 5, 2);
+      speckle(n, r, 0, GTOP + 4, 1024, 56, 520, ['#cdb27e', '#f2e2b8', '#a88a5a', '#d9c18e']);
+      for (let i = 0; i < 14; i++) { const x = Math.floor(r() * 1000), y = 256 + Math.floor(r() * 36); n.fillStyle = '#a88a5a'; n.fillRect(x, y, 3, 2); n.fillRect(x + 6, y + 3, 3, 2); }
+      for (const [sx, c] of [[220, '#ff7eb6'], [760, '#6fd0ff']]) { n.fillStyle = c; n.fillRect(sx, 262, 12, 4); n.fillRect(sx + 2, 260, 8, 8); n.fillStyle = '#ffffff'; n.fillRect(sx + 4, 262, 4, 4); }
+      return { layers: [{ cv: sky, par: 0.03 }, { cv: mid, par: 0.45 }, { cv: near, par: 1 }], fog: 'rgba(235,215,225,1)', fogA: 0.42, tint: 'rgba(255,140,120,0.06)', dust: '#cdb27e' };
+    },
   };
   function makeBG(theme, seed) {
     const key = 'bg|' + theme; if (cache[key]) return cache[key];
@@ -1844,6 +1963,8 @@ function loadSave() {
   if (!S) S = newSave();
 }
 function saveGame() { let ok = true; try { localStorage.setItem(SAVE_KEY, JSON.stringify(S)); } catch (e) { ok = false; } cloudQueue(); return ok; }
+/* autosave after every stage: written to this browser and sent to the cloud copy at once, not after the usual delay */
+function autoSave() { const local = saveGame(); const cloud = !!(CLOUD.doc && CLOUD.ready); if (cloud) { clearTimeout(CLOUD.timer); cloudPush(); } return local || cloud; }
 /* ---- cloud save: the browser's storage for this page can come back empty, so the save is mirrored to the
    viewer's private document on the server and restored from there when the local copy is behind ---- */
 const CLOUD = { doc: null, state: 'wait', ready: false, sent: '', busy: false, timer: 0, noAdopt: false, play: 0 };
@@ -1982,7 +2103,7 @@ function checkAchs() {
   ACHS.forEach(a => { if (!S.ach[a.id] && a.ok(S)) { S.ach[a.id] = 1; const r = a.rw; if (r.ap) S.ap += r.ap; if (r.armor) S.armor[r.armor] = 1; if (r.armors) r.armors.forEach(x => { S.armor[x] = 1; }); got.push(a); } });
   return got;
 }
-function rwText(r) { const t = []; if (r.armor) t.push('防具「' + ARMOR[r.armor].name + '」'); if (r.armors) t.push('シスター服セット（' + r.armors.map(x => ARMOR[x].name).join('・') + '）'); if (r.ap) t.push('アーマー +' + r.ap); return t.join(' / '); }
+function rwText(r) { const t = []; if (r.armor) t.push('防具「' + ARMOR[r.armor].name + '」'); if (r.armors) t.push((r.set || 'シスター服セット') + '（' + r.armors.map(x => ARMOR[x].name).join('・') + '）'); if (r.ap) t.push('アーマー +' + r.ap); return t.join(' / '); }
 const lvHp = l => Math.pow(1 + 0.16 * (l - 1), 1.15), lvDmg = l => 1 + 0.07 * (l - 1), lvRw = l => 1 + 0.1 * (l - 1);
 'use strict';
 /* ============================================================
@@ -3050,7 +3171,7 @@ const UI = (() => {
     const sc = keepScroll && root.querySelector('.scroll'), top = sc ? sc.scrollTop : 0;
     cur = name; root.style.display = name === 'none' ? 'none' : ''; root.className = 'ui s-' + name; root.innerHTML = name === 'none' ? '' : SCR[name]();
     paint(); if (keepScroll) { const s2 = root.querySelector('.scroll'); if (s2) s2.scrollTop = top; }
-    if (name === 'home') { ATTRACT.theme = CHAPTERS[Math.min(4, chapterReached())].bg; ATTRACT.team = S.team; SND.bgm('menu'); }
+    if (name === 'home') { ATTRACT.theme = CHAPTERS[Math.min(CHAPTERS.length - 1, chapterReached())].bg; ATTRACT.team = S.team; SND.bgm('menu'); }
     if (name === 'title') { ATTRACT.theme = 'school'; ATTRACT.team = null; }
   }
   const refresh = () => show(cur, true);
@@ -3084,7 +3205,7 @@ const UI = (() => {
 
     home: () => {
       const sp = CHAR_IDS.reduce((n, c) => n + spLeft(c), 0);
-      return `<div class="home"><div class="topbar"><div class="club"><b>霧ヶ丘女子高校 サバゲー部</b><span>部室 ― 第${Math.min(5, chapterReached() + 1)}章「${CHAPTERS[Math.min(4, chapterReached())].name}」</span></div>${curBar()}</div>
+      return `<div class="home"><div class="topbar"><div class="club"><b>霧ヶ丘女子高校 サバゲー部</b><span>部室 ― 第${Math.min(CHAPTERS.length, chapterReached() + 1)}章「${CHAPTERS[Math.min(CHAPTERS.length - 1, chapterReached())].name}」</span></div>${curBar()}</div>
       <div class="hmenu"><button class="b pri xl" data-a="go" data-to="stages">出 撃<small>SORTIE</small></button>
         <button class="b" data-a="go" data-to="team">チーム・装備${sp ? `<i class="badge">SP ${sp}</i>` : ''}</button><button class="b" data-a="go" data-to="shop">コレクション</button>
         <button class="b" data-a="go" data-to="rec">実績・図鑑</button><button class="b" data-a="go" data-to="opt">設定</button></div>
@@ -3241,7 +3362,7 @@ const UI = (() => {
   }
   function launch(stage, survival) {
     show('none'); const diff = DIFFS.find(x => x.id === S.diff);
-    const cfg = { stage: survival ? null : stage, survival: !!survival, diff: survival ? { id: 's', name: 'サバイバル', lv: 0, rw: 1 } : diff, team: survival ? S.team.slice() : stageTeam(stage).slice(), bg: CHAPTERS[Math.floor(Math.random() * Math.min(5, chapterReached() + 1))].bg,
+    const cfg = { stage: survival ? null : stage, survival: !!survival, diff: survival ? { id: 's', name: 'サバイバル', lv: 0, rw: 1 } : diff, team: survival ? S.team.slice() : stageTeam(stage).slice(), bg: CHAPTERS[Math.floor(Math.random() * Math.min(CHAPTERS.length, chapterReached() + 1))].bg,
       onEnd: res => endBattle(res, cfg), onPause: () => { const g = SN || B; if (g.phase === 'clear' || g.phase === 'fail') return; g.paused = true; battleResetInput(); if (SN) { SN.fire = false; SN.keys = {}; } show('pause'); } };
     if (cfg.stage && cfg.stage.type === 'snipe') snipeStart(cfg, VW); else battleStart(cfg, VW); MODE = 'battle';
   }
@@ -3263,13 +3384,14 @@ const UI = (() => {
     S.stats.boss += res.boss; S.stats.downs += res.downs; if (res.maxCombo > S.stats.maxCombo) S.stats.maxCombo = res.maxCombo;
     if (team.length > 1) { const bk = bondKey(team[0], team[1]), b0 = bondLv(S.bond[bk]); S.bond[bk] = (S.bond[bk] || 0) + (res.win ? 3 : 1); if (bondLv(S.bond[bk]) > b0) out.bondUp = bondLv(S.bond[bk]); }
     out.bondNew = grantBond();
-    saveGame(); MODE = 'menu'; B = null; SN = null; resultData = out; ATTRACT.theme = cfg.survival ? cfg.bg : CHAPTERS[stage.ch - 1].bg; ATTRACT.team = team;
-    const fin = () => { out.achs = checkAchs(); show('result'); SND.bgm('menu'); if (out.rows.some(r => r.ups)) SND.play('levelup'); saveGame(); };
+    out.saved = autoSave(); MODE = 'menu'; B = null; SN = null; resultData = out; ATTRACT.theme = cfg.survival ? cfg.bg : CHAPTERS[stage.ch - 1].bg; ATTRACT.team = team;
+    const fin = () => { out.achs = checkAchs(); out.saved = autoSave() || out.saved; show('result'); SND.bgm('menu'); if (out.rows.some(r => r.ups)) SND.play('levelup'); };
     if (res.win && stage && stage.after && !S.seen[stage.after]) story(stage.after, fin); else fin();
   }
   function resultHTML() {
     const o = resultData, r = o.res, win = r.win, sv = o.survival, i = sv ? -1 : STAGES.findIndex(s => s.id === o.stage.id), next = !sv && win && STAGES[i + 1] && stageUnlocked(i + 1, S.diff);
     return `<div class="result ${win ? 'win' : 'lose'}"><div class="rhead"><h2>${sv ? 'SURVIVAL RESULT' : win ? 'STAGE CLEAR' : 'MISSION FAILED'}</h2><div class="rsub">${sv ? `到達 <b>WAVE ${r.wave}</b>${o.record ? ' <i class="new">NEW RECORD</i>' : ''}` : `${o.stage.id}　${esc(o.stage.name)}　<small>${o.diff.name}</small>`}</div>
+      ${win || sv ? `<div class="asave ${o.saved ? '' : 'ng'}">${o.saved ? '✓ オートセーブしました' : '⚠ この端末に保存できませんでした（設定の「引き継ぎコード」で控えてください）'}</div>` : ''}
       ${!sv && win ? `<div class="rstars">${['クリア', star2(o.stage), star3(o.stage).label].map((t, k) => `<div class="${o.stars[k] ? 'y' : ''}" style="animation-delay:${0.2 + k * 0.25}s"><i>★</i><small>${t}</small></div>`).join('')}</div>` : ''}</div>
       <div class="rbody"><div class="rl scroll"><div class="grid2"><div>タイム<b>${time(r.time)}${o.bestNew ? ' <i class="new">BEST</i>' : ''}</b></div><div>撃破数<b>${r.kills}</b></div>${r.snipe ? `<div>ヘッドショット<b>${r.heads}</b></div><div>命中率 / 耐久<b>${r.acc}% / ${r.hpLeft}</b></div>` : `<div>最大コンボ<b>${r.maxCombo}</b></div><div>ダウン<b>${r.downs}</b></div>`}</div>
         <div class="rew"><div><b>武器 x${o.loot.weapons.length}</b><small>Lv${dropRange(o.L)[0]}〜${dropRange(o.L)[1]}${win || sv ? '' : '（失敗で半減）'}</small></div><div><b class="gb">防具 x${o.loot.armor.length}</b><small>新規 ${o.loot.armor.filter(x => x.isNew).length}</small></div><div><b class="ap">アーマー +${o.loot.ap}</b><small>最大HP +${armorHp()}（全員）</small></div>${o.bondUp ? `<div class="bu">絆 Lv${o.bondUp}${o.bondUp >= BOND_MAX ? ' MAX' : ''} にアップ！</div>` : ''}</div>
