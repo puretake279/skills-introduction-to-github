@@ -1,6 +1,6 @@
 // node fgrid.js html out sets(body:legs,...) frame scale
 const { chromium } = require('playwright'); const fs=require('fs'); const path=require('path');
-(async()=>{ const [,,html,out,sets,fr='7',sc='4']=process.argv; const b=await chromium.launch(); const p=await b.newPage(); p.on('pageerror',e=>console.log('ERR',e.message));
+(async()=>{ const [,,html,out,sets,fr='7',sc='4']=process.argv; const b=await chromium.launch(); const p=await b.newPage({locale:'ja-JP'}); p.on('pageerror',e=>console.log('ERR',e.message));
  await p.goto('file://'+path.resolve(html)); await p.waitForTimeout(2500);
  const u=await p.evaluate(({sets,fr,S})=>{ const L=sets.split(','), ids=CHAR_IDS, FW=96, FH=88, CW=70;
   const c=document.createElement('canvas'); c.width=L.length*CW*S; c.height=ids.length*FH*S; const x=c.getContext('2d'); x.imageSmoothingEnabled=false; x.fillStyle='#4a5468'; x.fillRect(0,0,c.width,c.height);

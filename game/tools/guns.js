@@ -1,7 +1,7 @@
 // node guns.js game.html out.png id,id,...  — draws each weapon's sprite (variant .0 and its element variant .4) large
 const { chromium } = require('playwright'); const fs = require('fs'); const path = require('path');
 (async () => {
-  const [, , html, out, ids] = process.argv; const b = await chromium.launch(); const p = await b.newPage();
+  const [, , html, out, ids] = process.argv; const b = await chromium.launch(); const p = await b.newPage({ locale: 'ja-JP' });
   p.on('pageerror', e => console.log('ERR', e.message));
   await p.goto('file://' + path.resolve(html)); await p.waitForTimeout(2500);
   const r = await p.evaluate((ids) => {

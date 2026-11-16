@@ -1,7 +1,7 @@
 // node play.js game.html "step,step,..."   steps: action[:id] | waitMS | shotNAME | js:CODE (evaluated, result printed)
 const { chromium } = require('playwright'); const path = require('path');
 (async () => {
-  const b = await chromium.launch(); const p = await b.newPage({ viewport: { width: 1280, height: 720 } }); const errs = [];
+  const b = await chromium.launch(); const p = await b.newPage({ viewport: { width: 1280, height: 720 }, locale: 'ja-JP' }); const errs = [];
   p.on('pageerror', e => errs.push('PAGEERR ' + e.message)); p.on('console', m => { if (m.type() === 'error') errs.push(m.text()); });
   const url = 'file://' + path.resolve(process.argv[2]); const steps = process.argv[3].split(';;');
   await p.goto(url); await p.waitForTimeout(2000);

@@ -1,5 +1,5 @@
 const { chromium } = require('playwright'); const path=require('path');
-(async()=>{ const b=await chromium.launch(); const p=await b.newPage(); const errs=[];
+(async()=>{ const b=await chromium.launch(); const p=await b.newPage({locale:'ja-JP'}); const errs=[];
  p.on('pageerror',e=>errs.push(e.message)); p.on('console',m=>{if(m.type()==='error')errs.push(m.text())});
  await p.goto('file://'+path.resolve(process.argv[2])); await p.waitForTimeout(3000);
  const r=await p.evaluate(()=>{ let n=0,fail=[]; const t0=performance.now();

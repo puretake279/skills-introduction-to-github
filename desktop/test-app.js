@@ -8,7 +8,7 @@ const shots = process.argv[2] || process.cwd();
 const ok = (c, m) => { console.log((c ? 'OK   ' : 'FAIL ') + m); if (!c) process.exitCode = 1; };
 
 async function run(n) {
-  const app = await electron.launch({ executablePath: require('electron'), args: [APP, '--no-sandbox', `--user-data-dir=${userData}`] });
+  const app = await electron.launch({ executablePath: require('electron'), args: [APP, '--no-sandbox', '--lang=ja-JP', `--user-data-dir=${userData}`] });
   const errs = []; const win = await app.firstWindow();
   win.on('pageerror', (e) => errs.push(e.message)); win.on('console', (m) => { if (m.type() === 'error') errs.push(m.text()); });
   await win.waitForSelector('[data-a="begin"]', { timeout: 30000 });

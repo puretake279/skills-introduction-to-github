@@ -6,4 +6,10 @@
 - 固有名詞は必ず `team/04_翻訳/用語集.md` に合わせる。新しい用語は先に用語集へ足す。
 - キャラの口調を保つ（ユイ：まじめな部長、レイ：冷静で毒舌、ハル：元気で口が悪め、ミオ：軽くて自由、ナナ：丁寧語で火力好き）。
 - AIの翻訳は下訳。販売前に、その言語を母語にする人に確認してもらう（費用は経理部に記録）。
-- ゲーム内の文章を翻訳するときは、開発部と相談して翻訳の仕組み（言語ごとの文章の置き場所）を先に作る。
+- ゲーム内の文章は、表示の直前に辞書で訳す仕組み（`I18N`）で切り替わる。日本語の文章を足したり変えたりしたら、次の順で訳を更新する：
+  1. `python3 game/tools/i18n-extract.py game/houkago-deadline.html team/04_翻訳/strings_ja.json`（新しい文章に番号が付く。既存の番号は変わらない）
+  2. 訳がない番号を訳して `team/04_翻訳/translations.json` に足す（`work/chunkN_ja.json` と `chunkN_out.json` に分けてもよい）。`python3 game/tools/i18n-check.py` で確認
+  3. `python3 game/tools/i18n-build.py`（ゲームに組み込む）
+  4. `node game/tools/i18n-qa.js game/houkago-deadline.html en <保存先>`（zh も）。訳し漏れ0件・はみ出し0件を確認
+- 文と数字や名前をつないで作る文（「〇〇 がダウン！」など）は、つながった形を `overrides.json` に `{}` 入りで登録すると確実に訳せる。
+- 母語の人に見てほしい箇所は `team/04_翻訳/要確認.md` にまとめる。

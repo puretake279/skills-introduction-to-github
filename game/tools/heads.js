@@ -1,6 +1,6 @@
 // node hgrid.js game.html out.png heads(comma) [scale] [frame]
 const { chromium } = require('playwright'); const fs=require('fs'); const path=require('path');
-(async()=>{ const [,,html,out,heads,sc='4',fr='7']=process.argv; const b=await chromium.launch(); const p=await b.newPage();
+(async()=>{ const [,,html,out,heads,sc='4',fr='7']=process.argv; const b=await chromium.launch(); const p=await b.newPage({locale:'ja-JP'});
  p.on('pageerror',e=>console.log('ERR',e.message));
  await p.goto('file://'+path.resolve(html)); await p.waitForTimeout(2500);
  const data=await p.evaluate(({heads,S,fr})=>{ const L=heads.split(','), ids=CHAR_IDS, CW=44, CH=40, FW=96, FH=88;

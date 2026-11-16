@@ -80,39 +80,47 @@ def add(t, pos):
     t = norm(t)
     if JP.search(t) and t not in found: found[t] = section(pos)
 
-# walk the code once, tokenising strings so quotes inside templates and vice versa are handled
-i, n = 0, len(code)
-while i < n:
-    ch = code[i]
-    if code.startswith('//', i) and (i == 0 or code[i - 1] != ':'):
-        j = code.find('\n', i); i = n if j < 0 else j; continue
-    if code.startswith('/*', i):
-        j = code.find('*/', i + 2); i = n if j < 0 else j + 2; continue
-    if ch in "'\"":
-        j = i + 1
-        while j < n and code[j] != ch and code[j] != '\n': j += 2 if code[j] == '\\' else 1
-        s = code[i + 1:j]
-        if JP.search(s):
-            if '<' in s and re.search(r'<[a-z/]', s): [add(r, i) for r in runs(decode(s))]
-            else: add(decode(s).strip(), i)
-        i = j + 1; continue
-    if ch == '`':
-        j, d = i + 1, 0
-        while j < n:
-            if code[j] == '\\': j += 2; continue
-            if code.startswith('${', j): d += 1; j += 2; continue
-            if code[j] == '}' and d: d -= 1; j += 1; continue
-            if code[j] == '`' and not d: break
-            if code[j] == '`' and d:   # nested template inside ${}
-                k = j + 1
-                while k < n and code[k] != '`': k += 2 if code[k] == '\\' else 1
-                body = code[j + 1:k]
-                for r in template_runs(body): add(r, j)
-                j = k + 1; continue
-            j += 1
-        for r in template_runs(code[i + 1:j]): add(r, i)
-        i = j + 1; continue
-    i += 1
+# walk the code with a small recursive tokenizer: strings, templates and ${...} nested to any depth
+import sys as _sys
+_sys.setrecursionlimit(10000)
+n = len(code)
+def read_quoted(i):
+    q, j = code[i], i + 1
+    while j < n and code[j] != q and code[j] != '\n': j += 2 if code[j] == '\\' else 1
+    lit = code[i + 1:j]
+    if JP.search(lit):
+        if re.search(r'<[a-z/]', lit): [add(r, i) for r in runs(decode(lit))]
+        else: add(decode(lit).strip(), i)
+    return j + 1
+def scan_code(i, in_expr=False):
+    depth = 0
+    while i < n:
+        c = code[i]
+        if not in_expr and code.startswith('//', i) and (i == 0 or code[i - 1] != ':'):
+            j = code.find('\n', i); i = n if j < 0 else j; continue
+        if code.startswith('/*', i):
+            j = code.find('*/', i + 2); i = n if j < 0 else j + 2; continue
+        if c in "'\"": i = read_quoted(i); continue
+        if c == '`': i = scan_tpl(i + 1); continue
+        if c == '{': depth += 1
+        elif c == '}':
+            if in_expr and depth == 0: return i
+            depth -= 1
+        i += 1
+    return i
+def scan_tpl(i):
+    start, buf = i, ''
+    while i < n:
+        c = code[i]
+        if c == '\\': buf += code[i:i + 2]; i += 2; continue
+        if code.startswith('${', i):
+            buf += '{}'; i = scan_code(i + 2, True) + 1; continue
+        if c == '`':
+            for r in runs(decode(buf)): add(r, start)
+            return i + 1
+        buf += c; i += 1
+    return i
+scan_code(0)
 
 # keep ids stable across runs
 old = {}

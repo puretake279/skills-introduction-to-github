@@ -4,7 +4,7 @@
 const { chromium } = require('playwright'); const path = require('path');
 (async () => {
   const html = path.resolve(process.argv[2]), shots = process.argv[3] || process.cwd();
-  const b = await chromium.launch(); const p = await b.newPage({ viewport: { width: 1400, height: 700 } }); const errs = [];
+  const b = await chromium.launch(); const p = await b.newPage({ viewport: { width: 1400, height: 700 }, locale: 'ja-JP' }); const errs = [];
   p.on('pageerror', (e) => errs.push(e.message)); p.on('console', (m) => { if (m.type() === 'error') errs.push(m.text()); });
   await p.addInitScript(() => {
     const pad = { id: 'Virtual Xbox Controller', index: 0, connected: true, mapping: 'standard', timestamp: 0, axes: [0, 0, 0, 0], buttons: Array.from({ length: 17 }, () => ({ pressed: false, value: 0 })) };
