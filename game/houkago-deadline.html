@@ -182,7 +182,7 @@ const CHARS = {
     uniq:{ name:'鷹の目', desc:'デッドアイの威力 +15%' } },
   haru: { id:'haru', name:'日向 ハル', short:'ハル', role:'制圧射撃 / 突撃担当', main:'LMG', sub:'AR',
     hp:150, spd:1.03, color:'#ffcf5a', w0:'lmg0.0',
-    art:{ rc:[['body',['31343a','1c1e22'],20,38,11,26],['body',['31343a','1c1e22'],29,38,27,34],['skirt',['717882','5b5d64','47494f','31343a'],37,46,12,33],['sock',['31343a','1c1e22'],46,58],['shoe',['634338','3e261c'],58,62],['leg',['fbd1b9','e9ac96','ca8378'],44,47,13,32]], tf:[-1,-6], img:'haru', cx:23, feet:63, legY:46, hx:9, hy:1, back:[3,-1], idle:0, shoot:[2,3], mz:[62,21] },
+    art:{ rc:[['body',['31343a','1c1e22'],20,38,11,26],['body',['31343a','1c1e22'],29,38,27,34],['skirt',['717882','5b5d64','47494f','31343a'],37,46,12,33],['sock',['31343a','1c1e22'],46,58],['shoe',['634338','3e261c'],58,62],['leg',['fbd1b9','e9ac96','ca8378'],44,47,13,32]], tf:[-1,-6], skull:[-5,6], img:'haru', cx:23, feet:63, legY:46, hx:9, hy:1, back:[3,-1], idle:0, shoot:[2,3], mz:[62,21] },
     prof:'金髪ツインテールの元ソフトボール部エース。考えるより先に引き金を引く。弟思いで、コロッケが大好物。',
     passive:'タフネス：被ダメージ-15%・近距離の与ダメージ+15%',
     skill:{ id:'charge', name:'ブレイクチャージ', cd:20, desc:'無敵の突進で敵をなぎ倒して気絶させ、止まった場所で衝撃波。その後7秒間、被ダメージ半減・与ダメージ+35%・弾薬全回復' },
@@ -1042,7 +1042,7 @@ const GFX = (() => {
     for (const [x, y] of ol) { const i = at(x, y); d[i] = OL[0]; d[i + 1] = OL[1]; d[i + 2] = OL[2]; d[i + 3] = 255; }
   }
   /* ---- head geometry of one 64x64 frame: top contour and per-row width of the head around the anchor (ax,ay) ---- */
-  function headGeo(op, ax, ay) {
+  function headGeo(op, ax, ay, sk) {
     const X0 = Math.max(0, ax - 5), X1 = Math.min(63, ax + 33), Y0 = Math.max(0, ay - 8);
     const topY = new Int16Array(64).fill(99);
     for (let x = X0; x <= X1; x++) for (let y = Y0; y <= ay + 14; y++) if (op(x, y)) { topY[x] = y; break; }
@@ -1055,16 +1055,22 @@ const GFX = (() => {
       return best || [hc, hc - 1];
     };
     const s3 = span(top + 3); hc = (s3[0] + s3[1]) >> 1;
+    if (sk) {   // big hair (twin tails): the skull is a fixed width around the crown, the first long run from the top; tails and their ribbons stay outside
+      for (let y = Y0; y <= ay + 8; y++) { let bl = 0, bx = 0; for (let x = X0; x <= X1; x++) { if (!op(x, y)) continue; let e = x; while (e + 1 <= X1 && op(e + 1, y)) e++; if (e - x + 1 > bl) { bl = e - x + 1; bx = x; } x = e; }
+        if (bl >= 5) { const x0 = bx + sk[0], x1 = bx + bl - 1 + sk[1]; top = y; hc = (x0 + x1) >> 1;
+          for (let x = 0; x < 64; x++) topY[x] = x < x0 || x > x1 ? 99 : Math.max(topY[x], y);
+          const sp = span; return { top, topY, hc, span: yy => { const r = sp(yy); return [Math.max(r[0], x0), Math.min(r[1], x1)]; } }; } }
+    }
     return { top, topY, span, hc };
   }
   /* ---- head gear: helmets, hats and bands painted over the hair, following the head's own outline,
      shaded from the upper front, with a shadow under the brim; hair under a hat is pressed flat ---- */
-  function dressHead(d, W, ox, M, A, ax, ay) {
+  function dressHead(d, W, ox, M, A, ax, ay, sk) {
     const sty = A && A.hsty; if (!sty) return;
     const N = 64, added = new Uint8Array(N * N), hat = new Uint8Array(N * N);
     const inb = (x, y) => x >= 0 && x < N && y >= 0 && y < N, at = (x, y) => (y * W + ox + x) * 4;
     const op = (x, y) => inb(x, y) && d[at(x, y) + 3] > 127;
-    const g = headGeo(op, ax, ay); if (!g) return;
+    const g = headGeo(op, ax, ay, sk); if (!g) return;
     const put = (x, y, c, a) => { if (!inb(x, y) || !c) return; const i = at(x, y); if (d[i + 3] < 128) added[y * N + x] = 1; hat[y * N + x] = 1;
       if (a != null && d[i + 3] > 127) { d[i] = d[i] + (c[0] - d[i]) * a; d[i + 1] = d[i + 1] + (c[1] - d[i + 1]) * a; d[i + 2] = d[i + 2] + (c[2] - d[i + 2]) * a; return; }
       d[i] = c[0]; d[i + 1] = c[1]; d[i + 2] = c[2]; d[i + 3] = 255; };
@@ -1159,10 +1165,12 @@ const GFX = (() => {
     for (const [x, y] of ol) { const i = at(x, y); d[i] = OL[0]; d[i + 1] = OL[1]; d[i + 2] = OL[2]; d[i + 3] = 255; }
   }
   /* small head items that rest on the hair (ears, caps, crowns, ribbons): lowered or raised so their base sits on this frame's crown */
-  function sitShift(op, A, ax, ay) {
+  function sitShift(op, A, ax, ay, sk) {
     if (!A || !A.sit || !A.ov || !A.ov.hf) return 0;
     const rs = A.ov.hf; let x0 = 99, x1 = -99, b = -99; rs.forEach(r => { x0 = Math.min(x0, r[0]); x1 = Math.max(x1, r[0] + r[2] - 1); b = Math.max(b, r[1] + r[3] - 1); });
-    let t = 99; for (let x = ax + x0; x <= ax + x1; x++) for (let y = Math.max(0, ay - 10); y <= ay + 14; y++) if (op(x, y)) { t = Math.min(t, y); break; }
+    const g = sk ? headGeo(op, ax, ay, sk) : null;
+    let t = 99; if (g) { for (let x = ax + x0; x <= ax + x1; x++) t = Math.min(t, g.topY[x]); if (t > 60) t = g.top; }
+    else for (let x = ax + x0; x <= ax + x1; x++) for (let y = Math.max(0, ay - 10); y <= ay + 14; y++) if (op(x, y)) { t = Math.min(t, y); break; }
     return t > 60 ? 0 : t - ay + (A.sit | 0) - b;
   }
   /* volume for flat overlay rects: lit top edge, shaded bottom edge */
@@ -1246,7 +1254,7 @@ const GFX = (() => {
           if (skin.has(c)) SK[j] = skin.get(c);
         }
         dressFrame(d, W, f * 64, { J, K, SK }, b, a.tor);
-        dressHead(d, W, f * 64, { SK }, hA, a.hx, a.hy);
+        dressHead(d, W, f * 64, { SK }, hA, a.hx, a.hy, a.skull);
       }
     }
     x.putImageData(im, 0, 0); return cv;
@@ -1259,7 +1267,7 @@ const GFX = (() => {
     const hb = [], hf = [], tb = [], tf = [];
     const HA = ARMOR[eq.head] || {}, hHf = HA.ov && HA.ov.hf, hdy = [];
     if (HA.sit) { const ic = mk(im.width, im.height), ix = ic.getContext('2d', { willReadFrequently: true }); ix.drawImage(im, 0, 0); const id = ix.getImageData(0, 0, im.width, im.height).data, iw = im.width;
-      for (let s2 = 0; s2 * 64 < iw || s2 === 0; s2++) hdy[s2] = sitShift((x, y) => x >= 0 && x < 64 && s2 * 64 + x < iw && y >= 0 && y < im.height && id[(y * iw + s2 * 64 + x) * 4 + 3] > 127, HA, a.hx - (sk && !sk.art ? sk.dx : 0), a.hy - (sk && !sk.art ? sk.dy : 0)); }
+      for (let s2 = 0; s2 * 64 < iw || s2 === 0; s2++) hdy[s2] = sitShift((x, y) => x >= 0 && x < 64 && s2 * 64 + x < iw && y >= 0 && y < im.height && id[(y * iw + s2 * 64 + x) * 4 + 3] > 127, HA, a.hx - (sk && !sk.art ? sk.dx : 0), a.hy - (sk && !sk.art ? sk.dy : 0), sk ? null : a.skull); }
     ['acc', 'body', 'legs', 'head'].forEach(sl => { const ov = (ARMOR[eq[sl]] || {}).ov; if (!ov || (sl === 'body' && ARMOR[eq[sl]].sty)) return; if (ov.hb) hb.push(ov.hb); if (ov.hf && !(sl === 'head' && HA.hsty && !sk)) hf.push(ov.hf); if (ov.tb) tb.push(ov.tb); if (ov.tf) tf.push(ov.tf); });
     // jacket mask: torso decorations are only painted onto the character's own jacket / skirt pixels, never over the gun or arms held in front
     let mask = null;
