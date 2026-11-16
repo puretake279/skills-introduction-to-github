@@ -36,7 +36,13 @@ node game/tools/boot-time.js game/houkago-deadline.html 4 3000
 ```
 CPUを4分の1、フォント読み込みに3秒かかる回線を想定して、タイトルが出るまでの時間（wallToTitle）を見る。1.5秒を大きく超えたら原因を調べる。
 
-## 5. パソコン版（セーブ・起動・`desktop/` に関わる変更をしたとき）
+## 5. ゲームパッド（操作・メニュー・入力に関わる変更をしたとき）
+```
+node game/tools/gamepad-test.js game/houkago-deadline.html <保存先>
+```
+仮想のゲームパッドをつないで、メニュー・戦闘・ポーズ・狙撃を操作する。全行が `OK` なら合格。
+
+## 6. パソコン版（セーブ・起動・`desktop/` に関わる変更をしたとき）
 ```
 cd desktop && node build.mjs --stage-only && xvfb-run -a node test-app.js <保存先>
 ```

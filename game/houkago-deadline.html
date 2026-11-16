@@ -130,6 +130,7 @@ button{font:inherit;color:inherit}
 .sbox.narr{--cc:#8b97ab;padding-left:1.8rem;text-align:center;color:#dfe6f0;font-style:italic;display:flex;align-items:center;justify-content:center}
 .s-result{background:rgba(5,7,11,.86)} .result{flex:1;display:flex;flex-direction:column;padding:1rem 2.4rem 1.2rem;min-height:0}
 .asave{display:inline-block;margin:.3rem auto 0;padding:.1rem .9rem;border-radius:1rem;background:rgba(123,224,123,.14);color:var(--green);font-size:1.05rem;animation:tin .4s .5s both} .asave.ng{background:rgba(255,92,106,.14);color:var(--red)}
+.gp .gpf{outline:.28rem solid var(--cyan)!important;outline-offset:.12rem;position:relative;z-index:2;box-shadow:0 0 0 .5rem rgba(111,227,255,.18)!important}
 .rhead{text-align:center} .rhead h2{font-size:3.2rem;letter-spacing:.5rem;font-weight:normal;color:var(--acc);text-shadow:.3rem .3rem 0 #000;line-height:1.1} .lose .rhead h2{color:var(--red)} .rsub{color:#c5cedd} .rsub b{color:var(--pink);font-size:2rem}
 .rstars{display:flex;justify-content:center;gap:2.4rem;margin:.2rem 0} .rstars>div{text-align:center;color:#3a4354;animation:pop .4s both} .rstars i{font-style:normal;font-size:3.4rem;line-height:1;display:block} .rstars .y{color:#ffd23f} .rstars .y small{color:#fff} @keyframes pop{0%{transform:scale(2.4);opacity:0}100%{transform:scale(1);opacity:1}}
 .rbody{flex:1;display:flex;gap:1.6rem;min-height:0;margin-top:.5rem} .rl,.rr{flex:1;min-width:0}
@@ -2538,7 +2539,7 @@ function spark(x, y, n, col) { for (let i = 0; i < n; i++) { const a = Math.rand
 function smoke(x, y, n) { if (B.parts.length > 520) return; for (let i = 0; i < n; i++) B.parts.push({ x: x + rnd(-3, 3), y: y + rnd(-3, 3), vx: rnd(-12, 12), vy: rnd(-34, -10), g: 0, life: rnd(0.4, 0.9), max: 0.9, col: '#555', size: rnd(3, 7), type: 'smoke' }); }
 function dust(x, y, n) { for (let i = 0; i < n; i++) B.parts.push({ x: x + rnd(-4, 4), y, vx: rnd(-25, 25), vy: rnd(-26, -6), g: 40, life: rnd(0.2, 0.45), max: 0.45, col: B.bg.dust || '#888', size: 2, type: 'px' }); }
 function ring(x, y, col, r) { B.parts.push({ x, y, life: 0.35, max: 0.35, r0: 4, r1: r, col, type: 'ring' }); }
-function shake(v) { if (S.opt.shake) B.shake = Math.max(B.shake, v); }
+function shake(v) { if (S.opt.shake) B.shake = Math.max(B.shake, v); if (v >= 5) PAD.rumble(Math.min(1, v / 14)); }
 function updParts(dt) {
   const ps = B.parts;
   for (let i = ps.length - 1; i >= 0; i--) {
@@ -2600,8 +2601,8 @@ function updFlow(dt) {
   if (!B || B.over) return;
   // tutorial hints
   if (st && st.tut && B.phase !== 'clear') {
-    const T = B.stat.time, touch = window.isTouch;
-    const hints = [[0.2, touch ? '左のスティックで移動、右の大きなボタン長押しで射撃' : 'A/Dで移動、J（またはマウス左）長押しで射撃'], [9, touch ? '射撃中は向きが固定。背後の敵は相棒が撃ってくれる' : '射撃中は向きが固定。背後の敵は相棒が撃ってくれる'], [18, touch ? '「回避」は無敵ステップ、「交代」で操作キャラを切り替え' : 'K：無敵の回避ステップ　Q：操作キャラ交代　W/Space：ジャンプ'], [28, touch ? 'ゲージが溜まったら「スキル」で必殺技！' : 'ゲージが溜まったら E でスキル発動！　R：リロード']];
+    const T = B.stat.time, touch = window.isTouch, gp = PAD.used;
+    const hints = [[0.2, gp ? '左スティックで移動、RT（またはRB）長押しで射撃' : touch ? '左のスティックで移動、右の大きなボタン長押しで射撃' : 'A/Dで移動、J（またはマウス左）長押しで射撃'], [9, touch ? '射撃中は向きが固定。背後の敵は相棒が撃ってくれる' : '射撃中は向きが固定。背後の敵は相棒が撃ってくれる'], [18, gp ? 'B：無敵の回避ステップ　LB：操作キャラ交代　A：ジャンプ' : touch ? '「回避」は無敵ステップ、「交代」で操作キャラを切り替え' : 'K：無敵の回避ステップ　Q：操作キャラ交代　W/Space：ジャンプ'], [28, gp ? 'ゲージが溜まったら Y でスキル発動！　X：リロード' : touch ? 'ゲージが溜まったら「スキル」で必殺技！' : 'ゲージが溜まったら E でスキル発動！　R：リロード']];
     if (B.tut < hints.length && T > hints[B.tut][0]) { B.msg = { text: hints[B.tut][1], t: 6 }; B.tut++; }
   }
 }
@@ -3126,6 +3127,7 @@ function snipeUpdate(dt) {
   if (s.banner) { s.banner.t += dt; if (s.banner.t > s.banner.dur) s.banner = null; }
   if (s.reload > 0) { s.reload -= dt; if (s.reload <= 0) { s.ammo = s.mag; SND.play('empty'); } }
   const k = s.keys, sp = 150 / s.zoom * 2 * dt; if (k.l) s.ax -= sp; if (k.r) s.ax += sp; if (k.u) s.ay -= sp; if (k.d) s.ay += sp;
+  if (s.pad) { const m = Math.hypot(s.pad.x, s.pad.y); if (m > 0) { const g = sp * 1.4 * Math.min(1, m); s.ax += s.pad.x / m * g * (0.35 + 0.65 * m); s.ay += s.pad.y / m * g * (0.35 + 0.65 * m); } }
   s.ax = clamp(s.ax, -545, 545); s.ay = clamp(s.ay, 70, 284);
   if (s.phase === 'intro') { if (s.phaseT > 1.6) { s.phase = 'play'; s.phaseT = 0; } }
   else if (s.phase === 'play') {
@@ -3203,7 +3205,7 @@ function snipeRender() {
   // ammo
   for (let i = 0; i < s.mag; i++) { c.fillStyle = '#000'; c.fillRect(10 + i * 9, VH - 34, 7, 20); c.fillStyle = i < s.ammo ? '#e6b422' : '#3a3a3a'; c.fillRect(11 + i * 9, VH - 33, 5, 18); if (i < s.ammo) { c.fillStyle = '#b5562a'; c.fillRect(11 + i * 9, VH - 33, 5, 5); } }
   if (s.reload > 0) { txt(c, 'RELOAD', 10, VH - 48, 9, '#ffc83d'); c.fillStyle = '#ffc83d'; c.fillRect(10, VH - 12, 44 * (1 - s.reload / (2.2 * s.cs.relMul)), 3); } else if (s.cycle > 0) { c.fillStyle = '#8a94a6'; c.fillRect(10, VH - 12, 44 * (1 - s.cycle / 0.85), 3); }
-  if (s.msgT > 0 && s.phase === 'play') { const m = s.msgT < 4.5 ? '赤いガス缶を撃つと爆発して、周りの敵をまとめて倒せる！' : window.isTouch ? '画面をドラッグで照準、右下のボタンで射撃。頭を撃てば一撃！' : 'マウスで照準、クリックで射撃。頭を撃てば一撃！（R：装填　Z：倍率）'; c.font = '9px ' + FONT; const w = c.measureText(m).width + 20; panel(c, cx - w / 2, VH - 26, w, 18, '#ffc83d', 0.85); txt(c, m, cx, VH - 22, 9, '#fff', 'center'); }
+  if (s.msgT > 0 && s.phase === 'play') { const m = s.msgT < 4.5 ? '赤いガス缶を撃つと爆発して、周りの敵をまとめて倒せる！' : PAD.used ? '左スティックで照準、RTで射撃。頭を撃てば一撃！（X：装填　LT：倍率）' : window.isTouch ? '画面をドラッグで照準、右下のボタンで射撃。頭を撃てば一撃！' : 'マウスで照準、クリックで射撃。頭を撃てば一撃！（R：装填　Z：倍率）'; c.font = '9px ' + FONT; const w = c.measureText(m).width + 20; panel(c, cx - w / 2, VH - 26, w, 18, '#ffc83d', 0.85); txt(c, m, cx, VH - 22, 9, '#fff', 'center'); }
   const t = TL(); panel(c, t.pause.x - 11, t.pause.y - 11, 22, 22, '#3a4354', 0.7); c.fillStyle = '#dfe6f0'; c.fillRect(t.pause.x - 5, t.pause.y - 6, 3, 12); c.fillRect(t.pause.x + 2, t.pause.y - 6, 3, 12);
   if (window.isTouch) { btn(c, t.fire, '射撃', s.fire, '#ffc83d', s.cycle > 0 ? 1 - s.cycle / 0.85 : null); btn(c, t.dash, 'x' + s.zoom.toFixed(1), false, '#6fe3ff'); btn(c, t.jump, '装填', false, '#b8c0cc'); }
   else txt(c, 'x' + s.zoom.toFixed(1), W - 10, VH - 16, 9, '#6fe3ff', 'right');
@@ -3378,14 +3380,14 @@ const UI = (() => {
       return header('設定', 'home') + `<div class="scroll list opt">${vol('bgm', 'BGM')}${vol('sfx', '効果音')}
         <div class="orow"><span>画面の揺れ</span><button class="b sm ${o.shake ? 'pri' : ''}" data-a="tog" data-k="shake">${o.shake ? 'ON' : 'OFF'}</button><span class="gap"></span><span>ダメージ数字</span><button class="b sm ${o.dmgnum ? 'pri' : ''}" data-a="tog" data-k="dmgnum">${o.dmgnum ? 'ON' : 'OFF'}</button></div>
         <div class="orow"><span>全画面表示</span><button class="b sm" data-a="fs">切り替え</button><small>対応ブラウザのみ。スマホは横向きに固定を試みます。</small></div>
-        <div class="box"><h4>操作方法</h4><b>スマホ</b>：左スティックで移動／射撃(長押し)・ジャンプ・回避・スキル・交代・装填ボタン。左上のキャラ表示タップでも交代。<br><b>キーボード</b>：A/D 移動　W・Space ジャンプ　J・Z・マウス左 射撃　K・X・Shift 回避　E スキル　Q 交代　R 装填　Esc ポーズ</div>
+        <div class="box"><h4>操作方法</h4><b>スマホ</b>：左スティックで移動／射撃(長押し)・ジャンプ・回避・スキル・交代・装填ボタン。左上のキャラ表示タップでも交代。<br><b>キーボード</b>：A/D 移動　W・Space ジャンプ　J・Z・マウス左 射撃　K・X・Shift 回避　E スキル　Q 交代　R 装填　Esc ポーズ<br><b>ゲームパッド</b>：左スティック・十字キー 移動　A ジャンプ　RT・RB 射撃　B 回避　Y スキル　LB 交代　X 装填　Start ポーズ<br>メニューでは十字キーで選んで A で決定、B で戻る、LB/RB でタブ切り替え、右スティックでスクロール</div>
         <div class="box"><h4>セーブデータ</h4><small>${DESKTOP ? '<b class="cl on">自動保存：このパソコン</b>　進行状況はこのパソコンに自動保存されます。別のパソコンへ移すときは、引き継ぎコードを使ってください。' : CLOUD.state === 'on' ? '<b class="cl on">クラウド保存：有効</b>　進行状況はあなたのアカウントに自動保存され、ブラウザのデータが消えても次回起動時に復元されます。' : CLOUD.state === 'wait' ? '<b class="cl">クラウド保存：確認中…</b>　進行状況はこのブラウザに自動保存されます。' : '<b class="cl off">クラウド保存：利用できません</b>　進行状況はこのブラウザにだけ保存されます。ブラウザのデータが消えると復元できないので、引き継ぎコードを控えておいてください。'}</small>
           <div class="orow"><button class="b sm" data-a="exp">引き継ぎコードを表示</button><button class="b sm" data-a="imp">コードから復元</button><button class="b sm red" data-a="reset">データを初期化</button></div>
           ${st.imp === 'exp' ? `<textarea id="code" readonly>${exportSave()}</textarea><div class="orow"><button class="b sm pri" data-a="copy">コピー</button><small>コピーできない場合は、上のコードを長押しして全選択してください。</small></div>` : ''}
           ${st.imp === 'imp' ? `<textarea id="code" placeholder="ここに引き継ぎコードを貼り付け"></textarea><div class="orow"><button class="b sm pri" data-a="doimp">このコードで復元する</button></div>` : ''}</div></div>`;
     },
     pause: () => `<div class="pausebox"><h2>PAUSE</h2><button class="b pri" data-a="resume">再開する</button><button class="b" data-a="retry">最初からやり直す</button><button class="b" data-a="quit">撤退する（箱は半分だけ持ち帰る）</button>
-      <small>${SN ? '照準：マウス / ドラッグ　射撃：クリック / ボタン　R 装填　Z 倍率' : 'A/D 移動　W ジャンプ　J 射撃　K 回避　E スキル　Q 交代　R 装填'}</small></div>`,
+      <small>${PAD.used ? (SN ? '照準：左スティック　射撃：RT　X 装填　LT 倍率　B 再開' : 'スティック 移動　A ジャンプ　RT 射撃　B 回避　Y スキル　LB 交代　X 装填　B 再開') : SN ? '照準：マウス / ドラッグ　射撃：クリック / ボタン　R 装填　Z 倍率' : 'A/D 移動　W ジャンプ　J 射撃　K 回避　E スキル　Q 交代　R 装填'}</small></div>`,
     story: () => `<div class="story" data-a="snext" data-q="1"><button class="b sm skip" data-a="sskip">スキップ ▶▶</button><div class="sbox"><div class="sface"></div><div class="sname"></div><div class="stext"></div><div class="snx">▼</div></div></div>`,
     result: () => resultHTML(),
   };
@@ -3519,8 +3521,104 @@ function tryFullscreen(auto) {
     if (p && p.then) p.then(() => { try { const q = screen.orientation && screen.orientation.lock && screen.orientation.lock('landscape'); if (q && q.catch) q.catch(() => { }); } catch (e) { } }).catch(() => { });
   } catch (e) { }
 }
+
+/* ============================================================
+   PAD — gamepad (standard / Xbox layout): battle, scope stage and the menus
+   battle: stick or d-pad move · A jump · B dash · X reload · Y skill · RT/RB fire · LB swap · Start pause
+   scope : stick aim · RT/RB/A fire · LT/Y zoom · X reload · Start pause
+   menus : d-pad/stick choose · A decide · B back · LB/RB tabs · right stick scroll · Start start/skip/resume
+   ============================================================ */
+const PAD = (() => {
+  const BT = { A: 0, B: 1, X: 2, Y: 3, LB: 4, RB: 5, LT: 6, RT: 7, BACK: 8, START: 9, UP: 12, DOWN: 13, LEFT: 14, RIGHT: 15 };
+  const st = { prev: [], used: false, l: false, r: false, fire: false, sfire: false, focus: null, fkey: '', rep: { d: '', t: 0 }, pad: null };
+  const list = () => { try { return [...(navigator.getGamepads ? navigator.getGamepads() : [])].filter(p => p && p.connected); } catch (e) { return []; } };
+  window.addEventListener('gamepadconnected', () => { try { UI.toast('ゲームパッドを認識しました'); } catch (e) { } });
+  window.addEventListener('gamepaddisconnected', () => { if (!list().length) release(); });
+  function release() { if (st.l) IN.l = false; if (st.r) IN.r = false; if (st.fire) IN.fire = false; if (st.sfire && SN) SN.fire = false; if (SN) SN.pad = null; st.l = st.r = st.fire = st.sfire = false; st.prev = []; }
+  function rumble(v) {   // v: 0..1
+    const p = st.pad; if (!st.used || !p || !p.vibrationActuator || !S.opt.shake) return;
+    try { p.vibrationActuator.playEffect('dual-rumble', { duration: 80 + v * 160, strongMagnitude: Math.min(1, v), weakMagnitude: Math.min(1, v * 0.7) }); } catch (e) { }
+  }
+  function poll(dt) {
+    const ps = list(); if (!ps.length) { if (st.pad) { release(); st.pad = null; } return; }
+    const p = ps[0]; st.pad = p;
+    const held = i => !!(p.buttons[i] && (p.buttons[i].pressed || p.buttons[i].value > 0.5)), now = p.buttons.map((_, i) => held(i));
+    const hit = i => now[i] && !st.prev[i], ax = i => { const v = p.axes[i] || 0; return Math.abs(v) < 0.25 ? 0 : v; };
+    const lx = ax(0), ly = ax(1), ry = ax(3);
+    const L = now[BT.LEFT] || lx < -0.45, R = now[BT.RIGHT] || lx > 0.45, U = now[BT.UP] || ly < -0.5, D = now[BT.DOWN] || ly > 0.5;
+    if (!st.used && (now.some(Boolean) || lx || ly)) { st.used = true; document.body.classList.add('gp'); }
+    if (MODE === 'battle' && SN && !SN.paused && !SN.over) {
+      SN.pad = { x: lx || (now[BT.RIGHT] ? 1 : now[BT.LEFT] ? -1 : 0), y: ly || (now[BT.DOWN] ? 1 : now[BT.UP] ? -1 : 0) };
+      const f = now[BT.RT] || now[BT.RB] || now[BT.A]; if (f !== st.sfire) { SN.fire = f; st.sfire = f; }
+      if (hit(BT.LT) || hit(BT.Y)) snZoom(); if (hit(BT.X)) snReload(); if (hit(BT.START)) SN.cfg.onPause();
+    } else if (MODE === 'battle' && B && !B.paused) {
+      if (L !== st.l) { IN.l = L; st.l = L; } if (R !== st.r) { IN.r = R; st.r = R; }
+      const f = now[BT.RT] || now[BT.RB]; if (f !== st.fire) { IN.fire = f; st.fire = f; }
+      if (hit(BT.A) || hit(BT.UP)) IN.jumpP = true; if (hit(BT.B)) IN.dashP = true; if (hit(BT.X)) IN.reloadP = true; if (hit(BT.Y)) IN.skillP = true; if (hit(BT.LB)) IN.swapP = true;
+      if (hit(BT.START)) B.cfg.onPause();
+    } else {
+      if (st.l || st.r || st.fire || st.sfire) release();
+      menu(dt, hit, { L, R, U, D }, ry);
+    }
+    st.prev = now;
+  }
+  /* ---- menus: move a highlight between the buttons on screen ---- */
+  const modal = () => { const m = document.getElementById('modal'); return m && m.style.display !== 'none' && m.offsetParent !== null && m.querySelector('button') ? m : null; };
+  const scope = () => modal() || document.getElementById('ui');
+  const keyOf = el => [el.dataset.a, el.dataset.id, el.dataset.to, el.dataset.sl, el.dataset.k, el.dataset.d, el.textContent.trim().slice(0, 12)].join('|');
+  const items = () => [...scope().querySelectorAll('button, [data-a]')].filter(el => !el.disabled && el.offsetParent !== null && !el.closest('[disabled]') && el.getBoundingClientRect().width > 0);
+  const center = el => { const r = el.getBoundingClientRect(); return toStage(r.left + r.width / 2, r.top + r.height / 2); };
+  function setFocus(el) {
+    if (st.focus && st.focus !== el) st.focus.classList.remove('gpf');
+    st.focus = el; if (!el) return; st.fkey = keyOf(el); el.classList.add('gpf');
+    try { el.scrollIntoView({ block: 'nearest', inline: 'nearest' }); } catch (e) { }
+  }
+  function current() {
+    const all = items(); if (!all.length) return null;
+    if (st.focus && st.focus.isConnected && all.includes(st.focus)) return st.focus;
+    const same = all.find(el => keyOf(el) === st.fkey);   // the screen was redrawn: find the same button again
+    return same || all.find(el => el.classList.contains('pri') && el.dataset.a !== 'go') || all.find(el => el.classList.contains('pri')) || all.find(el => !el.classList.contains('bk')) || all[0];
+  }
+  function move(dir) {
+    const cur = current(); if (!cur) return; if (cur !== st.focus) { setFocus(cur); return; }
+    const [cx, cy] = center(cur); let best = null, bs = 1e9;
+    for (const el of items()) {
+      if (el === cur) continue; const [x, y] = center(el), dx = x - cx, dy = y - cy;
+      const main = dir === 'L' ? -dx : dir === 'R' ? dx : dir === 'U' ? -dy : dy, side = dir === 'L' || dir === 'R' ? Math.abs(dy) : Math.abs(dx);
+      if (main <= 4) continue; const sc = main + side * 2.2; if (sc < bs) { bs = sc; best = el; }
+    }
+    if (best) { setFocus(best); SND.play('ui'); }
+  }
+  function menu(dt, hit, d, ry) {
+    if (!st.used) return;
+    const cur = current(); if (cur && cur !== st.focus) setFocus(cur);
+    const dir = d.L ? 'L' : d.R ? 'R' : d.U ? 'U' : d.D ? 'D' : '';
+    if (dir !== st.rep.d) { st.rep.d = dir; st.rep.t = 0.38; if (dir) move(dir); } else if (dir) { st.rep.t -= dt; if (st.rep.t <= 0) { st.rep.t = 0.11; move(dir); } }
+    if (ry) { const sc = (st.focus && st.focus.closest('.scroll')) || scope().querySelector('.scroll'); if (sc) sc.scrollTop += ry * dt * 900; }
+    const ui = UI.cur;
+    if (hit(BT.A)) { const el = current(); if (el) el.click(); return; }
+    if (hit(BT.START)) {
+      if (ui === 'title') UI.ACT.begin(); else if (ui === 'story') { const k = document.querySelector('[data-a="sskip"]'); if (k) k.click(); }
+      else if (ui === 'pause') UI.resumeBattle(); else { const el = current(); if (el) el.click(); }
+      return;
+    }
+    if (hit(BT.B)) {
+      const m = modal(); if (m) { const bs = [...m.querySelectorAll('button')]; const c = bs.find(b => !b.classList.contains('pri') && !b.classList.contains('red')) || bs[bs.length - 1]; if (c) c.click(); return; }
+      if (ui === 'pause') { UI.resumeBattle(); return; }
+      const bk = document.querySelector('#ui .hd .bk'); if (bk) { bk.click(); return; }
+      const home = document.querySelector('#ui [data-a="rhome"]'); if (home) home.click();
+      return;
+    }
+    if (hit(BT.LB) || hit(BT.RB)) {
+      const step = hit(BT.RB) ? 1 : -1, row = (st.focus && st.focus.closest('.tabs')) || document.querySelector('#ui .tabs');
+      if (row) { const tabs = [...row.querySelectorAll('.tab')].filter(t => !t.disabled), i = tabs.findIndex(t => t.classList.contains('on')), nx = tabs[i + step]; if (nx) nx.click(); }
+    }
+  }
+  return { poll, rumble, get used() { return st.used; }, get connected() { return list().length > 0; } };
+})();
 function frame(ts) {
   const dt = Math.min(0.05, (ts - lastTs) / 1000 || 0); lastTs = ts;
+  try { PAD.poll(dt); } catch (e) { console.error(e); }
   try {
     if (MODE === 'battle' && SN) { for (let i = (window.SPEED || 1); i > 0 && SN; i--) snipeUpdate(dt); if (SN) snipeRender(); if (SN && !SN.paused) S.stats.play += dt; }
     else if (MODE === 'battle' && B) { for (let i = (window.SPEED || 1); i > 0 && B; i--) battleUpdate(dt); if (B) battleRender(); if (B && !B.paused) S.stats.play += dt; }
