@@ -13,6 +13,7 @@
 *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
 html,body{margin:0;height:100%;background:#000;overflow:hidden;touch-action:none;user-select:none;-webkit-user-select:none;overscroll-behavior:none}
 body{font-family:"DotGothic16","Hiragino Kaku Gothic ProN","Yu Gothic",Meiryo,sans-serif;color:var(--txt)}
+body.lang-zh{font-family:"DotGothic16","Microsoft YaHei","PingFang SC","Noto Sans SC","Noto Sans CJK SC",sans-serif}
 #rot{position:fixed;left:0;top:0;transform-origin:0 0;overflow:hidden;background:#05070b}
 #cv{position:absolute;left:0;top:0;width:100%;height:100%;image-rendering:pixelated;image-rendering:crisp-edges}
 .ui{position:absolute;inset:0;font-size:1.3rem;line-height:1.4;display:flex;flex-direction:column}
@@ -167,6 +168,72 @@ Object.assign(ASSETS.skin,{"nun_yui": "data:image/png;base64,iVBORw0KGgoAAAANSUh
    ============================================================ */
 const CLASS_NAME = { HG:'ハンドガン', AR:'アサルトライフル', SMG:'サブマシンガン', SG:'ショットガン', SR:'スナイパーライフル', LMG:'軽機関銃', GL:'ランチャー' };
 const CLASS_SHORT = { HG:'HG', AR:'AR', SMG:'SMG', SG:'SG', SR:'SR', LMG:'LMG', GL:'GL' };
+
+/* ============================================================
+   I18N — English / Simplified Chinese. The game is written in Japanese; text is translated as it is shown:
+   HTML text (a MutationObserver on the page), canvas text (fillText / measureText) and story lines.
+   Dictionary keys are the Japanese text with every number and every inserted value written as {}.
+   ============================================================ */
+/*I18N-START*/const LANG_PACK = {"en":{"放課後デッドライン":"Afterschool Deadline","放課後":"AFTERSCHOOL","デッドライン":"DEADLINE"},"zh":{"放課後デッドライン":"放学后的死线","放課後":"放学后的","デッドライン":"死线"}};/*I18N-END*/
+const I18N = (() => {
+  const SUP = ['ja', 'en', 'zh'], LKEY = 'houkago_lang';
+  let lang = ''; try { lang = localStorage.getItem(LKEY) || ''; } catch (e) { }
+  if (!SUP.includes(lang)) { const n = ((navigator.languages && navigator.languages[0]) || navigator.language || 'ja').toLowerCase(); lang = n.startsWith('ja') ? 'ja' : n.startsWith('zh') ? 'zh' : 'en'; }
+  const D = lang !== 'ja' && LANG_PACK[lang] && Object.keys(LANG_PACK[lang]).length ? LANG_PACK[lang] : null;
+  if (!D) lang = 'ja';
+  const JP = /[぀-ヿ㐀-鿿]/, JPG = /[぀-ヿ㐀-鿿]/g, LEFT = lang === 'en' ? /[぀-ヿ㐀-鿿]/ : /[぀-ヿ]/;
+  const esc = t => t.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  const cache = new Map(), outs = new Set(), missing = new Set();
+  let PAT = [], SUB = null;
+  if (D) {
+    const subs = [];
+    for (const k in D) {
+      if (k.includes('{}')) { if ((k.replace(/\{\}/g, '').match(JPG) || []).length >= 2) PAT.push({ k, n: k.replace(/\{\}/g, '').length, re: new RegExp('^' + k.split('{}').map(esc).join('([\\s\\S]+?)') + '$') }); }
+      else if ((k.match(JPG) || []).length >= 2) subs.push(k);
+    }
+    PAT.sort((a, b) => b.n - a.n); subs.sort((a, b) => b.length - a.length);
+    if (subs.length) SUB = new RegExp(subs.map(esc).join('|'), 'g');
+  }
+  const fill = (t, v) => { let i = 0; return t.replace(/\{\}/g, () => (v[i++] ?? '')); };
+  function core(s) {
+    const nums = [], norm = s.replace(/\d+(?:\.\d+)?/g, m => (nums.push(m), '{}'));
+    if (D[norm] != null) return fill(D[norm], nums);
+    for (const p of PAT) { const m = p.re.exec(s); if (m) return fill(D[p.k], m.slice(1).map(v => tr(v))); }
+    return SUB ? s.replace(SUB, m => D[m]) : s;
+  }
+  function tr(s) {
+    if (!D || typeof s !== 'string' || !s || outs.has(s) || !JP.test(s)) return s;
+    let r = cache.get(s); if (r !== undefined) return r;
+    const m = /^(\s*)([\s\S]*?)(\s*)$/.exec(s); r = m[1] + core(m[2]) + m[3];
+    if (LEFT.test(r)) missing.add(s);
+    if (cache.size > 6000) { cache.clear(); outs.clear(); }
+    cache.set(s, r); outs.add(r); return r;
+  }
+  // ---- page text
+  const skip = n => { for (let e = n.nodeType === 1 ? n : n.parentNode; e && e !== document.body; e = e.parentNode) if (e.dataset && e.dataset.noi18n != null) return true; return false; };
+  function walk(n) {
+    if (n.nodeType === 3) { const t = n.data, r = tr(t); if (r !== t) n.data = r; return; }
+    if (n.nodeType !== 1 || (n.dataset && n.dataset.noi18n != null) || n.tagName === 'SCRIPT' || n.tagName === 'STYLE' || n.tagName === 'TEXTAREA') return;
+    for (const a of ['placeholder', 'title', 'aria-label']) if (n.hasAttribute(a)) { const v = n.getAttribute(a), r = tr(v); if (r !== v) n.setAttribute(a, r); }
+    for (let c = n.firstChild; c; c = c.nextSibling) walk(c);
+  }
+  function start() {
+    document.documentElement.lang = lang === 'zh' ? 'zh-CN' : lang;
+    if (!D) return;
+    document.title = tr(document.title); walk(document.body);
+    new MutationObserver(ms => { for (const m of ms) { if (m.type === 'characterData') { if (!skip(m.target)) walk(m.target); } else for (const n of m.addedNodes) if (!skip(n)) walk(n); } })
+      .observe(document.body, { childList: true, subtree: true, characterData: true });
+    // ---- canvas text
+    const P = CanvasRenderingContext2D.prototype, F = P.fillText, M = P.measureText, ST = P.strokeText;
+    P.fillText = function (t, ...a) { return F.call(this, tr(String(t)), ...a); };
+    P.strokeText = function (t, ...a) { return ST.call(this, tr(String(t)), ...a); };
+    P.measureText = function (t) { return M.call(this, tr(String(t))); };
+    if (lang === 'zh') document.body.classList.add('lang-zh');
+  }
+  function set(l) { if (!SUP.includes(l)) return; try { localStorage.setItem(LKEY, l); } catch (e) { } if (typeof S !== 'undefined' && S) { S.opt.lang = l; saveGame(); } location.reload(); }
+  return { lang, tr, start, set, missing, get on() { return !!D; } };
+})();
+const T = s => I18N.tr(s);
 
 const CHARS = {
   yui: { id:'yui', name:'朝比奈 ユイ', short:'ユイ', role:'アサルト / 部長', main:'AR', sub:'SR',
@@ -2798,7 +2865,7 @@ function updHaz(dt) {
    ============================================================ */
 let CV = null, CTX = null, KS = 1, VW = 533;
 const ICON = {};
-const FONT = '"DotGothic16","Hiragino Kaku Gothic ProN","Yu Gothic","Meiryo",sans-serif';
+const FONT = I18N.lang === 'zh' ? '"DotGothic16","Microsoft YaHei","PingFang SC","Noto Sans SC","Noto Sans CJK SC",sans-serif' : '"DotGothic16","Hiragino Kaku Gothic ProN","Yu Gothic","Meiryo",sans-serif';
 function battleInitCanvas(cv) { CV = cv; CTX = cv.getContext('2d'); }
 function battleResize(cssW, cssH) {
   if (!CV) return;
@@ -3407,7 +3474,8 @@ const UI = (() => {
     opt: () => {
       const bindBtn = (dev, a) => { const on = BINDING && BINDING.dev === dev && BINDING.a === a; return `<button class="b sm bind ${on ? 'pri blink' : ''}" data-a="bind" data-dev="${dev}" data-k="${a}">${on ? (dev === 'key' ? 'キーを押す…' : 'ボタンを押す…') : dev === 'key' ? kn(a) : pn(a)}</button>`; };
       const o = S.opt, vol = (k, nm) => `<div class="orow"><span>${nm}</span><button class="b sm" data-a="vol" data-k="${k}" data-d="-1">−</button><div class="vbar">${'<i class="y"></i>'.repeat(Math.round(o[k] * 10))}${'<i></i>'.repeat(10 - Math.round(o[k] * 10))}</div><button class="b sm" data-a="vol" data-k="${k}" data-d="1">＋</button></div>`;
-      return header('設定', 'home') + `<div class="scroll list opt">${vol('bgm', 'BGM')}${vol('sfx', '効果音')}
+      const langRow = `<div class="orow" data-noi18n><span>言語 / Language</span>${[['ja', '日本語'], ['en', 'English'], ['zh', '简体中文']].map(([k, t]) => `<button class="b sm ${I18N.lang === k ? 'pri' : ''}" data-a="lang" data-k="${k}">${t}</button>`).join('')}</div>`;
+      return header('設定', 'home') + `<div class="scroll list opt">${langRow}${vol('bgm', 'BGM')}${vol('sfx', '効果音')}
         <div class="orow"><span>画面の揺れ</span><button class="b sm ${o.shake ? 'pri' : ''}" data-a="tog" data-k="shake">${o.shake ? 'ON' : 'OFF'}</button><span class="gap"></span><span>ダメージ数字</span><button class="b sm ${o.dmgnum ? 'pri' : ''}" data-a="tog" data-k="dmgnum">${o.dmgnum ? 'ON' : 'OFF'}</button></div>
         <h4 class="sub">画面</h4>
         ${DESKTOP ? `<div class="orow"><span>ウィンドウ</span>${[['1280', '1280×720'], ['1600', '1600×900'], ['1920', '1920×1080'], ['full', '全画面']].map(([k, t]) => `<button class="b sm ${(o.win || '1280') === k ? 'pri' : ''}" data-a="win" data-k="${k}">${t}</button>`).join('')}</div>`
@@ -3425,7 +3493,7 @@ const UI = (() => {
     },
     pause: () => `<div class="pausebox"><h2>PAUSE</h2><button class="b pri" data-a="resume">再開する</button><button class="b" data-a="retry">最初からやり直す</button><button class="b" data-a="quit">撤退する（箱は半分だけ持ち帰る）</button>
       <small>${PAD.used ? (SN ? `照準：左スティック　射撃：${pn('fire')}　${pn('reload')} 装填　LT 倍率　B 再開` : `スティック 移動　${pn('jump')} ジャンプ　${pn('fire')} 射撃　${pn('dash')} 回避　${pn('skill')} スキル　${pn('swap')} 交代　${pn('reload')} 装填　B 再開`) : SN ? `照準：マウス / ドラッグ　射撃：クリック / ボタン　${kn('reload')} 装填　${kn('skill')} 倍率` : `${kn('l')}/${kn('r')} 移動　${kn('jump')} ジャンプ　${kn('fire')} 射撃　${kn('dash')} 回避　${kn('skill')} スキル　${kn('swap')} 交代　${kn('reload')} 装填`}</small></div>`,
-    story: () => `<div class="story" data-a="snext" data-q="1"><button class="b sm skip" data-a="sskip">スキップ ▶▶</button><div class="sbox"><div class="sface"></div><div class="sname"></div><div class="stext"></div><div class="snx">▼</div></div></div>`,
+    story: () => `<div class="story" data-a="snext" data-q="1"><button class="b sm skip" data-a="sskip">スキップ ▶▶</button><div class="sbox"><div class="sface"></div><div class="sname"></div><div class="stext" data-noi18n></div><div class="snx">▼</div></div></div>`,
     result: () => resultHTML(),
   };
   const stageTeam = s => s && s.solo ? [s.solo] : s && s.fixed ? s.fixed : S.team;
@@ -3455,6 +3523,7 @@ const UI = (() => {
     vol(d) { const o = S.opt; o[d.k] = clamp(Math.round((o[d.k] + d.d * 0.1) * 10) / 10, 0, 1); SND.setVol(d.k, o[d.k]); saveGame(); refresh(); }, tog(d) { S.opt[d.k] = S.opt[d.k] ? 0 : 1; saveGame(); refresh(); },
     fs() { tryFullscreen(false); },
     bind(d) { BINDING = BINDING && BINDING.a === d.k && BINDING.dev === d.dev ? null : { a: d.k, dev: d.dev }; refresh(); if (BINDING) { const b = BINDING; setTimeout(() => { if (BINDING === b) { BINDING = null; if (cur === 'opt') refresh(); } }, 6000); } },
+    lang(d) { if (d.k !== I18N.lang) I18N.set(d.k); },
     bindreset() { delete S.opt.keys; delete S.opt.padb; BINDING = null; buildKeymaps(); saveGame(); SND.play('ok'); refresh(); },
     win(d) { S.opt.win = d.k; applyWindow(); saveGame(); refresh(); },
     aspect(d) { S.opt.aspect = d.k; saveGame(); layout(); refresh(); }, exp() { st.imp = st.imp === 'exp' ? false : 'exp'; refresh(); }, imp() { st.imp = st.imp === 'imp' ? false : 'imp'; refresh(); },
@@ -3477,7 +3546,7 @@ const UI = (() => {
     const s = storyState; if (!s) return;
     if (s.shown < s.full.length) { s.shown = s.full.length; storyDraw(); return; }
     s.i++; if (s.i >= s.lines.length) return storyEnd();
-    const [who, text] = s.lines[s.i]; s.full = text; s.shown = 0; s.acc = 0;
+    const [who, text] = s.lines[s.i]; s.full = T(text); s.shown = 0; s.acc = 0;
     const box = root.querySelector('.sbox'), face = root.querySelector('.sface'), name = root.querySelector('.sname');
     if (who === 'narr') { box.className = 'sbox narr'; face.innerHTML = ''; name.textContent = ''; }
     else { box.className = 'sbox'; box.style.setProperty('--cc', CHARS[who].color); face.innerHTML = pv('face', who, 'face'); name.textContent = CHARS[who].name; paint(); }
@@ -3677,7 +3746,7 @@ function frame(ts) {
   requestAnimationFrame(frame);
 }
 async function boot() {
-  loadSave(); layout(); if (S.opt.win && S.opt.win !== '1280') applyWindow();
+  I18N.start(); loadSave(); layout(); if (S.opt.win && S.opt.win !== '1280') applyWindow();
   cloudInit(() => { try { for (const k in GFX.cache) if (k[0] === 'c' || k[0] === 'g') delete GFX.cache[k]; SND.setVol('bgm', S.opt.bgm); SND.setVol('sfx', S.opt.sfx); } catch (e) { } UI.toast('クラウドのセーブデータを読み込みました'); if (UI.cur !== 'title') UI.show('home'); });
   await GFX.init();
   // the pixel font is a nice-to-have: wait a moment for it, never hold the title screen on a slow network

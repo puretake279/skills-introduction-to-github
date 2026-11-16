@@ -1,0 +1,906 @@
+{
+ "s0500": {
+  "en": "Clutching her little brother's shoe, Haru slipped out the back door of the croquette shop. Shadows were gathering from both ends of the street.",
+  "zh": "小春紧紧攥着弟弟的鞋，从可乐饼店的后门走了出来。街道两头，黑影正在聚拢。"
+ },
+ "s0501": {
+  "en": "Haru, don't move. Stay behind the crates. ...I'm on the roof across the street.",
+  "zh": "小春，别动。躲在木箱后面。……我在对面的楼顶。"
+ },
+ "s0502": {
+  "en": "Rei!? When did you get up there—",
+  "zh": "玲！？你什么时候跑上去的——"
+ },
+ "s0503": {
+  "en": "Borrowed sniper rifle. Range {}, no wind. One headshot drops them.",
+  "zh": "借来的狙击枪。距离{}，无风。打头一枪就能放倒。"
+ },
+ "s0504": {
+  "en": "Shoot an orange one and it takes the others with it. —Not one of them touches you.",
+  "zh": "橙色的一打就会波及周围。——我不会让任何一只碰到你。"
+ },
+ "s0505": {
+  "en": "Rei headed for the examination room. From the ward across the way, Yui watched her path back through a scope.",
+  "zh": "玲前往了诊察室。在对面的病栋里，结衣正透过瞄准镜守望着她的归途。"
+ },
+ "s0506": {
+  "en": "Rei, can you hear me? They're coming from both ends of the hall. Grab the files and wait behind the bench.",
+  "zh": "玲，听得到吗？走廊两头都有东西过来。拿好资料，在长椅后面等着。"
+ },
+ "s0507": {
+  "en": "...You were watching? I said I'd go alone.",
+  "zh": "……你一直在看着？我明明说了要一个人去。"
+ },
+ "s0508": {
+  "en": "I said I'd let you go alone. I never said I'd leave you alone.",
+  "zh": "我是说过让你一个人去，可没说过要丢下你一个人。"
+ },
+ "s0509": {
+  "en": "The fireball throwers will aim from range. Helmets deflect headshots, so go for the body. —Covering fire, starting now!",
+  "zh": "会扔火球的家伙会从远处瞄准。头盔能弹开子弹，所以打身体。——掩护，开始！"
+ },
+ "s0510": {
+  "en": "The main entrance is blocked. Our only way out is across the walkway and through the gym.",
+  "zh": "正门被堵住了。只能穿过连廊，从体育馆那边出去。"
+ },
+ "s0511": {
+  "en": "The walkway? It's totally open. They'll see us from the whole field!",
+  "zh": "连廊？那里四面透风啊。从操场上看得一清二楚吧？"
+ },
+ "s0512": {
+  "en": "Look look, the ones in tracksuits are fast! The track team's still running even as zombies!",
+  "zh": "快看快看，穿运动服的那些好快！田径部变成僵尸了还在跑！"
+ },
+ "s0513": {
+  "en": "Take down the fast ones first. Keep formation!",
+  "zh": "先解决跑得快的。别打乱队形！"
+ },
+ "s0514": {
+  "en": "Too many of them at the gate... Let's fall back to the gym storeroom and regroup.",
+  "zh": "校门口的数量太多了……先退回体育仓库，重新整顿。"
+ },
+ "s0515": {
+  "en": "Mio's gonna build a barricade outta mats and vaulting boxes. Gimme {} seconds!",
+  "zh": "我用垫子和跳箱搭个路障哦。给我{}秒！"
+ },
+ "s0516": {
+  "en": "{} seconds!? That's forever! ...Fine, nothing's getting past me!",
+  "zh": "{}秒！？好久！……行吧，一只都别想过去！"
+ },
+ "s0517": {
+  "en": "They're coming from both sides. Watch each other's backs.",
+  "zh": "两边都来了。背靠背守住。"
+ },
+ "s0518": {
+  "en": "Before the school gate stood a shadow far larger than the rest.",
+  "zh": "校门前，立着一个格外巨大的身影。"
+ },
+ "s0519": {
+  "en": "That tie... is that the Vice Principal!? He's HUGE!!",
+  "zh": "那条领带……是教导主任！？好大只！！"
+ },
+ "s0520": {
+  "en": "Seems the longer they breathe the Fog, the bigger they get. His body glows red before he charges. Don't miss it.",
+  "zh": "看来吸雾越久的个体，体型越大。冲撞之前身体会发红光。别看漏了。"
+ },
+ "s0521": {
+  "en": "...Vice Principal. School's out. Please, let us through!",
+  "zh": "……教导主任。放学时间到了。请让我们过去！"
+ },
+ "s0522": {
+  "en": "The Fog's all trapped inside the arcade. Can't see a thing~",
+  "zh": "商店街里面雾都闷住了。视野好差～"
+ },
+ "s0523": {
+  "en": "Screaming from the back. Could be a survivor. Could be a Screamer.",
+  "zh": "里面有尖叫声。可能是幸存者，也可能是尖叫者。"
+ },
+ "s0524": {
+  "en": "Either way we gotta go! Shoot the orange ones before they get close—they explode!",
+  "zh": "不管是哪个都得去吧！橙色的家伙要在靠近之前打掉，会爆炸的！"
+ },
+ "s0525": {
+  "en": "Watch out for the pigeons too. ...I can't believe even the birds...",
+  "zh": "也要小心鸽子。……没想到连鸟都……"
+ },
+ "s0526": {
+  "en": "Behind the croquette shop, Haru found one of her brother's shoes. Just one.",
+  "zh": "在可乐饼店后面，小春只找到了弟弟的一只鞋。"
+ },
+ "s0527": {
+  "en": "...It's still new. He's close. I know he is!",
+  "zh": "……还是新的。他就在附近。一定在！"
+ },
+ "s0528": {
+  "en": "Footsteps are closing in. We have to hold them here until the butcher's shutter is open.",
+  "zh": "脚步声在聚集。在打开肉铺的卷帘门之前，只能在这里挡住它们。"
+ },
+ "s0529": {
+  "en": "Lockpicking, {} seconds! Keep the zombies off Mio, 'kay~!",
+  "zh": "开锁，{}秒！僵尸就拜托你们挡一下啦～！"
+ },
+ "s0530": {
+  "en": "The shutter rose. Before the walk-in fridge stood a hulking figure, a cleaver hanging from its hand.",
+  "zh": "卷帘门升起。冷库前，一个提着剁肉刀的庞然身影挡住了去路。"
+ },
+ "s0531": {
+  "en": "Mister... The kids are back there, aren't they? Were you protecting them?",
+  "zh": "大叔……里面有孩子们对吧。你一直在保护他们吗？"
+ },
+ "s0532": {
+  "en": "He can't understand us anymore. When he slams the ground, a shockwave runs out. Jump over it.",
+  "zh": "他已经听不懂话了。砸地的时候会放出冲击波。跳起来躲开。"
+ },
+ "s0533": {
+  "en": "...Sorry, mister. Your croquettes were the best!",
+  "zh": "……对不起，大叔。你的可乐饼，真的很好吃！"
+ },
+ "s0534": {
+  "en": "From here, we walk the tracks. It's a straight shot to the next station.",
+  "zh": "接下来沿着铁轨走。到下一站只有一条路。"
+ },
+ "s0535": {
+  "en": "A straight shot means they can only come from the front and back, right? ...Wait, that means they're coming from the front AND back?",
+  "zh": "只有一条路，就是说它们只会从前后来吧。……也就是说会从前后一起来吧？"
+ },
+ "s0536": {
+  "en": "There are ones that kick off the walls to leap at you, and wolves. Stay sharp even at a distance.",
+  "zh": "有会蹬墙跳过来的个体，还有狼。就算隔着距离也别大意。"
+ },
+ "s0537": {
+  "en": "It's too dark to see, so I'll just blow up anything suspicious in advance!",
+  "zh": "太暗了看不清，可疑的地方我就先炸掉了哦！"
+ },
+ "s0538": {
+  "en": "Please don't collapse the tunnel!?",
+  "zh": "别把隧道炸塌了啊！？"
+ },
+ "s0539": {
+  "en": "The moment they reached the platform, every light went out.",
+  "zh": "刚登上站台，所有的灯就一齐熄灭了。"
+ },
+ "s0540": {
+  "en": "Whoa, blackout! Backup power's gonna take like {} seconds to kick in!",
+  "zh": "哇，停电了！切换到备用电源大概要{}秒！"
+ },
+ "s0541": {
+  "en": "Move in the dark and you'll fall onto the tracks. We hold here.",
+  "zh": "在黑暗里乱动会掉下铁轨。就在原地迎击。"
+ },
+ "s0542": {
+  "en": "The ones with mushrooms leave poison behind even after they're dead, so don't step in it!",
+  "zh": "长蘑菇的那种，打倒以后毒还会留在地上，别踩到啊！"
+ },
+ "s0543": {
+  "en": "A train that should have been the last of the night glided into the station. There was no one in the driver's seat.",
+  "zh": "本该是末班车的列车，缓缓滑进了站台。驾驶座上，空无一人。"
+ },
+ "s0544": {
+  "en": "The doors opened... Did you hear it say \"Thank you for riding with us\"?",
+  "zh": "门开了……刚才是不是听到了一句“感谢您的乘坐”？"
+ },
+ "s0545": {
+  "en": "The conductor. He charges over and over. Hit him right after he slams into a wall.",
+  "zh": "是列车员。他会连续冲撞好几次。撞到墙上的那一刻就是机会。"
+ },
+ "s0546": {
+  "en": "We're getting off at the next station. —You're letting us through!",
+  "zh": "我们要在前面那站下车。——请让我们过去！"
+ },
+ "s0547": {
+  "en": "Ward Three. Where the first infected patients were brought in.",
+  "zh": "第三病栋。最早一批感染者被送进来的地方。"
+ },
+ "s0548": {
+  "en": "Ugh... every bed's empty. So they all just... walked out?",
+  "zh": "呜哇……床全都是空的。意思是大家都自己走出去了？"
+ },
+ "s0549": {
+  "en": "Is that guy in the lab coat throwing FIREBALLS!? Is that what medicine is now!?",
+  "zh": "那个穿白大褂的是不是在放火球！？医疗是这样的吗！？"
+ },
+ "s0550": {
+  "en": "Fireballs fly straight. Jump, or dodge right through them!",
+  "zh": "火球是直线飞来的。跳起来，或者用闪避穿过去！"
+ },
+ "s0551": {
+  "en": "I found the antiserum. But it takes {} seconds to thaw. Guard the pharmacy until then.",
+  "zh": "找到抗血清了。但解冻要{}秒。这段时间守住药剂部。"
+ },
+ "s0552": {
+  "en": "{} seconds, got it! Should we just seal the entrance? With explosives!",
+  "zh": "{}秒对吧！入口干脆堵上吧？用爆破！"
+ },
+ "s0553": {
+  "en": "That would blow up the medicine too. Don't.",
+  "zh": "药也会一起炸飞的。别。"
+ },
+ "s0554": {
+  "en": "The dancing one in the dress heals everything around her. Take her out first the moment you see her.",
+  "zh": "跳舞的那个穿礼服的会给周围回血。一看到就优先打倒。"
+ },
+ "s0555": {
+  "en": "Beyond the director's door, slow footsteps approached, as if making the rounds.",
+  "zh": "院长室的门后，查房般的脚步声正缓缓逼近。"
+ },
+ "s0556": {
+  "en": "The hospital director... The man who knew what the Fog was, and hid it.",
+  "zh": "院长……知道雾的真面目，却隐瞒了的人。"
+ },
+ "s0557": {
+  "en": "Rei, your dad—",
+  "zh": "玲，你爸爸他——"
+ },
+ "s0558": {
+  "en": "He wasn't here. So there's still hope. ...The director rains down acid. Watch your footing.",
+  "zh": "他不在这里。所以，还有希望。……院长会像下雨一样洒下强酸。注意脚下。"
+ },
+ "s0559": {
+  "en": "Let's go. He has the answers.",
+  "zh": "走吧。答案就在这个人手里。"
+ },
+ "s0560": {
+  "en": "The lab's security system is still live. Every time we open a bulkhead, whatever's inside comes out.",
+  "zh": "研究所里的警备系统还在运作。每开一道隔离门，里面的东西就会跑出来哦。"
+ },
+ "s0561": {
+  "en": "Armored ones, and bears. Even the lab animals got hit by the Fog... Punch through their front armor with AP rounds or explosives.",
+  "zh": "穿铠甲的个体，还有熊。连实验动物都被雾……正面装甲要用穿甲弹或者爆炸来打穿。"
+ },
+ "s0562": {
+  "en": "Explosives! Did someone call me!?",
+  "zh": "爆炸！是在叫我吗！？"
+ },
+ "s0563": {
+  "en": "I'm counting on you, Nana. All {} sections—we push straight through!",
+  "zh": "就靠你了，奈奈。全部{}个区块，一口气冲过去！"
+ },
+ "s0564": {
+  "en": "The generator's control room. Entering the shutdown code would take {} seconds.",
+  "zh": "发生炉的控制室。输入停止代码需要{}秒。"
+ },
+ "s0565": {
+  "en": "This is gonna be the longest {} seconds of Mio's whole life... Can't take my hands off this, so!",
+  "zh": "这大概会是澪酱有史以来最长的{}秒……我手可离不开哦！"
+ },
+ "s0566": {
+  "en": "Every one of them in the tower is heading here. This is our last line of defense.",
+  "zh": "整座塔里的个体都在往这边来。这是最后的防线。"
+ },
+ "s0567": {
+  "en": "Bring it! I'll hold out till morning if I have to!",
+  "zh": "来得好！撑到天亮都没问题！"
+ },
+ "s0568": {
+  "en": "Everyone, protect Mio. —Nothing gets through!",
+  "zh": "全员，保护澪。——绝对，不让它们过去！"
+ },
+ "s0569": {
+  "en": "At the bottom of the core, it quietly opened its eyes. The first one—the source of all the Fog.",
+  "zh": "在炉心底部，它静静地睁开了眼睛。不断生出雾的，最初的那个人。"
+ },
+ "s0570": {
+  "en": "Patient Zero... The test subject from my father's notes. They were only ever waiting for a cure.",
+  "zh": "零号病人……父亲笔记里提到的受试者。这个人，也只是在等待治疗而已。"
+ },
+ "s0571": {
+  "en": "It goes wilder the lower its health gets, right? So don't let up till the very end!",
+  "zh": "血越少就闹得越凶对吧。意思是到最后都不能松懈！"
+ },
+ "s0572": {
+  "en": "I brought every last warhead!",
+  "zh": "弹头，我全都带来了！"
+ },
+ "s0573": {
+  "en": "Let's end this. For them, and for the town. —Airsoft Club, final operation: commence!",
+  "zh": "结束这一切吧。为了这个人，也为了这座城市。——生存游戏社，最终行动，开始！"
+ },
+ "s0574": {
+  "en": "Senpai, let me take a quick detour! There's still ammo for \"that thing\" in the storeroom!",
+  "zh": "学姐，让我稍微绕个路！仓库里还剩着“那个”的弹药！"
+ },
+ "s0575": {
+  "en": "Alone!? That's dangerous, Nana!",
+  "zh": "一个人！？太危险了，奈奈！"
+ },
+ "s0576": {
+  "en": "It's fine! If I caught you all in the blast in a narrow hallway, that'd be way more dangerous!",
+  "zh": "没事的！要是在狭窄的通道里把学姐们也炸进去，那才更危险！"
+ },
+ "s0577": {
+  "en": "...What's annoying is that her logic holds up. Be back in five minutes.",
+  "zh": "……偏偏道理说得通，真让人火大。五分钟内回来。"
+ },
+ "s0578": {
+  "en": "That croquette shop's got a tiny back door. If we all go, we'll get boxed in. ...I'll go check it out alone.",
+  "zh": "那家可乐饼店后门很窄。大家一起去会被包围的。……我一个人去看看。"
+ },
+ "s0579": {
+  "en": "Haru, but—",
+  "zh": "小春，可是——"
+ },
+ "s0580": {
+  "en": "He's my little brother. His big sister's gotta go. I'll be right back, so hold the front!",
+  "zh": "那是我弟弟啊。姐姐不去谁去。我马上回来，你们守好前面！"
+ },
+ "s0581": {
+  "en": "Don't say stuff that sounds like a death flag~... Keep your radio on, 'kay?",
+  "zh": "别说这种像立flag的话嘛～……对讲机一直开着哦。"
+ },
+ "s0582": {
+  "en": "The platform's emergency door is on an electronic lock. We can't go on until the power room is rebooted.",
+  "zh": "站台的紧急门被电子锁锁住了。不重启配电室就没法前进。"
+ },
+ "s0583": {
+  "en": "A switchboard? That's Mio's time to shine. But the shutter on the way's welded shut, y'know?",
+  "zh": "配电盘的话就轮到澪酱出场了。不过半路上的卷帘门被焊死了哦？"
+ },
+ "s0584": {
+  "en": "I'll open the shutter! Physically!",
+  "zh": "卷帘门交给奈奈来开！用物理手段！"
+ },
+ "s0585": {
+  "en": "...I'm really nervous about sending these two together.",
+  "zh": "……让这两个人一起去，我真的很不放心。"
+ },
+ "s0586": {
+  "en": "Tech and firepower. A rational pairing. —Don't break too much.",
+  "zh": "技术加火力。合理的人选。——别破坏过头。"
+ },
+ "s0587": {
+  "en": "My father's examination room is up ahead. ...Let me go alone from here.",
+  "zh": "前面就是父亲的诊察室。……接下来，让我一个人去。"
+ },
+ "s0588": {
+  "en": "Huh!? Why!? You said we'd go together!",
+  "zh": "哈！？为什么啊，不是说好一起去的吗！"
+ },
+ "s0589": {
+  "en": "If my father has crossed over to \"the other side,\" I have to be the one who shoots. I don't want anyone else carrying that.",
+  "zh": "如果父亲已经变成了“那一边”的人，开枪的必须是我。我不想让任何人背负这些。"
+ },
+ "s0590": {
+  "en": "...All right. But promise me you'll come back. That's an order from your club president.",
+  "zh": "……我知道了。但你要答应我，一定要回来。这是社长命令。"
+ },
+ "s0591": {
+  "en": "Understood. —I'll be right back, President.",
+  "zh": "收到。——我马上回来，社长。"
+ },
+ "s0592": {
+  "en": "The bridge to the generator was only wide enough for two.",
+  "zh": "通往发生炉的连接桥，只有两个人的宽度。"
+ },
+ "s0593": {
+  "en": "Rei and I will go. You three, secure our way out.",
+  "zh": "这里我和玲去。你们三个确保退路。"
+ },
+ "s0594": {
+  "en": "Aww, but it's the big finale!",
+  "zh": "诶——明明是最后的高光时刻！"
+ },
+ "s0595": {
+  "en": "If the bridge falls, we're all finished. I'll cross first and open the door from the other side. President, I'm leaving my back to you.",
+  "zh": "桥塌了大家都完了。我先过去，从对面开门。社长，后背就交给你了。"
+ },
+ "s0596": {
+  "en": "Yeah. It's been that way since the day you joined, hasn't it?",
+  "zh": "嗯。从入社那天起，一直都是这样的吧。"
+ },
+ "s0597": {
+  "en": "August. Ten months had passed since that night of Fog.",
+  "zh": "八月。距离那个雾夜，已经过去了十个月。"
+ },
+ "s0598": {
+  "en": "For their summer training camp, the Airsoft Club was riding a ferry to the remote isle of Shiomi Island.",
+  "zh": "生存游戏社为了夏季集训，正乘着渡轮摇摇晃晃地前往离岛——潮见岛。"
+ },
+ "s0599": {
+  "en": "Look look, the ocean! An island camp on the club budget? That's gotta be a first in Kirigaoka history!",
+  "zh": "快看快看，大海！用社团经费去离岛集训，这可是雾丘建校以来的壮举吧？"
+ },
+ "s0600": {
+  "en": "It's not the club budget. My father booked the inn \"for the girls who saved my daughter's life.\"",
+  "zh": "不是社团经费。是我父亲说“给女儿的救命恩人们”，帮我们订了民宿。"
+ },
+ "s0601": {
+  "en": "Rei's dad is the best! First thing when we land, I'm swimming! Then shaved ice!",
+  "zh": "玲的爸爸最棒了！到了先去游泳！然后吃刨冰！"
+ },
+ "s0602": {
+  "en": "Senpai, I brought fireworks! The big aerial kind!",
+  "zh": "学姐，奈奈带了烟花来！是往天上放的那种！"
+ },
+ "s0603": {
+  "en": "...Nana, where did you get those?",
+  "zh": "……奈奈，那个，你是从哪儿弄来的？"
+ },
+ "s0604": {
+  "en": "The moment the ferry reached the pier, a white wall rose from the open sea. A thick fog that had no business existing on a summer evening.",
+  "zh": "渡轮靠上栈桥的那一刻，一堵白墙从海面上涌了起来。在夏日傍晚本不该出现的浓雾。"
+ },
+ "s0605": {
+  "en": "This color... it's the same as that night. But we shut down the generator.",
+  "zh": "这个颜色……和那天晚上一样。可发生炉明明已经停了。"
+ },
+ "s0606": {
+  "en": "There's a giant building out at sea. Helios logo... it says \"Fourth Laboratory.\"",
+  "zh": "海上有栋超大的建筑。赫利俄斯的标志……上面写着“第四研究所”。"
+ },
+ "s0607": {
+  "en": "...Camp is canceled. Airsoft Club, operation start. We all make it out alive, and we take our summer back!",
+  "zh": "……集训取消。生存游戏社，行动开始。大家一起活下来，把暑假夺回来！"
+ },
+ "s0608": {
+  "en": "No way, every beach shack's turned into a zombie food stall... The worst part is it still smells like yakisoba.",
+  "zh": "不会吧，海滩小屋全变成僵尸摊位了……只剩炒面的香味还在，太难受了。"
+ },
+ "s0609": {
+  "en": "There's one running at us still wearing a swim ring!? Isn't it kinda fast!?",
+  "zh": "有个套着游泳圈跑过来的耶！？是不是有点快！？"
+ },
+ "s0610": {
+  "en": "Even tourists in swimsuits... The whole island's been swallowed by the Fog.",
+  "zh": "连穿泳衣的游客都……整座岛都被雾吞没了啊。"
+ },
+ "s0611": {
+  "en": "The people from the inn should be sheltering at the end of the pier. Let's get through the street and meet up with them!",
+  "zh": "民宿的人应该在栈桥尽头避难。穿过街道去和他们会合！"
+ },
+ "s0612": {
+  "en": "The beach shack \"Shiosai.\" The island's children who had fled there were hiding behind the counter.",
+  "zh": "海滩小屋“潮骚”。避难的岛上孩子们，正躲在柜台后面。"
+ },
+ "s0613": {
+  "en": "Senpai, they say the ferry won't be back for {} seconds!",
+  "zh": "学姐，说是渡轮回来还要{}秒！"
+ },
+ "s0614": {
+  "en": "Barricade with the beach umbrellas and benches! ...Man, I've gotten way too good at this.",
+  "zh": "用遮阳伞和长椅搭路障！……我居然变得擅长干这种事了。"
+ },
+ "s0615": {
+  "en": "They won't lay a finger on those kids. Both sides, here they come!",
+  "zh": "绝不让它们碰孩子们一根手指。两边都来了！"
+ },
+ "s0616": {
+  "en": "After sending the children off on the ferry, their friends were nearly surrounded behind the crates on the pier. From atop the lighthouse, Mio looked down.",
+  "zh": "把孩子们送上渡轮的伙伴们，在栈桥的木箱后面快被包围了。灯塔顶上，澪正俯视着下方。"
+ },
+ "s0617": {
+  "en": "Pochi, sync camera. ...Okay, aim correction's good. Today, Mio's playing sniper.",
+  "zh": "波奇，相机同步。……好，瞄准校正OK。澪酱今天要当狙击手哦。"
+ },
+ "s0618": {
+  "en": "Mio, you're sniping? Are you sure about this?",
+  "zh": "澪，你来狙击？没问题吗？"
+ },
+ "s0619": {
+  "en": "Y'know, the Discipline Committee's whole job is spotting rule-breakers from far away. —Anyone running on the beach is in violation!",
+  "zh": "风纪委员啊，工作就是从远处找出违规的人。——在沙滩上乱跑的，全员违规！"
+ },
+ "s0620": {
+  "en": "We're pinned here for {} seconds until the ferry leaves. Mio, cover us!",
+  "zh": "渡轮开走前的{}秒，我们动不了。澪，拜托掩护！"
+ },
+ "s0621": {
+  "en": "The ferry carrying the children pulled away. As if answering its horn, something atop the watchtower blew a whistle.",
+  "zh": "载着孩子们的渡轮渐渐远去。仿佛在回应那声汽笛，瞭望塔上，有什么东西吹响了哨子。"
+ },
+ "s0622": {
+  "en": "That whistle... it's the lifeguard. Last summer, he saved a kid who was drowning.",
+  "zh": "那个哨声……是救生员。听说去年夏天，他救过一个差点溺水的孩子。"
+ },
+ "s0623": {
+  "en": "He closes the whole length of the beach in an instant. After he charges, hit him when his feet sink into the sand.",
+  "zh": "他能一瞬间从海滩这头冲到那头。冲撞之后，趁他脚陷进沙子的瞬间打。"
+ },
+ "s0624": {
+  "en": "...No one else is drowning on this beach. Let's go!",
+  "zh": "……不会再让任何人在这片海滩溺水了。上吧！"
+ },
+ "s0625": {
+  "en": "From the fallen lifeguard's waterproof pouch came a Helios employee ID. On the back, a handwritten note.",
+  "zh": "倒下的救生员的防水袋里，掉出了一张赫利俄斯的员工证。背面有一行手写的字。"
+ },
+ "s0626": {
+  "en": "\"The Fourth Laboratory is culturing the Fog's 'stock solution' in seawater. The generator was a decoy\"...!",
+  "zh": "“第四研究所正在用海水培养雾的‘原液’。发生炉只是诱饵”……！"
+ },
+ "s0627": {
+  "en": "A decoy...? So the thing we stopped that night wasn't the real deal?",
+  "zh": "诱饵……那就是说，那天晚上我们关掉的不是本体？"
+ },
+ "s0628": {
+  "en": "Then we just blow up the real one too! I still have fireworks left!",
+  "zh": "那把本体也炸掉就行了吧！烟花还有剩！"
+ },
+ "s0629": {
+  "en": "We need a boat to reach the lab offshore. Let's head to the island's fishing port.",
+  "zh": "要去海上的研究所得有船。去岛上的渔港吧。"
+ },
+ "s0630": {
+  "en": "The fishing port at night. Only one boat still ran, and the fuel tank sat on the far side of the cold storage.",
+  "zh": "夜晚的渔港。能动的船只有一艘，燃料罐在冷冻仓库的另一头。"
+ },
+ "s0631": {
+  "en": "I'll haul the fuel. And anything in the way—",
+  "zh": "燃料我来扛。至于碍事的家伙——"
+ },
+ "s0632": {
+  "en": "Nana will blow it away!",
+  "zh": "奈奈来炸飞！"
+ },
+ "s0633": {
+  "en": "...Sending just these two makes me even more nervous than the power room did.",
+  "zh": "……只让这两个人去，比配电室那次还让人不放心。"
+ },
+ "s0634": {
+  "en": "Muscle and firepower. A rational pairing. —Don't blow up the whole port.",
+  "zh": "力气加火力。合理的人选。——别把港口一起炸飞了。"
+ },
+ "s0635": {
+  "en": "I know, I know! Probably!",
+  "zh": "知道啦！大概吧！"
+ },
+ "s0636": {
+  "en": "Inside the cold storage, the surviving fishermen had barricaded themselves.",
+  "zh": "冷冻仓库里，幸存的渔民们正据守其中。"
+ },
+ "s0637": {
+  "en": "{} seconds to start the boat's engine! It's an old model, so even Mio needs a bit!",
+  "zh": "船的引擎发动要{}秒！是老型号，就算是澪酱也要花点时间！"
+ },
+ "s0638": {
+  "en": "{} seconds? Easy... is what I wanna say, but isn't the crowd outside kinda insane?",
+  "zh": "{}秒的话小意思……虽然很想这么说，但外面的数量是不是有点不妙？"
+ },
+ "s0639": {
+  "en": "The Fog is flowing into the port. Their numbers are only going to grow.",
+  "zh": "雾正在往港口里涌。数量只会越来越多。"
+ },
+ "s0640": {
+  "en": "We meet them at the door. No one gets inside the warehouse!",
+  "zh": "在门前迎击。谁都别想进仓库！"
+ },
+ "s0641": {
+  "en": "The lab's control signal is coming from the lighthouse antenna. Unless someone cuts it, the boat can't get close.",
+  "zh": "研究所的控制信号是从灯塔的天线发出来的。不切断的话，船就没法靠近。"
+ },
+ "s0642": {
+  "en": "Then we all go—",
+  "zh": "那就全员一起——"
+ },
+ "s0643": {
+  "en": "No. The lighthouse stairs only fit one person. Besides, I need all of you to protect the boat.",
+  "zh": "不。灯塔的楼梯只有一个人的宽度。而且，我想让大家守住船。"
+ },
+ "s0644": {
+  "en": "Yui, that's the same thing Rei said before. \"Let me go alone.\"",
+  "zh": "结衣，这不就是之前玲说过的话嘛。“让我一个人去”。"
+ },
+ "s0645": {
+  "en": "Yeah. Which is why I'm coming back too. A president can give orders to herself, you know.",
+  "zh": "嗯。所以我也一定会回来。社长命令，也可以下给自己的哦。"
+ },
+ "s0646": {
+  "en": "...Understood, President. If you don't come back, I'll never forgive you.",
+  "zh": "……收到，社长。要是你没回来，我绝不原谅你。"
+ },
+ "s0647": {
+  "en": "The lighthouse signal died, and beyond the Fog, a bridge to the lab came into view.",
+  "zh": "灯塔的信号中断了，雾的另一头，浮现出通往研究所的连接桥。"
+ },
+ "s0648": {
+  "en": "All the lab's security drones just shut down! Nice one, Yui!",
+  "zh": "研究所的警备无人机全停了！结衣，干得漂亮！"
+ },
+ "s0649": {
+  "en": "I'm back. ...Sorry to keep you all waiting.",
+  "zh": "我回来了。……让大家久等了，对不起。"
+ },
+ "s0650": {
+  "en": "Welcome back! You're late, jeez!",
+  "zh": "欢迎回来！太慢了啦！"
+ },
+ "s0651": {
+  "en": "The bridge has six sections. Some of them climb up from the sea. Keep moving.",
+  "zh": "桥有六个区块。还有从海里爬上来的个体。别停下脚步。"
+ },
+ "s0652": {
+  "en": "I'm saving my last fireworks!",
+  "zh": "最后的烟花，我先留着！"
+ },
+ "s0653": {
+  "en": "The deepest level of the lab. Before a giant tank filled with seawater stood a woman in a white coat.",
+  "zh": "研究所的最深处。在灌满海水的巨大水槽前，站着一位身穿白大褂的女性。"
+ },
+ "s0654": {
+  "en": "Director Sayoko Shiomi... My father's co-author. The one who first made the Fog drug.",
+  "zh": "潮见小夜子所长……父亲论文的共同研究者。最早制造出雾之药的人。"
+ },
+ "s0655": {
+  "en": "The woman slowly turned. From her body, the Fog poured out like a wave.",
+  "zh": "女人缓缓转过身来。雾从她的身体里，如波浪般涌了出来。"
+ },
+ "s0656": {
+  "en": "She's become the Fog itself...!",
+  "zh": "这个人，已经变成雾本身了……！"
+ },
+ "s0657": {
+  "en": "She's HUGE! Like, three times bigger than the Vice Principal!?",
+  "zh": "好大！差不多有教导主任的三倍大吧！？"
+ },
+ "s0658": {
+  "en": "I brought every last firework!",
+  "zh": "烟花，我全都带来了！"
+ },
+ "s0659": {
+  "en": "Let's end this—for real this time. —Airsoft Club, last operation of summer break: commence!",
+  "zh": "结束吧，这次一定。——生存游戏社，暑假最后的行动，开始！"
+ },
+ "s0660": {
+  "en": "The tank shattered, and morning light poured into the lab. The sea fog came undone in the salt breeze.",
+  "zh": "水槽碎裂，晨光照进了研究所。海上的雾，在海风中渐渐散开。"
+ },
+ "s0661": {
+  "en": "...All the Fog's stock solution has gone back to seawater. This time, it's really over.",
+  "zh": "……雾的原液，全部变回了海水。这一次，真的结束了。"
+ },
+ "s0662": {
+  "en": "The sound of rescue helicopters drew near. Aboard one was Rei's father, in his white coat.",
+  "zh": "救援直升机的声音越来越近。其中，有身穿白大褂的玲的父亲。"
+ },
+ "s0663": {
+  "en": "We're DONE! Okay, swimming! Right now!",
+  "zh": "结束啦——！好，去游泳！马上！"
+ },
+ "s0664": {
+  "en": "I wanna sleep first... That's two all-nighters in a row this camp...",
+  "zh": "在那之前我想先睡觉……集训连续两天通宵了啊……"
+ },
+ "s0665": {
+  "en": "Senpai, the people at the inn say they've got swimsuits ready for us \"as thanks\"!",
+  "zh": "学姐，民宿的人说“作为谢礼”，给我们准备了泳衣！"
+ },
+ "s0666": {
+  "en": "...Yeah. Just for today, club activities are canceled. Let's all go to the beach!",
+  "zh": "……嗯。就今天，社团活动休息。大家一起去海边吧！"
+ },
+ "s0667": {
+  "en": "Afterschool Deadline Part {} — The End —\nReward: Swimsuits for the whole team.",
+  "zh": "放学后的死线 第{}部 —— 完 ——\n奖励：获得了全员的泳衣。"
+ },
+ "s0668": {
+  "en": "October, after school. A gray fog descended on the town of Kirigaoka.",
+  "zh": "十月，放学后。灰色的雾，降临在雾丘的街道上。"
+ },
+ "s0669": {
+  "en": "Anyone who breathed the Fog stopped being human within thirty minutes.",
+  "zh": "吸入雾的人，三十分钟后便不再是“人”。"
+ },
+ "s0670": {
+  "en": "W-wait! Those things on the field aren't the track team, right!?",
+  "zh": "等、等一下！操场上那些，不是田径部的吧！？"
+ },
+ "s0671": {
+  "en": "Pupils dilated, no response to voice. ...They're biting. Confirmed. Zombies.",
+  "zh": "瞳孔放大，呼唤无反应。……在咬人。确定了，是僵尸。"
+ },
+ "s0672": {
+  "en": "Wow. So, do we open it? Our advisor's \"DO NOT TOUCH\" locker?",
+  "zh": "哇哦。那要不要打开那个？顾问的“绝对不许碰”储物柜。"
+ },
+ "s0673": {
+  "en": "...Forgive me, Mr. Onizuka. Just for today, the Airsoft Club is using the real thing.",
+  "zh": "……鬼冢老师，对不起。就今天，生存游戏社要用真家伙了。"
+ },
+ "s0674": {
+  "en": "Senpai! There's a bazooka in the school festival storeroom! It's labeled \"stage prop\"!",
+  "zh": "学姐！文化祭的仓库里有火箭筒！上面写着“表演道具”！"
+ },
+ "s0675": {
+  "en": "...What kind of school festival is this.",
+  "zh": "……这是什么文化祭啊。"
+ },
+ "s0676": {
+  "en": "Objective: everyone lives to see morning. —Operation start!",
+  "zh": "目标：全员活着迎来早晨。——行动开始！"
+ },
+ "s0677": {
+  "en": "The Vice Principal... right to the end, he had that \"no running in the halls\" look on his face...",
+  "zh": "教导主任……到最后都是一副“走廊上不许跑”的表情……"
+ },
+ "s0678": {
+  "en": "Fog outside the gate too. The source is toward the harbor. I can work it out backward from wind direction and density.",
+  "zh": "校门外也是雾。源头在港口方向。根据风向和浓度可以反推出来。"
+ },
+ "s0679": {
+  "en": "The harbor? That's where the Helios Pharmaceuticals lab is. Suuuper suspicious~",
+  "zh": "说到港口，不就是赫利俄斯制药的研究所嘛。可疑度满分～"
+ },
+ "s0680": {
+  "en": "A research lab probably has spare rockets too! Let's go!",
+  "zh": "研究所的话应该也有备用火箭弹吧！走吧！"
+ },
+ "s0681": {
+  "en": "The shopping street first. We'll secure food and ammo, and look for survivors.",
+  "zh": "先去商店街。确保食物和弹药，寻找幸存者。"
+ },
+ "s0682": {
+  "en": "Sakura Street... Forget a ghost town of shuttered shops—it's a zombie town now.",
+  "zh": "樱花街……别说是卷帘门商店街了，简直成了僵尸街。"
+ },
+ "s0683": {
+  "en": "That croquette shop over there—me and my little brother used to go all the time. ...Hope the brat's okay.",
+  "zh": "那边那家可乐饼店，我以前常和弟弟一起去。……那小子，没事吧。"
+ },
+ "s0684": {
+  "en": "We'll find him, Haru. That's why we're taking this detour, right?",
+  "zh": "去找吧，小春。我们绕路不就是为了这个吗。"
+ },
+ "s0685": {
+  "en": "Correction. It's not a detour. It's Mission Objective Two.",
+  "zh": "更正。不是绕路，是作战目标之二。"
+ },
+ "s0686": {
+  "en": "The butcher... he always gave me an extra croquette...",
+  "zh": "肉铺的大叔……明明每次都多送我一个可乐饼的……"
+ },
+ "s0687": {
+  "en": "Deep in the walk-in fridge were the trembling children. Among them was Haru's little brother.",
+  "zh": "冷库深处，有一群瑟瑟发抖的孩子。其中，也有小春的弟弟。"
+ },
+ "s0688": {
+  "en": "...Ngh, you idiot! Don't scare me like that!",
+  "zh": "……唔，笨蛋！别让人担心啊！"
+ },
+ "s0689": {
+  "en": "The kids are coughing. Early symptoms of the Fog. We need the antiserum from the hospital.",
+  "zh": "孩子在咳嗽。是雾的初期症状。需要医院的抗血清。"
+ },
+ "s0690": {
+  "en": "The Fog's too thick on the surface. We'll walk the subway tracks to City Hospital.",
+  "zh": "地面上的雾太浓了。沿着地铁轨道走，去市立医院吧。"
+ },
+ "s0691": {
+  "en": "Feels like the last train left a looong time ago, huh.",
+  "zh": "末班车，感觉早就开走了呢。"
+ },
+ "s0692": {
+  "en": "The Fog is heavier than air. Underground, it's... thicker than above.",
+  "zh": "雾比空气重。地下……比上面更浓。"
+ },
+ "s0693": {
+  "en": "Wait, then why'd we come underground!?",
+  "zh": "诶，那为什么还要来地下！？"
+ },
+ "s0694": {
+  "en": "Because there are three times as many zombies on the surface.",
+  "zh": "因为地面上的僵尸是这里的三倍。"
+ },
+ "s0695": {
+  "en": "Six of one, half a dozen of the other... Watch your step. Let's go.",
+  "zh": "半斤八两……注意脚下，走吧。"
+ },
+ "s0696": {
+  "en": "The conductor kept saying \"Please do not rush onto the train\" right to the end... Total commitment, huh.",
+  "zh": "列车员先生到最后都在说“请勿抢上抢下”……真是始终如一啊。"
+ },
+ "s0697": {
+  "en": "There was a log left on the conductor's terminal. On the night of the Fog, only the freight trains bound for the harbor were running.",
+  "zh": "列车员的终端里留有记录。雾夜里，只有开往港口的货运列车还在运行。"
+ },
+ "s0698": {
+  "en": "What they're carrying is... culture tanks? It's Helios Pharmaceuticals after all.",
+  "zh": "运的是……培养罐？果然是赫利俄斯制药。"
+ },
+ "s0699": {
+  "en": "Medicine first! The hospital's right above us!",
+  "zh": "先拿药！医院就在正上方！"
+ },
+ "s0700": {
+  "en": "Kirigaoka City General Hospital. Only the emergency lights lit the halls, in shades of green.",
+  "zh": "雾丘市立综合医院。只有应急灯，把走廊照成了绿色。"
+ },
+ "s0701": {
+  "en": "The antiserum's in the basement pharmacy. And—I want to check the director's records.",
+  "zh": "抗血清在地下的药剂部。还有——我想确认院长的记录。"
+ },
+ "s0702": {
+  "en": "Rei-rei, your face is kinda scary right now?",
+  "zh": "小玲，你表情好吓人哦？"
+ },
+ "s0703": {
+  "en": "...My father is a doctor here. He was on duty the night of the Fog.",
+  "zh": "……我父亲是这里的医生。雾夜那天，他在值班。"
+ },
+ "s0704": {
+  "en": "We'll look together. It's okay. You've got us.",
+  "zh": "一起找吧。没事的，有我们在。"
+ },
+ "s0705": {
+  "en": "A single note fell from the white coat of the monstrous director. It was in Rei's father's handwriting.",
+  "zh": "从变成怪物的院长的白大褂里，掉出了一张便条。是玲父亲的字迹。"
+ },
+ "s0706": {
+  "en": "\"The Fog is not a weapon. It is a failed drug. If the generator is stopped, some can still be brought back.\"",
+  "zh": "“雾不是武器，是失败的药。只要让发生炉停下，还有人能变回来。”"
+ },
+ "s0707": {
+  "en": "Brought back...!? So the people who were only bitten recently could be...!",
+  "zh": "能变回来……！？那，刚被咬没多久的人也！"
+ },
+ "s0708": {
+  "en": "It's possible. My father went to the lab. To stop it.",
+  "zh": "有这个可能。父亲去了研究所。为了阻止这一切。"
+ },
+ "s0709": {
+  "en": "Let's go. To the harbor. Three hours until dawn.",
+  "zh": "走吧，去港口。离天亮还有三个小时。"
+ },
+ "s0710": {
+  "en": "The harbor district. Helios Pharmaceuticals, Third Laboratory. The heart of the Fog.",
+  "zh": "港湾地区，赫利俄斯制药第三研究所。雾的心脏。"
+ },
+ "s0711": {
+  "en": "Leave security to Mio~ ...Annnd it's open. Total joke.",
+  "zh": "安保就交给澪酱吧～……好，开了。漏洞百出。"
+ },
+ "s0712": {
+  "en": "Look, that tower! The Fog's coming out of there!",
+  "zh": "看，那座塔！雾是从那里冒出来的！"
+ },
+ "s0713": {
+  "en": "The generator. And inside it is \"the first one.\"",
+  "zh": "发生炉。而且那里面，有“最初的那个人”。"
+ },
+ "s0714": {
+  "en": "Remaining warheads, check! I'm putting every last one into that tower!",
+  "zh": "奈奈，剩余弹头确认！全部轰进那座塔里！"
+ },
+ "s0715": {
+  "en": "Everyone, check your ammo. —This is our last club activity.",
+  "zh": "全员，确认剩余弹药。——这是最后的社团活动了。"
+ },
+ "s0716": {
+  "en": "The generator fell silent, and the tower crumbled. The Fog came undone in the morning wind.",
+  "zh": "发生炉归于沉寂，高塔崩塌。雾，在晨风中渐渐散去。"
+ },
+ "s0717": {
+  "en": "...Dad. I stopped it.",
+  "zh": "……爸爸。我阻止它了。"
+ },
+ "s0718": {
+  "en": "Beside the rubble, a man in a white coat coughed and weakly raised a hand.",
+  "zh": "瓦砾旁，一个身穿白大褂的男人一边咳嗽，一边微微举起了手。"
+ },
+ "s0719": {
+  "en": "He's alive! Rei, your dad's alive!!",
+  "zh": "他还活着！玲，你爸爸还活着！！"
+ },
+ "s0720": {
+  "en": "Look look, the sunrise. Ugh, so bright... We pulled an all-nighter.",
+  "zh": "快看快看，朝阳。哇，好刺眼……我们通宵了耶。"
+ },
+ "s0721": {
+  "en": "Ehehe... Did I maybe break the tower a little too much?",
+  "zh": "诶嘿嘿……塔是不是稍微炸过头了？"
+ },
+ "s0722": {
+  "en": "Objective complete. Everyone lived to see morning.",
+  "zh": "目标达成。全员，活着迎来了早晨。"
+ },
+ "s0723": {
+  "en": "—Airsoft Club, operation complete! ...Let's go home and sleep.",
+  "zh": "——生存游戏社，行动结束！……回家睡觉吧。"
+ },
+ "s0724": {
+  "en": "Afterschool Deadline — The End —\nOn Hard and above, and in Survival, the night of Fog goes on.",
+  "zh": "放学后的死线 —— 完 ——\n在困难以上的难度和生存模式中，雾之夜仍将继续。"
+ },
+ "s0725": {
+  "en": "...And then, summer.\nPart {}: \"Shiomi Island Seaside Camp\" is now unlocked.",
+  "zh": "……然后，夏天到了。\n第{}部“潮见岛 临海集训”已解锁。"
+ }
+}
