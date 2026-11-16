@@ -2158,9 +2158,11 @@ function needOk(it) {
 }
 /* ---- loot (hack & slash) ---- */
 function dropRange(L) { return [Math.max(1, Math.round(L * 0.4) - 3), L + 3]; }
-function rollWeapon(L) {
-  const [lo, hi] = dropRange(L); let pool = WEAPON_IDS.filter(id => !WEAPONS[id].bond && WEAPONS[id].wlv >= lo && WEAPONS[id].wlv <= hi);
-  if (!pool.length) pool = WEAPON_IDS.filter(id => !WEAPONS[id].bond && WEAPONS[id].wlv <= hi);
+const NORMAL_MAX_STAR = 3;   // on Normal, ★4 and ★5 weapons never drop — they are earned on Hard and above
+const dropOk = (w, d) => !w.bond && (d !== 'n' || w.star <= NORMAL_MAX_STAR);
+function rollWeapon(L, d) {
+  const [lo, hi] = dropRange(L); let pool = WEAPON_IDS.filter(id => dropOk(WEAPONS[id], d) && WEAPONS[id].wlv >= lo && WEAPONS[id].wlv <= hi);
+  if (!pool.length) pool = WEAPON_IDS.filter(id => dropOk(WEAPONS[id], d) && WEAPONS[id].wlv <= hi);
   const fresh = pool.filter(id => !S.weapons[id]); if (fresh.length && Math.random() < 0.55) pool = fresh;
   pool.sort((a, b) => WEAPONS[a].wlv - WEAPONS[b].wlv); return pool[Math.min(pool.length - 1, Math.floor(Math.pow(Math.random(), 0.8) * pool.length))];
 }
@@ -2169,9 +2171,9 @@ function rollArmor(L) {
   const fresh = pool.filter(a => !S.armor[a.id]); if (fresh.length && Math.random() < 0.7) pool = fresh;
   return pool[Math.floor(Math.random() * pool.length)].id;
 }
-function openLoot(wbox, abox, L, gbox) {
+function openLoot(wbox, abox, L, gbox, d) {
   const out = { weapons: [], armor: [], ap: 0 };
-  for (let i = 0; i < wbox; i++) { const id = rollWeapon(L), isNew = !S.weapons[id]; if (isNew) S.weapons[id] = 1; else { S.ap += 1; out.ap += 1; } out.weapons.push({ id, isNew }); }
+  for (let i = 0; i < wbox; i++) { const id = rollWeapon(L, d), isNew = !S.weapons[id]; if (isNew) S.weapons[id] = 1; else { S.ap += 1; out.ap += 1; } out.weapons.push({ id, isNew }); }
   for (let i = 0; i < (gbox || 0); i++) { const id = rollArmor(L), isNew = !S.armor[id]; if (isNew) S.armor[id] = 1; else { S.ap += 1; out.ap += 1; } out.armor.push({ id, isNew }); }
   for (let i = 0; i < abox; i++) { const g = 1 + Math.floor(L / 15); S.ap += g; out.ap += g; }
   return out;
@@ -3353,7 +3355,7 @@ const UI = (() => {
         : `<div class="row unk"><div class="rm"><b>？？？</b> <span class="tag">${ARMOR_SLOTS.find(s => s[0] === a.slot)[1]}</span><small>${a.need ? a.how.replace('で入荷', 'で入手') : 'Lv' + Math.max(1, a.lv - 3) + ' 以上のステージの防具箱から'}</small></div></div>`).join('');
       else rows = WEAPON_IDS.filter(id => WEAPONS[id].cls === st.shopTab).map(id => { const w = WEAPONS[id];
         return S.weapons[id] ? `<div class="row"><div class="gi">${pv('gun', id, 'gun')}</div><div class="rm"><b>${esc(w.name)}</b><small>${wInfo(w)}</small><small class="ds">威力${w.dmg}${w.pellets ? 'x' + w.pellets : ''}　連射${w.rps.toFixed(1)}/秒　装弾${w.mag}${w.pierce ? '　貫通' + (w.pierce > 20 ? '∞' : w.pierce) : ''}</small><small class="ds">${esc(w.desc || '')}</small>${wFx(w)}</div></div>`
-          : `<div class="row unk"><div class="rm"><b>？？？</b><small>Lv${w.wlv}　${w.bond ? w.how.replace('で入荷', 'で入手') : 'Lv' + Math.max(1, w.wlv - 3) + ' 以上のステージの武器箱から'}</small></div></div>`; }).join('');
+          : `<div class="row unk"><div class="rm"><b>？？？</b><small>Lv${w.wlv}　${w.bond ? w.how.replace('で入荷', 'で入手') : (w.star > NORMAL_MAX_STAR ? 'ハード以上、' : '') + 'Lv' + Math.max(1, w.wlv - 3) + ' 以上のステージの武器箱から'}</small></div></div>`; }).join('');
       return header('コレクション', 'home') + `<div class="tabs">${tabs}</div><div class="scroll list">${rows}<p class="hint">武器箱（緑）・防具箱（青）・アーマー箱（赤）は敵が落とします。ステージのレベルが高いほど、高レベルの武器と防具が出ます。持っているものが出たときは、アーマー（最大HP）に変わります。</p></div>`;
     },
 
@@ -3462,7 +3464,7 @@ const UI = (() => {
       out.stars = stz; r.clear = true; if (!r.best || res.time < r.best) { r.best = res.time; out.bestNew = true; }
       S.stats.clears++; if (stage.type === 'boss' && res.downs === 0) S.stats.perfectBoss = 1;
     } else { xp = Math.round(xp * 0.5); wbox = Math.floor(wbox / 2); abox = Math.floor(abox / 2); gbox = Math.floor(gbox / 2); }
-    out.xp = Math.round(xp); out.L = L; out.loot = openLoot(wbox, abox, L, gbox);
+    out.xp = Math.round(xp); out.L = L; out.loot = openLoot(wbox, abox, L, gbox, diff.id);
     CHAR_IDS.forEach(c => { const inT = team.includes(c), g = Math.round(xp * (inT ? 1 : 0.3)), before = S.chars[c].lv, ups = addXp(c, g); out.rows.push({ c, g, inT, before, ups }); });
     for (const k in res.by) S.stats.kills[k] = (S.stats.kills[k] || 0) + res.by[k];
     S.stats.boss += res.boss; S.stats.downs += res.downs; if (res.maxCombo > S.stats.maxCombo) S.stats.maxCombo = res.maxCombo;
