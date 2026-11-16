@@ -370,6 +370,37 @@ const WBASE = {
   gl4:{ cls:'GL', name:'プラズマキャノン', star:5, dmg:200, rps:1.6, mag:8, rel:2.6, spr:0, pierce:3, range:480, kb:60, crit:0, price:40000, ch:5, expl:54, plasma:1,
     col:'#2e3440', x:'#5dff8a', tracer:'#8effa8', desc:'発生炉の技術を転用した光球砲。貫通しながら爆ぜる。',
     g:[[3,4,22,7,'a'],[25,3,12,9,'c'],[27,5,10,5,'x'],[37,3,6,2,'d'],[37,10,6,2,'d'],[9,1,10,1,'b'],[10,2,1,2,'b'],[17,2,1,2,'b'],[10,11,3,4,'b'],[15,11,7,4,'x']], mz:[43,7], top:[12,4], mi:-1, noSight:1, noMuzzle:1 },
+  /* ---- 第2部「潮見島」: summer / sea models for chapter 6 (lvBase sets their level band) ---- */
+  hg8:{ cls:'HG', name:'ハープーン・ピストル「銛」', star:4, lvBase:22, dmg:150, rps:1.2, mag:4, rel:1.8, spr:0.3, pierce:4, range:420, kb:110, crit:20, price:16000, ch:6,
+    col:'#2f7fc4', x:'#e8e4dc', tracer:'#cfe8ff', desc:'漁協の倉庫にあった水中銃を拳銃サイズに詰めたもの。銛が4体まで串刺しにする。',
+    g:[[8,5,14,4,'a'],[9,4,12,1,'A'],[22,6,14,1,'d'],[36,5,3,3,'x'],[39,6,2,1,'x'],[11,9,4,6,'b'],[15,9,4,2,'c'],[9,3,1,1,'b'],[20,3,1,1,'b'],[24,5,1,3,'c'],[30,5,1,3,'c']], mz:[41,6], top:[12,4], mi:-1, noMuzzle:1 },
+  ar8:{ cls:'AR', name:'サーフライダー AR-30', star:4, lvBase:22, dmg:25, rps:10.5, mag:36, rel:1.4, spr:1.3, pierce:1, range:400, kb:22, crit:9, price:16000, ch:6,
+    col:'#2a9db8', x:'#f2c94c', tracer:'#bff4ff', desc:'塩害対策のコーティングを施した海辺の自警団仕様。砂を噛んでも止まらない。',
+    g:[[2,6,7,4,'a'],[2,9,4,2,'a'],[9,6,15,4,'a'],[10,5,13,1,'A'],[24,6,11,3,'e'],[26,7,7,1,'x'],[35,7,9,1,'b'],[44,6,2,3,'c'],[11,10,3,4,'b'],[17,10,4,7,'c'],[4,7,3,1,'x'],[36,4,1,2,'b']], mz:[46,7], top:[14,5], mi:9 },
+  smg8:{ cls:'SMG', name:'スコール SMG-7', star:5, lvBase:25, dmg:13, rps:23, mag:50, rel:1.2, spr:4.5, pierce:0, range:270, kb:9, crit:7, price:24000, ch:6, eff:'shock',
+    col:'#3a4a6a', x:'#7af0ff', tracer:'#7af0ff', desc:'夕立の雷を閉じ込めたような短機関銃。弾が敵を感電させる。',
+    g:[[5,6,3,3,'b'],[8,5,17,5,'a'],[10,6,12,1,'x'],[25,6,7,3,'e'],[32,7,4,1,'b'],[11,10,3,4,'b'],[16,10,5,6,'c'],[17,11,3,1,'x'],[17,14,3,1,'x'],[19,3,4,2,'b']], mz:[36,7], top:[12,5], mi:7 },
+  sg8:{ cls:'SG', name:'ビーチブレイカー', star:5, lvBase:25, dmg:20, pellets:9, rps:2.6, mag:7, rel:2.0, spr:12, pierce:1, range:210, kb:100, crit:5, price:24000, ch:6,
+    col:'#e8472f', x:'#f4f0e6', desc:'海の家の大将が「スイカ割り用」と言い張る散弾銃。浜の端まで吹き飛ばす。',
+    g:[[3,6,6,4,'w'],[3,9,3,2,'w'],[9,5,13,6,'a'],[22,5,18,2,'c'],[22,8,16,2,'c'],[40,4,3,7,'x'],[25,10,8,2,'a'],[11,11,3,3,'b'],[15,11,6,5,'c'],[11,6,8,1,'x']], mz:[43,6], top:[12,5], mi:8 },
+  sr8:{ cls:'SR', name:'灯台守のライフル', star:5, lvBase:28, dmg:320, rps:1.1, mag:6, rel:2.1, spr:0, pierce:7, range:800, kb:90, crit:34, price:30000, ch:6,
+    col:'#e8e4dc', x:'#c0392b', tracer:'#fff3c0', desc:'灯台の踊り場に掛けてあった古い狙撃銃。紅白の帯は、海から見える目印。',
+    g:[[2,6,10,4,'a'],[2,9,5,2,'a'],[12,6,13,3,'a'],[25,7,9,2,'e'],[34,7,18,1,'b'],[52,6,2,3,'x'],[12,2,14,3,'b'],[25,3,1,1,'x'],[14,5,1,1,'b'],[22,5,1,1,'b'],[11,10,3,3,'a'],[18,9,4,3,'c'],[5,7,2,2,'x'],[16,6,2,3,'x']], mz:[54,7], top:[12,2], mi:11, noSight:1 },
+  lmg8:{ cls:'LMG', name:'マーメイド・ガトリング', star:5, lvBase:30, dmg:14, rps:28, mag:220, rel:4.2, spr:6.5, pierce:1, range:360, kb:14, crit:5, price:34000, ch:6, spin:1, eff:'frost',
+    col:'#3fa6c4', x:'#f4f0e6', tracer:'#bfe8ff', desc:'冷凍倉庫の冷却ユニットを積んだ回転銃。当てた敵の足を凍らせる。',
+    g:[[6,5,12,6,'a'],[18,4,24,1,'d'],[18,6,24,1,'c'],[18,8,24,1,'d'],[18,10,24,1,'c'],[24,3,2,9,'x'],[38,3,2,9,'x'],[8,2,8,1,'b'],[9,3,1,2,'b'],[14,3,1,2,'b'],[10,11,3,4,'b'],[14,11,5,5,'A']], mz:[42,7], top:[10,2], mi:-1, noSight:1, noMuzzle:1 },
+  gl7:{ cls:'GL', name:'ハナビ・ランチャー「大輪」', star:5, lvBase:28, dmg:240, rps:1.3, mag:5, rel:2.4, spr:2, pierce:0, range:330, kb:80, crit:0, price:30000, ch:6, expl:60, arc:1, eff:'burn',
+    col:'#c0392b', x:'#ffd23f', tracer:'#ffb04a', desc:'ナナが合宿に持ち込んだ打ち上げ花火を、筒ごと撃てるようにしたもの。夜空ごと燃やす。',
+    g:[[3,6,6,1,'b'],[3,9,6,1,'b'],[3,6,1,4,'b'],[9,5,8,6,'a'],[17,4,18,8,'a'],[18,5,16,1,'A'],[17,7,18,1,'x'],[35,3,4,10,'c'],[39,4,2,8,'d'],[11,11,3,4,'b'],[22,12,3,3,'b'],[12,3,4,2,'b']], mz:[41,7], top:[12,3], mi:-1, noSight:1, noMuzzle:1 },
+  ar9:{ cls:'AR', name:'タイダル・カービン「黎明」', star:5, lvBase:58, dmg:30, rps:12, mag:45, rel:1.3, spr:0.9, pierce:3, range:440, kb:24, crit:12, price:60000, ch:6,
+    col:'#f4efe2', x:'#ffd23f', tracer:'#ffe9a0', desc:'第四研究所の警備主任が持っていた最新式。潮の満ち引きのように途切れない弾幕。',
+    g:[[3,5,28,5,'a'],[3,10,6,1,'a'],[12,7,16,1,'x'],[31,5,10,1,'d'],[31,9,10,1,'d'],[31,7,8,1,'x'],[11,10,3,4,'b'],[17,10,5,4,'x'],[8,4,10,1,'e'],[4,6,4,3,'A']], mz:[41,7], top:[12,4], mi:7 },
+  sr9:{ cls:'SR', name:'アビス・レールガン「深淵」', star:5, lvBase:58, dmg:380, rps:0.75, mag:5, rel:2.3, spr:0, pierce:99, range:900, kb:100, crit:32, price:64000, ch:6, beam:1,
+    col:'#123040', x:'#7af0ff', tracer:'#bff8ff', desc:'深海探査用の電磁加速砲。海の底まで届く光が、射線上のすべてを貫く。',
+    g:[[2,5,22,5,'a'],[2,10,5,1,'a'],[24,4,26,2,'d'],[24,8,26,2,'d'],[24,6,24,2,'x'],[28,3,2,8,'c'],[36,3,2,8,'c'],[44,3,2,8,'c'],[10,1,12,3,'b'],[21,2,1,1,'x'],[16,10,6,4,'x'],[10,10,3,4,'b']], mz:[50,7], top:[10,1], mi:10, noSight:1, noMuzzle:1 },
+  gl8:{ cls:'GL', name:'大玉スターマイン', star:5, lvBase:60, dmg:560, rps:0.6, mag:2, rel:2.2, spr:0, pierce:0, range:560, kb:160, crit:0, price:68000, ch:6, expl:96, rocket:1, eff:'burn',
+    col:'#2a2f5e', x:'#ff7eb6', tracer:'#ffd59a', desc:'夏祭りのフィナーレ用の大玉を二連装で撃ち出す。爆発の跡がしばらく燃え続ける。',
+    g:[[1,3,40,4,'a'],[1,8,40,4,'a'],[0,2,3,11,'c'],[38,2,4,11,'c'],[18,4,14,1,'x'],[18,9,14,1,'x'],[11,12,3,4,'b'],[23,12,3,3,'b'],[14,1,3,2,'b'],[6,4,3,1,'A'],[6,9,3,1,'A']], mz:[42,7], top:[12,3], mi:-1, noSight:1, noMuzzle:1 },
 };
 Object.keys(WBASE).forEach(k => WBASE[k].id = k);
 /* ---------- weapon catalogue ----------
@@ -405,7 +436,7 @@ Object.keys(WBASE).forEach(key => {
   let h = 0; for (const c of key) h = (h * 31 + c.charCodeAt(0)) % 997;
   let el = ELEM[h % 4]; if (el.eff === b.eff) el = ELEM[(h + 1) % 4];
   (b.expl ? GLVAR : VARIANTS).forEach((v0, vi) => {
-    const v = v0 || el, m = v.m || {}, w = Object.assign({}, b, { id:key + '.' + vi, base:key, vi, wlv:(Array.isArray(b.need) ? 54 : STAR_LV[b.star]) + v.lv, effs:{}, ap:!!v.ap, ex:v.ex || '', tags:v.tags.slice(), vis:{ att:v.att || {}, col:v.col || null } });
+    const v = v0 || el, m = v.m || {}, w = Object.assign({}, b, { id:key + '.' + vi, base:key, vi, wlv:(b.lvBase != null ? b.lvBase : Array.isArray(b.need) ? 54 : STAR_LV[b.star]) + v.lv, effs:{}, ap:!!v.ap, ex:v.ex || '', tags:v.tags.slice(), vis:{ att:v.att || {}, col:v.col || null } });
     delete w.need; delete w.how;
     w.name = b.name + (v.sfx ? ' ' + v.sfx : ''); w.dmg = Math.round(b.dmg * (m.dmg || 1) * wpow(w.wlv) * 10) / 10;
     w.mag = Math.max(b.mag === 1 && m.mag ? 2 : 1, Math.round(b.mag * (m.mag || 1))); w.rel = b.rel * (m.rel || 1); w.spr = b.spr * (m.spr || 1); w.crit = b.crit + (m.crit || 0); w.range = b.range * (m.range || 1); w.rps = b.rps * (m.rps || 1);
@@ -507,6 +538,19 @@ const ARMOR = {
   b_nun_rei:{ slot:'body', name:'シスター服（レイ専用）', price:1, need:{ ach:'allclr' }, how:'第1部の全ステージクリアで入手', only:'rei', skin:{ img:'nun_rei', art:{ cx:14, feet:63, legY:58, hx:0, hy:1, back:[-6,-1], mz:[44,16] } }, st:{ heal:15, regen:0.8, def:5 } },
   b_nun_haru:{ slot:'body', name:'シスター服（ハル専用）', price:1, need:{ ach:'allclr' }, how:'第1部の全ステージクリアで入手', only:'haru', skin:{ img:'nun_haru', art:{ cx:21, feet:62, legY:56, hx:7, hy:1, back:[1,-1], mz:[62,20] } }, st:{ heal:15, regen:0.8, def:5 } },
   b_nun_mio:{ slot:'body', name:'シスター服（ミオ専用）', price:1, need:{ ach:'allclr' }, how:'第1部の全ステージクリアで入手', only:'mio', skin:{ img:'nun_mio', art:{ cx:27, feet:63, legY:57, hx:13, hy:1, back:[7,-1], gunAt:[41,40] } }, st:{ heal:15, regen:0.8, def:5 } },
+  /* ---- 第2部「潮見島」の夏装備 ---- */
+  h_goggle:{ slot:'head', hsty:'goggle', col:'#2f7fc4', c2:'#9fe6ff', name:'水中ゴーグル', price:7000, st:{ crit:6, def:3, acid:20 } },
+  h_visor:{ slot:'head', hsty:'visor', col:'#f4f4f4', c2:'#e8472f', name:'サンバイザー', price:5600, st:{ crit:5, spd:3 } },
+  h_diver:{ slot:'head', hsty:'diver', col:'#c9a227', c2:'#9fd8ff', name:'潜水ヘルメット', price:30000, need:{ ach:'h6' }, how:'第6章をハードで全クリアで入手', st:{ def:16, acid:60, hp:10 } },
+  b_rash:{ slot:'body', sty:'jersey', c2:'#9fe6ff', name:'ラッシュガード', price:6300, col:'#1f6fb5', st:{ spd:5, def:4, dash:10 } },
+  b_life:{ slot:'body', sty:'life', c2:'#f4f4f4', name:'ライフジャケット', price:8400, col:'#ff7a1a', st:{ def:9, hp:8 } },
+  b_happi:{ slot:'body', sty:'happi', c2:'#f4f4f4', name:'祭りの法被', price:9800, col:'#2f4f9e', st:{ dmg:7, crit:5, def:4 } },
+  b_wet:{ slot:'body', sty:'wet', c2:'#2fc4c4', suitSkirt:1, name:'ウェットスーツ', price:11200, col:'#22252c', st:{ def:10, spd:4, acid:30 } },
+  b_tide:{ slot:'body', sty:'dawn', c2:'#7af0ff', name:'潮騒の羽衣', price:40000, need:{ ach:'x6' }, how:'第6章をナイトメアで全クリアで入手', col:'#bfe8f0', st:{ def:16, dmg:10, hp:12, regen:1 } },
+  l_surf:{ slot:'legs', name:'サーフパンツ＆ビーサン', price:6000, bare:1, skirt:'#2f7fc4', shoe:'#e8472f', st:{ spd:7, dash:10 } },
+  l_geta:{ slot:'legs', name:'下駄と白足袋', price:7700, sock:'#f4f4f4', shoe:'#8a5a34', st:{ def:5, crit:4 } },
+  a_board:{ slot:'acc', name:'サーフボード', price:8800, st:{ def:7, hp:6 }, ov:{ tb:[[1,14,6,28,'#f4f0e6'],[2,15,4,26,'#2fc4c4'],[3,16,2,24,'#f4f0e6'],[2,38,4,3,'#2f7fc4']] } },
+  a_uchiwa:{ slot:'acc', name:'祭りのうちわ', price:4400, st:{ cd:10, drop:6 }, ov:{ tb:[[5,26,7,7,'#ff7eb6'],[6,27,5,5,'#ffffff'],[7,28,3,3,'#ff7eb6'],[8,33,1,6,'#c9a227']] } },
   b_bikini:{ slot:'body', sty:'swim', charCol:1, c2:'#ffffff', name:'スポーツビキニ（トップス）', price:1, need:{ ach:'ch6' }, how:'第2部の全10ステージクリアで入手', col:'#ff6fa8', st:{ spd:8, dash:15, regen:0.6, def:2 } },
   l_std:{ slot:'legs', name:'制服スカート', price:0, st:{} },
   l_bikini:{ slot:'legs', charCol:1, bare:1, name:'スポーツビキニ（ボトムス）', price:1, need:{ ach:'ch6' }, how:'第2部の全10ステージクリアで入手', skirt:'#ff6fa8', shoe:'#f2d16b', st:{ spd:6, dash:10, def:2 } },
@@ -812,6 +856,9 @@ const ACHS = [
   { id:'h3', name:'ハード：終点', desc:'第3章をハードで全クリア', ok:s=>chClear(s,3,'h'), rw:{ ap:25 } },
   { id:'h4', name:'ハード：夜勤明け', desc:'第4章をハードで全クリア', ok:s=>chClear(s,4,'h'), rw:{ armor:'b_nurse' } },
   { id:'h5', name:'ハード：夜明け', desc:'第5章をハードで全クリア', ok:s=>chClear(s,5,'h'), rw:{ ap:25 } },
+  { id:'h6', name:'ハード：夏休みを取り返せ', desc:'第6章をハードで全クリア', ok:s=>chClear(s,6,'h'), rw:{ armor:'h_diver' } },
+  { id:'v6', name:'ベリーハード：夏休みを取り返せ', desc:'第6章をベリーハードで全クリア', ok:s=>chClear(s,6,'v'), rw:{ ap:60 } },
+  { id:'x6', name:'ナイトメア：夏休みを取り返せ', desc:'第6章をナイトメアで全クリア', ok:s=>chClear(s,6,'x'), rw:{ ap:40, armor:'b_tide' } },
   { id:'v1', name:'ベリーハード：下校完了', desc:'第1章をベリーハードで全クリア', ok:s=>chClear(s,1,'v'), rw:{ ap:30 } },
   { id:'v2', name:'ベリーハード：おかわりコロッケ', desc:'第2章をベリーハードで全クリア', ok:s=>chClear(s,2,'v'), rw:{ ap:35 } },
   { id:'v3', name:'ベリーハード：終点', desc:'第3章をベリーハードで全クリア', ok:s=>chClear(s,3,'v'), rw:{ ap:40 } },
@@ -1088,6 +1135,21 @@ const GFX = (() => {
       plus(nx + 3, jTop + 5, [224, 58, 58]);
       cuffPaint(C2[1]);
       each((x, y) => { if (T(x, y) && jl(x, y) >= 0 && jl(x, y - 1) < 0) put(x, y, C2[1]); });
+    } else if (sty === 'life') {   // life jacket: bulky collar, reflective bands, buckles
+      const s1 = jTop + 4, s2 = jTop + Math.round(tH * 0.66);
+      vest(2, (x, y, c) => { if (y === s1 || y === s2) return x === nx || x === nx + 1 ? [40, 40, 44] : C2[y === s1 ? 0 : 1]; if (y === jTop + 1) return C[0]; });
+      for (let y = jTop + 2; y < skTop - 1; y++) if (jl(nx, y) >= 0 && y !== s1 && y !== s2) dot(nx, y, C[3]);
+    } else if (sty === 'wet') {    // wetsuit: shoulder panels and cuffs in the accent colour, back zip
+      each((x, y) => { const l = jl(x, y); if (l < 0) return; if (y <= jTop + 2 || (arm(x, y) && jl(x, y - 1) < 0)) put(x, y, C2[cl4(l)]); });
+      for (let y = jTop + 2; y < skTop; y++) if (jl(wx0 + 1, y) >= 0) dot(wx0 + 1, y, C[0]);
+      cuffPaint(C2[1], C2[2]);
+      for (let x = kx0[skTop]; x <= kx1[skTop]; x++) if (kl(x, skTop)) put(x, skTop, C2[2]);
+    } else if (sty === 'happi') {  // festival coat: white collar bands down the front, red obi, short open hem
+      coat(4, [0, 0.35], false, false);
+      each((x, y) => { if (!T(x, y) || jl(x, y) < 0) return; const dx = x - nx; if (dx === -2 || dx === -1 || dx === 2 || dx === 3) put(x, y, (y - jTop) % 4 === 2 && (dx === -2 || dx === 3) ? C[3] : C2[dx === -1 || dx === 2 ? 1 : 0]); });
+      for (let y = skTop - 2; y < skTop; y++) for (let x = wx0; x <= wx1; x++) if (jl(x, y) >= 0) put(x, y, y === skTop - 1 ? [140, 32, 30] : [200, 58, 46]);
+      for (let y = skTop; y <= skTop + 4; y++) for (let x = 0; x < N; x++) if (added[y * N + x] && (x + y) % 4 === 0) put(x, y, C2[1]);
+      cuffPaint(C2[1]);
     } else if (sty === 'swim') {   // swimsuit: skin where jacket, shirt and tie were; a sporty top with halter straps
       const SC = M.SKC; if (SC) {
         const SH = M.SH, sh = (x, y) => inb(x, y) && SH && SH[y * N + x] > 0 && T(x, y), skn = (x, y) => jl(x, y) >= 0 || sh(x, y);
@@ -1164,10 +1226,13 @@ const GFX = (() => {
       const top = T - 1, brim = T + depth, rows = [];
       for (let y = top; y <= brim + (back || 0); y++) {
         let [L, R] = g.span(Math.max(y, T + (y < T + 1 ? 1 : 0))); if (L > R) continue;
+        let guard = false;   // deep helmets: never wider than the skull, and a gun held across the face stays in front
+        if (y > T + 8 && HR >= 0) { guard = L < HL - 3 || R > HR + 3; L = Math.max(L, HL - 1); R = Math.min(R, HR + 1); }
         if (y === top) { L += 3; R -= 3; } else if (y === T) { L += 1; R -= 1; } else { L -= ext; R += ext; }
         if (y > brim) R = L + Math.round((R - L) * 0.35);   // neck guard at the back only
         rows.push([y, L, R]);
         for (let x = L; x <= R; x++) {
+          if (guard && op(x, y) && !hair(x, y) && !skin(x, y)) continue;
           const u = (x - L) / Math.max(1, R - L), v = (y - top) / Math.max(1, brim - top);
           let lv = u < 0.14 ? 3 : u < 0.34 ? 2 : 1; if (v > 0.72) lv++; if (u > 0.5 && u < 0.86 && v < 0.5) lv = 0;
           if (x === L || x === R || y === top) lv = Math.min(4, lv + 1);
@@ -1227,6 +1292,21 @@ const GFX = (() => {
       const y0 = T + 5; for (let y = y0; y <= y0 + 1; y++) { const [L, R] = g.span(y); for (let x = L; x <= R; x++) { const u = (x - L) / Math.max(1, R - L); put(x, y, y === y0 + 1 || u < 0.2 ? C[2] : C[1]); } }
       const [, R] = g.span(y0); put(R - 4, y0, C2[1]); put(R - 3, y0, C2[1]); put(R - 4, y0 + 1, C2[2]); put(R - 3, y0 + 1, C2[2]);
       shadow(y0 + 2, g.span(y0)[0], R, 0.85);
+    } else if (sty === 'goggle') {   // swim goggles pushed up on the forehead
+      const y0 = T + 4; for (let y = y0; y <= y0 + 1; y++) { const [L, R] = g.span(y); for (let x = L; x <= R; x++) put(x, y, C[y === y0 ? 1 : 3]); }
+      const [, R] = g.span(y0), lx = R - 7;
+      for (const ox of [0, 4]) { for (let y = y0 - 1; y <= y0 + 2; y++) for (let x = lx + ox; x <= lx + ox + 3; x++) { const e = y === y0 - 1 || y === y0 + 2 || x === lx + ox || x === lx + ox + 3; put(x, y, e ? C[4] : C2[y === y0 ? 0 : 1]); } put(lx + ox + 1, y0, W5); }
+      shadow(y0 + 3, lx - 1, R, 0.8);
+    } else if (sty === 'visor') {    // sun visor: band plus a front bill, no crown
+      const y0 = T + 3; for (let y = y0; y <= y0 + 1; y++) { const [L, R] = g.span(y); for (let x = L; x <= R; x++) put(x, y, C[x < g.hc ? 2 : 1]); }
+      const [, R] = g.span(y0); for (let x = R - 3; x <= R + 6; x++) { put(x, y0 + 1, C2[x > R + 4 ? 2 : 1]); put(x, y0 + 2, C2[3]); }
+      shadow(y0 + 3, R - 6, R + 5, 0.6);
+    } else if (sty === 'diver') {    // brass diving helmet with a round face window and bolts
+      const h = dome(21, 1, 0), cxw = h.R - 6, cyw = T + 13;
+      for (let y = cyw - 5; y <= cyw + 5; y++) for (let x = cxw - 5; x <= cxw + 5; x++) { const r2 = (x - cxw) ** 2 + (y - cyw) ** 2; if (r2 <= 16) put(x, y, C2[1], 0.35); else if (r2 <= 27) put(x, y, C[4]); }
+      put(cxw - 2, cyw - 2, W5, 0.8); put(cxw - 1, cyw - 3, W5, 0.6);
+      for (const [bx, by] of [[cxw - 6, cyw], [cxw + 6, cyw], [cxw, cyw - 6], [cxw, cyw + 6]]) put(bx, by, C[0]);
+      rim(h.brim, h.L - 1, h.R + 1, C[3], C[4]);
     } else if (sty === 'band') {   // headbands / headphones: an arc that follows the crown
       const L = HL, R = HR, k = A.bandK || 2;
       for (let x = L + 1; x <= R - 1; x++) { const y = g.topY[x] + k; if (g.topY[x] > T + 10) continue; put(x, y, C[x < g.hc ? 2 : 1]); put(x, y + 1, C[3]); }
