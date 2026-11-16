@@ -471,22 +471,22 @@ const PAINTS = {
 const Y1='#f2c21a', TG='#5b6650', NV='#27324a', PK='#ff7eb6', GD='#ffd23f';
 const ARMOR = {
   h_none:{ slot:'head', name:'なし', price:0, st:{} },
-  h_cap:{ slot:'head', name:'部活キャップ', price:400, st:{ def:2 }, ov:{ hf:[[9,-2,10,2,'#c0392b'],[6,0,16,2,'#c0392b'],[4,2,20,3,'#c0392b'],[20,4,12,2,'#8e2a20'],[13,1,3,2,'#ffffff']] } },
-  h_hachi:{ slot:'head', name:'必勝ハチマキ', price:900, st:{ dmg:4 }, ov:{ hf:[[3,5,20,2,'#f4f4f4'],[18,5,3,2,'#e03a3a']], hb:[[-2,6,5,2,'#f4f4f4',1],[-4,8,4,2,'#f4f4f4',1]] } },
-  h_hard:{ slot:'head', name:'安全ヘルメット', price:1500, st:{ def:5 }, ov:{ hf:[[10,-3,9,2,Y1],[7,-1,15,2,Y1],[5,1,19,3,Y1],[3,4,25,2,'#c9a000'],[13,-2,2,5,'#fff3a0'],[18,1,3,2,'#3d8b3d']] } },
-  h_neko:{ slot:'head', name:'ネコミミヘッドホン', price:2800, st:{ crit:5 }, ov:{ hf:[[8,-1,12,2,'#2b2b33'],[7,-5,2,2,PK],[6,-3,4,2,PK],[17,-5,2,2,PK],[16,-3,4,2,PK],[4,8,5,7,'#2b2b33'],[5,10,3,3,PK]] } },
+  h_cap:{ slot:'head', hsty:'cap', col:'#c0392b', name:'部活キャップ', price:400, st:{ def:2 }, ov:{ hf:[[9,-2,10,2,'#c0392b'],[6,0,16,2,'#c0392b'],[4,2,20,3,'#c0392b'],[20,4,12,2,'#8e2a20'],[13,1,3,2,'#ffffff']] } },
+  h_hachi:{ slot:'head', hsty:'hachi', col:'#f4f4f4', c2:'#e03a3a', name:'必勝ハチマキ', price:900, st:{ dmg:4 }, ov:{ hf:[[3,5,20,2,'#f4f4f4'],[18,5,3,2,'#e03a3a']], hb:[[-2,6,5,2,'#f4f4f4',1],[-4,8,4,2,'#f4f4f4',1]] } },
+  h_hard:{ slot:'head', hsty:'hard', col:'#f2c21a', c2:'#3d8b3d', name:'安全ヘルメット', price:1500, st:{ def:5 }, ov:{ hf:[[10,-3,9,2,Y1],[7,-1,15,2,Y1],[5,1,19,3,Y1],[3,4,25,2,'#c9a000'],[13,-2,2,5,'#fff3a0'],[18,1,3,2,'#3d8b3d']] } },
+  h_neko:{ slot:'head', hsty:'band', col:'#2b2b33', c2:'#ff7eb6', ear:1, cat:1, bandK:0, name:'ネコミミヘッドホン', price:2800, st:{ crit:5 }, ov:{ hf:[[8,-1,12,2,'#2b2b33'],[7,-5,2,2,PK],[6,-3,4,2,PK],[17,-5,2,2,PK],[16,-3,4,2,PK],[4,8,5,7,'#2b2b33'],[5,10,3,3,PK]] } },
   h_gas:{ slot:'head', name:'ガスマスク', price:3600, st:{ def:4, acid:50 }, ov:{ hf:[[2,13,9,1,'#222222'],[10,11,13,10,'#3a3f45'],[11,12,5,4,'#16262a'],[18,12,4,4,'#16262a'],[12,13,2,1,'#7fe3d0'],[19,13,2,1,'#7fe3d0'],[21,17,5,4,'#7b828a'],[23,18,2,2,'#4b5158']] } },
-  h_usa:{ slot:'head', name:'うさ耳リボン', price:4200, st:{ drop:15 }, ov:{ hf:[[10,-9,3,9,'#ffffff'],[11,-8,1,6,'#ffb3cf'],[16,-9,3,9,'#ffffff'],[17,-8,1,6,'#ffb3cf'],[12,-1,6,2,'#ff5c93']] } },
-  h_tac:{ slot:'head', name:'タクティカルヘルメット', price:6500, st:{ def:9 }, ov:{ hf:[[9,-3,11,2,TG],[6,-1,16,2,TG],[4,1,20,4,TG],[3,5,8,5,TG],[13,-1,9,3,'#22262b'],[14,0,7,1,'#6fd0ff'],[10,5,1,6,'#222222']] } },
-  h_riot:{ slot:'head', name:'ライオットバイザー', price:11000, st:{ def:13, spd:-3 }, ov:{ hf:[[9,-3,11,2,NV],[6,-1,16,2,NV],[4,1,20,4,NV],[3,5,8,6,NV],[10,4,22,1,'#161d2e'],[11,5,21,10,'rgba(140,210,255,0.38)'],[13,6,2,7,'rgba(255,255,255,0.35)']] } },
-  h_nurse:{ slot:'head', name:'ナースキャップ', price:6000, need:{ ach:'ch4' }, how:'第4章クリアで入荷', st:{ heal:30, regen:0.6 }, ov:{ hf:[[10,-3,9,4,'#ffffff'],[13,-2,3,1,'#e03a3a'],[14,-3,1,3,'#e03a3a']] } },
-  h_crown:{ slot:'head', name:'部長のティアラ', price:25000, need:{ ach:'stars' }, how:'ノーマル全ステージ★3で入荷', st:{ dmg:6, crit:6, def:6 }, ov:{ hf:[[9,-3,11,3,GD],[9,-5,2,2,GD],[14,-6,2,3,GD],[18,-5,2,2,GD],[14,-2,2,1,'#e03a3a'],[10,-2,1,1,'#6fe3ff'],[18,-2,1,1,'#6fe3ff']] } },
+  h_usa:{ slot:'head', sit:2, name:'うさ耳リボン', price:4200, st:{ drop:15 }, ov:{ hf:[[10,-9,3,9,'#ffffff'],[11,-8,1,6,'#ffb3cf'],[16,-9,3,9,'#ffffff'],[17,-8,1,6,'#ffb3cf'],[12,-1,6,2,'#ff5c93']] } },
+  h_tac:{ slot:'head', hsty:'tac', col:'#5b6650', c2:'#22262b', name:'タクティカルヘルメット', price:6500, st:{ def:9 }, ov:{ hf:[[9,-3,11,2,TG],[6,-1,16,2,TG],[4,1,20,4,TG],[3,5,8,5,TG],[13,-1,9,3,'#22262b'],[14,0,7,1,'#6fd0ff'],[10,5,1,6,'#222222']] } },
+  h_riot:{ slot:'head', hsty:'riot', col:'#27324a', c2:'#161d2e', name:'ライオットバイザー', price:11000, st:{ def:13, spd:-3 }, ov:{ hf:[[9,-3,11,2,NV],[6,-1,16,2,NV],[4,1,20,4,NV],[3,5,8,6,NV],[10,4,22,1,'#161d2e'],[11,5,21,10,'rgba(140,210,255,0.38)'],[13,6,2,7,'rgba(255,255,255,0.35)']] } },
+  h_nurse:{ slot:'head', sit:3, name:'ナースキャップ', price:6000, need:{ ach:'ch4' }, how:'第4章クリアで入荷', st:{ heal:30, regen:0.6 }, ov:{ hf:[[10,-3,9,4,'#ffffff'],[13,-2,3,1,'#e03a3a'],[14,-3,1,3,'#e03a3a']] } },
+  h_crown:{ slot:'head', sit:2, name:'部長のティアラ', price:25000, need:{ ach:'stars' }, how:'ノーマル全ステージ★3で入荷', st:{ dmg:6, crit:6, def:6 }, ov:{ hf:[[9,-3,11,3,GD],[9,-5,2,2,GD],[14,-6,2,3,GD],[18,-5,2,2,GD],[14,-2,2,1,'#e03a3a'],[10,-2,1,1,'#6fe3ff'],[18,-2,1,1,'#6fe3ff']] } },
 
-  h_chef:{ slot:'head', name:'コロッケ屋のコック帽', price:9000, need:[2,'h'], how:'第2章をハードで全クリアで入荷', st:{ heal:25, hp:8, def:4 }, ov:{ hf:[[8,-8,13,6,'#ffffff'],[7,-10,5,4,'#ffffff'],[14,-11,6,4,'#ffffff'],[9,-2,11,3,'#e8e8e8']] } },
+  h_chef:{ slot:'head', sit:5, name:'コロッケ屋のコック帽', price:9000, need:[2,'h'], how:'第2章をハードで全クリアで入荷', st:{ heal:25, hp:8, def:4 }, ov:{ hf:[[8,-8,13,6,'#ffffff'],[7,-10,5,4,'#ffffff'],[14,-11,6,4,'#ffffff'],[9,-2,11,3,'#e8e8e8']] } },
   h_halo:{ slot:'head', name:'霧払いの光輪', price:40000, need:[5,'x'], how:'第5章をナイトメアで全クリアで入荷', st:{ dmg:10, crit:8, def:8, regen:1 }, ov:{ hf:[[7,-7,15,1,'#ffe14d'],[6,-6,1,1,'#ffe14d'],[22,-6,1,1,'#ffe14d'],[7,-5,15,1,'#fff7c0']] } },
-  h_yui:{ slot:'head', name:'ユイのカチューシャ', price:12000, need:{ bond:'yui' }, how:'ユイの絆レベルMAXで入荷', st:{ dmg:6, cd:10, def:3 }, ov:{ hf:[[5,3,18,2,'#ffd23f'],[13,1,3,2,'#5fbf6a']] } },
-  h_haru:{ slot:'head', name:'ハルの赤リボン', price:12000, need:{ bond:'haru' }, how:'ハルの絆レベルMAXで入荷', st:{ hp:12, def:5 }, ov:{ hf:[[7,-4,6,4,'#e03a3a'],[15,-4,6,4,'#e03a3a'],[12,-3,4,3,'#a81f1f']] } },
-  h_straw:{ slot:'head', name:'麦わら帽子', price:4500, st:{ heal:20, crit:6, def:4 }, ov:{ hf:[[8,-3,13,3,'#e8c56a'],[6,-1,17,2,'#e8c56a'],[0,1,29,2,'#d9b04f'],[8,0,13,1,'#e03a3a']] } },
+  h_yui:{ slot:'head', hsty:'band', col:'#ffd23f', c2:'#5fbf6a', bandK:3, gem:1, name:'ユイのカチューシャ', price:12000, need:{ bond:'yui' }, how:'ユイの絆レベルMAXで入荷', st:{ dmg:6, cd:10, def:3 }, ov:{ hf:[[5,3,18,2,'#ffd23f'],[13,1,3,2,'#5fbf6a']] } },
+  h_haru:{ slot:'head', sit:2, name:'ハルの赤リボン', price:12000, need:{ bond:'haru' }, how:'ハルの絆レベルMAXで入荷', st:{ hp:12, def:5 }, ov:{ hf:[[7,-4,6,4,'#e03a3a'],[15,-4,6,4,'#e03a3a'],[12,-3,4,3,'#a81f1f']] } },
+  h_straw:{ slot:'head', hsty:'straw', col:'#e8c56a', c2:'#e03a3a', name:'麦わら帽子', price:4500, st:{ heal:20, crit:6, def:4 }, ov:{ hf:[[8,-3,13,3,'#e8c56a'],[6,-1,17,2,'#e8c56a'],[0,1,29,2,'#d9b04f'],[8,0,13,1,'#e03a3a']] } },
   b_std:{ slot:'body', name:'制服カーディガン', price:0, st:{} },
   b_jersey:{ slot:'body', sty:'jersey', c2:'#f4f4f4', name:'部活ジャージ', price:600, st:{ spd:5 }, col:'#2f6fb5', ov:{ tf:[[14,42,14,1,'#ffffff'],[23,36,1,6,'#ffffff'],[9,26,1,6,'#ffffff']] } },
   b_stab:{ slot:'body', sty:'stab', c2:'#1d2229', name:'防刃ベスト', price:1800, st:{ def:6 }, col:'#3d4654', ov:{ tf:[[14,36,14,1,'#1d2229'],[15,38,5,4,'#2a313b'],[22,38,4,4,'#2a313b']] } },
@@ -498,7 +498,7 @@ const ARMOR = {
   b_dawn:{ slot:'body', sty:'dawn', c2:'#ffd23f', name:'夜明けのコート', price:20000, need:{ ach:'ch5' }, how:'第5章クリアで入荷', st:{ def:12, dmg:6, hp:10 }, col:'#f4efe2', collar:GD, ov:{ tf:[[14,42,14,1,GD],[23,36,1,6,GD],[10,24,4,2,GD]] } },
 
   b_nurse:{ slot:'body', sty:'nurse', c2:'#ff7eb6', suitSkirt:1, name:'夜勤のナース服', price:15000, need:[4,'h'], how:'第4章をハードで全クリアで入荷', st:{ regen:1.5, def:8, heal:20 }, col:'#f6dfe6', collar:'#ff7eb6', ov:{ tf:[[19,38,3,1,'#e03a3a'],[20,37,1,3,'#e03a3a']] } },
-  h_veil:{ slot:'head', name:'シスターのベール', price:20000, need:{ ach:'allclr' }, how:'全ステージクリアで入手', st:{ heal:15, def:4 }, ov:{ hf:[[8,-3,12,2,'#1c1c22'],[5,-1,18,2,'#1c1c22'],[3,1,22,3,'#1c1c22'],[5,3,19,2,'#f4f4f4'],[2,4,4,15,'#1c1c22']], hb:[[-1,3,8,27,'#1c1c22',1],[-3,12,5,17,'#1c1c22',1]] } },
+  h_veil:{ slot:'head', hsty:'veil', col:'#1c1c22', c2:'#f4f4f4', name:'シスターのベール', price:20000, need:{ ach:'allclr' }, how:'全ステージクリアで入手', st:{ heal:15, def:4 }, ov:{ hf:[[8,-3,12,2,'#1c1c22'],[5,-1,18,2,'#1c1c22'],[3,1,22,3,'#1c1c22'],[5,3,19,2,'#f4f4f4'],[2,4,4,15,'#1c1c22']], hb:[[-1,3,8,27,'#1c1c22',1],[-3,12,5,17,'#1c1c22',1]] } },
   b_sister:{ slot:'body', sty:'sister', c2:'#f4f4f4', suitSkirt:1, name:'シスター服', price:20000, need:{ ach:'allclr' }, how:'全ステージクリアで入手', st:{ regen:0.8, def:6, heal:10 }, col:'#2a2a34', collar:'#f4f4f4', ov:{ tf:[[19,38,3,1,'#e6b422'],[20,37,1,4,'#e6b422']] } },
   l_sister:{ slot:'legs', name:'シスター服（スカート）', price:20000, need:{ ach:'allclr' }, how:'全ステージクリアで入手', st:{ def:5, spd:3 }, skirt:'#2a2a34', tights:'#2a2a34', sock:'#2a2a34', shoe:'#4a3528' },
   b_nun:{ slot:'body', name:'シスター服（ナナ専用）', price:1, need:{ ach:'allclr' }, how:'全ステージクリアで入手', only:'nana', skin:{ img:'nun', dx:1, dy:2, legY:56 }, st:{ heal:15, regen:0.8, def:5 } },
@@ -1041,6 +1041,140 @@ const GFX = (() => {
     const ol = []; each((x, y) => { if (op(x, y) || added[y * N + x]) return; if ([[1, 0], [-1, 0], [0, 1], [0, -1]].some(([dx, dy]) => inb(x + dx, y + dy) && added[(y + dy) * N + x + dx])) ol.push([x, y]); });
     for (const [x, y] of ol) { const i = at(x, y); d[i] = OL[0]; d[i + 1] = OL[1]; d[i + 2] = OL[2]; d[i + 3] = 255; }
   }
+  /* ---- head geometry of one 64x64 frame: top contour and per-row width of the head around the anchor (ax,ay) ---- */
+  function headGeo(op, ax, ay) {
+    const X0 = Math.max(0, ax - 5), X1 = Math.min(63, ax + 33), Y0 = Math.max(0, ay - 8);
+    const topY = new Int16Array(64).fill(99);
+    for (let x = X0; x <= X1; x++) for (let y = Y0; y <= ay + 14; y++) if (op(x, y)) { topY[x] = y; break; }
+    let top = 99, tx = ax + 13; for (let x = ax + 2; x <= ax + 26; x++) if (topY[x] < top) { top = topY[x]; tx = x; }
+    if (top > ay + 12) return null;
+    let hc = tx;
+    const span = y => {   // the contiguous run of the head in row y (the run holding the head centre, else the widest)
+      let best = null, bl = 0;
+      for (let x = X0; x <= X1; x++) { if (!op(x, y)) continue; let e = x; while (e + 1 <= X1 && op(e + 1, y)) e++; const has = hc >= x && hc <= e; if (has || (!best && e - x + 1 > bl)) { best = [x, e]; bl = e - x + 1; if (has) break; } x = e; }
+      return best || [hc, hc - 1];
+    };
+    const s3 = span(top + 3); hc = (s3[0] + s3[1]) >> 1;
+    return { top, topY, span, hc };
+  }
+  /* ---- head gear: helmets, hats and bands painted over the hair, following the head's own outline,
+     shaded from the upper front, with a shadow under the brim; hair under a hat is pressed flat ---- */
+  function dressHead(d, W, ox, M, A, ax, ay) {
+    const sty = A && A.hsty; if (!sty) return;
+    const N = 64, added = new Uint8Array(N * N), hat = new Uint8Array(N * N);
+    const inb = (x, y) => x >= 0 && x < N && y >= 0 && y < N, at = (x, y) => (y * W + ox + x) * 4;
+    const op = (x, y) => inb(x, y) && d[at(x, y) + 3] > 127;
+    const g = headGeo(op, ax, ay); if (!g) return;
+    const put = (x, y, c, a) => { if (!inb(x, y) || !c) return; const i = at(x, y); if (d[i + 3] < 128) added[y * N + x] = 1; hat[y * N + x] = 1;
+      if (a != null && d[i + 3] > 127) { d[i] = d[i] + (c[0] - d[i]) * a; d[i + 1] = d[i + 1] + (c[1] - d[i + 1]) * a; d[i + 2] = d[i + 2] + (c[2] - d[i + 2]) * a; return; }
+      d[i] = c[0]; d[i + 1] = c[1]; d[i + 2] = c[2]; d[i + 3] = 255; };
+    const dark = (x, y, k) => { if (!op(x, y) || hat[y * N + x]) return; const i = at(x, y); d[i] *= k; d[i + 1] *= k; d[i + 2] = d[i + 2] * k + 6; };
+    const skin = (x, y) => inb(x, y) && M.SK[y * N + x] > 0;
+    const C = R5(A.col || '#888888'), C2 = R5(A.c2 || A.col || '#888888'), OL = h2r(OLC), W5 = [255, 255, 255];
+    const T = g.top;
+    // hair colours of this frame = what the crown is made of; widest head row = where the ears sit
+    const hairC = new Set(); for (let y = T; y <= T + 2; y++) { const [L, R] = g.span(y); for (let x = L; x <= R; x++) { const i = at(x, y); if (d[i] + d[i + 1] + d[i + 2] > 45) hairC.add((d[i] << 16) | (d[i + 1] << 8) | d[i + 2]); } }
+    const lum = c => c[0] * 0.3 + c[1] * 0.59 + c[2] * 0.11, hcl0 = [...hairC].map(c => [c >> 16, c >> 8 & 255, c & 255]), hmax = Math.max(0, ...hcl0.map(lum)), hcl = hcl0.filter(c => lum(c) > hmax * 0.3);
+    const fx0 = new Int16Array(N).fill(99), fx1 = new Int16Array(N).fill(-1); for (let y = 0; y < N; y++) for (let x = 0; x < N; x++) if (skin(x, y)) { fx0[y] = Math.min(fx0[y], x); fx1[y] = Math.max(fx1[y], x); }
+    const hair = (x, y) => { if (!op(x, y) || skin(x, y) || (x > fx0[y] && x < fx1[y])) return false; if (M.HR) return M.HR[y * N + x] > 0; const i = at(x, y), r = d[i], gg = d[i + 1], b = d[i + 2];
+      return hcl.some(c => (c[0] - r) ** 2 + (c[1] - gg) ** 2 + (c[2] - b) ** 2 < 2500); };
+    let HL = 99, HR = -1; for (let y = T + 3; y <= T + 10; y++) { const [L, R] = g.span(y); if (R - L > HR - HL) { HL = L; HR = R; } }
+    // a shell over the skull: rows from just above the hair down to the brim, widened by ext, rounded at the crown
+    const dome = (depth, ext, back) => {
+      const top = T - 1, brim = T + depth, rows = [];
+      for (let y = top; y <= brim + (back || 0); y++) {
+        let [L, R] = g.span(Math.max(y, T + (y < T + 1 ? 1 : 0))); if (L > R) continue;
+        if (y === top) { L += 3; R -= 3; } else if (y === T) { L += 1; R -= 1; } else { L -= ext; R += ext; }
+        if (y > brim) R = L + Math.round((R - L) * 0.35);   // neck guard at the back only
+        rows.push([y, L, R]);
+        for (let x = L; x <= R; x++) {
+          const u = (x - L) / Math.max(1, R - L), v = (y - top) / Math.max(1, brim - top);
+          let lv = u < 0.14 ? 3 : u < 0.34 ? 2 : 1; if (v > 0.72) lv++; if (u > 0.5 && u < 0.86 && v < 0.5) lv = 0;
+          if (x === L || x === R || y === top) lv = Math.min(4, lv + 1);
+          if (y === brim || y > brim) lv = Math.max(lv, 3);
+          put(x, y, C[lv]);
+        }
+      }
+      const r1 = rows[1] || rows[0]; if (r1) { const sx = r1[1] + Math.round((r1[2] - r1[1]) * 0.66); put(sx, r1[0], W5); put(sx + 1, r1[0], C[0]); }
+      return { top, brim, L: (rows.find(r => r[0] === brim) || rows[rows.length - 1])[1], R: (rows.find(r => r[0] === brim) || rows[rows.length - 1])[2] };
+    };
+    const shadow = (y, x0, x1, k) => { for (let x = x0; x <= x1; x++) { dark(x, y, k || 0.62); dark(x, y + 1, 0.82); } };
+    const rim = (y, x0, x1, c, cu) => { for (let x = x0; x <= x1; x++) { put(x, y, c); if (cu) put(x, y + 1, cu); } };
+    const ac = (x, y) => ({ x: ax + x, y: ay + y });
+    if (sty === 'cap') {
+      const h = dome(5, 1);
+      for (let x = h.R - 2; x <= h.R + 6; x++) { put(x, h.brim - 1, x > h.R + 4 ? C[2] : C[1]); put(x, h.brim, C[3]); }
+      put(h.R + 6, h.brim - 1, C[3]); shadow(h.brim + 1, h.L + 2, h.R + 5);
+      const lx = h.L + Math.round((h.R - h.L) * 0.62); put(lx, T + 1, W5); put(lx + 1, T + 1, W5); put(lx, T + 2, [220, 220, 220]);
+    } else if (sty === 'hard') {
+      const h = dome(5, 1);
+      for (let y = h.top + 1; y < h.brim; y++) put(g.hc + 1, y, C[0]);
+      rim(h.brim, h.L - 2, h.R + 3, C[3], C[4]); put(h.R + 3, h.brim, C[4]);
+      shadow(h.brim + 2, h.L, h.R + 2);
+      put(h.R - 3, T + 2, C2[1]); put(h.R - 2, T + 2, C2[1]); put(h.R - 3, T + 3, C2[2]); put(h.R - 2, T + 3, C2[2]);
+    } else if (sty === 'tac') {
+      const h = dome(7, 1, 3);
+      for (let x = h.L + 1; x < h.R; x++) put(x, h.top + 4, C[3]);           // accessory rail
+      for (let x = h.R - 5; x <= h.R - 1; x++) { put(x, h.top + 2, C2[3]); put(x, h.top + 3, C2[4]); }
+      put(h.R - 4, h.top + 3, [111, 208, 255]); put(h.R - 3, h.top + 3, [190, 240, 255]);   // NVG lens
+      rim(h.brim, h.L, h.R + 1, C[4]); shadow(h.brim + 1, h.L + 1, h.R);
+      for (let y = h.brim; y <= h.brim + 6; y++) put(h.L + Math.round((h.R - h.L) * 0.3), y, C2[4]);   // chin strap
+    } else if (sty === 'riot') {
+      const h = dome(6, 1, 3);
+      rim(h.brim - 1, h.L, h.R + 1, C2[4]);
+      const vx0 = h.L + Math.round((h.R - h.L) * 0.42), vb = h.brim + 11, V = [140, 210, 255];
+      for (let y = h.brim; y <= vb; y++) for (let x = vx0 + (y > vb - 3 ? (y - vb + 3) : 0); x <= h.R + 2; x++) put(x, y, x === h.R + 2 || y === vb ? [70, 110, 150] : V, x === h.R + 2 || y === vb ? 0.8 : 0.38);
+      for (let y = h.brim + 1; y < vb - 2; y++) put(vx0 + 2 + ((y - h.brim) >> 2), y, W5, 0.5);
+      rim(h.brim, vx0, h.R + 2, C2[3]);
+    } else if (sty === 'straw') {
+      const h = dome(4, 0);
+      each2((x, y) => { if (hat[y * N + x] && (x + y) % 3 === 0) put(x, y, C[2]); });
+      rim(h.brim - 1, h.L, h.R, C2[1]);
+      for (let x = h.L - 5; x <= h.R + 5; x++) { const e = x < h.L - 3 || x > h.R + 3; put(x, h.brim, e ? C[2] : C[1]); put(x, h.brim + 1, e ? C[4] : C[3]); }
+      shadow(h.brim + 2, h.L - 2, h.R + 4, 0.55);
+    } else if (sty === 'veil') {
+      const hs = new Uint8Array(N * N), inR = (x, y) => y >= T && y <= T + 22 && x >= HL - 4 && x <= HR + 2; let hm = [], st = [];
+      for (let y = T; y <= T + 3; y++) for (let x = HL - 4; x <= HR + 2; x++) if (hair(x, y)) { hs[y * N + x] = 1; st.push([x, y]); }
+      while (st.length) { const [x, y] = st.pop(); if (y >= T + 4) hm.push([x, y]); for (const [dx, dy] of [[1, 0], [-1, 0], [0, 1], [0, -1]]) { const X = x + dx, Y = y + dy; if (inR(X, Y) && !hs[Y * N + X] && hair(X, Y)) { hs[Y * N + X] = 1; st.push([X, Y]); } } }
+      for (let pass = 0; pass < 2; pass++) { const nw = []; for (let y = T + 4; y <= T + 22 && y < N; y++) for (let x = HL - 4; x <= HR + 2; x++) { if (hs[y * N + x] || !op(x, y) || skin(x, y) || (x > fx0[y] && x < fx1[y])) continue;
+        const n = [[1, 0], [-1, 0], [0, 1], [0, -1]].filter(([dx, dy]) => inb(x + dx, y + dy) && hs[(y + dy) * N + x + dx]).length; if (n >= 2) nw.push([x, y]); } nw.forEach(([x, y]) => { hs[y * N + x] = 1; hm.push([x, y]); }); }
+      const h = dome(3, 1);
+      for (const [x, y] of hm) { const u = (x - HL) / Math.max(1, HR - HL); put(x, y, C[u < 0.3 ? 3 : u > 0.8 ? 1 : 2]); }
+      for (let y = h.brim; y <= T + 14; y++) { const [L] = g.span(y); if (op(L, y)) put(L - 1, y, C[4]); }
+      rim(h.brim, h.L, h.R + 1, C2[1]); for (let x = h.L; x <= h.R + 1; x++) put(x, h.brim + 1, [200, 200, 205]);
+      shadow(h.brim + 2, h.L + 2, h.R + 1, 0.75);
+    } else if (sty === 'hachi') {
+      const y0 = T + 5; for (let y = y0; y <= y0 + 1; y++) { const [L, R] = g.span(y); for (let x = L; x <= R; x++) { const u = (x - L) / Math.max(1, R - L); put(x, y, y === y0 + 1 || u < 0.2 ? C[2] : C[1]); } }
+      const [, R] = g.span(y0); put(R - 4, y0, C2[1]); put(R - 3, y0, C2[1]); put(R - 4, y0 + 1, C2[2]); put(R - 3, y0 + 1, C2[2]);
+      shadow(y0 + 2, g.span(y0)[0], R, 0.85);
+    } else if (sty === 'band') {   // headbands / headphones: an arc that follows the crown
+      const L = HL, R = HR, k = A.bandK || 2;
+      for (let x = L + 1; x <= R - 1; x++) { const y = g.topY[x] + k; if (g.topY[x] > T + 10) continue; put(x, y, C[x < g.hc ? 2 : 1]); put(x, y + 1, C[3]); }
+      if (A.ear) { const ex = L + Math.round((R - L) * 0.06), ey = T + 7; for (let y = 0; y < 7; y++) for (let x = 0; x < 5; x++) put(ex + x, ey + y, x === 0 || y === 6 ? C[4] : y === 0 ? C[1] : C[2]); for (let y = 2; y < 5; y++) for (let x = 1; x < 4; x++) put(ex + x, ey + y, C2[y === 2 ? 0 : 1]); }
+      if (A.cat) [0.32, 0.72].forEach(u => { const x = L + Math.round((R - L) * u), y = g.topY[x] + 1; put(x, y - 3, C2[1]); put(x + 1, y - 3, C2[2]); for (let i = -1; i <= 2; i++) put(x + i, y - 2, i === -1 ? C[3] : C2[i === 2 ? 2 : 1]); for (let i = -1; i <= 3; i++) put(x + i, y - 1, C[i === -1 ? 3 : 2]); put(x, y - 2, C2[0]); });
+      if (A.gem) { const x = L + Math.round((R - L) * 0.62), y = g.topY[x] + k; put(x, y - 1, C2[1]); put(x + 1, y - 1, C2[0]); put(x, y, C2[2]); put(x + 1, y, C2[1]); }
+    }
+    function each2(fn) { for (let y = 0; y < N; y++) for (let x = 0; x < N; x++) fn(x, y); }
+    const ol = []; each2((x, y) => { if (op(x, y) || added[y * N + x]) return; if ([[1, 0], [-1, 0], [0, 1], [0, -1]].some(([dx, dy]) => inb(x + dx, y + dy) && added[(y + dy) * N + x + dx])) ol.push([x, y]); });
+    for (const [x, y] of ol) { const i = at(x, y); d[i] = OL[0]; d[i + 1] = OL[1]; d[i + 2] = OL[2]; d[i + 3] = 255; }
+  }
+  /* small head items that rest on the hair (ears, caps, crowns, ribbons): lowered or raised so their base sits on this frame's crown */
+  function sitShift(op, A, ax, ay) {
+    if (!A || !A.sit || !A.ov || !A.ov.hf) return 0;
+    const rs = A.ov.hf; let x0 = 99, x1 = -99, b = -99; rs.forEach(r => { x0 = Math.min(x0, r[0]); x1 = Math.max(x1, r[0] + r[2] - 1); b = Math.max(b, r[1] + r[3] - 1); });
+    let t = 99; for (let x = ax + x0; x <= ax + x1; x++) for (let y = Math.max(0, ay - 10); y <= ay + 14; y++) if (op(x, y)) { t = Math.min(t, y); break; }
+    return t > 60 ? 0 : t - ay + (A.sit | 0) - b;
+  }
+  /* volume for flat overlay rects: lit top edge, shaded bottom edge */
+  function relief(ctx, w, h) {
+    const im = ctx.getImageData(0, 0, w, h), d = im.data, a = new Uint8Array(w * h);
+    for (let i = 0; i < a.length; i++) a[i] = d[i * 4 + 3] > 40 ? 1 : 0;
+    for (let y = 0; y < h; y++) for (let x = 0; x < w; x++) { const i = y * w + x; if (!a[i] || d[i * 4 + 3] < 250) continue;
+      const up = y > 0 && a[i - w], dn = y < h - 1 && a[i + w], lf = x > 0 && a[i - 1];
+      const k = !up ? 1.22 : !dn ? 0.68 : !lf ? 0.85 : 1; if (k === 1) continue;
+      for (let c = 0; c < 3; c++) d[i * 4 + c] = Math.min(255, k > 1 ? d[i * 4 + c] + (255 - d[i * 4 + c]) * (k - 1) : d[i * 4 + c] * k); }
+    ctx.putImageData(im, 0, 0);
+  }
   function drawRects(tx, rects, ax, ay, f, palHex) {
     for (const r of rects) {
       const c = typeof r[4] === 'number' ? (palHex[r[4]] || '#888') : r[4];
@@ -1057,7 +1191,9 @@ const GFX = (() => {
     const groups = { hb: [], hf: [], tb: [], tf: [] };
     const add = ov => { if (!ov) return; for (const k in ov) groups[k].push(ov[k]); };
     add(HAIR_OV[ch.hairStyle]);
-    ['acc', 'body', 'legs', 'head'].forEach(s => { const a = ARMOR[eq[s]] || {}; if (!(s === 'body' && a.sty)) add(a.ov); });
+    const HA = ARMOR[eq.head] || {};
+    ['acc', 'body', 'legs', 'head'].forEach(s => { const a = ARMOR[eq[s]] || {}; if (s === 'body' && a.sty) return; if (s === 'head' && a.hsty && a.ov) { if (a.ov.hb) groups.hb.push(a.ov.hb); return; } add(a.ov); });
+    const hHf = HA.ov && HA.ov.hf; let hdy = 0;
     const BA = ARMOR[eq.body] || {}, hpal = BA.sty && BA.glove ? (() => { const q = pal.slice(), G = R5(BA.glove); q[11] = G[1]; q[12] = G[2]; q[13] = G[3]; q[15] = G[4]; return q; })() : pal;
     for (let f = 0; f < 8; f++) {
       const m = ASSETS.frames[f], hx = OX + m.hx, hy = OY + m.hy, t0x = OX + m.ax - 24, t0y = OY + m.ay - 26;
@@ -1065,15 +1201,16 @@ const GFX = (() => {
         if (!groups[hk].length && !groups[tk].length) return;
         tx.clearRect(0, 0, FW, FH);
         groups[tk].forEach(r => drawRects(tx, r, t0x, t0y, f, palHex));
-        groups[hk].forEach(r => drawRects(tx, r, hx, hy, f, palHex));
-        outline(tx, FW, FH); bx.drawImage(tmp, f * FW, 0);
+        groups[hk].forEach(r => drawRects(tx, r, hx, hy + (r === hHf ? hdy : 0), f, palHex));
+        relief(tx, FW, FH); outline(tx, FW, FH); bx.drawImage(tmp, f * FW, 0);
       };
       layer('hb', 'tb');
       putCls(t6, girlCls, f, pal);
-      if (BA.sty) {
+      if (BA.sty || HA.hsty || HA.sit) {
         const J = new Int8Array(4096).fill(-1), K = new Uint8Array(4096), SK = new Uint8Array(4096);
         for (let i = 0; i < 4096; i++) { const c = girlCls[(i >> 6) * 512 + f * 64 + (i & 63)]; if (c >= 18 && c <= 21) J[i] = c - 17; else if (c >= 23 && c <= 26) K[i] = c - 22; else if ((c >= 11 && c <= 13) || (c >= 27 && c <= 29)) SK[i] = (c - 10) % 16; }
-        const im = t6.getImageData(0, 0, 64, 64); dressFrame(im.data, 64, 0, { J, K, SK }, BA, ch.tor); t6.putImageData(im, 0, 0);
+        const im = t6.getImageData(0, 0, 64, 64), dd = im.data; dressFrame(dd, 64, 0, { J, K, SK }, BA, ch.tor); dressHead(dd, 64, 0, { SK, HR: Uint8Array.from({ length: 4096 }, (_, i) => { const c = girlCls[(i >> 6) * 512 + f * 64 + (i & 63)]; return c >= 1 && c <= 7 ? 1 : 0; }) }, HA, m.hx, m.hy);
+        hdy = sitShift((x, y) => x >= 0 && x < 64 && y >= 0 && y < 64 && dd[(y * 64 + x) * 4 + 3] > 127, HA, m.hx, m.hy); t6.putImageData(im, 0, 0);
       }
       bx.drawImage(t64, f * FW + OX, OY);
       layer('hf', 'tf');
@@ -1085,18 +1222,18 @@ const GFX = (() => {
   }
   /* outfit recolouring for the fixed-art characters: per-region colour sets are remapped to the armour's colours */
   function recolorArt(ch, eq) {
-    const a = ch.art, src = chImg[a.img], b = ARMOR[eq.body] || {}, l = ARMOR[eq.legs] || {}, tgt = {};
+    const a = ch.art, src = chImg[a.img], b = ARMOR[eq.body] || {}, l = ARMOR[eq.legs] || {}, hA = ARMOR[eq.head] || {}, tgt = {};
     if (b.col && !b.sty) tgt.body = ramp(b.col, [1.12, 0.8, 0.55, 0.36]);
     if (l.skirt) tgt.skirt = ramp(l.skirt, [1.2, 0.95, 0.7, 0.48]);
     if (l.sock) tgt.sock = ramp(l.sock, [1, 0.8, 0.6]); if (l.shoe) tgt.shoe = ramp(l.shoe, [1.2, 0.95, 0.7]); if (l.tights) tgt.leg = ramp(l.tights, [1.15, 0.95, 0.75]);
-    if (!a.rc || (!Object.keys(tgt).length && !b.sty)) return src;
+    if (!a.rc || (!Object.keys(tgt).length && !b.sty && !hA.hsty)) return src;
     const cv = mk(src.width, src.height), x = cv.getContext('2d', { willReadFrequently: true }); x.drawImage(src, 0, 0);
     const im = x.getImageData(0, 0, cv.width, cv.height), d = im.data, W = cv.width, rules = a.rc.filter(r => tgt[r[0]]).map(r => ({ t: tgt[r[0]].map(h2r), m: r[1].map(h => parseInt(h, 16)), y0: r[2], y1: r[3], x0: r[4] == null ? 0 : r[4], x1: r[5] == null ? 63 : r[5] }));
     for (let y = 0; y < cv.height; y++) for (let px = 0; px < W; px++) {
       const i = (y * W + px) * 4; if (d[i + 3] < 128) continue; const fx = px % 64, c = (d[i] << 16) | (d[i + 1] << 8) | d[i + 2];
       for (const r of rules) { if (y < r.y0 || y > r.y1 || fx < r.x0 || fx > r.x1) continue; const k = r.m.indexOf(c); if (k < 0) continue; const q = r.t[Math.min(k, r.t.length - 1)]; d[i] = q[0]; d[i + 1] = q[1]; d[i + 2] = q[2]; break; }
     }
-    if (b.sty) {   // masks come from the untouched art, then the armour is painted frame by frame
+    if (b.sty || hA.hsty) {   // masks come from the untouched art, then the armour is painted frame by frame
       const sd = (() => { const c2 = mk(W, cv.height), x2 = c2.getContext('2d', { willReadFrequently: true }); x2.drawImage(src, 0, 0); return x2.getImageData(0, 0, W, cv.height).data; })();
       const all = a.rc.map(r => ({ k: r[0], m: r[1].map(h => parseInt(h, 16)), y0: r[2], y1: r[3], x0: r[4] == null ? 0 : r[4], x1: r[5] == null ? 63 : r[5] }));
       const skin = new Map(); all.filter(r => r.k === 'leg').forEach(r => r.m.forEach((c, k) => skin.set(c, k + 1)));
@@ -1109,6 +1246,7 @@ const GFX = (() => {
           if (skin.has(c)) SK[j] = skin.get(c);
         }
         dressFrame(d, W, f * 64, { J, K, SK }, b, a.tor);
+        dressHead(d, W, f * 64, { SK }, hA, a.hx, a.hy);
       }
     }
     x.putImageData(im, 0, 0); return cv;
@@ -1119,7 +1257,10 @@ const GFX = (() => {
     const a = sk && sk.art ? sk.art : ch.art, im = sk ? skinImg[sk.img] : recolorArt(ch, eq), sw = sk ? im.width : 64, sox = sk && !sk.art ? sk.dx : 0, soy = sk && !sk.art ? sk.dy : 0, legY0 = sk && !sk.art ? sk.legY : a.legY, body = mk(FW * 8, FH), bx = body.getContext('2d'); bx.imageSmoothingEnabled = false;
     const tmp = mk(FW, FH), tx = tmp.getContext('2d', { willReadFrequently: true }), dx0 = OX + CX - a.cx, dy0 = OY + FEET - a.feet;
     const hb = [], hf = [], tb = [], tf = [];
-    ['acc', 'body', 'legs', 'head'].forEach(sl => { const ov = (ARMOR[eq[sl]] || {}).ov; if (!ov || (sl === 'body' && ARMOR[eq[sl]].sty)) return; if (ov.hb) hb.push(ov.hb); if (ov.hf) hf.push(ov.hf); if (ov.tb) tb.push(ov.tb); if (ov.tf) tf.push(ov.tf); });
+    const HA = ARMOR[eq.head] || {}, hHf = HA.ov && HA.ov.hf, hdy = [];
+    if (HA.sit) { const ic = mk(im.width, im.height), ix = ic.getContext('2d', { willReadFrequently: true }); ix.drawImage(im, 0, 0); const id = ix.getImageData(0, 0, im.width, im.height).data, iw = im.width;
+      for (let s2 = 0; s2 * 64 < iw || s2 === 0; s2++) hdy[s2] = sitShift((x, y) => x >= 0 && x < 64 && s2 * 64 + x < iw && y >= 0 && y < im.height && id[(y * iw + s2 * 64 + x) * 4 + 3] > 127, HA, a.hx - (sk && !sk.art ? sk.dx : 0), a.hy - (sk && !sk.art ? sk.dy : 0)); }
+    ['acc', 'body', 'legs', 'head'].forEach(sl => { const ov = (ARMOR[eq[sl]] || {}).ov; if (!ov || (sl === 'body' && ARMOR[eq[sl]].sty)) return; if (ov.hb) hb.push(ov.hb); if (ov.hf && !(sl === 'head' && HA.hsty && !sk)) hf.push(ov.hf); if (ov.tb) tb.push(ov.tb); if (ov.tf) tf.push(ov.tf); });
     // jacket mask: torso decorations are only painted onto the character's own jacket / skirt pixels, never over the gun or arms held in front
     let mask = null;
     if (tf.length && a.rc && a.tf && !sk) { const src = chImg[a.img], mc = mk(src.width, src.height), mx = mc.getContext('2d', { willReadFrequently: true }); mx.drawImage(src, 0, 0); const md = mx.getImageData(0, 0, mc.width, mc.height).data;
@@ -1128,7 +1269,7 @@ const GFX = (() => {
     const SQ = [1, 0.74, 0.46, 0.74];
     for (let f = 0; f < 8; f++) {
       const src = sk ? 0 : f === 5 ? a.shoot[0] : f === 6 ? a.shoot[1] : a.idle, sq = f < 4 && !sk ? SQ[f] : 1, bob = f === 1 || f === 3 ? -1 : 0, ly = legY0 + bob, fh = im.height;
-      const layer = (hs, ts) => { if (!hs.length && !ts.length) return; tx.clearRect(0, 0, FW, FH); ts.forEach(r => drawRects(tx, r, dx0 + a.back[0], dy0 + a.back[1] + bob, f, [])); hs.forEach(r => drawRects(tx, r, dx0 + a.hx, dy0 + a.hy + bob, f, [])); outline(tx, FW, FH); bx.drawImage(tmp, f * FW, 0); };
+      const layer = (hs, ts) => { if (!hs.length && !ts.length) return; tx.clearRect(0, 0, FW, FH); ts.forEach(r => drawRects(tx, r, dx0 + a.back[0], dy0 + a.back[1] + bob, f, [])); hs.forEach(r => drawRects(tx, r, dx0 + a.hx, dy0 + a.hy + bob + (r === hHf ? hdy[src] || 0 : 0), f, [])); relief(tx, FW, FH); outline(tx, FW, FH); bx.drawImage(tmp, f * FW, 0); };
       layer(hb, tb);
       bx.drawImage(im, src * 64 , ly, sw, fh - ly, f * FW + dx0 + sox + Math.round(a.cx * (1 - sq)), dy0 + soy + ly, Math.round(sw * sq), fh - ly);
       bx.drawImage(im, src * 64, 0, sw, legY0, f * FW + dx0 + sox, dy0 + soy + bob, sw, legY0);
