@@ -114,7 +114,7 @@ button{font:inherit;color:inherit}
 .paints{display:flex;gap:.5rem;align-items:center;padding:.4rem .8rem;flex-wrap:wrap}
 .spbar{display:flex;align-items:center;gap:1rem;margin-bottom:.5rem;color:var(--pink)} .spbar b{font-size:1.8rem} .spbar .b{margin-left:auto;color:var(--txt)}
 .perk{display:flex;align-items:center;gap:.8rem;background:var(--p1);border:.12rem solid var(--line);border-radius:.3rem;padding:.35rem .8rem;margin-bottom:.4rem} .perk>div:first-child{flex:1} .perk b{font-weight:normal} .perk small{display:block}
-.pips{display:flex;gap:.25rem} .pips i,.vbar i{width:.9rem;height:1.2rem;background:#0b0f17;border:.1rem solid var(--line)} .pips i.y,.vbar i.y{background:var(--acc);border-color:var(--acc)}
+.pips{display:flex;gap:.25rem} .pips i:nth-child(6){margin-left:.35rem} .pips i.t2{border-color:#7a5a8e} .pips i.t2.y{background:var(--pink);border-color:var(--pink)} .pc{display:inline!important;font-size:.8rem!important;color:#5a4505!important;margin-left:.2rem} .pips i,.vbar i{width:.9rem;height:1.2rem;background:#0b0f17;border:.1rem solid var(--line)} .pips i.y,.vbar i.y{background:var(--acc);border-color:var(--acc)}
 /* records / options */
 .dex{display:grid;grid-template-columns:1fr 1fr;gap:.5rem} .dcard{display:flex;gap:.8rem;background:var(--p1);border:.12rem solid var(--line);border-radius:.3rem;padding:.5rem .8rem;line-height:1.3} .dcard small{display:block} .dcard.boss{border-color:#7a2e3a} .dcard .ttl{color:var(--red)!important} .dcard .kc{color:var(--acc)!important}
 .sub{color:var(--acc);font-weight:normal;margin:.8rem 0 .4rem!important} .bonds{display:grid;grid-template-columns:1fr 1fr;gap:.4rem} .bonds>div{background:var(--p1);border-radius:.2rem;padding:.3rem .7rem;display:flex;gap:.7rem;align-items:baseline} .bonds b{color:var(--pink);font-weight:normal;margin-left:auto}
@@ -205,13 +205,16 @@ const CHARS = {
 };
 const CHAR_IDS = ['yui','rei','haru','mio','nana'];
 
+const PERK_T1 = 5;                                             // ranks 1-5 cost 1 SP, ranks 6-10 (second tier) cost 2 SP
+const perkCost = r => r < PERK_T1 ? 1 : 2;                       // SP needed to go from rank r to r+1
+const perkSpent = n => Math.min(n, PERK_T1) + 2 * Math.max(0, n - PERK_T1);
 const PERKS = [
-  { id:'atk', name:'火力訓練', desc:'与ダメージ +3%', max:5 },
-  { id:'hp', name:'体力づくり', desc:'最大HP +5%', max:5 },
-  { id:'rel', name:'装填練習', desc:'リロード時間 -4%', max:5 },
-  { id:'crit', name:'急所狙い', desc:'会心率 +2%', max:5 },
-  { id:'cd', name:'集中力', desc:'スキル再使用時間 -5%', max:5 },
-  { id:'uniq', name:'', desc:'', max:5 },
+  { id:'atk', name:'火力訓練', desc:'与ダメージ +3%', max:10 },
+  { id:'hp', name:'体力づくり', desc:'最大HP +5%', max:10 },
+  { id:'rel', name:'装填練習', desc:'リロード時間 -4%', max:10 },
+  { id:'crit', name:'急所狙い', desc:'会心率 +2%', max:10 },
+  { id:'cd', name:'集中力', desc:'スキル再使用時間 -5%', max:10 },
+  { id:'uniq', name:'', desc:'', max:10 },
 ];
 
 /* ---------- weapons ----------
@@ -654,10 +657,10 @@ const BOSSES = {
   b5:{ name:'ペイシェント・ゼロ', title:'発生炉の心臓 ― 最初の一人', hp:38000, dmg:33, spd:36, cr:4000, xp:2600, scale:2.9, pal:{ hood:'#17121f', skin:'#d6cfe8', jeans:'#0f0c16', eye:'#ff3df0' },
     atk:['swipe','charge','slam','spit','summon','rain'], sum:['ogre','bomber','wolf','witch','eagle'], desc:'霧を生み続ける最初の被験者。すべての攻撃を使い、体力が減るほど凶暴になる。' },
 };
-BOSSES.b6 = { name:'監視塔の主', title:'潮見浜 海水浴場 ライフセーバー', hp:30000, dmg:31, spd:40, cr:2400, xp:1800, scale:2.6, pal:{ hood:'#e8472f', skin:'#8fc4c0', jeans:'#f2c94c', eye:'#fff1a0' },
+BOSSES.b6 = { name:'監視塔の主', title:'潮見浜 海水浴場 ライフセーバー', hp:26000, dmg:28, spd:40, cr:2400, xp:1800, scale:2.6, pal:{ hood:'#e8472f', skin:'#8fc4c0', jeans:'#f2c94c', eye:'#fff1a0' },
   atk:['swipe','charge','charge','slam','summon'], sum:['runner','zwoman','leaper','crow'], desc:'「遊泳区域から出ないでください」。浜の端から端まで一瞬で駆けてくる。' };
-BOSSES.b7 = { name:'霧の母', title:'ヘリオス製薬 第四研究所 所長 潮見サヨコ', hp:52000, dmg:36, spd:34, cr:5200, xp:3400, scale:3.0, pal:{ hood:'#2b6f8a', skin:'#d8e8f0', jeans:'#123040', eye:'#7af0ff' }, helmet:{ col:'#3fa6c4', rim:'#1d5a70', visor:null },
-  atk:['swipe','spit','charge','slam','summon','rain'], sum:['witch','lady','shroom','eagle','ogre','bear'], desc:'霧の薬を最初に作った研究者。海の霧そのものを纏い、すべての攻撃を使う。' };
+BOSSES.b7 = { name:'霧の母', title:'ヘリオス製薬 第四研究所 所長 潮見サヨコ', hp:34000, dmg:29, spd:32, cr:5200, xp:3400, scale:3.0, pal:{ hood:'#2b6f8a', skin:'#d8e8f0', jeans:'#123040', eye:'#7af0ff' }, helmet:{ col:'#3fa6c4', rim:'#1d5a70', visor:null },
+  atk:['swipe','spit','charge','slam','summon','rain'], sum:['witch','lady','shroom','eagle','zwoman'], desc:'霧の薬を最初に作った研究者。海の霧そのものを纏い、すべての攻撃を使う。' };
 Object.keys(BOSSES).forEach(k => { BOSSES[k].id = k; BOSSES[k].boss = true; BOSSES[k].cost = 0; });
 
 /* ---------- stages ---------- */
@@ -2134,7 +2137,7 @@ function charPower(cid) {
   const cs = charStats(cid), ws = weaponStats(S.chars[cid].weapon, cid);
   return Math.round(weaponDps(ws) * cs.dmgMul * (1 + cs.crit / 100 * (cs.critMul - 1)) * 0.6 + cs.maxHp / cs.taken * 0.5);
 }
-function spLeft(cid) { const c = S.chars[cid]; let used = 0; for (const k in c.perks) used += c.perks[k]; return (c.lv - 1) - used; }
+function spLeft(cid) { const c = S.chars[cid]; let used = 0; for (const k in c.perks) used += perkSpent(c.perks[k]); return (c.lv - 1) - used; }
 function addXp(cid, xp) {
   const c = S.chars[cid]; let ups = 0; if (c.lv >= MAX_LV) return 0; c.xp += Math.round(xp);
   while (c.lv < MAX_LV && c.xp >= xpNeed(c.lv)) { c.xp -= xpNeed(c.lv); c.lv++; ups++; } if (c.lv >= MAX_LV) c.xp = 0; return ups;
@@ -3338,7 +3341,7 @@ const UI = (() => {
         body = `<div class="chips"><button class="chip ${lk ? '' : 'on'}" data-a="amode" data-id="real">性能装備</button><button class="chip ${lk ? 'on' : ''}" data-a="amode" data-id="look">見た目装備</button><small>${lk ? '見た目だけを変えます。性能は「性能装備」のまま。' : 'ステータスに反映される装備です。'}</small></div>` + ARMOR_SLOTS.map(([sl, nm]) => { const real = ARMOR[c.armor[sl]], curA = lk ? (look[sl] && S.armor[look[sl]] ? ARMOR[look[sl]] : null) : real, open = st.aslot === sl;
           const opts = Object.values(ARMOR).filter(a => a.slot === sl && S.armor[a.id] && (!a.only || a.only === cid)).sort((x, y) => x.lv - y.lv);
           return `<div class="aslot ${open ? 'open' : ''}"><button class="arow" data-a="aslot" data-id="${sl}"><span class="sl">${nm}</span><b>${curA ? curA.name : '性能装備と同じ'}</b><small>${lk ? (curA ? '見た目のみ' : real.name) : statText(curA.st)}</small><i>${open ? '▲' : '▼'}</i></button>${open ? `<div class="alist">${lk ? `<button class="aopt ${curA ? '' : 'on'}" data-a="aeq" data-id="" data-sl="${sl}"><b>性能装備と同じ</b><small>${real.name}</small></button>` : ''}${opts.map(a => `<button class="aopt ${curA && a.id === curA.id ? 'on' : ''}" data-a="aeq" data-id="${a.id}" data-sl="${sl}"><b>${a.name}</b><small>${lk ? '' : statText(a.st)}</small></button>`).join('')}</div>` : ''}</div>`; }).join('') + `<p class="hint">防具は青い防具箱から手に入ります。「見た目装備」に入れた防具は姿だけに反映され、性能には影響しません。</p>`; }
-      else body = `<div class="spbar">スキルポイント <b>${spLeft(cid)}</b><button class="b sm" data-a="preset">振り直し</button></div>` + PERKS.map(p => { const r = c.perks[p.id] || 0, nm = p.id === 'uniq' ? ch.uniq.name : p.name, ds = p.id === 'uniq' ? ch.uniq.desc : p.desc; return `<div class="perk"><div><b>${nm}</b><small>${ds}</small></div><div class="pips">${'<i class="y"></i>'.repeat(r)}${'<i></i>'.repeat(p.max - r)}</div><button class="b sm pri" data-a="perk" data-id="${p.id}" ${r >= p.max || spLeft(cid) <= 0 ? 'disabled' : ''}>＋</button></div>`; }).join('') + `<p class="hint">レベルが1上がるごとにスキルポイントを1獲得。振り直しは無料です。</p>`;
+      else body = `<div class="spbar">スキルポイント <b>${spLeft(cid)}</b><button class="b sm" data-a="preset">振り直し</button></div>` + PERKS.map(p => { const r = c.perks[p.id] || 0, nm = p.id === 'uniq' ? ch.uniq.name : p.name, ds = p.id === 'uniq' ? ch.uniq.desc : p.desc; return `<div class="perk"><div><b>${nm}</b><small>${ds}</small></div><div class="pips">${Array.from({ length: p.max }, (_, k) => `<i class="${k < r ? 'y' : ''} ${k >= PERK_T1 ? 't2' : ''}"></i>`).join('')}</div><button class="b sm pri" data-a="perk" data-id="${p.id}" ${r >= p.max || spLeft(cid) < perkCost(r) ? 'disabled' : ''}>＋${r < p.max && perkCost(r) > 1 ? '<small class="pc">2pt</small>' : ''}</button></div>`; }).join('') + `<p class="hint">レベルが1上がるごとにスキルポイントを1獲得。1〜5段階目は1ポイント、6〜10段階目（二段階目）は2ポイント必要です。振り直しは無料です。</p>`;
       return header('チーム・装備', 'home') + `<div class="team"><div class="cl">${left}</div>${mid}<div class="cright"><div class="tabs sm">${tabs}</div><div class="scroll tb">${body}</div></div></div>`;
     },
 
@@ -3401,7 +3404,7 @@ const UI = (() => {
     auto(d) { const ids = d.id === 'all' ? CHAR_IDS : [st.sel]; let n = 0; ids.forEach(c => { n += autoEquip(c); }); st.aslot = null; st.autoMsg = n ? (d.id === 'all' ? '全員の' : '') + '装備を' + n + 'か所変更しました' : '今の装備が最適です'; saveGame(); SND.play('swap'); refresh(); st.autoMsg = ''; },
     weq(d) { S.chars[st.sel].weapon = d.id; saveGame(); SND.play('reload'); refresh(); }, 
     aslot(d) { st.aslot = st.aslot === d.id ? null : d.id; refresh(); }, aeq(d) { const c = S.chars[st.sel]; if (st.amode === 'look') { c.look = c.look || {}; if (d.id) c.look[d.sl] = d.id; else delete c.look[d.sl]; } else c.armor[d.sl] = d.id; st.aslot = null; saveGame(); SND.play('swap'); refresh(); }, amode(d) { st.amode = d.id; st.aslot = null; refresh(); },
-    perk(d) { const c = S.chars[st.sel]; if (spLeft(st.sel) <= 0) return; c.perks[d.id] = (c.perks[d.id] || 0) + 1; saveGame(); SND.play('ok'); refresh(); },
+    perk(d) { const c = S.chars[st.sel], r = c.perks[d.id] || 0, pm = PERKS.find(q => q.id === d.id); if (!pm || r >= pm.max || spLeft(st.sel) < perkCost(r)) return; c.perks[d.id] = r + 1; saveGame(); SND.play('ok'); refresh(); },
     preset() { S.chars[st.sel].perks = {}; saveGame(); refresh(); },
     stab(d) { st.shopTab = d.id; show('shop'); }, rtab(d) { st.recTab = d.id; show('rec'); },
     vol(d) { const o = S.opt; o[d.k] = clamp(Math.round((o[d.k] + d.d * 0.1) * 10) / 10, 0, 1); SND.setVol(d.k, o[d.k]); saveGame(); refresh(); }, tog(d) { S.opt[d.k] = S.opt[d.k] ? 0 : 1; saveGame(); refresh(); },
