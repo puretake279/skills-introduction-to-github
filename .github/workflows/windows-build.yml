@@ -1,0 +1,36 @@
+name: Windows版をビルド
+
+# ゲーム本体かパソコン版の部品が変わるたびに、Windows版（zip）を作ってダウンロードできるようにする。
+# Actions タブ → この作業 → 一番上の実行 → 下の「Artifacts」から AfterschoolDeadline-win-x64 をダウンロード。
+on:
+  push:
+    paths:
+      - 'game/houkago-deadline.html'
+      - 'desktop/**'
+      - '.github/workflows/windows-build.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: 部品を入れる
+        working-directory: desktop
+        env:
+          ELECTRON_SKIP_BINARY_DOWNLOAD: '1'   # the Windows Electron is fetched by build.mjs itself
+        run: npm ci --no-audit --no-fund
+      - name: Windows版を組み立てる
+        run: node desktop/build.mjs
+      - name: ダウンロードできるようにする
+        uses: actions/upload-artifact@v4
+        with:
+          name: AfterschoolDeadline-win-x64
+          path: desktop/.build/win/
+          retention-days: 30

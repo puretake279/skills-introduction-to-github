@@ -36,5 +36,11 @@ node game/tools/boot-time.js game/houkago-deadline.html 4 3000
 ```
 CPUを4分の1、フォント読み込みに3秒かかる回線を想定して、タイトルが出るまでの時間（wallToTitle）を見る。1.5秒を大きく超えたら原因を調べる。
 
+## 5. パソコン版（セーブ・起動・`desktop/` に関わる変更をしたとき）
+```
+cd desktop && node build.mjs --stage-only && xvfb-run -a node test-app.js <保存先>
+```
+全行が `OK` なら合格。
+
 ## 報告するとき
 確認したこと（どのスクリプトで何を見たか）と、確認していないこと（実機、実際に遊んだ手応え）を分けて書く。

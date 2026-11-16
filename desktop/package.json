@@ -1,0 +1,16 @@
+{
+  "name": "afterschool-deadline",
+  "productName": "Afterschool Deadline",
+  "version": "0.1.0",
+  "description": "放課後デッドライン — desktop build",
+  "private": true,
+  "main": "main.js",
+  "scripts": {
+    "build": "node build.mjs",
+    "start": "node build.mjs --stage-only && electron .build/app"
+  },
+  "devDependencies": {
+    "electron": "33.4.11",
+    "resedit": "2.0.3"
+  }
+}

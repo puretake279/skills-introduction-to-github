@@ -2041,12 +2041,16 @@ function sanitizeSave(s) {
   if (!Array.isArray(s.team) || s.team.length !== 2 || s.team[0] === s.team[1] || !CHARS[s.team[0]] || !CHARS[s.team[1]]) s.team = ['yui', 'rei'];
   return s;
 }
+/* desktop (Windows) build: the app provides window.desktop, and the save lives in a file next to the app's data */
+const DESKTOP = typeof window !== 'undefined' && window.desktop && typeof window.desktop.loadSave === 'function' ? window.desktop : null;
 function loadSave() {
   S = null;
-  try { const t = localStorage.getItem(SAVE_KEY); if (t) S = sanitizeSave(mergeSave(newSave(), JSON.parse(t))); } catch (e) { S = null; }
+  try { let t = DESKTOP ? DESKTOP.loadSave() : null; if (!t) t = localStorage.getItem(SAVE_KEY); if (t) S = sanitizeSave(mergeSave(newSave(), JSON.parse(t))); } catch (e) { S = null; }
   if (!S) S = newSave();
 }
-function saveGame() { let ok = true; try { localStorage.setItem(SAVE_KEY, JSON.stringify(S)); } catch (e) { ok = false; } cloudQueue(); return ok; }
+function saveGame() { let ok = true; const json = JSON.stringify(S);
+  if (DESKTOP) { try { ok = DESKTOP.writeSave(json) !== false; } catch (e) { ok = false; } }
+  try { localStorage.setItem(SAVE_KEY, json); } catch (e) { if (!DESKTOP) ok = false; } cloudQueue(); return ok; }
 /* autosave after every stage: written to this browser and sent to the cloud copy at once, not after the usual delay */
 function autoSave() { const local = saveGame(); const cloud = !!(CLOUD.doc && CLOUD.ready); if (cloud) { clearTimeout(CLOUD.timer); cloudPush(); } return local || cloud; }
 /* ---- cloud save: the browser's storage for this page can come back empty, so the save is mirrored to the
@@ -3287,7 +3291,7 @@ const UI = (() => {
   /* ---------- screens ---------- */
   const SCR = {
     title: () => `<div class="title"><div class="logo"><div class="l0">HOUKAGO DEADLINE</div><div class="l1">放課後</div><div class="l2">デッドライン</div><div class="tape"></div><div class="l3">女子高生 × 銃 × ゾンビ　横スクロール・シューティング</div></div>
-      <button class="b pri xl blink" data-a="begin">▶ タップしてスタート</button><div class="foot">音が出ます　／　スマホは横向きでプレイ</div></div>`,
+      <button class="b pri xl blink" data-a="begin">▶ ${DESKTOP ? 'クリックしてスタート' : 'タップしてスタート'}</button><div class="foot">${DESKTOP ? '音が出ます　／　Enterキーでもスタート　／　F11で全画面' : '音が出ます　／　スマホは横向きでプレイ'}</div></div>`,
 
     home: () => {
       const sp = CHAR_IDS.reduce((n, c) => n + spLeft(c), 0);
@@ -3375,7 +3379,7 @@ const UI = (() => {
         <div class="orow"><span>画面の揺れ</span><button class="b sm ${o.shake ? 'pri' : ''}" data-a="tog" data-k="shake">${o.shake ? 'ON' : 'OFF'}</button><span class="gap"></span><span>ダメージ数字</span><button class="b sm ${o.dmgnum ? 'pri' : ''}" data-a="tog" data-k="dmgnum">${o.dmgnum ? 'ON' : 'OFF'}</button></div>
         <div class="orow"><span>全画面表示</span><button class="b sm" data-a="fs">切り替え</button><small>対応ブラウザのみ。スマホは横向きに固定を試みます。</small></div>
         <div class="box"><h4>操作方法</h4><b>スマホ</b>：左スティックで移動／射撃(長押し)・ジャンプ・回避・スキル・交代・装填ボタン。左上のキャラ表示タップでも交代。<br><b>キーボード</b>：A/D 移動　W・Space ジャンプ　J・Z・マウス左 射撃　K・X・Shift 回避　E スキル　Q 交代　R 装填　Esc ポーズ</div>
-        <div class="box"><h4>セーブデータ</h4><small>${CLOUD.state === 'on' ? '<b class="cl on">クラウド保存：有効</b>　進行状況はあなたのアカウントに自動保存され、ブラウザのデータが消えても次回起動時に復元されます。' : CLOUD.state === 'wait' ? '<b class="cl">クラウド保存：確認中…</b>　進行状況はこのブラウザに自動保存されます。' : '<b class="cl off">クラウド保存：利用できません</b>　進行状況はこのブラウザにだけ保存されます。ブラウザのデータが消えると復元できないので、引き継ぎコードを控えておいてください。'}</small>
+        <div class="box"><h4>セーブデータ</h4><small>${DESKTOP ? '<b class="cl on">自動保存：このパソコン</b>　進行状況はこのパソコンに自動保存されます。別のパソコンへ移すときは、引き継ぎコードを使ってください。' : CLOUD.state === 'on' ? '<b class="cl on">クラウド保存：有効</b>　進行状況はあなたのアカウントに自動保存され、ブラウザのデータが消えても次回起動時に復元されます。' : CLOUD.state === 'wait' ? '<b class="cl">クラウド保存：確認中…</b>　進行状況はこのブラウザに自動保存されます。' : '<b class="cl off">クラウド保存：利用できません</b>　進行状況はこのブラウザにだけ保存されます。ブラウザのデータが消えると復元できないので、引き継ぎコードを控えておいてください。'}</small>
           <div class="orow"><button class="b sm" data-a="exp">引き継ぎコードを表示</button><button class="b sm" data-a="imp">コードから復元</button><button class="b sm red" data-a="reset">データを初期化</button></div>
           ${st.imp === 'exp' ? `<textarea id="code" readonly>${exportSave()}</textarea><div class="orow"><button class="b sm pri" data-a="copy">コピー</button><small>コピーできない場合は、上のコードを長押しして全選択してください。</small></div>` : ''}
           ${st.imp === 'imp' ? `<textarea id="code" placeholder="ここに引き継ぎコードを貼り付け"></textarea><div class="orow"><button class="b sm pri" data-a="doimp">このコードで復元する</button></div>` : ''}</div></div>`;
@@ -3413,7 +3417,7 @@ const UI = (() => {
     fs() { tryFullscreen(false); }, exp() { st.imp = st.imp === 'exp' ? false : 'exp'; refresh(); }, imp() { st.imp = st.imp === 'imp' ? false : 'imp'; refresh(); },
     copy() { const t = document.getElementById('code'); t.focus(); t.select(); try { navigator.clipboard.writeText(t.value).then(() => toast('コピーしました'), () => toast('コピーできませんでした。長押しで選択してください')); } catch (e) { toast('コピーできませんでした。長押しで選択してください'); } },
     doimp() { const ok = importSave(document.getElementById('code').value); if (ok) { CLOUD.noAdopt = true; SND.setVol('bgm', S.opt.bgm); SND.setVol('sfx', S.opt.sfx); toast('セーブデータを復元しました'); st.imp = false; show('home'); } else { SND.play('ng'); toast('コードが正しくありません'); } },
-    reset() { confirm('セーブデータをすべて消去して最初から始めます。<br>この操作は取り消せません。', () => { try { localStorage.removeItem(SAVE_KEY); } catch (e) { } loadSave(); CLOUD.noAdopt = true; saveGame(); GFX_clearChars(); show('title'); }, '初期化する'); },
+    reset() { confirm('セーブデータをすべて消去して最初から始めます。<br>この操作は取り消せません。', () => { try { localStorage.removeItem(SAVE_KEY); } catch (e) { } try { if (DESKTOP) DESKTOP.clearSave(); } catch (e) { } loadSave(); CLOUD.noAdopt = true; saveGame(); GFX_clearChars(); show('title'); }, '初期化する'); },
     myes() { const f = pending; closeModal(); if (f) f(); }, mno() { closeModal(); },
     resume() { resumeBattle(); }, retry() { const c = (SN || B).cfg; SN = null; show('none'); launch(c.stage, c.survival); }, quit() { if (SN) { SN.paused = false; snipeFinish(false); return; } B.paused = false; B.phase = 'fail'; finish(false); },
     snext() { storyNext(); }, sskip() { storyEnd(); },
