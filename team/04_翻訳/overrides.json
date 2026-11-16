@@ -23,5 +23,33 @@
  "{}:{} 以内": {
   "en": "Within {}:{}",
   "zh": "{}:{} 以内"
+ },
+ "{}発で{}粒の散弾を撃つ。近いほど多く当たる": {
+  "en": "{} shot fires {} pellets. More hit up close",
+  "zh": "{}发射出{}颗霰弹，距离越近命中越多"
+ },
+ "弾が敵を{}体まで貫通する": {
+  "en": "Pierces up to {} enemies",
+  "zh": "子弹最多穿透{}名敌人"
+ },
+ "弾が敵を何体でも貫通する": {
+  "en": "Pierces any number of enemies",
+  "zh": "子弹可穿透任意数量的敌人"
+ },
+ "敵を貫通しながら爆発するプラズマ弾（爆発範囲{}）": {
+  "en": "Plasma rounds that pierce and explode (blast radius {})",
+  "zh": "贯穿敌人并爆炸的等离子弹（爆炸范围{}）"
+ },
+ "山なりに飛んで爆発するてき弾（爆発範囲{}）": {
+  "en": "Lobbed grenades that explode (blast radius {})",
+  "zh": "抛物线飞行后爆炸的榴弹（爆炸范围{}）"
+ },
+ "まっすぐ飛んで爆発するロケット弾（爆発範囲{}）": {
+  "en": "Rockets that fly straight and explode (blast radius {})",
+  "zh": "直线飞行后爆炸的火箭弹（爆炸范围{}）"
+ },
+ "絆武器：{}": {
+  "en": "Bond weapon: {}",
+  "zh": "羁绊武器：{}"
  }
 }
