@@ -34,6 +34,16 @@ ipcMain.on('save:clear', (e) => {
   e.returnValue = true;
 });
 
+// window size chosen in the game's settings: '1280' | '1600' | '1920' | 'full'
+const SIZES = { '1280': [1280, 720], '1600': [1600, 900], '1920': [1920, 1080] };
+ipcMain.on('win:set', (e, mode) => {
+  e.returnValue = true; if (!win) return;
+  if (mode === 'full') { win.setFullScreen(true); return; }
+  const sz = SIZES[mode] || SIZES['1280'];
+  const apply = () => { win.setContentSize(sz[0], sz[1]); win.center(); };
+  if (win.isFullScreen()) { win.once('leave-full-screen', apply); win.setFullScreen(false); } else apply();
+});
+
 let win = null;
 function createWindow() {
   win = new BrowserWindow({

@@ -41,6 +41,11 @@ async function run(n) {
   await win.click('[data-a="begin"]', { force: true }); await win.waitForSelector('[data-to="opt"]');
   await win.click('[data-to="opt"]', { force: true }); await win.waitForTimeout(500);
   ok((await win.evaluate(() => document.body.innerText)).includes('自動保存：このパソコン'), 'the settings screen says the save is on this computer');
+  // window size from the settings screen
+  await win.click('[data-a="win"][data-k="1600"]', { force: true }); await win.waitForTimeout(800);
+  const big = await win.evaluate(() => [innerWidth, innerHeight, S.opt.win]); ok(big[0] === 1600 && big[1] === 900 && big[2] === '1600', 'window size 1600×900 from 設定 (' + big.join(', ') + ')');
+  await win.click('[data-a="win"][data-k="1280"]', { force: true }); await win.waitForTimeout(800);
+  const small = await win.evaluate(() => [innerWidth, innerHeight]); ok(small[0] === 1280 && small[1] === 720, 'back to 1280×720 (' + small.join('x') + ')');
   await win.screenshot({ path: path.join(shots, 'desktop_settings.png') });
   // a stage starts and runs
   await win.evaluate(() => { const s = JSON.parse(JSON.stringify(S)); STAGES.filter(st => st.ch <= 5).forEach(st => { s.stages[st.id] = { n: { clear: true, stars: [true, true, false], best: 100 } }; }); Object.keys(STORY).forEach(k => s.seen[k] = 1); S = sanitizeSave(mergeSave(newSave(), s)); saveGame(); });

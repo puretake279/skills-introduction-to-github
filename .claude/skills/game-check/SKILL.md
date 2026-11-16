@@ -42,6 +42,11 @@ node game/tools/gamepad-test.js game/houkago-deadline.html <保存先>
 ```
 仮想のゲームパッドをつないで、メニュー・戦闘・ポーズ・狙撃を操作する。全行が `OK` なら合格。
 
+キー設定・画面設定に関わる変更をしたときは、こちらも：
+```
+node game/tools/settings-test.js game/houkago-deadline.html <保存先>
+```
+
 ## 6. パソコン版（セーブ・起動・`desktop/` に関わる変更をしたとき）
 ```
 cd desktop && node build.mjs --stage-only && xvfb-run -a node test-app.js <保存先>
