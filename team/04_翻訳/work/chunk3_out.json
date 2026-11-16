@@ -1,0 +1,930 @@
+{
+ "s0255": {
+  "en": "Spread -{}%",
+  "zh": "散布 -{}%"
+ },
+ "s0256": {
+  "en": "Muzzle Brake",
+  "zh": "枪口制退器"
+ },
+ "s0257": {
+  "en": "Damage +{}% / Spread +{}%",
+  "zh": "伤害 +{}% / 散布 +{}%"
+ },
+ "s0258": {
+  "en": "Crit rate +{}% / Damage -{}%",
+  "zh": "暴击率 +{}% / 伤害 -{}%"
+ },
+ "s0259": {
+  "en": "Long Barrel",
+  "zh": "长枪管"
+ },
+ "s0260": {
+  "en": "Range +{}% / Damage +{}%",
+  "zh": "射程 +{}% / 伤害 +{}%"
+ },
+ "s0261": {
+  "en": "Choke",
+  "zh": "收束器"
+ },
+ "s0262": {
+  "en": "Spread -{}% / Range +{}% (SG only)",
+  "zh": "散布 -{}% / 射程 +{}%（仅限霰弹枪）"
+ },
+ "s0263": {
+  "en": "Red Dot Sight",
+  "zh": "红点瞄准镜"
+ },
+ "s0264": {
+  "en": "Laser Sight",
+  "zh": "激光瞄准器"
+ },
+ "s0265": {
+  "en": "Spread -{}% / Crit rate +{}%",
+  "zh": "散布 -{}% / 暴击率 +{}%"
+ },
+ "s0266": {
+  "en": "Holo Sight",
+  "zh": "全息瞄准镜"
+ },
+ "s0267": {
+  "en": "{}x Scope",
+  "zh": "{}倍镜"
+ },
+ "s0268": {
+  "en": "Crit rate +{}% / Range +{}% / Fire rate -{}%",
+  "zh": "暴击率 +{}% / 射程 +{}% / 射速 -{}%"
+ },
+ "s0269": {
+  "en": "Mag size +{}%",
+  "zh": "弹匣容量 +{}%"
+ },
+ "s0270": {
+  "en": "Quick Mag",
+  "zh": "快速弹匣"
+ },
+ "s0271": {
+  "en": "Drum Magazine",
+  "zh": "弹鼓"
+ },
+ "s0272": {
+  "en": "Mag size +{}% / Reload +{}%",
+  "zh": "弹匣容量 +{}% / 装弹 +{}%"
+ },
+ "s0273": {
+  "en": "Pierce +{} / Ignores enemy armor",
+  "zh": "穿透 +{} / 无视敌人装甲"
+ },
+ "s0274": {
+  "en": "Hollow Point Rounds",
+  "zh": "空尖弹"
+ },
+ "s0275": {
+  "en": "Damage +{}% / Pierce -{}",
+  "zh": "伤害 +{}% / 穿透 -{}"
+ },
+ "s0276": {
+  "en": "Sets enemies hit on fire for {}s",
+  "zh": "使命中的敌人燃烧{}秒"
+ },
+ "s0277": {
+  "en": "{}% chance to shock and stall enemies",
+  "zh": "{}%几率使敌人触电并定身"
+ },
+ "s0278": {
+  "en": "For {}s after a hit, enemy speed -{}%",
+  "zh": "命中的敌人{}秒内移动速度 -{}%"
+ },
+ "s0279": {
+  "en": "Small explosion on impact ({}% power)",
+  "zh": "命中时发生小爆炸（威力{}%）"
+ },
+ "s0293": {
+  "en": "None",
+  "zh": "无"
+ },
+ "s0294": {
+  "en": "Club Cap",
+  "zh": "社团棒球帽"
+ },
+ "s0295": {
+  "en": "Victory Headband",
+  "zh": "必胜头巾"
+ },
+ "s0296": {
+  "en": "Safety Helmet",
+  "zh": "安全帽"
+ },
+ "s0297": {
+  "en": "Cat-Ear Headphones",
+  "zh": "猫耳耳机"
+ },
+ "s0298": {
+  "en": "Gas Mask",
+  "zh": "防毒面具"
+ },
+ "s0299": {
+  "en": "Bunny-Ear Ribbon",
+  "zh": "兔耳蝴蝶结"
+ },
+ "s0300": {
+  "en": "Tactical Helmet",
+  "zh": "战术头盔"
+ },
+ "s0301": {
+  "en": "Riot Visor",
+  "zh": "防暴面罩"
+ },
+ "s0302": {
+  "en": "Nurse Cap",
+  "zh": "护士帽"
+ },
+ "s0303": {
+  "en": "Stocked after clearing Chapter {}",
+  "zh": "通关第{}章后上架"
+ },
+ "s0304": {
+  "en": "President's Tiara",
+  "zh": "社长的头冠"
+ },
+ "s0305": {
+  "en": "Stocked after ★{} on all Normal stages",
+  "zh": "普通难度全部关卡★{}后上架"
+ },
+ "s0306": {
+  "en": "Croquette Chef's Hat",
+  "zh": "可乐饼店的厨师帽"
+ },
+ "s0307": {
+  "en": "Fogbane Halo",
+  "zh": "驱雾光环"
+ },
+ "s0308": {
+  "en": "Yui's Headband",
+  "zh": "结衣的发箍"
+ },
+ "s0309": {
+  "en": "Haru's Red Ribbon",
+  "zh": "春的红丝带"
+ },
+ "s0310": {
+  "en": "Straw Hat",
+  "zh": "草帽"
+ },
+ "s0311": {
+  "en": "Uniform Cardigan",
+  "zh": "制服开衫"
+ },
+ "s0312": {
+  "en": "Club Tracksuit",
+  "zh": "社团运动服"
+ },
+ "s0313": {
+  "en": "Stab Vest",
+  "zh": "防刺背心"
+ },
+ "s0314": {
+  "en": "Hazmat Suit",
+  "zh": "防护服"
+ },
+ "s0315": {
+  "en": "Lab Coat",
+  "zh": "研究白大褂"
+ },
+ "s0316": {
+  "en": "Tactical Vest",
+  "zh": "战术背心"
+ },
+ "s0317": {
+  "en": "\"Yoroshiku\" Gang Coat",
+  "zh": "特攻服「夜露死苦」"
+ },
+ "s0318": {
+  "en": "Riot Body Armor",
+  "zh": "防暴装甲"
+ },
+ "s0319": {
+  "en": "Dawn Coat",
+  "zh": "黎明大衣"
+ },
+ "s0320": {
+  "en": "Night Shift Scrubs",
+  "zh": "夜班护士服"
+ },
+ "s0321": {
+  "en": "Nun's Veil",
+  "zh": "修女头纱"
+ },
+ "s0322": {
+  "en": "Earned by clearing all Part {} stages",
+  "zh": "通关第{}部全部关卡后获得"
+ },
+ "s0323": {
+  "en": "Nun's Habit",
+  "zh": "修女服"
+ },
+ "s0324": {
+  "en": "Nun's Habit (Skirt)",
+  "zh": "修女服（裙装）"
+ },
+ "s0325": {
+  "en": "Nun's Habit (Nana)",
+  "zh": "修女服（奈奈专用）"
+ },
+ "s0326": {
+  "en": "Nun's Habit (Yui)",
+  "zh": "修女服（结衣专用）"
+ },
+ "s0327": {
+  "en": "Nun's Habit (Rei)",
+  "zh": "修女服（玲专用）"
+ },
+ "s0328": {
+  "en": "Nun's Habit (Haru)",
+  "zh": "修女服（春专用）"
+ },
+ "s0329": {
+  "en": "Nun's Habit (Mio)",
+  "zh": "修女服（澪专用）"
+ },
+ "s0330": {
+  "en": "Swim Goggles",
+  "zh": "泳镜"
+ },
+ "s0331": {
+  "en": "Sun Visor",
+  "zh": "遮阳帽"
+ },
+ "s0332": {
+  "en": "Diving Helmet",
+  "zh": "潜水头盔"
+ },
+ "s0333": {
+  "en": "Earned by clearing Chapter {} on Hard",
+  "zh": "以困难难度通关第{}章全部关卡后获得"
+ },
+ "s0334": {
+  "en": "Rash Guard",
+  "zh": "防晒冲浪衣"
+ },
+ "s0335": {
+  "en": "Life Jacket",
+  "zh": "救生衣"
+ },
+ "s0336": {
+  "en": "Festival Happi Coat",
+  "zh": "祭典法被"
+ },
+ "s0337": {
+  "en": "Wetsuit",
+  "zh": "潜水衣"
+ },
+ "s0338": {
+  "en": "Robe of the Tides",
+  "zh": "潮音羽衣"
+ },
+ "s0339": {
+  "en": "Earned by clearing Chapter {} on Nightmare",
+  "zh": "以噩梦难度通关第{}章全部关卡后获得"
+ },
+ "s0340": {
+  "en": "Board Shorts & Sandals",
+  "zh": "冲浪短裤和人字拖"
+ },
+ "s0341": {
+  "en": "Geta & White Tabi",
+  "zh": "木屐和白足袋"
+ },
+ "s0342": {
+  "en": "Surfboard",
+  "zh": "冲浪板"
+ },
+ "s0343": {
+  "en": "Festival Fan",
+  "zh": "祭典团扇"
+ },
+ "s0344": {
+  "en": "Sport Swim Top",
+  "zh": "运动泳衣（上装）"
+ },
+ "s0345": {
+  "en": "Earned by clearing Part {} ({} stages)",
+  "zh": "通关第{}部全部{}个关卡后获得"
+ },
+ "s0346": {
+  "en": "Uniform Skirt",
+  "zh": "制服裙"
+ },
+ "s0347": {
+  "en": "Sport Swim Bottoms",
+  "zh": "运动泳衣（下装）"
+ },
+ "s0348": {
+  "en": "Bike Shorts & Sneakers",
+  "zh": "打底短裤和运动鞋"
+ },
+ "s0349": {
+  "en": "Knee Pads",
+  "zh": "护膝"
+ },
+ "s0350": {
+  "en": "Black Tights",
+  "zh": "黑色裤袜"
+ },
+ "s0351": {
+  "en": "Combat Boots",
+  "zh": "战斗靴"
+ },
+ "s0352": {
+  "en": "Camo Cargo Pants",
+  "zh": "迷彩工装裤"
+ },
+ "s0353": {
+  "en": "School Backpack",
+  "zh": "书包"
+ },
+ "s0354": {
+  "en": "Ammo Bag",
+  "zh": "弹药包"
+ },
+ "s0355": {
+  "en": "Sure-Hit Charm",
+  "zh": "必中护身符"
+ },
+ "s0356": {
+  "en": "First Aid Bag",
+  "zh": "急救包"
+ },
+ "s0357": {
+  "en": "Warding Bell",
+  "zh": "驱邪铃铛"
+ },
+ "s0358": {
+  "en": "Walkie-Talkie",
+  "zh": "对讲机"
+ },
+ "s0359": {
+  "en": "President's Cape",
+  "zh": "社长的披风"
+ },
+ "s0360": {
+  "en": "Rei's Study Guide",
+  "zh": "玲的参考书"
+ },
+ "s0361": {
+  "en": "Discipline Armband",
+  "zh": "风纪委员袖章"
+ },
+ "s0362": {
+  "en": "Nana's Warhead Pouch",
+  "zh": "奈奈的弹头包"
+ },
+ "s0363": {
+  "en": "Swim Ring",
+  "zh": "游泳圈"
+ },
+ "s0364": {
+  "en": "Angel Wing Backpack",
+  "zh": "天使翅膀背包"
+ },
+ "s0365": {
+  "en": "Stocked after a full Nightmare clear",
+  "zh": "噩梦难度全部通关后上架"
+ },
+ "s0366": {
+  "en": "Black",
+  "zh": "黑"
+ },
+ "s0367": {
+  "en": "White",
+  "zh": "白"
+ },
+ "s0368": {
+  "en": "Blue",
+  "zh": "蓝"
+ },
+ "s0369": {
+  "en": "Gold",
+  "zh": "金"
+ },
+ "s0370": {
+  "en": "Head",
+  "zh": "头部"
+ },
+ "s0371": {
+  "en": "Body",
+  "zh": "躯干"
+ },
+ "s0372": {
+  "en": "Legs",
+  "zh": "腿部"
+ },
+ "s0373": {
+  "en": "Accessory",
+  "zh": "饰品"
+ },
+ "s0374": {
+  "en": "Defense",
+  "zh": "防御"
+ },
+ "s0375": {
+  "en": "Speed%",
+  "zh": "速度%"
+ },
+ "s0376": {
+  "en": "Crit%",
+  "zh": "暴击%"
+ },
+ "s0377": {
+  "en": "Attack%",
+  "zh": "攻击%"
+ },
+ "s0378": {
+  "en": "Reload%",
+  "zh": "装弹%"
+ },
+ "s0379": {
+  "en": "Skill CD-%",
+  "zh": "技能冷却-%"
+ },
+ "s0380": {
+  "en": "Acid Res%",
+  "zh": "酸抗性%"
+ },
+ "s0381": {
+  "en": "Healing%",
+  "zh": "治疗量%"
+ },
+ "s0382": {
+  "en": "Mag Size%",
+  "zh": "弹匣容量%"
+ },
+ "s0383": {
+  "en": "Regen/s",
+  "zh": "每秒回复"
+ },
+ "s0384": {
+  "en": "Drop%",
+  "zh": "掉落%"
+ },
+ "s0385": {
+  "en": "Dodge CD-%",
+  "zh": "闪避冷却-%"
+ },
+ "s0386": {
+  "en": "Walker",
+  "zh": "行尸"
+ },
+ "s0387": {
+  "en": "A citizen possessed by the Fog. Slow, but comes in numbers.",
+  "zh": "被雾附身的市民。动作迟缓，但数量众多。"
+ },
+ "s0388": {
+  "en": "Runner",
+  "zh": "疾跑者"
+ },
+ "s0389": {
+  "en": "Wears a track team tracksuit. Very fast. Take it down first.",
+  "zh": "穿着田径队运动服的个体。速度极快，优先击倒它吧。"
+ },
+ "s0390": {
+  "en": "Spitter",
+  "zh": "喷吐者"
+ },
+ "s0391": {
+  "en": "Spits strong acid from a distance. Jump over the acid puddles it leaves.",
+  "zh": "保持距离喷吐强酸。脚下的酸液池可以跳跃躲开。"
+ },
+ "s0392": {
+  "en": "Bomber",
+  "zh": "自爆者"
+ },
+ "s0393": {
+  "en": "Swollen with gas. Explodes when it gets close. Shoot it from afar to catch nearby zombies in the blast.",
+  "zh": "体内积满气体的个体。靠近就会自爆。在远处射击可以波及周围的僵尸。"
+ },
+ "s0394": {
+  "en": "Leaper",
+  "zh": "跳跃者"
+ },
+ "s0395": {
+  "en": "Kicks off walls to pounce on you. Strike the moment it lands.",
+  "zh": "蹬墙扑过来。落地的瞬间就是机会。"
+ },
+ "s0396": {
+  "en": "Armored",
+  "zh": "装甲者"
+ },
+ "s0397": {
+  "en": "Once a riot police officer. Cuts frontal gunfire damage by {}0%. AP rounds, explosions and crits work well.",
+  "zh": "曾是防暴警察。来自正面的子弹伤害减少{}成。穿甲弹、爆炸、暴击对它有效。"
+ },
+ "s0398": {
+  "en": "Screamer",
+  "zh": "尖叫者"
+ },
+ "s0399": {
+  "en": "Its shriek calls for help and sends nearby zombies into a frenzy. Top priority target.",
+  "zh": "用尖叫召集同伴，让周围的僵尸狂暴化。最优先目标。"
+ },
+ "s0400": {
+  "en": "Brute",
+  "zh": "蛮力者"
+ },
+ "s0401": {
+  "en": "A massive mutant. It never flinches, and its blows send you flying.",
+  "zh": "巨大的变异个体。不会硬直，被它打中会被远远击飞。"
+ },
+ "s0402": {
+  "en": "Weeper",
+  "zh": "啜泣者"
+ },
+ "s0403": {
+  "en": "A sobbing female zombie that closes in at a brisk pace. Faster than a Walker.",
+  "zh": "一边啜泣一边快步逼近的女性僵尸。比行尸更快。"
+ },
+ "s0404": {
+  "en": "Sporer",
+  "zh": "孢子人"
+ },
+ "s0405": {
+  "en": "A man infested by fungus. Throws spore clumps and leaves a poison pool where it falls.",
+  "zh": "被蘑菇寄生的男人。投掷孢子团，倒下的地方也会留下毒液池。"
+ },
+ "s0406": {
+  "en": "Chainfat",
+  "zh": "锁链巨汉"
+ },
+ "s0407": {
+  "en": "A hulk swinging a chain with huge reach. When it winds up, back off or dodge in close.",
+  "zh": "挥舞锁链的巨汉，攻击范围极广。它抡起锁链时，要么拉开距离，要么闪避冲进它怀里。"
+ },
+ "s0408": {
+  "en": "Juggernaut",
+  "zh": "重甲巨人"
+ },
+ "s0409": {
+  "en": "An armored giant with an axe. Deflects {}0% of frontal gunfire. Use AP rounds, explosions, crits, or hit it from behind.",
+  "zh": "身披铠甲、手持巨斧的巨人。能弹开{}成来自正面的子弹。用穿甲弹、爆炸、暴击，或从背后攻击。"
+ },
+ "s0410": {
+  "en": "Pyrowitch",
+  "zh": "火焰女巫"
+ },
+ "s0411": {
+  "en": "A witch who fires fireballs straight at you. Jump or dodge to avoid them.",
+  "zh": "直线发射火球的女巫。火球可以跳跃或闪避躲开。"
+ },
+ "s0412": {
+  "en": "Madame Waltz",
+  "zh": "华尔兹夫人"
+ },
+ "s0413": {
+  "en": "A noblewoman zombie who never stops dancing. Each twirl heals nearby zombies. Take her out first.",
+  "zh": "不停起舞的贵妇僵尸。每次舞动都会治愈周围僵尸的伤势。最好第一个解决她。"
+ },
+ "s0414": {
+  "en": "Rot Pigeon",
+  "zh": "腐鸽"
+ },
+ "s0415": {
+  "en": "Rotten pigeons. Weak, but they swarm in flocks. Clear them out with an SMG or shotgun.",
+  "zh": "腐烂的鸽子。很弱，但会成群涌来。用冲锋枪或霰弹枪一网打尽吧。"
+ },
+ "s0416": {
+  "en": "Skull Crow",
+  "zh": "骷髅鸦"
+ },
+ "s0417": {
+  "en": "A crow whose head is bare bone. Hovers at a distance, then dives at you.",
+  "zh": "头部化为白骨的乌鸦。在远处振翅，然后猛扑过来。"
+ },
+ "s0418": {
+  "en": "Zombie Wolf",
+  "zh": "僵尸狼"
+ },
+ "s0419": {
+  "en": "Zombie wolves that run in packs. Very fast, and they leap to bite from far away.",
+  "zh": "成群奔跑的僵尸狼。速度极快，会从远处扑来撕咬。"
+ },
+ "s0420": {
+  "en": "Rot Eagle",
+  "zh": "腐鹰"
+ },
+ "s0421": {
+  "en": "A giant zombie eagle. One mighty flap carries it a long way in a single swoop.",
+  "zh": "巨大的僵尸鹰。用力振翅，一口气扑出很远的距离。"
+ },
+ "s0422": {
+  "en": "Zombie Bear",
+  "zh": "僵尸熊"
+ },
+ "s0423": {
+  "en": "A zombie bear still walking with arrows in it. Top-tier HP and attack, and faster than a Brute.",
+  "zh": "身上还插着箭的僵尸熊。体力和攻击力都是顶级，比蛮力者更快。"
+ },
+ "s0424": {
+  "en": "Ex-Vice Principal",
+  "zh": "昔日的教导主任"
+ },
+ "s0425": {
+  "en": "Former vice principal, Kirigaoka Girls' High",
+  "zh": "雾丘女子高中 教导主任"
+ },
+ "s0426": {
+  "en": "Catchphrase: \"No running in the halls!\" Now it comes running at you.",
+  "zh": "口头禅是「走廊上不许奔跑」。现在却自己朝你跑了过来。"
+ },
+ "s0427": {
+  "en": "Butcher",
+  "zh": "屠夫"
+ },
+ "s0428": {
+  "en": "Former owner, Sakura St. Butcher Shop",
+  "zh": "樱花街肉铺 老板"
+ },
+ "s0429": {
+  "en": "A kind shopkeeper who used to throw in a free croquette. Jump over the shockwaves from its ground slams.",
+  "zh": "曾是会多送你一个可乐饼的和善老板。砸地产生的冲击波可以跳跃躲开。"
+ },
+ "s0430": {
+  "en": "Last Train Conductor",
+  "zh": "末班车列车员"
+ },
+ "s0431": {
+  "en": "Former crew, Kirigaoka Line last train",
+  "zh": "雾丘线 末班列车 乘务员"
+ },
+ "s0432": {
+  "en": "Never lets anyone rush aboard. Charges again and again.",
+  "zh": "绝不容许任何人抢上车。会连续冲撞过来。"
+ },
+ "s0433": {
+  "en": "Dr. Necro",
+  "zh": "尼克罗博士"
+ },
+ "s0434": {
+  "en": "Former director, City General Hospital",
+  "zh": "市立综合医院 院长"
+ },
+ "s0435": {
+  "en": "Knew the truth about the Fog and covered it up. Rains down strong acid.",
+  "zh": "明知雾的真相却加以隐瞒的男人。会像下雨一样降下强酸。"
+ },
+ "s0436": {
+  "en": "Patient Zero",
+  "zh": "零号病人"
+ },
+ "s0437": {
+  "en": "Heart of the Reactor — The First One",
+  "zh": "发生炉之心 ― 最初的那个人"
+ },
+ "s0438": {
+  "en": "The first test subject, still spawning the Fog. Uses every attack and grows wilder as its HP drops.",
+  "zh": "不断产生雾的最初实验体。会使用所有攻击，体力越低越狂暴。"
+ },
+ "s0439": {
+  "en": "Lord of the Watchtower",
+  "zh": "监视塔之主"
+ },
+ "s0440": {
+  "en": "Former lifeguard, Shiomi Beach",
+  "zh": "潮见海滨浴场 救生员"
+ },
+ "s0441": {
+  "en": "\"Please stay inside the swimming area.\" Dashes from one end of the beach to the other in an instant.",
+  "zh": "「请不要离开游泳区域」。一瞬间就能从海滩一端冲到另一端。"
+ },
+ "s0442": {
+  "en": "Mother of the Fog",
+  "zh": "雾之母"
+ },
+ "s0443": {
+  "en": "Sayoko Shiomi, former director of Helios Pharmaceuticals Lab 4",
+  "zh": "赫利俄斯制药 第四研究所 所长 潮见小夜子"
+ },
+ "s0444": {
+  "en": "The researcher who first made the Fog drug. Cloaked in the sea fog itself, she uses every attack.",
+  "zh": "最早制造出雾之药的研究者。身披海雾本身，会使用所有攻击。"
+ },
+ "s0445": {
+  "en": "Kirigaoka Girls' High",
+  "zh": "雾丘女子高中"
+ },
+ "s0446": {
+  "en": "The World Ended After School",
+  "zh": "放学后，世界终结了"
+ },
+ "s0447": {
+  "en": "Sakura Street Shops",
+  "zh": "樱花街商店街"
+ },
+ "s0448": {
+  "en": "The Smell of Croquettes Is Gone",
+  "zh": "再也闻不到可乐饼的香味"
+ },
+ "s0449": {
+  "en": "Subway: Kirigaoka Line",
+  "zh": "地铁·雾丘线"
+ },
+ "s0450": {
+  "en": "What Comes After the Last Train",
+  "zh": "末班车之后到来的东西"
+ },
+ "s0451": {
+  "en": "City General Hospital",
+  "zh": "市立综合医院"
+ },
+ "s0452": {
+  "en": "Under the Green Exit Lights",
+  "zh": "绿色应急灯下"
+ },
+ "s0453": {
+  "en": "Harbor: Helios Lab 3",
+  "zh": "港湾·赫利俄斯第三研究所"
+ },
+ "s0454": {
+  "en": "Heart of the Fog",
+  "zh": "雾之心脏"
+ },
+ "s0455": {
+  "en": "Shiomi Seaside Camp",
+  "zh": "潮见岛 临海集训"
+ },
+ "s0456": {
+  "en": "Part {}: Summer Fog from the Sea",
+  "zh": "第{}部·夏日之雾自海上来"
+ },
+ "s0457": {
+  "en": "Trouble After School",
+  "zh": "放学后的异变"
+ },
+ "s0458": {
+  "en": "Across the Walkway",
+  "zh": "穿过连廊"
+ },
+ "s0459": {
+  "en": "The Festival Bazooka",
+  "zh": "文化祭仓库的火箭筒"
+ },
+ "s0460": {
+  "en": "Gym Shed Barricade",
+  "zh": "体育仓库路障"
+ },
+ "s0461": {
+  "en": "Showdown at the Gate",
+  "zh": "校门前的教导主任"
+ },
+ "s0462": {
+  "en": "Sakura Street Entrance",
+  "zh": "樱花街入口"
+ },
+ "s0463": {
+  "en": "Screams in the Arcade",
+  "zh": "拱廊里的惨叫"
+ },
+ "s0464": {
+  "en": "Solo Croquette Run",
+  "zh": "独自前往可乐饼店"
+ },
+ "s0465": {
+  "en": "Rooftop Cover Fire",
+  "zh": "屋顶的掩护射击"
+ },
+ "s0466": {
+  "en": "Shutter Defense Line",
+  "zh": "卷帘门前防线"
+ },
+ "s0467": {
+  "en": "The Butcher Shop Owner",
+  "zh": "肉铺之主"
+ },
+ "s0468": {
+  "en": "Empty Ticket Gates",
+  "zh": "无人的检票口"
+ },
+ "s0469": {
+  "en": "Walking the Tracks",
+  "zh": "沿着铁轨前行"
+ },
+ "s0470": {
+  "en": "Reboot the Power Room",
+  "zh": "重启配电室"
+ },
+ "s0471": {
+  "en": "Blackout Platform",
+  "zh": "停电的站台"
+ },
+ "s0472": {
+  "en": "Night ER Entrance",
+  "zh": "夜间急诊入口"
+ },
+ "s0473": {
+  "en": "Ward Three",
+  "zh": "第三病房楼"
+ },
+ "s0474": {
+  "en": "Father's Office",
+  "zh": "父亲的诊室"
+ },
+ "s0475": {
+  "en": "From the Opposite Ward",
+  "zh": "从对面的病房楼"
+ },
+ "s0476": {
+  "en": "Defend the Pharmacy",
+  "zh": "守住药房"
+ },
+ "s0477": {
+  "en": "The Director's Rounds",
+  "zh": "院长查房"
+ },
+ "s0478": {
+  "en": "Container Yard",
+  "zh": "集装箱堆场"
+ },
+ "s0479": {
+  "en": "Laboratory 3",
+  "zh": "第三研究所"
+ },
+ "s0480": {
+  "en": "President & Vice-Pres.",
+  "zh": "社长与副社长"
+ },
+ "s0481": {
+  "en": "Reactor: Last Stand",
+  "zh": "发生炉前·最终防线"
+ },
+ "s0482": {
+  "en": "Fog Over the Pier",
+  "zh": "笼罩栈桥的雾"
+ },
+ "s0483": {
+  "en": "Beach Hut Row",
+  "zh": "海滨小屋街"
+ },
+ "s0484": {
+  "en": "Beach Hut Barricade",
+  "zh": "海滨小屋路障"
+ },
+ "s0485": {
+  "en": "Lighthouse Cover Fire",
+  "zh": "灯塔的掩护射击"
+ },
+ "s0486": {
+  "en": "Fishing Port at Night",
+  "zh": "夜晚的渔港"
+ },
+ "s0487": {
+  "en": "Cold Storage Survivors",
+  "zh": "冷冻仓库的幸存者"
+ },
+ "s0488": {
+  "en": "Lighthouse, Alone",
+  "zh": "独自前往灯塔"
+ },
+ "s0489": {
+  "en": "Offshore Plant Bridge",
+  "zh": "海上工厂连接桥"
+ },
+ "s0490": {
+  "en": "Barricade {}%+ intact",
+  "zh": "路障耐久{}%以上"
+ },
+ "s0491": {
+  "en": "No Downs",
+  "zh": "无倒地"
+ },
+ "s0492": {
+  "en": "Headshots",
+  "zh": "爆头"
+ },
+ "s0493": {
+  "en": "+",
+  "zh": "次以上"
+ },
+ "s0494": {
+  "en": "+ kills",
+  "zh": "只以上击杀"
+ },
+ "s0495": {
+  "en": "or less",
+  "zh": "以内"
+ },
+ "s0496": {
+  "en": "Normal",
+  "zh": "普通"
+ },
+ "s0497": {
+  "en": "Hard",
+  "zh": "困难"
+ },
+ "s0498": {
+  "en": "Very Hard",
+  "zh": "极难"
+ },
+ "s0499": {
+  "en": "Nightmare",
+  "zh": "噩梦"
+ }
+}
