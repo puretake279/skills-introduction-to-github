@@ -1,0 +1,150 @@
+Sprite Fusion 利用規約（https://www.spritefusion.com/terms）
+取得日：2026-11-16（AI営業部が保存した控え。本文は英語の原文のまま）
+
+Terms of Service
+These Terms of Service govern Your access to and use of Sprite Fusion, including the Website, the Tilemap Editor,
+Pixel Snapper, the Pixel Art Generator, desktop apps, downloads, subscriptions, credits, and related services. By
+using the Service, You agree to these Terms.
+If You do not agree to these Terms, You must not use the Service. If You use the Service on behalf of a company or
+other organization, You represent that You have authority to bind that organization to these Terms.
+Definitions
+Company
+, 
+We
+, 
+Us
+, or 
+Our
+refers to Sprite Fusion.
+Service
+refers to Sprite Fusion and all related products, tools, websites, and services.
+You
+refers to the person or entity accessing or using the Service.
+User Content
+refers to prompts, uploaded images, tilesets, sprites, generated images, generated
+animations, maps, settings, files, feedback, and any other content You submit, create, import, or export through
+the Service.
+Output
+refers to images, animations, sprites, maps, files, or other materials generated, edited,
+exported, or downloaded through the Service.
+Eligibility
+You must be at least 13 years old to use the Service. If You are under the age of majority in Your jurisdiction,
+You may use the Service only with permission and supervision from a parent or legal guardian.
+Accounts
+Some parts of the Service may require an Account. You agree to provide accurate information, keep Your login
+credentials secure, and remain responsible for all activity under Your Account.
+We may suspend, restrict, or terminate Accounts that violate these Terms, create legal risk, harm the Service, or
+appear fraudulent, abusive, or insecure.
+API Access and Automation
+You may automate development-time workflows through Our documented API and official integrations. This permission
+does not authorize scraping, browser automation outside documented interfaces, bypassing access controls, or using
+undocumented endpoints.
+API keys are confidential Account credentials. You must keep them secure and must not share, publish, sell, or embed
+them in browser bundles, public repositories, games, plugins, distributed binaries, or other client software. You are
+responsible for activity performed with Your API keys and must revoke a key promptly if it may have been exposed.
+You may include generated Outputs in a distributed personal or commercial game or project under these Terms. That is
+distinct from distributing API access. By default, You may not resell credits, proxy the API, share API access with third
+parties, or offer Sprite Fusion generation as a third-party or multi-tenant service. If Your product or business needs one
+of these uses, 
+contact Us by email
+to discuss a separate written
+commercial arrangement based on the intended use, expected volume, and operational requirements.
+We may apply rate limits and may suspend API keys or Account access where use threatens security, availability, costs,
+or compliance with these Terms.
+User Content and License to Operate the Service
+You retain the rights You have in Your User Content. You grant Us a limited, worldwide, non-exclusive license to
+host, process, transmit, reproduce, display, modify, and use Your User Content only as needed to provide, secure,
+moderate, troubleshoot, support, and improve the Service.
+Some features rely on third-party service providers and AI infrastructure providers. You authorize Us to send User
+Content, generation settings, and job metadata to those providers as needed to provide the requested feature,
+prevent abuse, troubleshoot errors, and comply with legal obligations.
+Only creations generated using free or promotional credits by users without an active paid plan may be selected and
+copied to the public gallery. Creations generated under an active paid plan are private and not publicly available.
+You represent that You have all rights, permissions, and legal authority needed to submit, upload, generate, edit,
+and use Your User Content and Outputs.
+Outputs and Commercial Use
+Subject to Your compliance with these Terms, We do not claim ownership over Outputs You create through the
+Service. You may use Outputs for personal or commercial projects.
+You are solely responsible for reviewing Outputs before use. We do not guarantee that any Output is unique,
+copyrightable, trademark-safe, free from third-party rights, suitable for a specific project, or lawful in every
+jurisdiction or context.
+AI-powered tools may produce unexpected, inaccurate, similar, or unusable results. You must not rely on the
+Service as a substitute for legal, copyright, trademark, or licensing review.
+Restrictions
+You agree not to use the Service to:
+Violate any law, regulation, contract, intellectual property right, privacy right, or other third-party right.
+Create, upload, request, or distribute illegal, abusive, hateful, harassing, deceptive, exploitative, or harmful
+content.
+Impersonate another person or misrepresent the origin, ownership, or endorsement of User Content or Outputs.
+Upload malware, attempt unauthorized access, overload infrastructure, or interfere with the Service.
+Scrape, crawl, extract, reverse engineer, bypass limits, or automate access except through Our documented API or
+official integrations as expressly permitted above.
+Resell, sublicense, proxy, or provide the Service to third parties as a competing or substantially similar
+service unless We expressly authorize it in a separate written agreement.
+Use Outputs, Service data, or Service access to train, fine-tune, benchmark, or improve machine-learning models
+without Our prior written permission.
+Remove notices, bypass payment or credit systems, or exploit bugs, promotions, refunds, or
+subscriptions.
+Obtain, attempt to obtain, or use free or promotional credits contrary to their stated eligibility, quantity,
+or usage limits.
+Payments, Subscriptions, and Credits
+Paid features may be sold as subscriptions, one-time purchases, desktop apps, usage credits, or other paid plans.
+Prices, included usage, feature availability, and limits may change over time.
+Subscriptions renew automatically unless canceled before the renewal date. Cancellation stops future renewals but
+does not automatically refund prior charges or partially used billing periods unless required by law or stated in
+a specific offer.
+Credits, usage allowances, and generation limits may expire, reset, be consumed by successful generations, or be
+held while a generation is pending. We may restore credits for failed generations at Our discretion or where the
+Service explicitly provides it.
+We may correct pricing errors, refuse purchases, cancel abusive transactions, and suspend paid access where a
+payment fails, is reversed, is fraudulent, or violates these Terms.
+Refunds
+Except where required by law or stated in a specific offer, payments are non-refundable. Because AI-generated
+creative results can vary, dissatisfaction with a particular Output does not automatically create a refund right.
+Service Availability and Changes
+We may modify, pause, discontinue, limit, or remove any part of the Service at any time. The Service may be
+unavailable, slow, rate-limited, or fail because of maintenance, errors, third-party providers, infrastructure
+issues, abuse prevention, or circumstances outside Our control.
+You are responsible for exporting and backing up any User Content or Outputs You need. We are not responsible for
+lost, corrupted, unavailable, or deleted User Content or Outputs except where applicable law says otherwise.
+Our Intellectual Property
+The Service, including software, design, source code, interfaces, branding, documentation, logos, and other
+materials We provide, is owned by Us or Our licensors. These Terms do not transfer any rights in the Service to
+You except the limited right to use it according to these Terms.
+Third-Party Services
+The Service may integrate with or depend on third-party services, infrastructure, payment processors, hosting
+providers, analytics tools, AI infrastructure, stores, links, or downloads. We are not responsible for third-party
+services, their availability, their content, or their legal terms.
+Privacy
+Our Privacy Policy explains how We collect, use, share, and retain information. By using the Service, You also
+agree to the processing described in the 
+Privacy Policy
+.
+Termination
+You may stop using the Service at any time. We may suspend or terminate Your access to the Service if We believe
+You violated these Terms, created legal risk, abused the Service, failed to pay, or caused harm to Us, other
+users, third-party providers, or the Service.
+Disclaimer
+The Service is provided "as is" and "as available." To the maximum extent permitted by law, We
+disclaim all warranties, whether express, implied, or statutory, including warranties of merchantability, fitness
+for a particular purpose, non-infringement, accuracy, availability, and reliability.
+Limitation of Liability
+To the maximum extent permitted by law, We will not be liable for indirect, incidental, special, consequential,
+exemplary, or punitive damages, or for lost profits, lost revenue, lost data, lost goodwill, business
+interruption, or the cost of substitute services.
+To the maximum extent permitted by law, Our total liability for any claim related to the Service will not exceed
+the greater of 100 USD or the amount You paid to Us for the Service during the one month before the event giving
+rise to the claim.
+Indemnification
+You agree to defend, indemnify, and hold Us harmless from claims, damages, liabilities, losses, and expenses
+arising from Your use of the Service, Your User Content, Your Outputs, Your violation of these Terms, or Your
+violation of law or third-party rights.
+Changes to These Terms
+We may update these Terms from time to time. Changes are effective when posted unless a later date is stated. If
+You continue using the Service after changes take effect, You accept the updated Terms.
+Governing Law
+These Terms are governed by the laws of France, except where applicable consumer protection laws require
+otherwise.
+Contact Us
+If You have questions about these Terms, You can contact Us:
+By email: 
