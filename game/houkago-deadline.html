@@ -7,7 +7,7 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <title>放課後デッドライン</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
 <style>
 :root{--bg:#0b0f17;--p1:#141b28;--p2:#1c2535;--line:#2f3b52;--txt:#e8eef8;--dim:#8b97ab;--acc:#ffc83d;--pink:#ff6b9d;--cyan:#6fe3ff;--green:#7be07b;--red:#ff5c6a}
 *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
@@ -944,11 +944,10 @@ const GFX = (() => {
     return out;
   }
   async function init() {
-    const [g, h, z] = await Promise.all([loadImg(ASSETS.girl), loadImg(ASSETS.hands), loadImg(ASSETS.zombie)]);
+    // all sprite sheets decode in parallel (they used to load in three rounds, one after another)
+    const grp = (src, dst) => Object.keys(src || {}).map(async k => { dst[k] = await loadImg(src[k]); });
+    const [g, h, z] = await Promise.all([loadImg(ASSETS.girl), loadImg(ASSETS.hands), loadImg(ASSETS.zombie), ...grp(ASSETS.ch, chImg), ...grp(ASSETS.skin, skinImg), ...grp(ASSETS.ex, exImg)]);
     girlCls = clsOf(g); handCls = clsOf(h);
-    await Promise.all(Object.keys(ASSETS.ch || {}).map(async k => { chImg[k] = await loadImg(ASSETS.ch[k]); }));
-    await Promise.all(Object.keys(ASSETS.skin || {}).map(async k => { skinImg[k] = await loadImg(ASSETS.skin[k]); }));
-    await Promise.all(Object.keys(ASSETS.ex || {}).map(async k => { exImg[k] = await loadImg(ASSETS.ex[k]); }));
     const c = mk(512, 64), x = c.getContext('2d'); x.drawImage(z, 0, 0);
     zData = x.getImageData(0, 0, 512, 64);
     // zombie head anchors (hood top)
@@ -1854,9 +1853,11 @@ const SND = (() => {
       duck = ac.createGain(); duck.connect(master); bgmG = ac.createGain(); bgmG.gain.value = vol.bgm * 0.75; bgmG.connect(duck);
       noiseBuf = ac.createBuffer(1, ac.sampleRate * 2, ac.sampleRate); const d = noiseBuf.getChannelData(0); for (let i = 0; i < d.length; i++) d[i] = Math.random() * 2 - 1;
       // generated stereo reverb impulse
-      const len = Math.floor(ac.sampleRate * 1.9), ir = ac.createBuffer(2, len, ac.sampleRate);
-      for (let c = 0; c < 2; c++) { const b = ir.getChannelData(c); let lp = 0; for (let i = 0; i < len; i++) { const t = i / len, n = Math.random() * 2 - 1; lp += (n - lp) * (0.75 - 0.6 * t); b[i] = lp * Math.pow(1 - t, 2.6) * (i < 400 ? i / 400 : 1); } }
-      rev = ac.createConvolver(); rev.buffer = ir; const rg = ac.createGain(); rg.gain.value = 0.9; rev.connect(rg); rg.connect(master);
+      // the reverb tail is generated in a later task so the first tap answers at once (sounds are dry for that moment)
+      rev = ac.createConvolver();
+      setTimeout(() => { try { const len = Math.floor(ac.sampleRate * 1.9), ir = ac.createBuffer(2, len, ac.sampleRate);
+        for (let c = 0; c < 2; c++) { const b = ir.getChannelData(c); let lp = 0; for (let i = 0; i < len; i++) { const t = i / len, n = Math.random() * 2 - 1; lp += (n - lp) * (0.75 - 0.6 * t); b[i] = lp * Math.pow(1 - t, 2.6) * (i < 400 ? i / 400 : 1); } }
+        rev.buffer = ir; } catch (e) { } }, 120); const rg = ac.createGain(); rg.gain.value = 0.9; rev.connect(rg); rg.connect(master);
       revS = ac.createGain(); revS.gain.value = vol.sfx; revS.connect(rev); revB = ac.createGain(); revB.gain.value = vol.bgm * 0.75; revB.connect(rev);
       dly = ac.createDelay(1); dly.delayTime.value = 0.3; const fb = ac.createGain(); fb.gain.value = 0.34; const df = ac.createBiquadFilter(); df.type = 'lowpass'; df.frequency.value = 2600;
       dly.connect(df); df.connect(fb); fb.connect(dly); df.connect(bgmG); dlyS = ac.createGain(); dlyS.gain.value = 1; dlyS.connect(dly);
@@ -3523,7 +3524,8 @@ async function boot() {
   loadSave(); layout();
   cloudInit(() => { try { for (const k in GFX.cache) if (k[0] === 'c' || k[0] === 'g') delete GFX.cache[k]; SND.setVol('bgm', S.opt.bgm); SND.setVol('sfx', S.opt.sfx); } catch (e) { } UI.toast('クラウドのセーブデータを読み込みました'); if (UI.cur !== 'title') UI.show('home'); });
   await GFX.init();
-  try { if (document.fonts && document.fonts.load) await Promise.race([document.fonts.load('16px "DotGothic16"'), new Promise(r => setTimeout(r, 1500))]); } catch (e) { }
+  // the pixel font is a nice-to-have: wait a moment for it, never hold the title screen on a slow network
+  try { if (document.fonts && document.fonts.load) await Promise.race([document.fonts.load('16px "DotGothic16"'), new Promise(r => setTimeout(r, 300))]); } catch (e) { }
   battleInitCanvas(document.getElementById('cv')); layout();
   UI.init(document.getElementById('ui')); UI.show('title'); document.getElementById('load').remove();
   const rot = document.getElementById('rot');
