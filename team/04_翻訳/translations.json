@@ -395,17 +395,9 @@
   "en": "A machine gun pieced together from the wreckage of the generator. It turns the Fog itself into bullets and never stops firing.",
   "zh": "用发生炉残骸组装的机枪。把雾本身化为子弹，不停射击。"
  },
- "s0100": {
-  "en": "Service Pistol P-{}",
-  "zh": "制式手枪 P-{}"
- },
  "s0101": {
   "en": "An automatic pistol also issued to the police. Light, and crits easily.",
   "zh": "警察也在配备的自动手枪。轻巧，容易打出暴击。"
- },
- "s0102": {
-  "en": "Machine Pistol G-{}",
-  "zh": "冲锋手枪 G-{}"
  },
  "s0103": {
   "en": "A pistol that fires full-auto. A little bucking bronco that sprays bullets everywhere.",
@@ -435,10 +427,6 @@
   "en": "A lab-made electromagnetic pistol. Fire rate and power in one: the pinnacle of handguns.",
   "zh": "研究所制造的电磁手枪。兼顾射速与威力，手枪的巅峰之作。"
  },
- "s0110": {
-  "en": "SAW Carbine M-{}",
-  "zh": "班用支援卡宾枪 M-{}"
- },
  "s0111": {
   "en": "A lightweight rifle adapted to serve as a machine gun. Haru's favorite.",
   "zh": "把步枪改作机枪使用的轻量型号。春的爱枪。"
@@ -459,25 +447,13 @@
   "en": "The standard rifle from the club's equipment locker. Straightforward and easy to handle.",
   "zh": "社团器材柜里的标准步枪。中规中矩，容易上手。"
  },
- "s0116": {
-  "en": "Bullpup F-{}",
-  "zh": "无托步枪 F-{}"
- },
  "s0117": {
   "en": "A short rifle with its action set behind the grip. Handy, with a quick reload.",
   "zh": "机匣后置的短步枪。操控灵活，装弹也快。"
  },
- "s0118": {
-  "en": "Cossack AK-{}K",
-  "zh": "哥萨克 AK-{}K"
- },
  "s0119": {
   "en": "A tough rifle rumored to work even after a mud bath. Every round hits hard and pierces {} enemies.",
   "zh": "据说泡过泥水也照样能用的结实步枪。每一发都很沉重，可穿透{}名敌人。"
- },
- "s0120": {
-  "en": "Battle Rifle SR-{}B",
-  "zh": "战斗步枪 SR-{}B"
  },
  "s0121": {
   "en": "A large-caliber rifle that leans semi-auto. High accuracy and range, and crits easily.",
@@ -491,25 +467,13 @@
   "en": "A prototype electromagnetic rifle from Helios Pharmaceuticals. Its high-velocity rounds pierce {} enemies.",
   "zh": "赫利俄斯制药的试作电磁步枪。高初速子弹可贯穿{}名敌人。"
  },
- "s0124": {
-  "en": "Pocket Buzz MP-{}K",
-  "zh": "口袋蜂鸣 MP-{}K"
- },
  "s0125": {
   "en": "A small, light SMG. Spray bullets while you run circles around them.",
   "zh": "小巧轻便的冲锋枪。可以边跑边泼洒子弹。"
  },
- "s0126": {
-  "en": "Honeybee P-{}",
-  "zh": "蜜蜂 P-{}"
- },
  "s0127": {
   "en": "An oddball with a {}-round magazine mounted on top. Rarely runs dry.",
   "zh": "顶部装着{}发弹匣的个性派。不容易断弹。"
- },
- "s0128": {
-  "en": "Vector V-{}",
-  "zh": "维克托 V-{}"
  },
  "s0129": {
   "en": "A system that channels recoil downward gives it a staggering fire rate. Runs dry in no time.",
@@ -531,10 +495,6 @@
   "en": "A plasma-round SMG found in a lab. A storm of bullets.",
   "zh": "在研究所发现的等离子弹冲锋枪。暴风般的弹幕。"
  },
- "s0134": {
-  "en": "Pump M-{}",
-  "zh": "泵动 M-{}"
- },
  "s0135": {
   "en": "The classic ka-chunk pump-action. Blows away every enemy that gets too close.",
   "zh": "咔嚓作响的经典泵动式。把靠近的敌人一并轰飞。"
@@ -546,10 +506,6 @@
  "s0137": {
   "en": "A double-barrel with its barrels cut short. Holds only {} shells, but hits like a truck.",
   "zh": "截短枪管的双管枪。只能装{}发，但威力巨大。"
- },
- "s0138": {
-  "en": "Auto {} Saiga",
-  "zh": "自动{} 萨伊加"
  },
  "s0139": {
   "en": "A semi-auto shotgun with a box magazine. Rapid fire pushes back the horde.",
@@ -570,10 +526,6 @@
  "s0143": {
   "en": "An anti-materiel shotgun that blows away the door and whoever's behind it. Zombies fly to the edge of the screen.",
   "zh": "连门带人一起轰飞的反器材霰弹枪。僵尸会飞到画面边缘。"
- },
- "s0144": {
-  "en": "Bolt-Action M-{}",
-  "zh": "栓动 M-{}"
  },
  "s0145": {
   "en": "A bolt-action sniper rifle. Pierces up to {} enemies lined up in a row.",
@@ -611,10 +563,6 @@
   "en": "A prototype that launches rounds by electromagnetic acceleration. Pierces everything in its line of fire.",
   "zh": "以电磁加速发射子弹的试作兵器。贯穿射线上的一切。"
  },
- "s0154": {
-  "en": "SAW M-{}",
-  "zh": "班用支援机枪 M-{}"
- },
  "s0155": {
   "en": "{}-round belt feed. Keeps firing, but reloads take forever.",
   "zh": "{}发弹链供弹。可以持续射击，但装弹很慢。"
@@ -626,10 +574,6 @@
  "s0157": {
   "en": "Hammers in heavy rounds without end. Punches holes in zombie lines.",
   "zh": "源源不断地砸进重型子弹。在僵尸队列中打出缺口。"
- },
- "s0158": {
-  "en": "MG-{} 'Buzzsaw'",
-  "zh": "MG-{}「电锯」"
  },
  "s0159": {
   "en": "Nicknamed for a rate of fire that sounds like tearing cloth. Sheer violence by bullet storm.",
@@ -643,17 +587,9 @@
   "en": "A rotary multi-barrel gun. Once it starts spinning, nothing in front of it is left standing.",
   "zh": "回转式多管枪。一旦转起来，眼前便什么都不剩。"
  },
- "s0162": {
-  "en": "Grenade Launcher M-{}",
-  "zh": "榴弹枪 M-{}"
- },
  "s0163": {
   "en": "A break-action, single-shot grenade launcher. Lobs in an arc and explodes.",
   "zh": "折开式单发榴弹发射器。沿抛物线飞行后爆炸。"
- },
- "s0164": {
-  "en": "Revolver Launcher MGL",
-  "zh": "转轮榴弹发射器 MGL"
  },
  "s0165": {
   "en": "A {}-shot revolving-cylinder launcher. Back-to-back blasts wipe out the horde.",
@@ -682,10 +618,6 @@
  "s0171": {
   "en": "A fishing co-op speargun, shrunk down to pistol size. Its harpoon skewers up to {} enemies.",
   "zh": "把渔协仓库里的水下枪缩成手枪大小。鱼叉最多可串起{}名敌人。"
- },
- "s0172": {
-  "en": "Surfrider AR-{}",
-  "zh": "冲浪者 AR-{}"
  },
  "s0173": {
   "en": "A seaside vigilante model with an anti-salt coating. Keeps running even with sand in it.",
@@ -4482,5 +4414,73 @@
  "s1121": {
   "en": "WAVE {} cleared! Pick {} to start the next WAVE",
   "zh": "WAVE {} 通过！选择{}项后开始下一个WAVE"
+ },
+ "s1122": {
+  "en": "Service Pistol K-{}",
+  "zh": "制式手枪 K-{}"
+ },
+ "s1123": {
+  "en": "Machine Pistol R-{}",
+  "zh": "冲锋手枪 R-{}"
+ },
+ "s1124": {
+  "en": "SAW Carbine T-{}",
+  "zh": "班用支援卡宾枪 T-{}"
+ },
+ "s1125": {
+  "en": "Bullpup B-{}",
+  "zh": "无托步枪 B-{}"
+ },
+ "s1126": {
+  "en": "Cossack KR-{}",
+  "zh": "哥萨克 KR-{}"
+ },
+ "s1127": {
+  "en": "Battle Rifle BR-{}",
+  "zh": "战斗步枪 BR-{}"
+ },
+ "s1128": {
+  "en": "Pocket Buzz PB-{}",
+  "zh": "口袋蜂鸣 PB-{}"
+ },
+ "s1129": {
+  "en": "Honeybee HB-{}",
+  "zh": "蜜蜂 HB-{}"
+ },
+ "s1130": {
+  "en": "Vortex V-{}",
+  "zh": "涡流 V-{}"
+ },
+ "s1131": {
+  "en": "Pump PS-{}",
+  "zh": "泵动 PS-{}"
+ },
+ "s1132": {
+  "en": "Auto {} Blizzard",
+  "zh": "自动{} 暴雪"
+ },
+ "s1133": {
+  "en": "Bolt-Action BA-{}",
+  "zh": "栓动 BA-{}"
+ },
+ "s1134": {
+  "en": "SAW SW-{}",
+  "zh": "班用支援机枪 SW-{}"
+ },
+ "s1135": {
+  "en": "MG GP-{} 'Buzzsaw'",
+  "zh": "机枪 GP-{}「电锯」"
+ },
+ "s1136": {
+  "en": "Grenade Launcher GL-{}",
+  "zh": "榴弹枪 GL-{}"
+ },
+ "s1137": {
+  "en": "Revolver Launcher RL-{}",
+  "zh": "转轮榴弹发射器 RL-{}"
+ },
+ "s1138": {
+  "en": "Surfrider SF-{}",
+  "zh": "冲浪者 SF-{}"
  }
 }
