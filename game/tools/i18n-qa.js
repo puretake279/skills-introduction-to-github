@@ -39,6 +39,11 @@ const { chromium } = require('playwright'); const path = require('path'); const 
   await p.evaluate(() => B.cfg.onEnd({ win: true, xp: 300, time: 100, downs: 0, kills: 40, by: { walker: 40 }, boss: 0, maxCombo: 9, wbox: 3, abox: 1, gbox: 2 })); await p.waitForTimeout(1200); await shot('result');
   await p.evaluate(() => { UI.launch(STAGES.find((s) => s.id === '6-4'), false); }); await p.waitForTimeout(2500); await shot('snipe');
   await p.evaluate(() => SN.cfg.onPause()); await shot('snipe_pause');
+  // survival: upgrade cards, HUD and the pause list
+  await p.evaluate(() => { SN = null; UI.launch(null, true); }); await p.waitForTimeout(2500);
+  await p.evaluate(() => { survApply('dmg'); survApply('boom'); survOpenPick(); }); await shot('surv_pick');
+  await p.evaluate(() => { for (const u of SURV_UPS) { I18N.tr(u.name); I18N.tr(u.desc); } document.querySelector('#ui .pcard').click(); }); await p.waitForTimeout(300); await shot('surv_battle');
+  await p.evaluate(() => B.cfg.onPause()); await shot('surv_pause');
   // all data names / descriptions through the translator, as the collection screens would
   await p.evaluate(() => { const t = I18N.tr; Object.values(WEAPONS).forEach((w) => { t(w.name); t(w.desc || ''); (w.tags || []).forEach((x) => typeof x === 'string' && t(x)); weaponFeats(w).forEach(t); });
     Object.values(ARMOR).forEach((a) => { t(a.name); t(a.how || ''); }); Object.values(ENEMIES).concat(Object.values(BOSSES)).forEach((e) => { t(e.name); t(e.desc); if (e.title) t(e.title); });

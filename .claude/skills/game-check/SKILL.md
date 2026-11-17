@@ -47,6 +47,11 @@ node game/tools/gamepad-test.js game/houkago-deadline.html <保存先>
 node game/tools/settings-test.js game/houkago-deadline.html <保存先>
 ```
 
+## 5b. サバイバル（強化カード・WAVE進行に関わる変更をしたとき）
+```
+node game/tools/survival-test.js game/houkago-deadline.html <保存先>
+```
+
 ## 6. 翻訳（文章を足した・変えたとき）
 `team/04_翻訳/CLAUDE.md` の手順で訳を更新し、`node game/tools/i18n-qa.js game/houkago-deadline.html en <保存先>` と `zh` で訳し漏れ・はみ出しが0件か確かめる。
 テスト用のスクリプトはブラウザを日本語の設定で開く（ゲームは初回、PCの言語に合わせて表示言語を選ぶため）。

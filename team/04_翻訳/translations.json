@@ -4382,5 +4382,105 @@
  "s1096": {
   "en": "(bench)",
   "zh": "（替补）"
+ },
+ "s1097": {
+  "en": "Firepower Up",
+  "zh": "火力增强"
+ },
+ "s1098": {
+  "en": "Rapid Fire",
+  "zh": "连射强化"
+ },
+ "s1099": {
+  "en": "Fire rate +{}%",
+  "zh": "射速 +{}%"
+ },
+ "s1100": {
+  "en": "Piercing Rounds",
+  "zh": "穿甲弹"
+ },
+ "s1101": {
+  "en": "Bullets pierce {} more enemy",
+  "zh": "子弹多穿透{}名敌人"
+ },
+ "s1102": {
+  "en": "Big Mags",
+  "zh": "大容量弹匣"
+ },
+ "s1103": {
+  "en": "Mag size +{}% (refilled now)",
+  "zh": "弹匣容量 +{}%（立即装满）"
+ },
+ "s1104": {
+  "en": "Toughness",
+  "zh": "体力强化"
+ },
+ "s1105": {
+  "en": "Max HP +{}% (heals the gain)",
+  "zh": "最大HP +{}%（回复增加的部分）"
+ },
+ "s1106": {
+  "en": "Regeneration",
+  "zh": "自然恢复"
+ },
+ "s1107": {
+  "en": "Recover {} HP per second",
+  "zh": "每秒恢复{}点HP"
+ },
+ "s1108": {
+  "en": "Fleet Foot",
+  "zh": "疾步"
+ },
+ "s1109": {
+  "en": "Move speed +{}%",
+  "zh": "移动速度 +{}%"
+ },
+ "s1110": {
+  "en": "Weak Spot",
+  "zh": "弱点看破"
+ },
+ "s1111": {
+  "en": "Focus",
+  "zh": "专注"
+ },
+ "s1112": {
+  "en": "Support Drone",
+  "zh": "支援无人机"
+ },
+ "s1113": {
+  "en": "Adds {} auto-firing drone",
+  "zh": "增加{}架自动射击的无人机"
+ },
+ "s1114": {
+  "en": "Chain Blast",
+  "zh": "诱爆"
+ },
+ "s1115": {
+  "en": "Defeated enemies explode, hitting those nearby (power and size grow with Lv)",
+  "zh": "被击倒的敌人会爆炸并波及周围（等级越高威力和范围越大）"
+ },
+ "s1116": {
+  "en": "Upgrades",
+  "zh": "强化"
+ },
+ "s1117": {
+  "en": "After every WAVE, pick {} upgrade card and your team grows stronger.",
+  "zh": "每过一个WAVE选择{}张强化卡，队伍会越来越强。"
+ },
+ "s1118": {
+  "en": "Choose with the D-pad, confirm with A",
+  "zh": "用十字键选择，按A确认"
+ },
+ "s1119": {
+  "en": "Click, or press {}–{} to choose",
+  "zh": "点击，或按{}～{}键选择"
+ },
+ "s1120": {
+  "en": "Choose an Upgrade",
+  "zh": "选择强化"
+ },
+ "s1121": {
+  "en": "WAVE {} cleared! Pick {} to start the next WAVE",
+  "zh": "WAVE {} 通过！选择{}项后开始下一个WAVE"
  }
 }
