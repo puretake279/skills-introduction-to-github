@@ -1,0 +1,222 @@
+{
+ "s1042": {
+  "en": "Click to Start",
+  "zh": "点击开始"
+ },
+ "s1043": {
+  "en": "Tap to Start",
+  "zh": "轻触开始"
+ },
+ "s1044": {
+  "en": "Sound on　/　Enter also starts　/　F{} for fullscreen",
+  "zh": "有声音　/　也可按Enter开始　/　F{}切换全屏"
+ },
+ "s1045": {
+  "en": "Sound on　/　Play in landscape on phones",
+  "zh": "有声音　/　手机请横屏游玩"
+ },
+ "s1046": {
+  "en": "Locked",
+  "zh": "未解锁"
+ },
+ "s1047": {
+  "en": "Changes looks only. Stats still come from your Stat Gear.",
+  "zh": "只改变外观，属性仍按“属性装备”计算。"
+ },
+ "s1048": {
+  "en": "This gear counts toward your stats.",
+  "zh": "此装备会计入角色属性。"
+ },
+ "s1049": {
+  "en": "Same as Stat Gear",
+  "zh": "与属性装备相同"
+ },
+ "s1050": {
+  "en": "Looks only",
+  "zh": "仅外观"
+ },
+ "s1051": {
+  "en": " (stocked)",
+  "zh": "时上架"
+ },
+ "s1052": {
+  "en": " (earned)",
+  "zh": "时获得"
+ },
+ "s1053": {
+  "en": "+ stages, from Gear Crates",
+  "zh": "以上的关卡，装备箱掉落"
+ },
+ "s1054": {
+  "en": "Pierce",
+  "zh": "穿透"
+ },
+ "s1055": {
+  "en": "Hard or above, ",
+  "zh": "困难及以上，"
+ },
+ "s1056": {
+  "en": "+ stages, from Weapon Crates",
+  "zh": "以上的关卡，武器箱掉落"
+ },
+ "s1057": {
+  "en": "Not encountered yet.",
+  "zh": "尚未遭遇。"
+ },
+ "s1058": {
+  "en": "Press a key…",
+  "zh": "请按键…"
+ },
+ "s1059": {
+  "en": "Press a button…",
+  "zh": "请按按钮…"
+ },
+ "s1060": {
+  "en": "日本語",
+  "zh": "日本語"
+ },
+ "s1061": {
+  "en": "简体中文",
+  "zh": "简体中文"
+ },
+ "s1062": {
+  "en": "言語 / Language",
+  "zh": "言語 / Language"
+ },
+ "s1063": {
+  "en": "Sound FX",
+  "zh": "音效"
+ },
+ "s1064": {
+  "en": "Autosave: this PC",
+  "zh": "自动保存：本电脑"
+ },
+ "s1065": {
+  "en": "Progress is saved automatically on this PC. To move it to another PC, use a transfer code.",
+  "zh": "进度会自动保存在本电脑上。要转移到其他电脑，请使用继承码。"
+ },
+ "s1066": {
+  "en": "Cloud save: on",
+  "zh": "云存档：已开启"
+ },
+ "s1067": {
+  "en": "Progress is saved to your account automatically and restored on the next start even if browser data is cleared.",
+  "zh": "进度会自动保存到你的账号，即使浏览器数据被清除，下次启动时也会恢复。"
+ },
+ "s1068": {
+  "en": "Cloud save: checking…",
+  "zh": "云存档：确认中…"
+ },
+ "s1069": {
+  "en": "Progress is saved automatically in this browser.",
+  "zh": "进度会自动保存在此浏览器中。"
+ },
+ "s1070": {
+  "en": "Cloud save: unavailable",
+  "zh": "云存档：不可用"
+ },
+ "s1071": {
+  "en": "Progress is saved in this browser only. If browser data is cleared it can't be restored, so keep a transfer code.",
+  "zh": "进度只保存在此浏览器中。浏览器数据被清除后将无法恢复，请记下继承码。"
+ },
+ "s1072": {
+  "en": "Sniper Mission",
+  "zh": "狙击任务"
+ },
+ "s1073": {
+  "en": "Fixed Team",
+  "zh": "固定编队"
+ },
+ "s1074": {
+  "en": "Good with",
+  "zh": "次擅长"
+ },
+ "s1075": {
+  "en": "Equipped",
+  "zh": "装备中"
+ },
+ "s1076": {
+  "en": "(halved on failure)",
+  "zh": "（失败时减半）"
+ },
+ "s1077": {
+  "en": "Retry",
+  "zh": "再来一次"
+ },
+ "s1078": {
+  "en": "Retry",
+  "zh": "重试"
+ },
+ "s1079": {
+  "en": "Next Stage ▶",
+  "zh": "下一关 ▶"
+ },
+ "s1080": {
+  "en": "Sniper",
+  "zh": "狙击"
+ },
+ "s1081": {
+  "en": "Solo",
+  "zh": "单人"
+ },
+ "s1082": {
+  "en": "Fixed Team",
+  "zh": "固定编队"
+ },
+ "s1083": {
+  "en": "Assault",
+  "zh": "突破"
+ },
+ "s1084": {
+  "en": "Defend",
+  "zh": "防守"
+ },
+ "s1085": {
+  "en": "Weapons up to Lv",
+  "zh": "武器 最高Lv"
+ },
+ "s1086": {
+  "en": "Clear this chapter on ",
+  "zh": "本章"
+ },
+ "s1087": {
+  "en": " to unlock",
+  "zh": "通关后解锁"
+ },
+ "s1088": {
+  "en": "Done",
+  "zh": "已达成"
+ },
+ "s1089": {
+  "en": "Clear every stage in this chapter for",
+  "zh": "本章全部通关可获得"
+ },
+ "s1090": {
+  "en": "Fullscreen",
+  "zh": "全屏"
+ },
+ "s1091": {
+  "en": "Stick / D-pad",
+  "zh": "摇杆 / 十字键"
+ },
+ "s1092": {
+  "en": "✓ Autosaved",
+  "zh": "✓ 已自动保存"
+ },
+ "s1093": {
+  "en": "⚠ Couldn't save on this device (keep a transfer code from Settings)",
+  "zh": "⚠ 无法保存在此设备上（请在设置中记下“继承码”）"
+ },
+ "s1094": {
+  "en": "Clear",
+  "zh": "通关"
+ },
+ "s1095": {
+  "en": "Owned",
+  "zh": "已拥有"
+ },
+ "s1096": {
+  "en": "(bench)",
+  "zh": "（替补）"
+ }
+}

@@ -1,0 +1,1042 @@
+{
+ "s0008": {
+  "en": "Yui Asahina",
+  "zh": "朝比奈 结衣"
+ },
+ "s0009": {
+  "en": "Yui",
+  "zh": "结衣"
+ },
+ "s0010": {
+  "en": "Assault / Club President",
+  "zh": "突击 / 社长"
+ },
+ "s0011": {
+  "en": "President of the Airsoft Club. Deeply responsible, her motto in any situation is \"We all go home together.\" Her shooting is textbook-precise.",
+  "zh": "生存游戏社社长。责任感极强，无论何时都把「大家一起回家」挂在嘴边。射击精准，堪称教科书。"
+ },
+ "s0012": {
+  "en": "Leadership: Partner damage +{}%",
+  "zh": "领导力：搭档伤害+{}%"
+ },
+ "s0013": {
+  "en": "Full Burst",
+  "zh": "全力连射"
+ },
+ "s0014": {
+  "en": "For {}s: fire rate +{}%, no ammo used",
+  "zh": "{}秒内，射速+{}%，不消耗弹药"
+ },
+ "s0015": {
+  "en": "Extended Burst",
+  "zh": "连射延长"
+ },
+ "s0016": {
+  "en": "Full Burst duration +{}s",
+  "zh": "全力连射持续时间 +{}秒"
+ },
+ "s0017": {
+  "en": "Rei Kurose",
+  "zh": "黑濑 玲"
+ },
+ "s0018": {
+  "en": "Rei",
+  "zh": "玲"
+ },
+ "s0019": {
+  "en": "Marksman / Vice President",
+  "zh": "射手 / 副社长"
+ },
+ "s0020": {
+  "en": "Just transferred in and still wearing her old school's sailor uniform. Top of her class, and with a pistol she can hit a vital spot in one shot. Her father is a doctor at the city hospital.",
+  "zh": "刚转学过来，还穿着前一所学校的水手服。头脑全年级第一，用手枪一发就能击穿要害。父亲是市立医院的医生。"
+ },
+ "s0021": {
+  "en": "Precision: Crit +{}%, Crit damage +{}%",
+  "zh": "精准射击：暴击率+{}%，暴击伤害+{}%"
+ },
+ "s0022": {
+  "en": "Deadeye",
+  "zh": "死亡之眼"
+ },
+ "s0023": {
+  "en": "Locks on to up to {} enemies on screen and fires piercing rounds through them",
+  "zh": "锁定画面内最多{}名敌人，用穿透弹将其击穿"
+ },
+ "s0024": {
+  "en": "Hawk Eye",
+  "zh": "鹰之眼"
+ },
+ "s0025": {
+  "en": "Deadeye damage +{}%",
+  "zh": "死亡之眼威力 +{}%"
+ },
+ "s0026": {
+  "en": "Haru Hinata",
+  "zh": "日向 春"
+ },
+ "s0027": {
+  "en": "Haru",
+  "zh": "春"
+ },
+ "s0028": {
+  "en": "Suppression / Vanguard",
+  "zh": "压制射击 / 突击手"
+ },
+ "s0029": {
+  "en": "A blonde, twin-tailed former ace of the softball club. Pulls the trigger before she thinks. Looks out for her little brother, and croquettes are her favorite food.",
+  "zh": "金发双马尾，前垒球社王牌。想都不想就先扣扳机。很疼弟弟，最爱吃可乐饼。"
+ },
+ "s0030": {
+  "en": "Toughness: Damage taken -{}%, close-range damage +{}%",
+  "zh": "坚韧：受到伤害-{}%，近距离伤害+{}%"
+ },
+ "s0031": {
+  "en": "Break Charge",
+  "zh": "破阵冲锋"
+ },
+ "s0032": {
+  "en": "An invincible charge that bowls enemies over and stuns them, ending in a shockwave. Then for {}s: damage taken halved, damage +{}%, ammo fully restored",
+  "zh": "无敌冲锋撞飞并击晕敌人，在停下处释放冲击波。之后{}秒内，受到伤害减半，伤害+{}%，弹药全满"
+ },
+ "s0033": {
+  "en": "Iron Wall",
+  "zh": "铁壁"
+ },
+ "s0034": {
+  "en": "Post-charge buff duration +{}s",
+  "zh": "冲锋后强化时间 +{}秒"
+ },
+ "s0035": {
+  "en": "Mio Shirayuki",
+  "zh": "白雪 澪"
+ },
+ "s0036": {
+  "en": "Mio",
+  "zh": "澪"
+ },
+ "s0037": {
+  "en": "Gadgets / Skirmisher",
+  "zh": "装置 / 游击"
+ },
+ "s0038": {
+  "en": "A silver-haired first-year who breaks school rules while still wearing her discipline committee armband. One hand shoots, the other is a spare. Her homemade drone \"Pochi\" counts as club equipment.",
+  "zh": "戴着风纪委员袖章照样违反校规的银发一年级生。一只手开枪，另一只手备用。自制无人机「波奇」被算作社团公物。"
+ },
+ "s0039": {
+  "en": "Nimble: Move speed +{}%, Weapon & Armor Crate drop rate +{}%",
+  "zh": "身手敏捷：移动速度+{}%，武器箱与护甲箱掉落率+{}%"
+ },
+ "s0040": {
+  "en": "Drone \"Pochi\"",
+  "zh": "无人机「波奇」"
+ },
+ "s0041": {
+  "en": "Calls a support drone that auto-fires at enemies for {}s",
+  "zh": "召唤支援无人机，在{}秒内自动射击敌人"
+ },
+ "s0042": {
+  "en": "Big Battery",
+  "zh": "大容量电池"
+ },
+ "s0043": {
+  "en": "Drone uptime +{}s",
+  "zh": "无人机运作时间 +{}秒"
+ },
+ "s0044": {
+  "en": "Nana Momoi",
+  "zh": "桃井 奈奈"
+ },
+ "s0045": {
+  "en": "Nana",
+  "zh": "奈奈"
+ },
+ "s0046": {
+  "en": "Heavy Weapons / Rookie",
+  "zh": "重火器 / 新社员"
+ },
+ "s0047": {
+  "en": "The new member whose catchphrase is \"Firepower is justice, Senpai!\" She hauled an anti-tank bazooka out of the school festival storeroom. Small, but strong.",
+  "zh": "口头禅是「火力就是正义，前辈！」的新社员。从文化祭仓库里扛出了一门反坦克火箭筒。个子小小，力气却很大。"
+ },
+ "s0048": {
+  "en": "Demolition Fanatic: Blast radius +{}%, explosion damage +{}%",
+  "zh": "爆破狂：爆炸范围+{}%，爆炸伤害+{}%"
+ },
+ "s0049": {
+  "en": "Megaton Buster",
+  "zh": "百万吨爆破"
+ },
+ "s0050": {
+  "en": "Fires {} rockets in a row. Big explosions no matter what weapon is equipped",
+  "zh": "连射{}发火箭弹。无论装备什么武器都会引发大爆炸"
+ },
+ "s0051": {
+  "en": "More Explosives",
+  "zh": "增量炸药"
+ },
+ "s0052": {
+  "en": "Megaton Buster damage +{}%",
+  "zh": "百万吨爆破威力 +{}%"
+ },
+ "s0053": {
+  "en": "Firepower Drills",
+  "zh": "火力训练"
+ },
+ "s0054": {
+  "en": "Damage +{}%",
+  "zh": "伤害 +{}%"
+ },
+ "s0055": {
+  "en": "Fitness Training",
+  "zh": "体能锻炼"
+ },
+ "s0056": {
+  "en": "Max HP +{}%",
+  "zh": "最大HP +{}%"
+ },
+ "s0057": {
+  "en": "Reload Drills",
+  "zh": "装弹练习"
+ },
+ "s0058": {
+  "en": "Reload time -{}%",
+  "zh": "装弹时间 -{}%"
+ },
+ "s0059": {
+  "en": "Vital Shots",
+  "zh": "瞄准要害"
+ },
+ "s0060": {
+  "en": "Crit +{}%",
+  "zh": "暴击率 +{}%"
+ },
+ "s0061": {
+  "en": "Focus",
+  "zh": "专注力"
+ },
+ "s0062": {
+  "en": "Skill cooldown -{}%",
+  "zh": "技能冷却时间 -{}%"
+ },
+ "s0063": {
+  "en": "The President's Oath",
+  "zh": "社长的誓言"
+ },
+ "s0064": {
+  "en": "In stock at Yui's Bond Lv MAX",
+  "zh": "结衣羁绊等级MAX时上架"
+ },
+ "s0065": {
+  "en": "A rifle tuned just for Yui, with \"We all go home together\" carved into the stock. No quirks, and accurate all the way.",
+  "zh": "枪托上刻着「大家一起回家」，专为结衣调校的步枪。毫无怪癖，无论多远都精准。"
+ },
+ "s0066": {
+  "en": "Kurose 'Silence'",
+  "zh": "黑濑式「静寂」"
+ },
+ "s0067": {
+  "en": "In stock at Rei's Bond Lv MAX",
+  "zh": "玲羁绊等级MAX时上架"
+ },
+ "s0068": {
+  "en": "A suppressed pistol Rei built herself. Nobody notices it fire except the one pulling the trigger.",
+  "zh": "玲亲手组装的消音手枪。除了开枪的人，谁也察觉不到。"
+ },
+ "s0069": {
+  "en": "Home Run King",
+  "zh": "本垒打之王"
+ },
+ "s0070": {
+  "en": "In stock at Haru's Bond Lv MAX",
+  "zh": "春羁绊等级MAX时上架"
+ },
+ "s0071": {
+  "en": "A machine gun Haru wrapped in bat grip tape. Enemies it hits go flying into the stands.",
+  "zh": "春缠上球棒握把带的机枪。被击中的敌人会一路飞进看台。"
+ },
+ "s0072": {
+  "en": "Pochi Mk-II",
+  "zh": "波奇 Mk-II"
+ },
+ "s0073": {
+  "en": "In stock at Mio's Bond Lv MAX",
+  "zh": "澪羁绊等级MAX时上架"
+ },
+ "s0074": {
+  "en": "An SMG built from spare parts for the drone \"Pochi.\" Its cryo rounds slow enemies down.",
+  "zh": "用无人机「波奇」的备用零件做成的冲锋枪。冷却弹能让敌人步履迟缓。"
+ },
+ "s0075": {
+  "en": "Nana Special",
+  "zh": "奈奈特制"
+ },
+ "s0076": {
+  "en": "In stock at Nana's Bond Lv MAX",
+  "zh": "奈奈羁绊等级MAX时上架"
+ },
+ "s0077": {
+  "en": "A twin-barrel bazooka Nana modded with the school festival budget. \"Firepower is justice!\"",
+  "zh": "奈奈挪用文化祭预算改造的双联火箭筒。「火力就是正义！」"
+ },
+ "s0078": {
+  "en": "Shared Crosshairs",
+  "zh": "两人的准星"
+ },
+ "s0079": {
+  "en": "In stock at Yui & Rei's Bond Lv MAX",
+  "zh": "结衣与玲羁绊等级MAX时上架"
+ },
+ "s0080": {
+  "en": "A sniper rifle the captain and vice captain have taken turns using. The scope bears both their adjustments.",
+  "zh": "社长与副社长轮流使用的狙击枪。瞄准镜上留着两人的调校痕迹。"
+ },
+ "s0081": {
+  "en": "Croquette Blaster",
+  "zh": "可乐饼爆破枪"
+ },
+ "s0082": {
+  "en": "In stock at Haru & Nana's Bond Lv MAX",
+  "zh": "春与奈奈羁绊等级MAX时上架"
+ },
+ "s0083": {
+  "en": "A rapid-fire shotgun that sears enemies with fresh-from-the-fryer heat. Co-developed by a glutton and a demolition fanatic.",
+  "zh": "以刚出锅的热度灼烧敌人的连发霰弹枪。由吃货与爆破狂共同开发。"
+ },
+ "s0084": {
+  "en": "Crest Carbine Mk.II",
+  "zh": "校徽卡宾枪·改"
+ },
+ "s0085": {
+  "en": "In stock after clearing all of Chapter {} on Hard",
+  "zh": "以困难难度全通第{}章后上架"
+ },
+ "s0086": {
+  "en": "A special model engraved with the school crest. Left behind by a graduate, it's the best-kept gun in the whole school.",
+  "zh": "刻有校徽的特别款。由毕业生留下，是全校保养得最好的一把枪。"
+ },
+ "s0087": {
+  "en": "Last Train Express",
+  "zh": "末班特快"
+ },
+ "s0088": {
+  "en": "An SMG charged with power from the overhead train lines. Its rounds shock enemies in their tracks.",
+  "zh": "蓄满架空电线电力的冲锋枪。子弹让敌人触电而停下脚步。"
+ },
+ "s0089": {
+  "en": "Daybreak Sniper",
+  "zh": "破晓狙击枪"
+ },
+ "s0090": {
+  "en": "A sniper rifle the color of sunrise. Wreathes the enemies it pierces in flame.",
+  "zh": "朝霞色的狙击枪。被击穿的敌人会被火焰包裹。"
+ },
+ "s0091": {
+  "en": "Butcher's Cannon",
+  "zh": "屠夫之炮"
+ },
+ "s0092": {
+  "en": "In stock after clearing all of Chapter {} on Nightmare",
+  "zh": "以噩梦难度全通第{}章后上架"
+ },
+ "s0093": {
+  "en": "A shotgun with a cleaver attached, found at the back of a butcher shop's freezer. Its {} pellets pierce through enemies.",
+  "zh": "在肉铺冷库深处找到的、装着剁肉刀的霰弹枪。{}颗霰弹都能穿透敌人。"
+ },
+ "s0094": {
+  "en": "Conductor's Flare Gun",
+  "zh": "列车长的信号枪"
+ },
+ "s0095": {
+  "en": "A flare pistol once used to signal train departures. Bursts on every hit.",
+  "zh": "曾用于发车信号的信号枪。每次命中都会炸裂。"
+ },
+ "s0096": {
+  "en": "Necro Launcher",
+  "zh": "亡灵发射器"
+ },
+ "s0097": {
+  "en": "A prototype grenade launcher found in the director's lab. Fires {} in a row to blow away a wide area.",
+  "zh": "在院长研究室发现的试作榴弹枪。{}连发，炸飞大片区域。"
+ },
+ "s0098": {
+  "en": "Zero Day",
+  "zh": "零日"
+ },
+ "s0099": {
+  "en": "A machine gun pieced together from the wreckage of the generator. It turns the Fog itself into bullets and never stops firing.",
+  "zh": "用发生炉残骸组装的机枪。把雾本身化为子弹，不停射击。"
+ },
+ "s0100": {
+  "en": "Service Pistol P-{}",
+  "zh": "制式手枪 P-{}"
+ },
+ "s0101": {
+  "en": "An automatic pistol also issued to the police. Light, and crits easily.",
+  "zh": "警察也在配备的自动手枪。轻巧，容易打出暴击。"
+ },
+ "s0102": {
+  "en": "Machine Pistol G-{}",
+  "zh": "冲锋手枪 G-{}"
+ },
+ "s0103": {
+  "en": "A pistol that fires full-auto. A little bucking bronco that sprays bullets everywhere.",
+  "zh": "可以全自动射击的手枪。到处泼洒子弹的小烈马。"
+ },
+ "s0104": {
+  "en": "Magnum .{}",
+  "zh": "马格南 .{}"
+ },
+ "s0105": {
+  "en": "A {}-shot revolver. Every round hits hard and pierces {} enemies.",
+  "zh": "{}连发转轮手枪。每一发都很沉重，可穿透{}名敌人。"
+ },
+ "s0106": {
+  "en": "Heavy Pistol 'Lion King'",
+  "zh": "大口径手枪「狮子王」"
+ },
+ "s0107": {
+  "en": "A {} caliber you're not meant to fire one-handed. Rifle-grade power that skewers {} enemies.",
+  "zh": "不该单手开的{}口径。拥有步枪级威力，可贯穿{}名敌人。"
+ },
+ "s0108": {
+  "en": "Pulse Pistol",
+  "zh": "脉冲手枪"
+ },
+ "s0109": {
+  "en": "A lab-made electromagnetic pistol. Fire rate and power in one: the pinnacle of handguns.",
+  "zh": "研究所制造的电磁手枪。兼顾射速与威力，手枪的巅峰之作。"
+ },
+ "s0110": {
+  "en": "SAW Carbine M-{}",
+  "zh": "班用支援卡宾枪 M-{}"
+ },
+ "s0111": {
+  "en": "A lightweight rifle adapted to serve as a machine gun. Haru's favorite.",
+  "zh": "把步枪改作机枪使用的轻量型号。春的爱枪。"
+ },
+ "s0112": {
+  "en": "Hand-Me-Down Bazooka",
+  "zh": "二手火箭筒"
+ },
+ "s0113": {
+  "en": "An anti-tank rocket that was gathering dust in the festival storeroom. Flies straight and explodes.",
+  "zh": "沉睡在文化祭仓库里的反坦克火箭。直线飞行后爆炸。"
+ },
+ "s0114": {
+  "en": "School Carbine SC-{}",
+  "zh": "校用卡宾枪 SC-{}"
+ },
+ "s0115": {
+  "en": "The standard rifle from the club's equipment locker. Straightforward and easy to handle.",
+  "zh": "社团器材柜里的标准步枪。中规中矩，容易上手。"
+ },
+ "s0116": {
+  "en": "Bullpup F-{}",
+  "zh": "无托步枪 F-{}"
+ },
+ "s0117": {
+  "en": "A short rifle with its action set behind the grip. Handy, with a quick reload.",
+  "zh": "机匣后置的短步枪。操控灵活，装弹也快。"
+ },
+ "s0118": {
+  "en": "Cossack AK-{}K",
+  "zh": "哥萨克 AK-{}K"
+ },
+ "s0119": {
+  "en": "A tough rifle rumored to work even after a mud bath. Every round hits hard and pierces {} enemies.",
+  "zh": "据说泡过泥水也照样能用的结实步枪。每一发都很沉重，可穿透{}名敌人。"
+ },
+ "s0120": {
+  "en": "Battle Rifle SR-{}B",
+  "zh": "战斗步枪 SR-{}B"
+ },
+ "s0121": {
+  "en": "A large-caliber rifle that leans semi-auto. High accuracy and range, and crits easily.",
+  "zh": "偏半自动的大口径步枪。精度与射程出色，容易打出暴击。"
+ },
+ "s0122": {
+  "en": "Rail Carbine X-{}",
+  "zh": "电磁卡宾枪 X-{}"
+ },
+ "s0123": {
+  "en": "A prototype electromagnetic rifle from Helios Pharmaceuticals. Its high-velocity rounds pierce {} enemies.",
+  "zh": "赫利俄斯制药的试作电磁步枪。高初速子弹可贯穿{}名敌人。"
+ },
+ "s0124": {
+  "en": "Pocket Buzz MP-{}K",
+  "zh": "口袋蜂鸣 MP-{}K"
+ },
+ "s0125": {
+  "en": "A small, light SMG. Spray bullets while you run circles around them.",
+  "zh": "小巧轻便的冲锋枪。可以边跑边泼洒子弹。"
+ },
+ "s0126": {
+  "en": "Honeybee P-{}",
+  "zh": "蜜蜂 P-{}"
+ },
+ "s0127": {
+  "en": "An oddball with a {}-round magazine mounted on top. Rarely runs dry.",
+  "zh": "顶部装着{}发弹匣的个性派。不容易断弹。"
+ },
+ "s0128": {
+  "en": "Vector V-{}",
+  "zh": "维克托 V-{}"
+ },
+ "s0129": {
+  "en": "A system that channels recoil downward gives it a staggering fire rate. Runs dry in no time.",
+  "zh": "将后坐力向下导出的机构带来惊人射速。弹药转眼就空。"
+ },
+ "s0130": {
+  "en": "Uzi Mod",
+  "zh": "乌兹改"
+ },
+ "s0131": {
+  "en": "An old SMG that Mio souped up beyond recognition. Don't let its looks fool you: its firepower is top-class.",
+  "zh": "被澪魔改过的老式冲锋枪。别看外表，火力可是一流。"
+ },
+ "s0132": {
+  "en": "Storm Viper",
+  "zh": "风暴毒蛇"
+ },
+ "s0133": {
+  "en": "A plasma-round SMG found in a lab. A storm of bullets.",
+  "zh": "在研究所发现的等离子弹冲锋枪。暴风般的弹幕。"
+ },
+ "s0134": {
+  "en": "Pump M-{}",
+  "zh": "泵动 M-{}"
+ },
+ "s0135": {
+  "en": "The classic ka-chunk pump-action. Blows away every enemy that gets too close.",
+  "zh": "咔嚓作响的经典泵动式。把靠近的敌人一并轰飞。"
+ },
+ "s0136": {
+  "en": "Sawed-Off Double",
+  "zh": "短管双管枪"
+ },
+ "s0137": {
+  "en": "A double-barrel with its barrels cut short. Holds only {} shells, but hits like a truck.",
+  "zh": "截短枪管的双管枪。只能装{}发，但威力巨大。"
+ },
+ "s0138": {
+  "en": "Auto {} Saiga",
+  "zh": "自动{} 萨伊加"
+ },
+ "s0139": {
+  "en": "A semi-auto shotgun with a box magazine. Rapid fire pushes back the horde.",
+  "zh": "使用盒式弹匣的半自动霰弹枪。以连射击退尸群。"
+ },
+ "s0140": {
+  "en": "Dragon's Breath AA",
+  "zh": "龙息 AA"
+ },
+ "s0141": {
+  "en": "Spews incendiary shot on full auto. Sets enemies it hits on fire.",
+  "zh": "全自动喷吐燃烧霰弹。命中的敌人会燃烧起来。"
+ },
+ "s0142": {
+  "en": "Gigante Breacher",
+  "zh": "巨人破门枪"
+ },
+ "s0143": {
+  "en": "An anti-materiel shotgun that blows away the door and whoever's behind it. Zombies fly to the edge of the screen.",
+  "zh": "连门带人一起轰飞的反器材霰弹枪。僵尸会飞到画面边缘。"
+ },
+ "s0144": {
+  "en": "Bolt-Action M-{}",
+  "zh": "栓动 M-{}"
+ },
+ "s0145": {
+  "en": "A bolt-action sniper rifle. Pierces up to {} enemies lined up in a row.",
+  "zh": "栓动式狙击枪。可贯穿排成一列的最多{}名敌人。"
+ },
+ "s0146": {
+  "en": "Dragoon SVD",
+  "zh": "龙骑兵 SVD"
+ },
+ "s0147": {
+  "en": "A semi-auto designated marksman rifle. Snipe shot after shot.",
+  "zh": "半自动精确射手步枪。可以连续狙击。"
+ },
+ "s0148": {
+  "en": "Silent VSS",
+  "zh": "静默 VSS"
+ },
+ "s0149": {
+  "en": "A special sniper rifle with a built-in suppressor. The luxury of a sniper that fires rapidly.",
+  "zh": "一体式消音器的特种狙击枪。能连射的狙击，堪称奢侈。"
+ },
+ "s0150": {
+  "en": "AMR Hekatoncheires",
+  "zh": "反器材步枪 百臂巨人"
+ },
+ "s0151": {
+  "en": "A monster built to stop armored vehicles. The screen shakes with every shot.",
+  "zh": "为拦下装甲车而生的怪物。每开一枪画面都会震动。"
+ },
+ "s0152": {
+  "en": "Railgun 'Raijin'",
+  "zh": "电磁炮「雷神」"
+ },
+ "s0153": {
+  "en": "A prototype that launches rounds by electromagnetic acceleration. Pierces everything in its line of fire.",
+  "zh": "以电磁加速发射子弹的试作兵器。贯穿射线上的一切。"
+ },
+ "s0154": {
+  "en": "SAW M-{}",
+  "zh": "班用支援机枪 M-{}"
+ },
+ "s0155": {
+  "en": "{}-round belt feed. Keeps firing, but reloads take forever.",
+  "zh": "{}发弹链供弹。可以持续射击，但装弹很慢。"
+ },
+ "s0156": {
+  "en": "PKM Hammer",
+  "zh": "PKM 重锤"
+ },
+ "s0157": {
+  "en": "Hammers in heavy rounds without end. Punches holes in zombie lines.",
+  "zh": "源源不断地砸进重型子弹。在僵尸队列中打出缺口。"
+ },
+ "s0158": {
+  "en": "MG-{} 'Buzzsaw'",
+  "zh": "MG-{}「电锯」"
+ },
+ "s0159": {
+  "en": "Nicknamed for a rate of fire that sounds like tearing cloth. Sheer violence by bullet storm.",
+  "zh": "因撕裂布匹般的连射声而得名。弹幕即暴力。"
+ },
+ "s0160": {
+  "en": "Vulcan Minigun",
+  "zh": "火神加特林"
+ },
+ "s0161": {
+  "en": "A rotary multi-barrel gun. Once it starts spinning, nothing in front of it is left standing.",
+  "zh": "回转式多管枪。一旦转起来，眼前便什么都不剩。"
+ },
+ "s0162": {
+  "en": "Grenade Launcher M-{}",
+  "zh": "榴弹枪 M-{}"
+ },
+ "s0163": {
+  "en": "A break-action, single-shot grenade launcher. Lobs in an arc and explodes.",
+  "zh": "折开式单发榴弹发射器。沿抛物线飞行后爆炸。"
+ },
+ "s0164": {
+  "en": "Revolver Launcher MGL",
+  "zh": "转轮榴弹发射器 MGL"
+ },
+ "s0165": {
+  "en": "A {}-shot revolving-cylinder launcher. Back-to-back blasts wipe out the horde.",
+  "zh": "{}连发转轮弹仓式。连续轰炸把尸群炸得灰飞烟灭。"
+ },
+ "s0166": {
+  "en": "Rocket Launcher RPG",
+  "zh": "火箭筒 RPG"
+ },
+ "s0167": {
+  "en": "An anti-tank rocket. Flies straight and clears the area with a huge blast.",
+  "zh": "反坦克火箭。直线飞行，以大爆炸横扫周围。"
+ },
+ "s0168": {
+  "en": "Plasma Cannon",
+  "zh": "等离子炮"
+ },
+ "s0169": {
+  "en": "An orb cannon built on repurposed generator tech. Bursts as it pierces.",
+  "zh": "转用发生炉技术的光球炮。边贯穿边爆裂。"
+ },
+ "s0170": {
+  "en": "Harpoon Pistol 'Barb'",
+  "zh": "鱼叉手枪「倒钩」"
+ },
+ "s0171": {
+  "en": "A fishing co-op speargun, shrunk down to pistol size. Its harpoon skewers up to {} enemies.",
+  "zh": "把渔协仓库里的水下枪缩成手枪大小。鱼叉最多可串起{}名敌人。"
+ },
+ "s0172": {
+  "en": "Surfrider AR-{}",
+  "zh": "冲浪者 AR-{}"
+ },
+ "s0173": {
+  "en": "A seaside vigilante model with an anti-salt coating. Keeps running even with sand in it.",
+  "zh": "涂有防盐蚀涂层的海边自卫队规格。进了沙子也不卡壳。"
+ },
+ "s0174": {
+  "en": "Squall SMG-{}",
+  "zh": "骤雨 SMG-{}"
+ },
+ "s0175": {
+  "en": "An SMG that seems to hold the lightning of a summer storm. Its rounds shock enemies.",
+  "zh": "仿佛封存了夏日骤雨雷电的冲锋枪。子弹能让敌人触电。"
+ },
+ "s0176": {
+  "en": "Beach Breaker",
+  "zh": "海滩破坏者"
+ },
+ "s0177": {
+  "en": "The beach shack owner insists it's \"for watermelon splitting.\" Blasts enemies to the far end of the beach.",
+  "zh": "海边小店老板坚称是「劈西瓜用的」霰弹枪。能把敌人轰到海滩尽头。"
+ },
+ "s0178": {
+  "en": "Lighthouse Keeper's Rifle",
+  "zh": "守塔人的步枪"
+ },
+ "s0179": {
+  "en": "An old sniper rifle that hung on the lighthouse landing. Its red and white bands are a marker visible from the sea.",
+  "zh": "挂在灯塔楼梯平台上的老狙击枪。红白相间的条纹，是从海上也能看见的标记。"
+ },
+ "s0180": {
+  "en": "Mermaid Gatling",
+  "zh": "美人鱼加特林"
+ },
+ "s0181": {
+  "en": "A rotary gun fitted with a cold-storage cooling unit. Freezes the legs of the enemies it hits.",
+  "zh": "装载冷冻仓库冷却装置的转管枪。冻住被击中敌人的双脚。"
+ },
+ "s0182": {
+  "en": "Hanabi Launcher 'Bloom'",
+  "zh": "烟花发射器「大轮」"
+ },
+ "s0183": {
+  "en": "Fireworks Nana brought to training camp, rigged to fire tube and all. Sets the whole night sky ablaze.",
+  "zh": "奈奈带去集训的烟花，连筒一起改成了能发射的武器。连夜空一起点燃。"
+ },
+ "s0184": {
+  "en": "Tidal Carbine 'Dawn'",
+  "zh": "潮汐卡宾枪「黎明」"
+ },
+ "s0185": {
+  "en": "The latest model, carried by the security chief of Lab No. 4. A barrage as unbroken as the tides.",
+  "zh": "第四研究所警备主任所持的最新型。如潮涨潮落般连绵不绝的弹幕。"
+ },
+ "s0186": {
+  "en": "Abyssal Railgun 'Depths'",
+  "zh": "深海电磁炮「深渊」"
+ },
+ "s0187": {
+  "en": "An electromagnetic accelerator cannon for deep-sea exploration. Its light reaches the ocean floor and pierces everything in its line of fire.",
+  "zh": "深海探测用的电磁加速炮。直达海底的光芒贯穿射线上的一切。"
+ },
+ "s0188": {
+  "en": "Grand Starmine",
+  "zh": "大号连珠烟花"
+ },
+ "s0189": {
+  "en": "Twin-launches the giant shells meant for a summer festival finale. The blast sites keep burning for a while.",
+  "zh": "双联发射夏日祭压轴用的大号烟花弹。爆炸处会持续燃烧一段时间。"
+ },
+ "s0190": {
+  "en": "Custom",
+  "zh": "定制"
+ },
+ "s0191": {
+  "en": "Mag size +{}%, spread -{}%",
+  "zh": "弹匣容量+{}%，散布-{}%"
+ },
+ "s0192": {
+  "en": "Extended Mag",
+  "zh": "扩容弹匣"
+ },
+ "s0193": {
+  "en": "Compensator",
+  "zh": "补偿器"
+ },
+ "s0194": {
+  "en": "Crit +{}%, range +{}%, damage -{}%",
+  "zh": "暴击率+{}%，射程+{}%，威力-{}%"
+ },
+ "s0195": {
+  "en": "Suppressor",
+  "zh": "消音器"
+ },
+ "s0196": {
+  "en": "Scope",
+  "zh": "瞄准镜"
+ },
+ "s0197": {
+  "en": "Pierce +{}, damage +{}%. Armor and shields don't reduce damage",
+  "zh": "穿透+{}，威力+{}%。不受装甲和盾牌削减威力"
+ },
+ "s0198": {
+  "en": "AP Rounds",
+  "zh": "穿甲弹"
+ },
+ "s0199": {
+  "en": "Mk.II",
+  "zh": "改"
+ },
+ "s0200": {
+  "en": "Damage +{}%, mag size +{}%, reload time -{}%, crit +{}%",
+  "zh": "威力+{}%，弹匣容量+{}%，装弹时间-{}%，暴击率+{}%"
+ },
+ "s0201": {
+  "en": "All-Round Upgrade",
+  "zh": "全面强化"
+ },
+ "s0202": {
+  "en": "Ignis",
+  "zh": "烈焰"
+ },
+ "s0203": {
+  "en": "Incendiary Rounds",
+  "zh": "燃烧弹"
+ },
+ "s0204": {
+  "en": "Bolt",
+  "zh": "雷霆"
+ },
+ "s0205": {
+  "en": "Shock Rounds",
+  "zh": "电击弹"
+ },
+ "s0206": {
+  "en": "Frost",
+  "zh": "霜冻"
+ },
+ "s0207": {
+  "en": "Cryo Rounds",
+  "zh": "冷冻弹"
+ },
+ "s0208": {
+  "en": "Burst",
+  "zh": "爆裂"
+ },
+ "s0209": {
+  "en": "Explosive Rounds",
+  "zh": "炸裂弹"
+ },
+ "s0210": {
+  "en": "Mag size +{}%, reload time -{}%",
+  "zh": "弹匣容量+{}%，装弹时间-{}%"
+ },
+ "s0211": {
+  "en": "Mag Size Up",
+  "zh": "弹容提升"
+ },
+ "s0212": {
+  "en": "Fast Reload",
+  "zh": "快速装弹"
+ },
+ "s0213": {
+  "en": "Wide",
+  "zh": "广域"
+ },
+ "s0214": {
+  "en": "Blast radius +{}%",
+  "zh": "爆炸范围+{}%"
+ },
+ "s0215": {
+  "en": "Heavy",
+  "zh": "重型"
+ },
+ "s0216": {
+  "en": "Damage +{}%, fire rate -{}%",
+  "zh": "威力+{}%，射速-{}%"
+ },
+ "s0217": {
+  "en": "Large Warhead",
+  "zh": "大型弹头"
+ },
+ "s0218": {
+  "en": "Quick",
+  "zh": "速射"
+ },
+ "s0219": {
+  "en": "Fire rate +{}%, reload time -{}%",
+  "zh": "射速+{}%，装弹时间-{}%"
+ },
+ "s0220": {
+  "en": "Rapid-Fire Action",
+  "zh": "速射机构"
+ },
+ "s0221": {
+  "en": "Damage +{}%, blast radius +{}%, reload time -{}%",
+  "zh": "威力+{}%，爆炸范围+{}%，装弹时间-{}%"
+ },
+ "s0222": {
+  "en": "While equipped: partner damage +{}%",
+  "zh": "装备时，搭档伤害+{}%"
+ },
+ "s0223": {
+  "en": "Crit kills refund {} rounds",
+  "zh": "暴击击杀返还{}发子弹"
+ },
+ "s0224": {
+  "en": "No slowdown while firing; massive knockback",
+  "zh": "射击时不减速，超强击退"
+ },
+ "s0225": {
+  "en": "A mini drone provides constant covering fire",
+  "zh": "小型无人机持续提供掩护射击"
+ },
+ "s0226": {
+  "en": "Blast sites burn for {}s",
+  "zh": "爆炸处持续燃烧{}秒"
+ },
+ "s0227": {
+  "en": "Always crits while your partner is standing",
+  "zh": "搭档健在时必定暴击"
+ },
+ "s0228": {
+  "en": "Restore {} HP per kill",
+  "zh": "每击倒一名敌人恢复{}HP"
+ },
+ "s0229": {
+  "en": "Burn",
+  "zh": "燃烧"
+ },
+ "s0230": {
+  "en": "Shock",
+  "zh": "触电"
+ },
+ "s0231": {
+  "en": "Chill",
+  "zh": "冷却"
+ },
+ "s0232": {
+  "en": "Blast",
+  "zh": "炸裂"
+ },
+ "s0233": {
+  "en": "Enemies hit burn for {}s, taking damage over time",
+  "zh": "命中的敌人会燃烧{}秒，持续受到伤害"
+ },
+ "s0234": {
+  "en": "Each hit has a {}% chance to shock the enemy, stopping it in place",
+  "zh": "每次命中有{}%几率使敌人触电，令其停止行动"
+ },
+ "s0235": {
+  "en": "Slows enemies hit for {}s",
+  "zh": "使命中的敌人减速{}秒"
+ },
+ "s0236": {
+  "en": "Each hit sets off a small explosion that catches nearby enemies",
+  "zh": "每次命中都会引发小爆炸，波及周围敌人"
+ },
+ "s0237": {
+  "en": "Bond weapon: ",
+  "zh": "羁绊武器："
+ },
+ "s0238": {
+  "en": "Lower base damage",
+  "zh": "威力偏低"
+ },
+ "s0239": {
+  "en": "{} shot fires ",
+  "zh": "{}发可射出"
+ },
+ "s0240": {
+  "en": " pellets. More hit at close range",
+  "zh": "颗霰弹。距离越近，命中越多"
+ },
+ "s0241": {
+  "en": "Fires a beam that pierces every enemy in its line",
+  "zh": "发射贯穿射线上所有敌人的光线"
+ },
+ "s0242": {
+  "en": "Barrels need time to spin up before firing",
+  "zh": "开火前需要等待枪管转起来"
+ },
+ "s0243": {
+  "en": "Plasma rounds that explode while piercing enemies",
+  "zh": "边穿透敌人边爆炸的等离子弹"
+ },
+ "s0244": {
+  "en": "Grenades that lob in an arc and explode",
+  "zh": "沿抛物线飞行后爆炸的榴弹"
+ },
+ "s0245": {
+  "en": "Rockets that fly straight and explode",
+  "zh": "直线飞行后爆炸的火箭弹"
+ },
+ "s0246": {
+  "en": " (blast radius ",
+  "zh": "（爆炸范围"
+ },
+ "s0247": {
+  "en": "Pierce: ",
+  "zh": "子弹可穿透"
+ },
+ "s0248": {
+  "en": "unlimited",
+  "zh": "任意数量的"
+ },
+ "s0249": {
+  "en": " enemies",
+  "zh": "名以内的"
+ },
+ "s0250": {
+  "en": " per shot",
+  "zh": "敌人"
+ },
+ "s0251": {
+  "en": "Muzzle",
+  "zh": "枪口"
+ },
+ "s0252": {
+  "en": "Sight",
+  "zh": "瞄具"
+ },
+ "s0253": {
+  "en": "Magazine",
+  "zh": "弹匣"
+ },
+ "s0254": {
+  "en": "Ammo",
+  "zh": "弹药"
+ },
+ "s0280": {
+  "en": "Factory",
+  "zh": "原厂"
+ },
+ "s0281": {
+  "en": "Matte Black",
+  "zh": "哑光黑"
+ },
+ "s0282": {
+  "en": "Desert",
+  "zh": "沙漠"
+ },
+ "s0283": {
+  "en": "Olive",
+  "zh": "橄榄绿"
+ },
+ "s0284": {
+  "en": "Snow",
+  "zh": "雪白"
+ },
+ "s0285": {
+  "en": "School Blue",
+  "zh": "校园蓝"
+ },
+ "s0286": {
+  "en": "Crimson",
+  "zh": "深红"
+ },
+ "s0287": {
+  "en": "Pink",
+  "zh": "粉红"
+ },
+ "s0288": {
+  "en": "Sakura",
+  "zh": "樱花"
+ },
+ "s0289": {
+  "en": "Gold",
+  "zh": "金色"
+ },
+ "s0290": {
+  "en": "Achievement: \"Hard Mode Conquered\"",
+  "zh": "成就「征服困难模式」"
+ },
+ "s0291": {
+  "en": "Neon",
+  "zh": "霓虹"
+ },
+ "s0292": {
+  "en": "Achievement: \"Beyond the Nightmare\"",
+  "zh": "成就「穿越噩梦」"
+ }
+}

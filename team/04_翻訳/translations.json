@@ -1,0 +1,4486 @@
+{
+ "s0001": {
+  "en": "Handgun",
+  "zh": "手枪"
+ },
+ "s0002": {
+  "en": "Assault Rifle",
+  "zh": "突击步枪"
+ },
+ "s0003": {
+  "en": "SMG",
+  "zh": "冲锋枪"
+ },
+ "s0004": {
+  "en": "Shotgun",
+  "zh": "霰弹枪"
+ },
+ "s0005": {
+  "en": "Sniper Rifle",
+  "zh": "狙击步枪"
+ },
+ "s0006": {
+  "en": "LMG",
+  "zh": "轻机枪"
+ },
+ "s0007": {
+  "en": "Launcher",
+  "zh": "发射器"
+ },
+ "s0008": {
+  "en": "Yui Asahina",
+  "zh": "朝比奈 结衣"
+ },
+ "s0009": {
+  "en": "Yui",
+  "zh": "结衣"
+ },
+ "s0010": {
+  "en": "Assault / Club President",
+  "zh": "突击 / 社长"
+ },
+ "s0011": {
+  "en": "President of the Airsoft Club. Deeply responsible, her motto in any situation is \"We all go home together.\" Her shooting is textbook-precise.",
+  "zh": "生存游戏社社长。责任感极强，无论何时都把「大家一起回家」挂在嘴边。射击精准，堪称教科书。"
+ },
+ "s0012": {
+  "en": "Leadership: Partner damage +{}%",
+  "zh": "领导力：搭档伤害+{}%"
+ },
+ "s0013": {
+  "en": "Full Burst",
+  "zh": "全力连射"
+ },
+ "s0014": {
+  "en": "For {}s: fire rate +{}%, no ammo used",
+  "zh": "{}秒内，射速+{}%，不消耗弹药"
+ },
+ "s0015": {
+  "en": "Extended Burst",
+  "zh": "连射延长"
+ },
+ "s0016": {
+  "en": "Full Burst duration +{}s",
+  "zh": "全力连射持续时间 +{}秒"
+ },
+ "s0017": {
+  "en": "Rei Kurose",
+  "zh": "黑濑 玲"
+ },
+ "s0018": {
+  "en": "Rei",
+  "zh": "玲"
+ },
+ "s0019": {
+  "en": "Marksman / Vice President",
+  "zh": "射手 / 副社长"
+ },
+ "s0020": {
+  "en": "Just transferred in and still wearing her old school's sailor uniform. Top of her class, and with a pistol she can hit a vital spot in one shot. Her father is a doctor at the city hospital.",
+  "zh": "刚转学过来，还穿着前一所学校的水手服。头脑全年级第一，用手枪一发就能击穿要害。父亲是市立医院的医生。"
+ },
+ "s0021": {
+  "en": "Precision: Crit +{}%, Crit damage +{}%",
+  "zh": "精准射击：暴击率+{}%，暴击伤害+{}%"
+ },
+ "s0022": {
+  "en": "Deadeye",
+  "zh": "死亡之眼"
+ },
+ "s0023": {
+  "en": "Locks on to up to {} enemies on screen and fires piercing rounds through them",
+  "zh": "锁定画面内最多{}名敌人，用穿透弹将其击穿"
+ },
+ "s0024": {
+  "en": "Hawk Eye",
+  "zh": "鹰之眼"
+ },
+ "s0025": {
+  "en": "Deadeye damage +{}%",
+  "zh": "死亡之眼威力 +{}%"
+ },
+ "s0026": {
+  "en": "Haru Hinata",
+  "zh": "日向 春"
+ },
+ "s0027": {
+  "en": "Haru",
+  "zh": "春"
+ },
+ "s0028": {
+  "en": "Suppression / Vanguard",
+  "zh": "压制射击 / 突击手"
+ },
+ "s0029": {
+  "en": "A blonde, twin-tailed former ace of the softball club. Pulls the trigger before she thinks. Looks out for her little brother, and croquettes are her favorite food.",
+  "zh": "金发双马尾，前垒球社王牌。想都不想就先扣扳机。很疼弟弟，最爱吃可乐饼。"
+ },
+ "s0030": {
+  "en": "Toughness: Damage taken -{}%, close-range damage +{}%",
+  "zh": "坚韧：受到伤害-{}%，近距离伤害+{}%"
+ },
+ "s0031": {
+  "en": "Break Charge",
+  "zh": "破阵冲锋"
+ },
+ "s0032": {
+  "en": "An invincible charge that bowls enemies over and stuns them, ending in a shockwave. Then for {}s: damage taken halved, damage +{}%, ammo fully restored",
+  "zh": "无敌冲锋撞飞并击晕敌人，在停下处释放冲击波。之后{}秒内，受到伤害减半，伤害+{}%，弹药全满"
+ },
+ "s0033": {
+  "en": "Iron Wall",
+  "zh": "铁壁"
+ },
+ "s0034": {
+  "en": "Post-charge buff duration +{}s",
+  "zh": "冲锋后强化时间 +{}秒"
+ },
+ "s0035": {
+  "en": "Mio Shirayuki",
+  "zh": "白雪 澪"
+ },
+ "s0036": {
+  "en": "Mio",
+  "zh": "澪"
+ },
+ "s0037": {
+  "en": "Gadgets / Skirmisher",
+  "zh": "装置 / 游击"
+ },
+ "s0038": {
+  "en": "A silver-haired first-year who breaks school rules while still wearing her discipline committee armband. One hand shoots, the other is a spare. Her homemade drone \"Pochi\" counts as club equipment.",
+  "zh": "戴着风纪委员袖章照样违反校规的银发一年级生。一只手开枪，另一只手备用。自制无人机「波奇」被算作社团公物。"
+ },
+ "s0039": {
+  "en": "Nimble: Move speed +{}%, Weapon & Armor Crate drop rate +{}%",
+  "zh": "身手敏捷：移动速度+{}%，武器箱与护甲箱掉落率+{}%"
+ },
+ "s0040": {
+  "en": "Drone \"Pochi\"",
+  "zh": "无人机「波奇」"
+ },
+ "s0041": {
+  "en": "Calls a support drone that auto-fires at enemies for {}s",
+  "zh": "召唤支援无人机，在{}秒内自动射击敌人"
+ },
+ "s0042": {
+  "en": "Big Battery",
+  "zh": "大容量电池"
+ },
+ "s0043": {
+  "en": "Drone uptime +{}s",
+  "zh": "无人机运作时间 +{}秒"
+ },
+ "s0044": {
+  "en": "Nana Momoi",
+  "zh": "桃井 奈奈"
+ },
+ "s0045": {
+  "en": "Nana",
+  "zh": "奈奈"
+ },
+ "s0046": {
+  "en": "Heavy Weapons / Rookie",
+  "zh": "重火器 / 新社员"
+ },
+ "s0047": {
+  "en": "The new member whose catchphrase is \"Firepower is justice, Senpai!\" She hauled an anti-tank bazooka out of the school festival storeroom. Small, but strong.",
+  "zh": "口头禅是「火力就是正义，前辈！」的新社员。从文化祭仓库里扛出了一门反坦克火箭筒。个子小小，力气却很大。"
+ },
+ "s0048": {
+  "en": "Demolition Fanatic: Blast radius +{}%, explosion damage +{}%",
+  "zh": "爆破狂：爆炸范围+{}%，爆炸伤害+{}%"
+ },
+ "s0049": {
+  "en": "Megaton Buster",
+  "zh": "百万吨爆破"
+ },
+ "s0050": {
+  "en": "Fires {} rockets in a row. Big explosions no matter what weapon is equipped",
+  "zh": "连射{}发火箭弹。无论装备什么武器都会引发大爆炸"
+ },
+ "s0051": {
+  "en": "More Explosives",
+  "zh": "增量炸药"
+ },
+ "s0052": {
+  "en": "Megaton Buster damage +{}%",
+  "zh": "百万吨爆破威力 +{}%"
+ },
+ "s0053": {
+  "en": "Firepower Drills",
+  "zh": "火力训练"
+ },
+ "s0054": {
+  "en": "Damage +{}%",
+  "zh": "伤害 +{}%"
+ },
+ "s0055": {
+  "en": "Fitness Training",
+  "zh": "体能锻炼"
+ },
+ "s0056": {
+  "en": "Max HP +{}%",
+  "zh": "最大HP +{}%"
+ },
+ "s0057": {
+  "en": "Reload Drills",
+  "zh": "装弹练习"
+ },
+ "s0058": {
+  "en": "Reload time -{}%",
+  "zh": "装弹时间 -{}%"
+ },
+ "s0059": {
+  "en": "Vital Shots",
+  "zh": "瞄准要害"
+ },
+ "s0060": {
+  "en": "Crit +{}%",
+  "zh": "暴击率 +{}%"
+ },
+ "s0061": {
+  "en": "Focus",
+  "zh": "专注力"
+ },
+ "s0062": {
+  "en": "Skill cooldown -{}%",
+  "zh": "技能冷却时间 -{}%"
+ },
+ "s0063": {
+  "en": "The President's Oath",
+  "zh": "社长的誓言"
+ },
+ "s0064": {
+  "en": "In stock at Yui's Bond Lv MAX",
+  "zh": "结衣羁绊等级MAX时上架"
+ },
+ "s0065": {
+  "en": "A rifle tuned just for Yui, with \"We all go home together\" carved into the stock. No quirks, and accurate all the way.",
+  "zh": "枪托上刻着「大家一起回家」，专为结衣调校的步枪。毫无怪癖，无论多远都精准。"
+ },
+ "s0066": {
+  "en": "Kurose 'Silence'",
+  "zh": "黑濑式「静寂」"
+ },
+ "s0067": {
+  "en": "In stock at Rei's Bond Lv MAX",
+  "zh": "玲羁绊等级MAX时上架"
+ },
+ "s0068": {
+  "en": "A suppressed pistol Rei built herself. Nobody notices it fire except the one pulling the trigger.",
+  "zh": "玲亲手组装的消音手枪。除了开枪的人，谁也察觉不到。"
+ },
+ "s0069": {
+  "en": "Home Run King",
+  "zh": "本垒打之王"
+ },
+ "s0070": {
+  "en": "In stock at Haru's Bond Lv MAX",
+  "zh": "春羁绊等级MAX时上架"
+ },
+ "s0071": {
+  "en": "A machine gun Haru wrapped in bat grip tape. Enemies it hits go flying into the stands.",
+  "zh": "春缠上球棒握把带的机枪。被击中的敌人会一路飞进看台。"
+ },
+ "s0072": {
+  "en": "Pochi Mk-II",
+  "zh": "波奇 Mk-II"
+ },
+ "s0073": {
+  "en": "In stock at Mio's Bond Lv MAX",
+  "zh": "澪羁绊等级MAX时上架"
+ },
+ "s0074": {
+  "en": "An SMG built from spare parts for the drone \"Pochi.\" Its cryo rounds slow enemies down.",
+  "zh": "用无人机「波奇」的备用零件做成的冲锋枪。冷却弹能让敌人步履迟缓。"
+ },
+ "s0075": {
+  "en": "Nana Special",
+  "zh": "奈奈特制"
+ },
+ "s0076": {
+  "en": "In stock at Nana's Bond Lv MAX",
+  "zh": "奈奈羁绊等级MAX时上架"
+ },
+ "s0077": {
+  "en": "A twin-barrel bazooka Nana modded with the school festival budget. \"Firepower is justice!\"",
+  "zh": "奈奈挪用文化祭预算改造的双联火箭筒。「火力就是正义！」"
+ },
+ "s0078": {
+  "en": "Shared Crosshairs",
+  "zh": "两人的准星"
+ },
+ "s0079": {
+  "en": "In stock at Yui & Rei's Bond Lv MAX",
+  "zh": "结衣与玲羁绊等级MAX时上架"
+ },
+ "s0080": {
+  "en": "A sniper rifle the captain and vice captain have taken turns using. The scope bears both their adjustments.",
+  "zh": "社长与副社长轮流使用的狙击枪。瞄准镜上留着两人的调校痕迹。"
+ },
+ "s0081": {
+  "en": "Croquette Blaster",
+  "zh": "可乐饼爆破枪"
+ },
+ "s0082": {
+  "en": "In stock at Haru & Nana's Bond Lv MAX",
+  "zh": "春与奈奈羁绊等级MAX时上架"
+ },
+ "s0083": {
+  "en": "A rapid-fire shotgun that sears enemies with fresh-from-the-fryer heat. Co-developed by a glutton and a demolition fanatic.",
+  "zh": "以刚出锅的热度灼烧敌人的连发霰弹枪。由吃货与爆破狂共同开发。"
+ },
+ "s0084": {
+  "en": "Crest Carbine Mk.II",
+  "zh": "校徽卡宾枪·改"
+ },
+ "s0085": {
+  "en": "In stock after clearing all of Chapter {} on Hard",
+  "zh": "以困难难度全通第{}章后上架"
+ },
+ "s0086": {
+  "en": "A special model engraved with the school crest. Left behind by a graduate, it's the best-kept gun in the whole school.",
+  "zh": "刻有校徽的特别款。由毕业生留下，是全校保养得最好的一把枪。"
+ },
+ "s0087": {
+  "en": "Last Train Express",
+  "zh": "末班特快"
+ },
+ "s0088": {
+  "en": "An SMG charged with power from the overhead train lines. Its rounds shock enemies in their tracks.",
+  "zh": "蓄满架空电线电力的冲锋枪。子弹让敌人触电而停下脚步。"
+ },
+ "s0089": {
+  "en": "Daybreak Sniper",
+  "zh": "破晓狙击枪"
+ },
+ "s0090": {
+  "en": "A sniper rifle the color of sunrise. Wreathes the enemies it pierces in flame.",
+  "zh": "朝霞色的狙击枪。被击穿的敌人会被火焰包裹。"
+ },
+ "s0091": {
+  "en": "Butcher's Cannon",
+  "zh": "屠夫之炮"
+ },
+ "s0092": {
+  "en": "In stock after clearing all of Chapter {} on Nightmare",
+  "zh": "以噩梦难度全通第{}章后上架"
+ },
+ "s0093": {
+  "en": "A shotgun with a cleaver attached, found at the back of a butcher shop's freezer. Its {} pellets pierce through enemies.",
+  "zh": "在肉铺冷库深处找到的、装着剁肉刀的霰弹枪。{}颗霰弹都能穿透敌人。"
+ },
+ "s0094": {
+  "en": "Conductor's Flare Gun",
+  "zh": "列车长的信号枪"
+ },
+ "s0095": {
+  "en": "A flare pistol once used to signal train departures. Bursts on every hit.",
+  "zh": "曾用于发车信号的信号枪。每次命中都会炸裂。"
+ },
+ "s0096": {
+  "en": "Necro Launcher",
+  "zh": "亡灵发射器"
+ },
+ "s0097": {
+  "en": "A prototype grenade launcher found in the director's lab. Fires {} in a row to blow away a wide area.",
+  "zh": "在院长研究室发现的试作榴弹枪。{}连发，炸飞大片区域。"
+ },
+ "s0098": {
+  "en": "Zero Day",
+  "zh": "零日"
+ },
+ "s0099": {
+  "en": "A machine gun pieced together from the wreckage of the generator. It turns the Fog itself into bullets and never stops firing.",
+  "zh": "用发生炉残骸组装的机枪。把雾本身化为子弹，不停射击。"
+ },
+ "s0101": {
+  "en": "An automatic pistol also issued to the police. Light, and crits easily.",
+  "zh": "警察也在配备的自动手枪。轻巧，容易打出暴击。"
+ },
+ "s0103": {
+  "en": "A pistol that fires full-auto. A little bucking bronco that sprays bullets everywhere.",
+  "zh": "可以全自动射击的手枪。到处泼洒子弹的小烈马。"
+ },
+ "s0104": {
+  "en": "Magnum .{}",
+  "zh": "马格南 .{}"
+ },
+ "s0105": {
+  "en": "A {}-shot revolver. Every round hits hard and pierces {} enemies.",
+  "zh": "{}连发转轮手枪。每一发都很沉重，可穿透{}名敌人。"
+ },
+ "s0106": {
+  "en": "Heavy Pistol 'Lion King'",
+  "zh": "大口径手枪「狮子王」"
+ },
+ "s0107": {
+  "en": "A {} caliber you're not meant to fire one-handed. Rifle-grade power that skewers {} enemies.",
+  "zh": "不该单手开的{}口径。拥有步枪级威力，可贯穿{}名敌人。"
+ },
+ "s0108": {
+  "en": "Pulse Pistol",
+  "zh": "脉冲手枪"
+ },
+ "s0109": {
+  "en": "A lab-made electromagnetic pistol. Fire rate and power in one: the pinnacle of handguns.",
+  "zh": "研究所制造的电磁手枪。兼顾射速与威力，手枪的巅峰之作。"
+ },
+ "s0111": {
+  "en": "A lightweight rifle adapted to serve as a machine gun. Haru's favorite.",
+  "zh": "把步枪改作机枪使用的轻量型号。春的爱枪。"
+ },
+ "s0112": {
+  "en": "Hand-Me-Down Bazooka",
+  "zh": "二手火箭筒"
+ },
+ "s0113": {
+  "en": "An anti-tank rocket that was gathering dust in the festival storeroom. Flies straight and explodes.",
+  "zh": "沉睡在文化祭仓库里的反坦克火箭。直线飞行后爆炸。"
+ },
+ "s0114": {
+  "en": "School Carbine SC-{}",
+  "zh": "校用卡宾枪 SC-{}"
+ },
+ "s0115": {
+  "en": "The standard rifle from the club's equipment locker. Straightforward and easy to handle.",
+  "zh": "社团器材柜里的标准步枪。中规中矩，容易上手。"
+ },
+ "s0117": {
+  "en": "A short rifle with its action set behind the grip. Handy, with a quick reload.",
+  "zh": "机匣后置的短步枪。操控灵活，装弹也快。"
+ },
+ "s0119": {
+  "en": "A tough rifle rumored to work even after a mud bath. Every round hits hard and pierces {} enemies.",
+  "zh": "据说泡过泥水也照样能用的结实步枪。每一发都很沉重，可穿透{}名敌人。"
+ },
+ "s0121": {
+  "en": "A large-caliber rifle that leans semi-auto. High accuracy and range, and crits easily.",
+  "zh": "偏半自动的大口径步枪。精度与射程出色，容易打出暴击。"
+ },
+ "s0122": {
+  "en": "Rail Carbine X-{}",
+  "zh": "电磁卡宾枪 X-{}"
+ },
+ "s0123": {
+  "en": "A prototype electromagnetic rifle from Helios Pharmaceuticals. Its high-velocity rounds pierce {} enemies.",
+  "zh": "赫利俄斯制药的试作电磁步枪。高初速子弹可贯穿{}名敌人。"
+ },
+ "s0125": {
+  "en": "A small, light SMG. Spray bullets while you run circles around them.",
+  "zh": "小巧轻便的冲锋枪。可以边跑边泼洒子弹。"
+ },
+ "s0127": {
+  "en": "An oddball with a {}-round magazine mounted on top. Rarely runs dry.",
+  "zh": "顶部装着{}发弹匣的个性派。不容易断弹。"
+ },
+ "s0129": {
+  "en": "A system that channels recoil downward gives it a staggering fire rate. Runs dry in no time.",
+  "zh": "将后坐力向下导出的机构带来惊人射速。弹药转眼就空。"
+ },
+ "s0130": {
+  "en": "Uzi Mod",
+  "zh": "乌兹改"
+ },
+ "s0131": {
+  "en": "An old SMG that Mio souped up beyond recognition. Don't let its looks fool you: its firepower is top-class.",
+  "zh": "被澪魔改过的老式冲锋枪。别看外表，火力可是一流。"
+ },
+ "s0132": {
+  "en": "Storm Viper",
+  "zh": "风暴毒蛇"
+ },
+ "s0133": {
+  "en": "A plasma-round SMG found in a lab. A storm of bullets.",
+  "zh": "在研究所发现的等离子弹冲锋枪。暴风般的弹幕。"
+ },
+ "s0135": {
+  "en": "The classic ka-chunk pump-action. Blows away every enemy that gets too close.",
+  "zh": "咔嚓作响的经典泵动式。把靠近的敌人一并轰飞。"
+ },
+ "s0136": {
+  "en": "Sawed-Off Double",
+  "zh": "短管双管枪"
+ },
+ "s0137": {
+  "en": "A double-barrel with its barrels cut short. Holds only {} shells, but hits like a truck.",
+  "zh": "截短枪管的双管枪。只能装{}发，但威力巨大。"
+ },
+ "s0139": {
+  "en": "A semi-auto shotgun with a box magazine. Rapid fire pushes back the horde.",
+  "zh": "使用盒式弹匣的半自动霰弹枪。以连射击退尸群。"
+ },
+ "s0140": {
+  "en": "Dragon's Breath AA",
+  "zh": "龙息 AA"
+ },
+ "s0141": {
+  "en": "Spews incendiary shot on full auto. Sets enemies it hits on fire.",
+  "zh": "全自动喷吐燃烧霰弹。命中的敌人会燃烧起来。"
+ },
+ "s0142": {
+  "en": "Gigante Breacher",
+  "zh": "巨人破门枪"
+ },
+ "s0143": {
+  "en": "An anti-materiel shotgun that blows away the door and whoever's behind it. Zombies fly to the edge of the screen.",
+  "zh": "连门带人一起轰飞的反器材霰弹枪。僵尸会飞到画面边缘。"
+ },
+ "s0145": {
+  "en": "A bolt-action sniper rifle. Pierces up to {} enemies lined up in a row.",
+  "zh": "栓动式狙击枪。可贯穿排成一列的最多{}名敌人。"
+ },
+ "s0146": {
+  "en": "Dragoon SVD",
+  "zh": "龙骑兵 SVD"
+ },
+ "s0147": {
+  "en": "A semi-auto designated marksman rifle. Snipe shot after shot.",
+  "zh": "半自动精确射手步枪。可以连续狙击。"
+ },
+ "s0148": {
+  "en": "Silent VSS",
+  "zh": "静默 VSS"
+ },
+ "s0149": {
+  "en": "A special sniper rifle with a built-in suppressor. The luxury of a sniper that fires rapidly.",
+  "zh": "一体式消音器的特种狙击枪。能连射的狙击，堪称奢侈。"
+ },
+ "s0150": {
+  "en": "AMR Hekatoncheires",
+  "zh": "反器材步枪 百臂巨人"
+ },
+ "s0151": {
+  "en": "A monster built to stop armored vehicles. The screen shakes with every shot.",
+  "zh": "为拦下装甲车而生的怪物。每开一枪画面都会震动。"
+ },
+ "s0152": {
+  "en": "Railgun 'Raijin'",
+  "zh": "电磁炮「雷神」"
+ },
+ "s0153": {
+  "en": "A prototype that launches rounds by electromagnetic acceleration. Pierces everything in its line of fire.",
+  "zh": "以电磁加速发射子弹的试作兵器。贯穿射线上的一切。"
+ },
+ "s0155": {
+  "en": "{}-round belt feed. Keeps firing, but reloads take forever.",
+  "zh": "{}发弹链供弹。可以持续射击，但装弹很慢。"
+ },
+ "s0156": {
+  "en": "PKM Hammer",
+  "zh": "PKM 重锤"
+ },
+ "s0157": {
+  "en": "Hammers in heavy rounds without end. Punches holes in zombie lines.",
+  "zh": "源源不断地砸进重型子弹。在僵尸队列中打出缺口。"
+ },
+ "s0159": {
+  "en": "Nicknamed for a rate of fire that sounds like tearing cloth. Sheer violence by bullet storm.",
+  "zh": "因撕裂布匹般的连射声而得名。弹幕即暴力。"
+ },
+ "s0160": {
+  "en": "Vulcan Minigun",
+  "zh": "火神加特林"
+ },
+ "s0161": {
+  "en": "A rotary multi-barrel gun. Once it starts spinning, nothing in front of it is left standing.",
+  "zh": "回转式多管枪。一旦转起来，眼前便什么都不剩。"
+ },
+ "s0163": {
+  "en": "A break-action, single-shot grenade launcher. Lobs in an arc and explodes.",
+  "zh": "折开式单发榴弹发射器。沿抛物线飞行后爆炸。"
+ },
+ "s0165": {
+  "en": "A {}-shot revolving-cylinder launcher. Back-to-back blasts wipe out the horde.",
+  "zh": "{}连发转轮弹仓式。连续轰炸把尸群炸得灰飞烟灭。"
+ },
+ "s0166": {
+  "en": "Rocket Launcher RPG",
+  "zh": "火箭筒 RPG"
+ },
+ "s0167": {
+  "en": "An anti-tank rocket. Flies straight and clears the area with a huge blast.",
+  "zh": "反坦克火箭。直线飞行，以大爆炸横扫周围。"
+ },
+ "s0168": {
+  "en": "Plasma Cannon",
+  "zh": "等离子炮"
+ },
+ "s0169": {
+  "en": "An orb cannon built on repurposed generator tech. Bursts as it pierces.",
+  "zh": "转用发生炉技术的光球炮。边贯穿边爆裂。"
+ },
+ "s0170": {
+  "en": "Harpoon Pistol 'Barb'",
+  "zh": "鱼叉手枪「倒钩」"
+ },
+ "s0171": {
+  "en": "A fishing co-op speargun, shrunk down to pistol size. Its harpoon skewers up to {} enemies.",
+  "zh": "把渔协仓库里的水下枪缩成手枪大小。鱼叉最多可串起{}名敌人。"
+ },
+ "s0173": {
+  "en": "A seaside vigilante model with an anti-salt coating. Keeps running even with sand in it.",
+  "zh": "涂有防盐蚀涂层的海边自卫队规格。进了沙子也不卡壳。"
+ },
+ "s0174": {
+  "en": "Squall SMG-{}",
+  "zh": "骤雨 SMG-{}"
+ },
+ "s0175": {
+  "en": "An SMG that seems to hold the lightning of a summer storm. Its rounds shock enemies.",
+  "zh": "仿佛封存了夏日骤雨雷电的冲锋枪。子弹能让敌人触电。"
+ },
+ "s0176": {
+  "en": "Beach Breaker",
+  "zh": "海滩破坏者"
+ },
+ "s0177": {
+  "en": "The beach shack owner insists it's \"for watermelon splitting.\" Blasts enemies to the far end of the beach.",
+  "zh": "海边小店老板坚称是「劈西瓜用的」霰弹枪。能把敌人轰到海滩尽头。"
+ },
+ "s0178": {
+  "en": "Lighthouse Keeper's Rifle",
+  "zh": "守塔人的步枪"
+ },
+ "s0179": {
+  "en": "An old sniper rifle that hung on the lighthouse landing. Its red and white bands are a marker visible from the sea.",
+  "zh": "挂在灯塔楼梯平台上的老狙击枪。红白相间的条纹，是从海上也能看见的标记。"
+ },
+ "s0180": {
+  "en": "Mermaid Gatling",
+  "zh": "美人鱼加特林"
+ },
+ "s0181": {
+  "en": "A rotary gun fitted with a cold-storage cooling unit. Freezes the legs of the enemies it hits.",
+  "zh": "装载冷冻仓库冷却装置的转管枪。冻住被击中敌人的双脚。"
+ },
+ "s0182": {
+  "en": "Hanabi Launcher 'Bloom'",
+  "zh": "烟花发射器「大轮」"
+ },
+ "s0183": {
+  "en": "Fireworks Nana brought to training camp, rigged to fire tube and all. Sets the whole night sky ablaze.",
+  "zh": "奈奈带去集训的烟花，连筒一起改成了能发射的武器。连夜空一起点燃。"
+ },
+ "s0184": {
+  "en": "Tidal Carbine 'Dawn'",
+  "zh": "潮汐卡宾枪「黎明」"
+ },
+ "s0185": {
+  "en": "The latest model, carried by the security chief of Lab No. 4. A barrage as unbroken as the tides.",
+  "zh": "第四研究所警备主任所持的最新型。如潮涨潮落般连绵不绝的弹幕。"
+ },
+ "s0186": {
+  "en": "Abyssal Railgun 'Depths'",
+  "zh": "深海电磁炮「深渊」"
+ },
+ "s0187": {
+  "en": "An electromagnetic accelerator cannon for deep-sea exploration. Its light reaches the ocean floor and pierces everything in its line of fire.",
+  "zh": "深海探测用的电磁加速炮。直达海底的光芒贯穿射线上的一切。"
+ },
+ "s0188": {
+  "en": "Grand Starmine",
+  "zh": "大号连珠烟花"
+ },
+ "s0189": {
+  "en": "Twin-launches the giant shells meant for a summer festival finale. The blast sites keep burning for a while.",
+  "zh": "双联发射夏日祭压轴用的大号烟花弹。爆炸处会持续燃烧一段时间。"
+ },
+ "s0190": {
+  "en": "Custom",
+  "zh": "定制"
+ },
+ "s0191": {
+  "en": "Mag size +{}%, spread -{}%",
+  "zh": "弹匣容量+{}%，散布-{}%"
+ },
+ "s0192": {
+  "en": "Extended Mag",
+  "zh": "扩容弹匣"
+ },
+ "s0193": {
+  "en": "Compensator",
+  "zh": "补偿器"
+ },
+ "s0194": {
+  "en": "Crit +{}%, range +{}%, damage -{}%",
+  "zh": "暴击率+{}%，射程+{}%，威力-{}%"
+ },
+ "s0195": {
+  "en": "Suppressor",
+  "zh": "消音器"
+ },
+ "s0196": {
+  "en": "Scope",
+  "zh": "瞄准镜"
+ },
+ "s0197": {
+  "en": "Pierce +{}, damage +{}%. Armor and shields don't reduce damage",
+  "zh": "穿透+{}，威力+{}%。不受装甲和盾牌削减威力"
+ },
+ "s0198": {
+  "en": "AP Rounds",
+  "zh": "穿甲弹"
+ },
+ "s0199": {
+  "en": "Mk.II",
+  "zh": "改"
+ },
+ "s0200": {
+  "en": "Damage +{}%, mag size +{}%, reload time -{}%, crit +{}%",
+  "zh": "威力+{}%，弹匣容量+{}%，装弹时间-{}%，暴击率+{}%"
+ },
+ "s0201": {
+  "en": "All-Round Upgrade",
+  "zh": "全面强化"
+ },
+ "s0202": {
+  "en": "Ignis",
+  "zh": "烈焰"
+ },
+ "s0203": {
+  "en": "Incendiary Rounds",
+  "zh": "燃烧弹"
+ },
+ "s0204": {
+  "en": "Bolt",
+  "zh": "雷霆"
+ },
+ "s0205": {
+  "en": "Shock Rounds",
+  "zh": "电击弹"
+ },
+ "s0206": {
+  "en": "Frost",
+  "zh": "霜冻"
+ },
+ "s0207": {
+  "en": "Cryo Rounds",
+  "zh": "冷冻弹"
+ },
+ "s0208": {
+  "en": "Burst",
+  "zh": "爆裂"
+ },
+ "s0209": {
+  "en": "Explosive Rounds",
+  "zh": "炸裂弹"
+ },
+ "s0210": {
+  "en": "Mag size +{}%, reload time -{}%",
+  "zh": "弹匣容量+{}%，装弹时间-{}%"
+ },
+ "s0211": {
+  "en": "Mag Size Up",
+  "zh": "弹容提升"
+ },
+ "s0212": {
+  "en": "Fast Reload",
+  "zh": "快速装弹"
+ },
+ "s0213": {
+  "en": "Wide",
+  "zh": "广域"
+ },
+ "s0214": {
+  "en": "Blast radius +{}%",
+  "zh": "爆炸范围+{}%"
+ },
+ "s0215": {
+  "en": "Heavy",
+  "zh": "重型"
+ },
+ "s0216": {
+  "en": "Damage +{}%, fire rate -{}%",
+  "zh": "威力+{}%，射速-{}%"
+ },
+ "s0217": {
+  "en": "Large Warhead",
+  "zh": "大型弹头"
+ },
+ "s0218": {
+  "en": "Quick",
+  "zh": "速射"
+ },
+ "s0219": {
+  "en": "Fire rate +{}%, reload time -{}%",
+  "zh": "射速+{}%，装弹时间-{}%"
+ },
+ "s0220": {
+  "en": "Rapid-Fire Action",
+  "zh": "速射机构"
+ },
+ "s0221": {
+  "en": "Damage +{}%, blast radius +{}%, reload time -{}%",
+  "zh": "威力+{}%，爆炸范围+{}%，装弹时间-{}%"
+ },
+ "s0222": {
+  "en": "While equipped: partner damage +{}%",
+  "zh": "装备时，搭档伤害+{}%"
+ },
+ "s0223": {
+  "en": "Crit kills refund {} rounds",
+  "zh": "暴击击杀返还{}发子弹"
+ },
+ "s0224": {
+  "en": "No slowdown while firing; massive knockback",
+  "zh": "射击时不减速，超强击退"
+ },
+ "s0225": {
+  "en": "A mini drone provides constant covering fire",
+  "zh": "小型无人机持续提供掩护射击"
+ },
+ "s0226": {
+  "en": "Blast sites burn for {}s",
+  "zh": "爆炸处持续燃烧{}秒"
+ },
+ "s0227": {
+  "en": "Always crits while your partner is standing",
+  "zh": "搭档健在时必定暴击"
+ },
+ "s0228": {
+  "en": "Restore {} HP per kill",
+  "zh": "每击倒一名敌人恢复{}HP"
+ },
+ "s0229": {
+  "en": "Burn",
+  "zh": "燃烧"
+ },
+ "s0230": {
+  "en": "Shock",
+  "zh": "触电"
+ },
+ "s0231": {
+  "en": "Chill",
+  "zh": "冷却"
+ },
+ "s0232": {
+  "en": "Blast",
+  "zh": "炸裂"
+ },
+ "s0233": {
+  "en": "Enemies hit burn for {}s, taking damage over time",
+  "zh": "命中的敌人会燃烧{}秒，持续受到伤害"
+ },
+ "s0234": {
+  "en": "Each hit has a {}% chance to shock the enemy, stopping it in place",
+  "zh": "每次命中有{}%几率使敌人触电，令其停止行动"
+ },
+ "s0235": {
+  "en": "Slows enemies hit for {}s",
+  "zh": "使命中的敌人减速{}秒"
+ },
+ "s0236": {
+  "en": "Each hit sets off a small explosion that catches nearby enemies",
+  "zh": "每次命中都会引发小爆炸，波及周围敌人"
+ },
+ "s0237": {
+  "en": "Bond weapon: ",
+  "zh": "羁绊武器："
+ },
+ "s0238": {
+  "en": "Lower base damage",
+  "zh": "威力偏低"
+ },
+ "s0239": {
+  "en": "{} shot fires ",
+  "zh": "{}发可射出"
+ },
+ "s0240": {
+  "en": " pellets. More hit at close range",
+  "zh": "颗霰弹。距离越近，命中越多"
+ },
+ "s0241": {
+  "en": "Fires a beam that pierces every enemy in its line",
+  "zh": "发射贯穿射线上所有敌人的光线"
+ },
+ "s0242": {
+  "en": "Barrels need time to spin up before firing",
+  "zh": "开火前需要等待枪管转起来"
+ },
+ "s0243": {
+  "en": "Plasma rounds that explode while piercing enemies",
+  "zh": "边穿透敌人边爆炸的等离子弹"
+ },
+ "s0244": {
+  "en": "Grenades that lob in an arc and explode",
+  "zh": "沿抛物线飞行后爆炸的榴弹"
+ },
+ "s0245": {
+  "en": "Rockets that fly straight and explode",
+  "zh": "直线飞行后爆炸的火箭弹"
+ },
+ "s0246": {
+  "en": " (blast radius ",
+  "zh": "（爆炸范围"
+ },
+ "s0247": {
+  "en": "Pierce: ",
+  "zh": "子弹可穿透"
+ },
+ "s0248": {
+  "en": "unlimited",
+  "zh": "任意数量的"
+ },
+ "s0249": {
+  "en": " enemies",
+  "zh": "名以内的"
+ },
+ "s0250": {
+  "en": " per shot",
+  "zh": "敌人"
+ },
+ "s0251": {
+  "en": "Muzzle",
+  "zh": "枪口"
+ },
+ "s0252": {
+  "en": "Sight",
+  "zh": "瞄具"
+ },
+ "s0253": {
+  "en": "Magazine",
+  "zh": "弹匣"
+ },
+ "s0254": {
+  "en": "Ammo",
+  "zh": "弹药"
+ },
+ "s0255": {
+  "en": "Spread -{}%",
+  "zh": "散布 -{}%"
+ },
+ "s0256": {
+  "en": "Muzzle Brake",
+  "zh": "枪口制退器"
+ },
+ "s0257": {
+  "en": "Damage +{}% / Spread +{}%",
+  "zh": "伤害 +{}% / 散布 +{}%"
+ },
+ "s0258": {
+  "en": "Crit rate +{}% / Damage -{}%",
+  "zh": "暴击率 +{}% / 伤害 -{}%"
+ },
+ "s0259": {
+  "en": "Long Barrel",
+  "zh": "长枪管"
+ },
+ "s0260": {
+  "en": "Range +{}% / Damage +{}%",
+  "zh": "射程 +{}% / 伤害 +{}%"
+ },
+ "s0261": {
+  "en": "Choke",
+  "zh": "收束器"
+ },
+ "s0262": {
+  "en": "Spread -{}% / Range +{}% (SG only)",
+  "zh": "散布 -{}% / 射程 +{}%（仅限霰弹枪）"
+ },
+ "s0263": {
+  "en": "Red Dot Sight",
+  "zh": "红点瞄准镜"
+ },
+ "s0264": {
+  "en": "Laser Sight",
+  "zh": "激光瞄准器"
+ },
+ "s0265": {
+  "en": "Spread -{}% / Crit rate +{}%",
+  "zh": "散布 -{}% / 暴击率 +{}%"
+ },
+ "s0266": {
+  "en": "Holo Sight",
+  "zh": "全息瞄准镜"
+ },
+ "s0267": {
+  "en": "{}x Scope",
+  "zh": "{}倍镜"
+ },
+ "s0268": {
+  "en": "Crit rate +{}% / Range +{}% / Fire rate -{}%",
+  "zh": "暴击率 +{}% / 射程 +{}% / 射速 -{}%"
+ },
+ "s0269": {
+  "en": "Mag size +{}%",
+  "zh": "弹匣容量 +{}%"
+ },
+ "s0270": {
+  "en": "Quick Mag",
+  "zh": "快速弹匣"
+ },
+ "s0271": {
+  "en": "Drum Magazine",
+  "zh": "弹鼓"
+ },
+ "s0272": {
+  "en": "Mag size +{}% / Reload +{}%",
+  "zh": "弹匣容量 +{}% / 装弹 +{}%"
+ },
+ "s0273": {
+  "en": "Pierce +{} / Ignores enemy armor",
+  "zh": "穿透 +{} / 无视敌人装甲"
+ },
+ "s0274": {
+  "en": "Hollow Point Rounds",
+  "zh": "空尖弹"
+ },
+ "s0275": {
+  "en": "Damage +{}% / Pierce -{}",
+  "zh": "伤害 +{}% / 穿透 -{}"
+ },
+ "s0276": {
+  "en": "Sets enemies hit on fire for {}s",
+  "zh": "使命中的敌人燃烧{}秒"
+ },
+ "s0277": {
+  "en": "{}% chance to shock and stall enemies",
+  "zh": "{}%几率使敌人触电并定身"
+ },
+ "s0278": {
+  "en": "For {}s after a hit, enemy speed -{}%",
+  "zh": "命中的敌人{}秒内移动速度 -{}%"
+ },
+ "s0279": {
+  "en": "Small explosion on impact ({}% power)",
+  "zh": "命中时发生小爆炸（威力{}%）"
+ },
+ "s0280": {
+  "en": "Factory",
+  "zh": "原厂"
+ },
+ "s0281": {
+  "en": "Matte Black",
+  "zh": "哑光黑"
+ },
+ "s0282": {
+  "en": "Desert",
+  "zh": "沙漠"
+ },
+ "s0283": {
+  "en": "Olive",
+  "zh": "橄榄绿"
+ },
+ "s0284": {
+  "en": "Snow",
+  "zh": "雪白"
+ },
+ "s0285": {
+  "en": "School Blue",
+  "zh": "校园蓝"
+ },
+ "s0286": {
+  "en": "Crimson",
+  "zh": "深红"
+ },
+ "s0287": {
+  "en": "Pink",
+  "zh": "粉红"
+ },
+ "s0288": {
+  "en": "Sakura",
+  "zh": "樱花"
+ },
+ "s0289": {
+  "en": "Gold",
+  "zh": "金色"
+ },
+ "s0290": {
+  "en": "Achievement: \"Hard Mode Conquered\"",
+  "zh": "成就「征服困难模式」"
+ },
+ "s0291": {
+  "en": "Neon",
+  "zh": "霓虹"
+ },
+ "s0292": {
+  "en": "Achievement: \"Beyond the Nightmare\"",
+  "zh": "成就「穿越噩梦」"
+ },
+ "s0293": {
+  "en": "None",
+  "zh": "无"
+ },
+ "s0294": {
+  "en": "Club Cap",
+  "zh": "社团棒球帽"
+ },
+ "s0295": {
+  "en": "Victory Headband",
+  "zh": "必胜头巾"
+ },
+ "s0296": {
+  "en": "Safety Helmet",
+  "zh": "安全帽"
+ },
+ "s0297": {
+  "en": "Cat-Ear Headphones",
+  "zh": "猫耳耳机"
+ },
+ "s0298": {
+  "en": "Gas Mask",
+  "zh": "防毒面具"
+ },
+ "s0299": {
+  "en": "Bunny-Ear Ribbon",
+  "zh": "兔耳蝴蝶结"
+ },
+ "s0300": {
+  "en": "Tactical Helmet",
+  "zh": "战术头盔"
+ },
+ "s0301": {
+  "en": "Riot Visor",
+  "zh": "防暴面罩"
+ },
+ "s0302": {
+  "en": "Nurse Cap",
+  "zh": "护士帽"
+ },
+ "s0303": {
+  "en": "Stocked after clearing Chapter {}",
+  "zh": "通关第{}章后上架"
+ },
+ "s0304": {
+  "en": "President's Tiara",
+  "zh": "社长的头冠"
+ },
+ "s0305": {
+  "en": "Stocked after ★{} on all Normal stages",
+  "zh": "普通难度全部关卡★{}后上架"
+ },
+ "s0306": {
+  "en": "Croquette Chef's Hat",
+  "zh": "可乐饼店的厨师帽"
+ },
+ "s0307": {
+  "en": "Fogbane Halo",
+  "zh": "驱雾光环"
+ },
+ "s0308": {
+  "en": "Yui's Headband",
+  "zh": "结衣的发箍"
+ },
+ "s0309": {
+  "en": "Haru's Red Ribbon",
+  "zh": "春的红丝带"
+ },
+ "s0310": {
+  "en": "Straw Hat",
+  "zh": "草帽"
+ },
+ "s0311": {
+  "en": "Uniform Cardigan",
+  "zh": "制服开衫"
+ },
+ "s0312": {
+  "en": "Club Tracksuit",
+  "zh": "社团运动服"
+ },
+ "s0313": {
+  "en": "Stab Vest",
+  "zh": "防刺背心"
+ },
+ "s0314": {
+  "en": "Hazmat Suit",
+  "zh": "防护服"
+ },
+ "s0315": {
+  "en": "Lab Coat",
+  "zh": "研究白大褂"
+ },
+ "s0316": {
+  "en": "Tactical Vest",
+  "zh": "战术背心"
+ },
+ "s0317": {
+  "en": "\"Yoroshiku\" Gang Coat",
+  "zh": "特攻服「夜露死苦」"
+ },
+ "s0318": {
+  "en": "Riot Body Armor",
+  "zh": "防暴装甲"
+ },
+ "s0319": {
+  "en": "Dawn Coat",
+  "zh": "黎明大衣"
+ },
+ "s0320": {
+  "en": "Night Shift Scrubs",
+  "zh": "夜班护士服"
+ },
+ "s0321": {
+  "en": "Nun's Veil",
+  "zh": "修女头纱"
+ },
+ "s0322": {
+  "en": "Earned by clearing all Part {} stages",
+  "zh": "通关第{}部全部关卡后获得"
+ },
+ "s0323": {
+  "en": "Nun's Habit",
+  "zh": "修女服"
+ },
+ "s0324": {
+  "en": "Nun's Habit (Skirt)",
+  "zh": "修女服（裙装）"
+ },
+ "s0325": {
+  "en": "Nun's Habit (Nana)",
+  "zh": "修女服（奈奈专用）"
+ },
+ "s0326": {
+  "en": "Nun's Habit (Yui)",
+  "zh": "修女服（结衣专用）"
+ },
+ "s0327": {
+  "en": "Nun's Habit (Rei)",
+  "zh": "修女服（玲专用）"
+ },
+ "s0328": {
+  "en": "Nun's Habit (Haru)",
+  "zh": "修女服（春专用）"
+ },
+ "s0329": {
+  "en": "Nun's Habit (Mio)",
+  "zh": "修女服（澪专用）"
+ },
+ "s0330": {
+  "en": "Swim Goggles",
+  "zh": "泳镜"
+ },
+ "s0331": {
+  "en": "Sun Visor",
+  "zh": "遮阳帽"
+ },
+ "s0332": {
+  "en": "Diving Helmet",
+  "zh": "潜水头盔"
+ },
+ "s0333": {
+  "en": "Earned by clearing Chapter {} on Hard",
+  "zh": "以困难难度通关第{}章全部关卡后获得"
+ },
+ "s0334": {
+  "en": "Rash Guard",
+  "zh": "防晒冲浪衣"
+ },
+ "s0335": {
+  "en": "Life Jacket",
+  "zh": "救生衣"
+ },
+ "s0336": {
+  "en": "Festival Happi Coat",
+  "zh": "祭典法被"
+ },
+ "s0337": {
+  "en": "Wetsuit",
+  "zh": "潜水衣"
+ },
+ "s0338": {
+  "en": "Robe of the Tides",
+  "zh": "潮音羽衣"
+ },
+ "s0339": {
+  "en": "Earned by clearing Chapter {} on Nightmare",
+  "zh": "以噩梦难度通关第{}章全部关卡后获得"
+ },
+ "s0340": {
+  "en": "Board Shorts & Sandals",
+  "zh": "冲浪短裤和人字拖"
+ },
+ "s0341": {
+  "en": "Geta & White Tabi",
+  "zh": "木屐和白足袋"
+ },
+ "s0342": {
+  "en": "Surfboard",
+  "zh": "冲浪板"
+ },
+ "s0343": {
+  "en": "Festival Fan",
+  "zh": "祭典团扇"
+ },
+ "s0344": {
+  "en": "Sport Swim Top",
+  "zh": "运动泳衣（上装）"
+ },
+ "s0345": {
+  "en": "Earned by clearing Part {} ({} stages)",
+  "zh": "通关第{}部全部{}个关卡后获得"
+ },
+ "s0346": {
+  "en": "Uniform Skirt",
+  "zh": "制服裙"
+ },
+ "s0347": {
+  "en": "Sport Swim Bottoms",
+  "zh": "运动泳衣（下装）"
+ },
+ "s0348": {
+  "en": "Bike Shorts & Sneakers",
+  "zh": "打底短裤和运动鞋"
+ },
+ "s0349": {
+  "en": "Knee Pads",
+  "zh": "护膝"
+ },
+ "s0350": {
+  "en": "Black Tights",
+  "zh": "黑色裤袜"
+ },
+ "s0351": {
+  "en": "Combat Boots",
+  "zh": "战斗靴"
+ },
+ "s0352": {
+  "en": "Camo Cargo Pants",
+  "zh": "迷彩工装裤"
+ },
+ "s0353": {
+  "en": "School Backpack",
+  "zh": "书包"
+ },
+ "s0354": {
+  "en": "Ammo Bag",
+  "zh": "弹药包"
+ },
+ "s0355": {
+  "en": "Sure-Hit Charm",
+  "zh": "必中护身符"
+ },
+ "s0356": {
+  "en": "First Aid Bag",
+  "zh": "急救包"
+ },
+ "s0357": {
+  "en": "Warding Bell",
+  "zh": "驱邪铃铛"
+ },
+ "s0358": {
+  "en": "Walkie-Talkie",
+  "zh": "对讲机"
+ },
+ "s0359": {
+  "en": "President's Cape",
+  "zh": "社长的披风"
+ },
+ "s0360": {
+  "en": "Rei's Study Guide",
+  "zh": "玲的参考书"
+ },
+ "s0361": {
+  "en": "Discipline Armband",
+  "zh": "风纪委员袖章"
+ },
+ "s0362": {
+  "en": "Nana's Warhead Pouch",
+  "zh": "奈奈的弹头包"
+ },
+ "s0363": {
+  "en": "Swim Ring",
+  "zh": "游泳圈"
+ },
+ "s0364": {
+  "en": "Angel Wing Backpack",
+  "zh": "天使翅膀背包"
+ },
+ "s0365": {
+  "en": "Stocked after a full Nightmare clear",
+  "zh": "噩梦难度全部通关后上架"
+ },
+ "s0366": {
+  "en": "Black",
+  "zh": "黑"
+ },
+ "s0367": {
+  "en": "White",
+  "zh": "白"
+ },
+ "s0368": {
+  "en": "Blue",
+  "zh": "蓝"
+ },
+ "s0369": {
+  "en": "Gold",
+  "zh": "金"
+ },
+ "s0370": {
+  "en": "Head",
+  "zh": "头部"
+ },
+ "s0371": {
+  "en": "Body",
+  "zh": "躯干"
+ },
+ "s0372": {
+  "en": "Legs",
+  "zh": "腿部"
+ },
+ "s0373": {
+  "en": "Accessory",
+  "zh": "饰品"
+ },
+ "s0374": {
+  "en": "Defense",
+  "zh": "防御"
+ },
+ "s0375": {
+  "en": "Speed%",
+  "zh": "速度%"
+ },
+ "s0376": {
+  "en": "Crit%",
+  "zh": "暴击%"
+ },
+ "s0377": {
+  "en": "Attack%",
+  "zh": "攻击%"
+ },
+ "s0378": {
+  "en": "Reload%",
+  "zh": "装弹%"
+ },
+ "s0379": {
+  "en": "Skill CD-%",
+  "zh": "技能冷却-%"
+ },
+ "s0380": {
+  "en": "Acid Res%",
+  "zh": "酸抗性%"
+ },
+ "s0381": {
+  "en": "Healing%",
+  "zh": "治疗量%"
+ },
+ "s0382": {
+  "en": "Mag Size%",
+  "zh": "弹匣容量%"
+ },
+ "s0383": {
+  "en": "Regen/s",
+  "zh": "每秒回复"
+ },
+ "s0384": {
+  "en": "Drop%",
+  "zh": "掉落%"
+ },
+ "s0385": {
+  "en": "Dodge CD-%",
+  "zh": "闪避冷却-%"
+ },
+ "s0386": {
+  "en": "Walker",
+  "zh": "行尸"
+ },
+ "s0387": {
+  "en": "A citizen possessed by the Fog. Slow, but comes in numbers.",
+  "zh": "被雾附身的市民。动作迟缓，但数量众多。"
+ },
+ "s0388": {
+  "en": "Runner",
+  "zh": "疾跑者"
+ },
+ "s0389": {
+  "en": "Wears a track team tracksuit. Very fast. Take it down first.",
+  "zh": "穿着田径队运动服的个体。速度极快，优先击倒它吧。"
+ },
+ "s0390": {
+  "en": "Spitter",
+  "zh": "喷吐者"
+ },
+ "s0391": {
+  "en": "Spits strong acid from a distance. Jump over the acid puddles it leaves.",
+  "zh": "保持距离喷吐强酸。脚下的酸液池可以跳跃躲开。"
+ },
+ "s0392": {
+  "en": "Bomber",
+  "zh": "自爆者"
+ },
+ "s0393": {
+  "en": "Swollen with gas. Explodes when it gets close. Shoot it from afar to catch nearby zombies in the blast.",
+  "zh": "体内积满气体的个体。靠近就会自爆。在远处射击可以波及周围的僵尸。"
+ },
+ "s0394": {
+  "en": "Leaper",
+  "zh": "跳跃者"
+ },
+ "s0395": {
+  "en": "Kicks off walls to pounce on you. Strike the moment it lands.",
+  "zh": "蹬墙扑过来。落地的瞬间就是机会。"
+ },
+ "s0396": {
+  "en": "Armored",
+  "zh": "装甲者"
+ },
+ "s0397": {
+  "en": "Once a riot police officer. Cuts frontal gunfire damage by {}0%. AP rounds, explosions and crits work well.",
+  "zh": "曾是防暴警察。来自正面的子弹伤害减少{}成。穿甲弹、爆炸、暴击对它有效。"
+ },
+ "s0398": {
+  "en": "Screamer",
+  "zh": "尖叫者"
+ },
+ "s0399": {
+  "en": "Its shriek calls for help and sends nearby zombies into a frenzy. Top priority target.",
+  "zh": "用尖叫召集同伴，让周围的僵尸狂暴化。最优先目标。"
+ },
+ "s0400": {
+  "en": "Brute",
+  "zh": "蛮力者"
+ },
+ "s0401": {
+  "en": "A massive mutant. It never flinches, and its blows send you flying.",
+  "zh": "巨大的变异个体。不会硬直，被它打中会被远远击飞。"
+ },
+ "s0402": {
+  "en": "Weeper",
+  "zh": "啜泣者"
+ },
+ "s0403": {
+  "en": "A sobbing female zombie that closes in at a brisk pace. Faster than a Walker.",
+  "zh": "一边啜泣一边快步逼近的女性僵尸。比行尸更快。"
+ },
+ "s0404": {
+  "en": "Sporer",
+  "zh": "孢子人"
+ },
+ "s0405": {
+  "en": "A man infested by fungus. Throws spore clumps and leaves a poison pool where it falls.",
+  "zh": "被蘑菇寄生的男人。投掷孢子团，倒下的地方也会留下毒液池。"
+ },
+ "s0406": {
+  "en": "Chainfat",
+  "zh": "锁链巨汉"
+ },
+ "s0407": {
+  "en": "A hulk swinging a chain with huge reach. When it winds up, back off or dodge in close.",
+  "zh": "挥舞锁链的巨汉，攻击范围极广。它抡起锁链时，要么拉开距离，要么闪避冲进它怀里。"
+ },
+ "s0408": {
+  "en": "Juggernaut",
+  "zh": "重甲巨人"
+ },
+ "s0409": {
+  "en": "An armored giant with an axe. Deflects {}0% of frontal gunfire. Use AP rounds, explosions, crits, or hit it from behind.",
+  "zh": "身披铠甲、手持巨斧的巨人。能弹开{}成来自正面的子弹。用穿甲弹、爆炸、暴击，或从背后攻击。"
+ },
+ "s0410": {
+  "en": "Pyrowitch",
+  "zh": "火焰女巫"
+ },
+ "s0411": {
+  "en": "A witch who fires fireballs straight at you. Jump or dodge to avoid them.",
+  "zh": "直线发射火球的女巫。火球可以跳跃或闪避躲开。"
+ },
+ "s0412": {
+  "en": "Madame Waltz",
+  "zh": "华尔兹夫人"
+ },
+ "s0413": {
+  "en": "A noblewoman zombie who never stops dancing. Each twirl heals nearby zombies. Take her out first.",
+  "zh": "不停起舞的贵妇僵尸。每次舞动都会治愈周围僵尸的伤势。最好第一个解决她。"
+ },
+ "s0414": {
+  "en": "Rot Pigeon",
+  "zh": "腐鸽"
+ },
+ "s0415": {
+  "en": "Rotten pigeons. Weak, but they swarm in flocks. Clear them out with an SMG or shotgun.",
+  "zh": "腐烂的鸽子。很弱，但会成群涌来。用冲锋枪或霰弹枪一网打尽吧。"
+ },
+ "s0416": {
+  "en": "Skull Crow",
+  "zh": "骷髅鸦"
+ },
+ "s0417": {
+  "en": "A crow whose head is bare bone. Hovers at a distance, then dives at you.",
+  "zh": "头部化为白骨的乌鸦。在远处振翅，然后猛扑过来。"
+ },
+ "s0418": {
+  "en": "Zombie Wolf",
+  "zh": "僵尸狼"
+ },
+ "s0419": {
+  "en": "Zombie wolves that run in packs. Very fast, and they leap to bite from far away.",
+  "zh": "成群奔跑的僵尸狼。速度极快，会从远处扑来撕咬。"
+ },
+ "s0420": {
+  "en": "Rot Eagle",
+  "zh": "腐鹰"
+ },
+ "s0421": {
+  "en": "A giant zombie eagle. One mighty flap carries it a long way in a single swoop.",
+  "zh": "巨大的僵尸鹰。用力振翅，一口气扑出很远的距离。"
+ },
+ "s0422": {
+  "en": "Zombie Bear",
+  "zh": "僵尸熊"
+ },
+ "s0423": {
+  "en": "A zombie bear still walking with arrows in it. Top-tier HP and attack, and faster than a Brute.",
+  "zh": "身上还插着箭的僵尸熊。体力和攻击力都是顶级，比蛮力者更快。"
+ },
+ "s0424": {
+  "en": "Ex-Vice Principal",
+  "zh": "昔日的教导主任"
+ },
+ "s0425": {
+  "en": "Former vice principal, Kirigaoka Girls' High",
+  "zh": "雾丘女子高中 教导主任"
+ },
+ "s0426": {
+  "en": "Catchphrase: \"No running in the halls!\" Now it comes running at you.",
+  "zh": "口头禅是「走廊上不许奔跑」。现在却自己朝你跑了过来。"
+ },
+ "s0427": {
+  "en": "Butcher",
+  "zh": "屠夫"
+ },
+ "s0428": {
+  "en": "Former owner, Sakura St. Butcher Shop",
+  "zh": "樱花街肉铺 老板"
+ },
+ "s0429": {
+  "en": "A kind shopkeeper who used to throw in a free croquette. Jump over the shockwaves from its ground slams.",
+  "zh": "曾是会多送你一个可乐饼的和善老板。砸地产生的冲击波可以跳跃躲开。"
+ },
+ "s0430": {
+  "en": "Last Train Conductor",
+  "zh": "末班车列车员"
+ },
+ "s0431": {
+  "en": "Former crew, Kirigaoka Line last train",
+  "zh": "雾丘线 末班列车 乘务员"
+ },
+ "s0432": {
+  "en": "Never lets anyone rush aboard. Charges again and again.",
+  "zh": "绝不容许任何人抢上车。会连续冲撞过来。"
+ },
+ "s0433": {
+  "en": "Dr. Necro",
+  "zh": "尼克罗博士"
+ },
+ "s0434": {
+  "en": "Former director, City General Hospital",
+  "zh": "市立综合医院 院长"
+ },
+ "s0435": {
+  "en": "Knew the truth about the Fog and covered it up. Rains down strong acid.",
+  "zh": "明知雾的真相却加以隐瞒的男人。会像下雨一样降下强酸。"
+ },
+ "s0436": {
+  "en": "Patient Zero",
+  "zh": "零号病人"
+ },
+ "s0437": {
+  "en": "Heart of the Reactor — The First One",
+  "zh": "发生炉之心 ― 最初的那个人"
+ },
+ "s0438": {
+  "en": "The first test subject, still spawning the Fog. Uses every attack and grows wilder as its HP drops.",
+  "zh": "不断产生雾的最初实验体。会使用所有攻击，体力越低越狂暴。"
+ },
+ "s0439": {
+  "en": "Lord of the Watchtower",
+  "zh": "监视塔之主"
+ },
+ "s0440": {
+  "en": "Former lifeguard, Shiomi Beach",
+  "zh": "潮见海滨浴场 救生员"
+ },
+ "s0441": {
+  "en": "\"Please stay inside the swimming area.\" Dashes from one end of the beach to the other in an instant.",
+  "zh": "「请不要离开游泳区域」。一瞬间就能从海滩一端冲到另一端。"
+ },
+ "s0442": {
+  "en": "Mother of the Fog",
+  "zh": "雾之母"
+ },
+ "s0443": {
+  "en": "Sayoko Shiomi, former director of Helios Pharmaceuticals Lab 4",
+  "zh": "赫利俄斯制药 第四研究所 所长 潮见小夜子"
+ },
+ "s0444": {
+  "en": "The researcher who first made the Fog drug. Cloaked in the sea fog itself, she uses every attack.",
+  "zh": "最早制造出雾之药的研究者。身披海雾本身，会使用所有攻击。"
+ },
+ "s0445": {
+  "en": "Kirigaoka Girls' High",
+  "zh": "雾丘女子高中"
+ },
+ "s0446": {
+  "en": "The World Ended After School",
+  "zh": "放学后，世界终结了"
+ },
+ "s0447": {
+  "en": "Sakura Street Shops",
+  "zh": "樱花街商店街"
+ },
+ "s0448": {
+  "en": "The Smell of Croquettes Is Gone",
+  "zh": "再也闻不到可乐饼的香味"
+ },
+ "s0449": {
+  "en": "Subway: Kirigaoka Line",
+  "zh": "地铁·雾丘线"
+ },
+ "s0450": {
+  "en": "What Comes After the Last Train",
+  "zh": "末班车之后到来的东西"
+ },
+ "s0451": {
+  "en": "City General Hospital",
+  "zh": "市立综合医院"
+ },
+ "s0452": {
+  "en": "Under the Green Exit Lights",
+  "zh": "绿色应急灯下"
+ },
+ "s0453": {
+  "en": "Harbor: Helios Lab 3",
+  "zh": "港湾·赫利俄斯第三研究所"
+ },
+ "s0454": {
+  "en": "Heart of the Fog",
+  "zh": "雾之心脏"
+ },
+ "s0455": {
+  "en": "Shiomi Seaside Camp",
+  "zh": "潮见岛 临海集训"
+ },
+ "s0456": {
+  "en": "Part {}: Summer Fog from the Sea",
+  "zh": "第{}部·夏日之雾自海上来"
+ },
+ "s0457": {
+  "en": "Trouble After School",
+  "zh": "放学后的异变"
+ },
+ "s0458": {
+  "en": "Across the Walkway",
+  "zh": "穿过连廊"
+ },
+ "s0459": {
+  "en": "The Festival Bazooka",
+  "zh": "文化祭仓库的火箭筒"
+ },
+ "s0460": {
+  "en": "Gym Shed Barricade",
+  "zh": "体育仓库路障"
+ },
+ "s0461": {
+  "en": "Showdown at the Gate",
+  "zh": "校门前的教导主任"
+ },
+ "s0462": {
+  "en": "Sakura Street Entrance",
+  "zh": "樱花街入口"
+ },
+ "s0463": {
+  "en": "Screams in the Arcade",
+  "zh": "拱廊里的惨叫"
+ },
+ "s0464": {
+  "en": "Solo Croquette Run",
+  "zh": "独自前往可乐饼店"
+ },
+ "s0465": {
+  "en": "Rooftop Cover Fire",
+  "zh": "屋顶的掩护射击"
+ },
+ "s0466": {
+  "en": "Shutter Defense Line",
+  "zh": "卷帘门前防线"
+ },
+ "s0467": {
+  "en": "The Butcher Shop Owner",
+  "zh": "肉铺之主"
+ },
+ "s0468": {
+  "en": "Empty Ticket Gates",
+  "zh": "无人的检票口"
+ },
+ "s0469": {
+  "en": "Walking the Tracks",
+  "zh": "沿着铁轨前行"
+ },
+ "s0470": {
+  "en": "Reboot the Power Room",
+  "zh": "重启配电室"
+ },
+ "s0471": {
+  "en": "Blackout Platform",
+  "zh": "停电的站台"
+ },
+ "s0472": {
+  "en": "Night ER Entrance",
+  "zh": "夜间急诊入口"
+ },
+ "s0473": {
+  "en": "Ward Three",
+  "zh": "第三病房楼"
+ },
+ "s0474": {
+  "en": "Father's Office",
+  "zh": "父亲的诊室"
+ },
+ "s0475": {
+  "en": "From the Opposite Ward",
+  "zh": "从对面的病房楼"
+ },
+ "s0476": {
+  "en": "Defend the Pharmacy",
+  "zh": "守住药房"
+ },
+ "s0477": {
+  "en": "The Director's Rounds",
+  "zh": "院长查房"
+ },
+ "s0478": {
+  "en": "Container Yard",
+  "zh": "集装箱堆场"
+ },
+ "s0479": {
+  "en": "Laboratory 3",
+  "zh": "第三研究所"
+ },
+ "s0480": {
+  "en": "President & Vice-Pres.",
+  "zh": "社长与副社长"
+ },
+ "s0481": {
+  "en": "Reactor: Last Stand",
+  "zh": "发生炉前·最终防线"
+ },
+ "s0482": {
+  "en": "Fog Over the Pier",
+  "zh": "笼罩栈桥的雾"
+ },
+ "s0483": {
+  "en": "Beach Hut Row",
+  "zh": "海滨小屋街"
+ },
+ "s0484": {
+  "en": "Beach Hut Barricade",
+  "zh": "海滨小屋路障"
+ },
+ "s0485": {
+  "en": "Lighthouse Cover Fire",
+  "zh": "灯塔的掩护射击"
+ },
+ "s0486": {
+  "en": "Fishing Port at Night",
+  "zh": "夜晚的渔港"
+ },
+ "s0487": {
+  "en": "Cold Storage Survivors",
+  "zh": "冷冻仓库的幸存者"
+ },
+ "s0488": {
+  "en": "Lighthouse, Alone",
+  "zh": "独自前往灯塔"
+ },
+ "s0489": {
+  "en": "Offshore Plant Bridge",
+  "zh": "海上工厂连接桥"
+ },
+ "s0490": {
+  "en": "Barricade {}%+ intact",
+  "zh": "路障耐久{}%以上"
+ },
+ "s0491": {
+  "en": "No Downs",
+  "zh": "无倒地"
+ },
+ "s0492": {
+  "en": "Headshots",
+  "zh": "爆头"
+ },
+ "s0493": {
+  "en": "+",
+  "zh": "次以上"
+ },
+ "s0494": {
+  "en": "+ kills",
+  "zh": "只以上击杀"
+ },
+ "s0495": {
+  "en": "or less",
+  "zh": "以内"
+ },
+ "s0496": {
+  "en": "Normal",
+  "zh": "普通"
+ },
+ "s0497": {
+  "en": "Hard",
+  "zh": "困难"
+ },
+ "s0498": {
+  "en": "Very Hard",
+  "zh": "极难"
+ },
+ "s0499": {
+  "en": "Nightmare",
+  "zh": "噩梦"
+ },
+ "s0500": {
+  "en": "Clutching her little brother's shoe, Haru slipped out the back door of the croquette shop. Shadows were gathering from both ends of the street.",
+  "zh": "小春紧紧攥着弟弟的鞋，从可乐饼店的后门走了出来。街道两头，黑影正在聚拢。"
+ },
+ "s0501": {
+  "en": "Haru, don't move. Stay behind the crates. ...I'm on the roof across the street.",
+  "zh": "小春，别动。躲在木箱后面。……我在对面的楼顶。"
+ },
+ "s0502": {
+  "en": "Rei!? When did you get up there—",
+  "zh": "玲！？你什么时候跑上去的——"
+ },
+ "s0503": {
+  "en": "Borrowed sniper rifle. Range {}, no wind. One headshot drops them.",
+  "zh": "借来的狙击枪。距离{}，无风。打头一枪就能放倒。"
+ },
+ "s0504": {
+  "en": "Shoot an orange one and it takes the others with it. —Not one of them touches you.",
+  "zh": "橙色的一打就会波及周围。——我不会让任何一只碰到你。"
+ },
+ "s0505": {
+  "en": "Rei headed for the examination room. From the ward across the way, Yui watched her path back through a scope.",
+  "zh": "玲前往了诊察室。在对面的病栋里，结衣正透过瞄准镜守望着她的归途。"
+ },
+ "s0506": {
+  "en": "Rei, can you hear me? They're coming from both ends of the hall. Grab the files and wait behind the bench.",
+  "zh": "玲，听得到吗？走廊两头都有东西过来。拿好资料，在长椅后面等着。"
+ },
+ "s0507": {
+  "en": "...You were watching? I said I'd go alone.",
+  "zh": "……你一直在看着？我明明说了要一个人去。"
+ },
+ "s0508": {
+  "en": "I said I'd let you go alone. I never said I'd leave you alone.",
+  "zh": "我是说过让你一个人去，可没说过要丢下你一个人。"
+ },
+ "s0509": {
+  "en": "The fireball throwers will aim from range. Helmets deflect headshots, so go for the body. —Covering fire, starting now!",
+  "zh": "会扔火球的家伙会从远处瞄准。头盔能弹开子弹，所以打身体。——掩护，开始！"
+ },
+ "s0510": {
+  "en": "The main entrance is blocked. Our only way out is across the walkway and through the gym.",
+  "zh": "正门被堵住了。只能穿过连廊，从体育馆那边出去。"
+ },
+ "s0511": {
+  "en": "The walkway? It's totally open. They'll see us from the whole field!",
+  "zh": "连廊？那里四面透风啊。从操场上看得一清二楚吧？"
+ },
+ "s0512": {
+  "en": "Look look, the ones in tracksuits are fast! The track team's still running even as zombies!",
+  "zh": "快看快看，穿运动服的那些好快！田径部变成僵尸了还在跑！"
+ },
+ "s0513": {
+  "en": "Take down the fast ones first. Keep formation!",
+  "zh": "先解决跑得快的。别打乱队形！"
+ },
+ "s0514": {
+  "en": "Too many of them at the gate... Let's fall back to the gym storeroom and regroup.",
+  "zh": "校门口的数量太多了……先退回体育仓库，重新整顿。"
+ },
+ "s0515": {
+  "en": "Mio's gonna build a barricade outta mats and vaulting boxes. Gimme {} seconds!",
+  "zh": "我用垫子和跳箱搭个路障哦。给我{}秒！"
+ },
+ "s0516": {
+  "en": "{} seconds!? That's forever! ...Fine, nothing's getting past me!",
+  "zh": "{}秒！？好久！……行吧，一只都别想过去！"
+ },
+ "s0517": {
+  "en": "They're coming from both sides. Watch each other's backs.",
+  "zh": "两边都来了。背靠背守住。"
+ },
+ "s0518": {
+  "en": "Before the school gate stood a shadow far larger than the rest.",
+  "zh": "校门前，立着一个格外巨大的身影。"
+ },
+ "s0519": {
+  "en": "That tie... is that the Vice Principal!? He's HUGE!!",
+  "zh": "那条领带……是教导主任！？好大只！！"
+ },
+ "s0520": {
+  "en": "Seems the longer they breathe the Fog, the bigger they get. His body glows red before he charges. Don't miss it.",
+  "zh": "看来吸雾越久的个体，体型越大。冲撞之前身体会发红光。别看漏了。"
+ },
+ "s0521": {
+  "en": "...Vice Principal. School's out. Please, let us through!",
+  "zh": "……教导主任。放学时间到了。请让我们过去！"
+ },
+ "s0522": {
+  "en": "The Fog's all trapped inside the arcade. Can't see a thing~",
+  "zh": "商店街里面雾都闷住了。视野好差～"
+ },
+ "s0523": {
+  "en": "Screaming from the back. Could be a survivor. Could be a Screamer.",
+  "zh": "里面有尖叫声。可能是幸存者，也可能是尖叫者。"
+ },
+ "s0524": {
+  "en": "Either way we gotta go! Shoot the orange ones before they get close—they explode!",
+  "zh": "不管是哪个都得去吧！橙色的家伙要在靠近之前打掉，会爆炸的！"
+ },
+ "s0525": {
+  "en": "Watch out for the pigeons too. ...I can't believe even the birds...",
+  "zh": "也要小心鸽子。……没想到连鸟都……"
+ },
+ "s0526": {
+  "en": "Behind the croquette shop, Haru found one of her brother's shoes. Just one.",
+  "zh": "在可乐饼店后面，小春只找到了弟弟的一只鞋。"
+ },
+ "s0527": {
+  "en": "...It's still new. He's close. I know he is!",
+  "zh": "……还是新的。他就在附近。一定在！"
+ },
+ "s0528": {
+  "en": "Footsteps are closing in. We have to hold them here until the butcher's shutter is open.",
+  "zh": "脚步声在聚集。在打开肉铺的卷帘门之前，只能在这里挡住它们。"
+ },
+ "s0529": {
+  "en": "Lockpicking, {} seconds! Keep the zombies off Mio, 'kay~!",
+  "zh": "开锁，{}秒！僵尸就拜托你们挡一下啦～！"
+ },
+ "s0530": {
+  "en": "The shutter rose. Before the walk-in fridge stood a hulking figure, a cleaver hanging from its hand.",
+  "zh": "卷帘门升起。冷库前，一个提着剁肉刀的庞然身影挡住了去路。"
+ },
+ "s0531": {
+  "en": "Mister... The kids are back there, aren't they? Were you protecting them?",
+  "zh": "大叔……里面有孩子们对吧。你一直在保护他们吗？"
+ },
+ "s0532": {
+  "en": "He can't understand us anymore. When he slams the ground, a shockwave runs out. Jump over it.",
+  "zh": "他已经听不懂话了。砸地的时候会放出冲击波。跳起来躲开。"
+ },
+ "s0533": {
+  "en": "...Sorry, mister. Your croquettes were the best!",
+  "zh": "……对不起，大叔。你的可乐饼，真的很好吃！"
+ },
+ "s0534": {
+  "en": "From here, we walk the tracks. It's a straight shot to the next station.",
+  "zh": "接下来沿着铁轨走。到下一站只有一条路。"
+ },
+ "s0535": {
+  "en": "A straight shot means they can only come from the front and back, right? ...Wait, that means they're coming from the front AND back?",
+  "zh": "只有一条路，就是说它们只会从前后来吧。……也就是说会从前后一起来吧？"
+ },
+ "s0536": {
+  "en": "There are ones that kick off the walls to leap at you, and wolves. Stay sharp even at a distance.",
+  "zh": "有会蹬墙跳过来的个体，还有狼。就算隔着距离也别大意。"
+ },
+ "s0537": {
+  "en": "It's too dark to see, so I'll just blow up anything suspicious in advance!",
+  "zh": "太暗了看不清，可疑的地方我就先炸掉了哦！"
+ },
+ "s0538": {
+  "en": "Please don't collapse the tunnel!?",
+  "zh": "别把隧道炸塌了啊！？"
+ },
+ "s0539": {
+  "en": "The moment they reached the platform, every light went out.",
+  "zh": "刚登上站台，所有的灯就一齐熄灭了。"
+ },
+ "s0540": {
+  "en": "Whoa, blackout! Backup power's gonna take like {} seconds to kick in!",
+  "zh": "哇，停电了！切换到备用电源大概要{}秒！"
+ },
+ "s0541": {
+  "en": "Move in the dark and you'll fall onto the tracks. We hold here.",
+  "zh": "在黑暗里乱动会掉下铁轨。就在原地迎击。"
+ },
+ "s0542": {
+  "en": "The ones with mushrooms leave poison behind even after they're dead, so don't step in it!",
+  "zh": "长蘑菇的那种，打倒以后毒还会留在地上，别踩到啊！"
+ },
+ "s0543": {
+  "en": "A train that should have been the last of the night glided into the station. There was no one in the driver's seat.",
+  "zh": "本该是末班车的列车，缓缓滑进了站台。驾驶座上，空无一人。"
+ },
+ "s0544": {
+  "en": "The doors opened... Did you hear it say \"Thank you for riding with us\"?",
+  "zh": "门开了……刚才是不是听到了一句“感谢您的乘坐”？"
+ },
+ "s0545": {
+  "en": "The conductor. He charges over and over. Hit him right after he slams into a wall.",
+  "zh": "是列车员。他会连续冲撞好几次。撞到墙上的那一刻就是机会。"
+ },
+ "s0546": {
+  "en": "We're getting off at the next station. —You're letting us through!",
+  "zh": "我们要在前面那站下车。——请让我们过去！"
+ },
+ "s0547": {
+  "en": "Ward Three. Where the first infected patients were brought in.",
+  "zh": "第三病栋。最早一批感染者被送进来的地方。"
+ },
+ "s0548": {
+  "en": "Ugh... every bed's empty. So they all just... walked out?",
+  "zh": "呜哇……床全都是空的。意思是大家都自己走出去了？"
+ },
+ "s0549": {
+  "en": "Is that guy in the lab coat throwing FIREBALLS!? Is that what medicine is now!?",
+  "zh": "那个穿白大褂的是不是在放火球！？医疗是这样的吗！？"
+ },
+ "s0550": {
+  "en": "Fireballs fly straight. Jump, or dodge right through them!",
+  "zh": "火球是直线飞来的。跳起来，或者用闪避穿过去！"
+ },
+ "s0551": {
+  "en": "I found the antiserum. But it takes {} seconds to thaw. Guard the pharmacy until then.",
+  "zh": "找到抗血清了。但解冻要{}秒。这段时间守住药剂部。"
+ },
+ "s0552": {
+  "en": "{} seconds, got it! Should we just seal the entrance? With explosives!",
+  "zh": "{}秒对吧！入口干脆堵上吧？用爆破！"
+ },
+ "s0553": {
+  "en": "That would blow up the medicine too. Don't.",
+  "zh": "药也会一起炸飞的。别。"
+ },
+ "s0554": {
+  "en": "The dancing one in the dress heals everything around her. Take her out first the moment you see her.",
+  "zh": "跳舞的那个穿礼服的会给周围回血。一看到就优先打倒。"
+ },
+ "s0555": {
+  "en": "Beyond the director's door, slow footsteps approached, as if making the rounds.",
+  "zh": "院长室的门后，查房般的脚步声正缓缓逼近。"
+ },
+ "s0556": {
+  "en": "The hospital director... The man who knew what the Fog was, and hid it.",
+  "zh": "院长……知道雾的真面目，却隐瞒了的人。"
+ },
+ "s0557": {
+  "en": "Rei, your dad—",
+  "zh": "玲，你爸爸他——"
+ },
+ "s0558": {
+  "en": "He wasn't here. So there's still hope. ...The director rains down acid. Watch your footing.",
+  "zh": "他不在这里。所以，还有希望。……院长会像下雨一样洒下强酸。注意脚下。"
+ },
+ "s0559": {
+  "en": "Let's go. He has the answers.",
+  "zh": "走吧。答案就在这个人手里。"
+ },
+ "s0560": {
+  "en": "The lab's security system is still live. Every time we open a bulkhead, whatever's inside comes out.",
+  "zh": "研究所里的警备系统还在运作。每开一道隔离门，里面的东西就会跑出来哦。"
+ },
+ "s0561": {
+  "en": "Armored ones, and bears. Even the lab animals got hit by the Fog... Punch through their front armor with AP rounds or explosives.",
+  "zh": "穿铠甲的个体，还有熊。连实验动物都被雾……正面装甲要用穿甲弹或者爆炸来打穿。"
+ },
+ "s0562": {
+  "en": "Explosives! Did someone call me!?",
+  "zh": "爆炸！是在叫我吗！？"
+ },
+ "s0563": {
+  "en": "I'm counting on you, Nana. All {} sections—we push straight through!",
+  "zh": "就靠你了，奈奈。全部{}个区块，一口气冲过去！"
+ },
+ "s0564": {
+  "en": "The generator's control room. Entering the shutdown code would take {} seconds.",
+  "zh": "发生炉的控制室。输入停止代码需要{}秒。"
+ },
+ "s0565": {
+  "en": "This is gonna be the longest {} seconds of Mio's whole life... Can't take my hands off this, so!",
+  "zh": "这大概会是澪酱有史以来最长的{}秒……我手可离不开哦！"
+ },
+ "s0566": {
+  "en": "Every one of them in the tower is heading here. This is our last line of defense.",
+  "zh": "整座塔里的个体都在往这边来。这是最后的防线。"
+ },
+ "s0567": {
+  "en": "Bring it! I'll hold out till morning if I have to!",
+  "zh": "来得好！撑到天亮都没问题！"
+ },
+ "s0568": {
+  "en": "Everyone, protect Mio. —Nothing gets through!",
+  "zh": "全员，保护澪。——绝对，不让它们过去！"
+ },
+ "s0569": {
+  "en": "At the bottom of the core, it quietly opened its eyes. The first one—the source of all the Fog.",
+  "zh": "在炉心底部，它静静地睁开了眼睛。不断生出雾的，最初的那个人。"
+ },
+ "s0570": {
+  "en": "Patient Zero... The test subject from my father's notes. They were only ever waiting for a cure.",
+  "zh": "零号病人……父亲笔记里提到的受试者。这个人，也只是在等待治疗而已。"
+ },
+ "s0571": {
+  "en": "It goes wilder the lower its health gets, right? So don't let up till the very end!",
+  "zh": "血越少就闹得越凶对吧。意思是到最后都不能松懈！"
+ },
+ "s0572": {
+  "en": "I brought every last warhead!",
+  "zh": "弹头，我全都带来了！"
+ },
+ "s0573": {
+  "en": "Let's end this. For them, and for the town. —Airsoft Club, final operation: commence!",
+  "zh": "结束这一切吧。为了这个人，也为了这座城市。——生存游戏社，最终行动，开始！"
+ },
+ "s0574": {
+  "en": "Senpai, let me take a quick detour! There's still ammo for \"that thing\" in the storeroom!",
+  "zh": "学姐，让我稍微绕个路！仓库里还剩着“那个”的弹药！"
+ },
+ "s0575": {
+  "en": "Alone!? That's dangerous, Nana!",
+  "zh": "一个人！？太危险了，奈奈！"
+ },
+ "s0576": {
+  "en": "It's fine! If I caught you all in the blast in a narrow hallway, that'd be way more dangerous!",
+  "zh": "没事的！要是在狭窄的通道里把学姐们也炸进去，那才更危险！"
+ },
+ "s0577": {
+  "en": "...What's annoying is that her logic holds up. Be back in five minutes.",
+  "zh": "……偏偏道理说得通，真让人火大。五分钟内回来。"
+ },
+ "s0578": {
+  "en": "That croquette shop's got a tiny back door. If we all go, we'll get boxed in. ...I'll go check it out alone.",
+  "zh": "那家可乐饼店后门很窄。大家一起去会被包围的。……我一个人去看看。"
+ },
+ "s0579": {
+  "en": "Haru, but—",
+  "zh": "小春，可是——"
+ },
+ "s0580": {
+  "en": "He's my little brother. His big sister's gotta go. I'll be right back, so hold the front!",
+  "zh": "那是我弟弟啊。姐姐不去谁去。我马上回来，你们守好前面！"
+ },
+ "s0581": {
+  "en": "Don't say stuff that sounds like a death flag~... Keep your radio on, 'kay?",
+  "zh": "别说这种像立flag的话嘛～……对讲机一直开着哦。"
+ },
+ "s0582": {
+  "en": "The platform's emergency door is on an electronic lock. We can't go on until the power room is rebooted.",
+  "zh": "站台的紧急门被电子锁锁住了。不重启配电室就没法前进。"
+ },
+ "s0583": {
+  "en": "A switchboard? That's Mio's time to shine. But the shutter on the way's welded shut, y'know?",
+  "zh": "配电盘的话就轮到澪酱出场了。不过半路上的卷帘门被焊死了哦？"
+ },
+ "s0584": {
+  "en": "I'll open the shutter! Physically!",
+  "zh": "卷帘门交给奈奈来开！用物理手段！"
+ },
+ "s0585": {
+  "en": "...I'm really nervous about sending these two together.",
+  "zh": "……让这两个人一起去，我真的很不放心。"
+ },
+ "s0586": {
+  "en": "Tech and firepower. A rational pairing. —Don't break too much.",
+  "zh": "技术加火力。合理的人选。——别破坏过头。"
+ },
+ "s0587": {
+  "en": "My father's examination room is up ahead. ...Let me go alone from here.",
+  "zh": "前面就是父亲的诊察室。……接下来，让我一个人去。"
+ },
+ "s0588": {
+  "en": "Huh!? Why!? You said we'd go together!",
+  "zh": "哈！？为什么啊，不是说好一起去的吗！"
+ },
+ "s0589": {
+  "en": "If my father has crossed over to \"the other side,\" I have to be the one who shoots. I don't want anyone else carrying that.",
+  "zh": "如果父亲已经变成了“那一边”的人，开枪的必须是我。我不想让任何人背负这些。"
+ },
+ "s0590": {
+  "en": "...All right. But promise me you'll come back. That's an order from your club president.",
+  "zh": "……我知道了。但你要答应我，一定要回来。这是社长命令。"
+ },
+ "s0591": {
+  "en": "Understood. —I'll be right back, President.",
+  "zh": "收到。——我马上回来，社长。"
+ },
+ "s0592": {
+  "en": "The bridge to the generator was only wide enough for two.",
+  "zh": "通往发生炉的连接桥，只有两个人的宽度。"
+ },
+ "s0593": {
+  "en": "Rei and I will go. You three, secure our way out.",
+  "zh": "这里我和玲去。你们三个确保退路。"
+ },
+ "s0594": {
+  "en": "Aww, but it's the big finale!",
+  "zh": "诶——明明是最后的高光时刻！"
+ },
+ "s0595": {
+  "en": "If the bridge falls, we're all finished. I'll cross first and open the door from the other side. President, I'm leaving my back to you.",
+  "zh": "桥塌了大家都完了。我先过去，从对面开门。社长，后背就交给你了。"
+ },
+ "s0596": {
+  "en": "Yeah. It's been that way since the day you joined, hasn't it?",
+  "zh": "嗯。从入社那天起，一直都是这样的吧。"
+ },
+ "s0597": {
+  "en": "August. Ten months had passed since that night of Fog.",
+  "zh": "八月。距离那个雾夜，已经过去了十个月。"
+ },
+ "s0598": {
+  "en": "For their summer training camp, the Airsoft Club was riding a ferry to the remote isle of Shiomi Island.",
+  "zh": "生存游戏社为了夏季集训，正乘着渡轮摇摇晃晃地前往离岛——潮见岛。"
+ },
+ "s0599": {
+  "en": "Look look, the ocean! An island camp on the club budget? That's gotta be a first in Kirigaoka history!",
+  "zh": "快看快看，大海！用社团经费去离岛集训，这可是雾丘建校以来的壮举吧？"
+ },
+ "s0600": {
+  "en": "It's not the club budget. My father booked the inn \"for the girls who saved my daughter's life.\"",
+  "zh": "不是社团经费。是我父亲说“给女儿的救命恩人们”，帮我们订了民宿。"
+ },
+ "s0601": {
+  "en": "Rei's dad is the best! First thing when we land, I'm swimming! Then shaved ice!",
+  "zh": "玲的爸爸最棒了！到了先去游泳！然后吃刨冰！"
+ },
+ "s0602": {
+  "en": "Senpai, I brought fireworks! The big aerial kind!",
+  "zh": "学姐，奈奈带了烟花来！是往天上放的那种！"
+ },
+ "s0603": {
+  "en": "...Nana, where did you get those?",
+  "zh": "……奈奈，那个，你是从哪儿弄来的？"
+ },
+ "s0604": {
+  "en": "The moment the ferry reached the pier, a white wall rose from the open sea. A thick fog that had no business existing on a summer evening.",
+  "zh": "渡轮靠上栈桥的那一刻，一堵白墙从海面上涌了起来。在夏日傍晚本不该出现的浓雾。"
+ },
+ "s0605": {
+  "en": "This color... it's the same as that night. But we shut down the generator.",
+  "zh": "这个颜色……和那天晚上一样。可发生炉明明已经停了。"
+ },
+ "s0606": {
+  "en": "There's a giant building out at sea. Helios logo... it says \"Fourth Laboratory.\"",
+  "zh": "海上有栋超大的建筑。赫利俄斯的标志……上面写着“第四研究所”。"
+ },
+ "s0607": {
+  "en": "...Camp is canceled. Airsoft Club, operation start. We all make it out alive, and we take our summer back!",
+  "zh": "……集训取消。生存游戏社，行动开始。大家一起活下来，把暑假夺回来！"
+ },
+ "s0608": {
+  "en": "No way, every beach shack's turned into a zombie food stall... The worst part is it still smells like yakisoba.",
+  "zh": "不会吧，海滩小屋全变成僵尸摊位了……只剩炒面的香味还在，太难受了。"
+ },
+ "s0609": {
+  "en": "There's one running at us still wearing a swim ring!? Isn't it kinda fast!?",
+  "zh": "有个套着游泳圈跑过来的耶！？是不是有点快！？"
+ },
+ "s0610": {
+  "en": "Even tourists in swimsuits... The whole island's been swallowed by the Fog.",
+  "zh": "连穿泳衣的游客都……整座岛都被雾吞没了啊。"
+ },
+ "s0611": {
+  "en": "The people from the inn should be sheltering at the end of the pier. Let's get through the street and meet up with them!",
+  "zh": "民宿的人应该在栈桥尽头避难。穿过街道去和他们会合！"
+ },
+ "s0612": {
+  "en": "The beach shack \"Shiosai.\" The island's children who had fled there were hiding behind the counter.",
+  "zh": "海滩小屋“潮骚”。避难的岛上孩子们，正躲在柜台后面。"
+ },
+ "s0613": {
+  "en": "Senpai, they say the ferry won't be back for {} seconds!",
+  "zh": "学姐，说是渡轮回来还要{}秒！"
+ },
+ "s0614": {
+  "en": "Barricade with the beach umbrellas and benches! ...Man, I've gotten way too good at this.",
+  "zh": "用遮阳伞和长椅搭路障！……我居然变得擅长干这种事了。"
+ },
+ "s0615": {
+  "en": "They won't lay a finger on those kids. Both sides, here they come!",
+  "zh": "绝不让它们碰孩子们一根手指。两边都来了！"
+ },
+ "s0616": {
+  "en": "After sending the children off on the ferry, their friends were nearly surrounded behind the crates on the pier. From atop the lighthouse, Mio looked down.",
+  "zh": "把孩子们送上渡轮的伙伴们，在栈桥的木箱后面快被包围了。灯塔顶上，澪正俯视着下方。"
+ },
+ "s0617": {
+  "en": "Pochi, sync camera. ...Okay, aim correction's good. Today, Mio's playing sniper.",
+  "zh": "波奇，相机同步。……好，瞄准校正OK。澪酱今天要当狙击手哦。"
+ },
+ "s0618": {
+  "en": "Mio, you're sniping? Are you sure about this?",
+  "zh": "澪，你来狙击？没问题吗？"
+ },
+ "s0619": {
+  "en": "Y'know, the Discipline Committee's whole job is spotting rule-breakers from far away. —Anyone running on the beach is in violation!",
+  "zh": "风纪委员啊，工作就是从远处找出违规的人。——在沙滩上乱跑的，全员违规！"
+ },
+ "s0620": {
+  "en": "We're pinned here for {} seconds until the ferry leaves. Mio, cover us!",
+  "zh": "渡轮开走前的{}秒，我们动不了。澪，拜托掩护！"
+ },
+ "s0621": {
+  "en": "The ferry carrying the children pulled away. As if answering its horn, something atop the watchtower blew a whistle.",
+  "zh": "载着孩子们的渡轮渐渐远去。仿佛在回应那声汽笛，瞭望塔上，有什么东西吹响了哨子。"
+ },
+ "s0622": {
+  "en": "That whistle... it's the lifeguard. Last summer, he saved a kid who was drowning.",
+  "zh": "那个哨声……是救生员。听说去年夏天，他救过一个差点溺水的孩子。"
+ },
+ "s0623": {
+  "en": "He closes the whole length of the beach in an instant. After he charges, hit him when his feet sink into the sand.",
+  "zh": "他能一瞬间从海滩这头冲到那头。冲撞之后，趁他脚陷进沙子的瞬间打。"
+ },
+ "s0624": {
+  "en": "...No one else is drowning on this beach. Let's go!",
+  "zh": "……不会再让任何人在这片海滩溺水了。上吧！"
+ },
+ "s0625": {
+  "en": "From the fallen lifeguard's waterproof pouch came a Helios employee ID. On the back, a handwritten note.",
+  "zh": "倒下的救生员的防水袋里，掉出了一张赫利俄斯的员工证。背面有一行手写的字。"
+ },
+ "s0626": {
+  "en": "\"The Fourth Laboratory is culturing the Fog's 'stock solution' in seawater. The generator was a decoy\"...!",
+  "zh": "“第四研究所正在用海水培养雾的‘原液’。发生炉只是诱饵”……！"
+ },
+ "s0627": {
+  "en": "A decoy...? So the thing we stopped that night wasn't the real deal?",
+  "zh": "诱饵……那就是说，那天晚上我们关掉的不是本体？"
+ },
+ "s0628": {
+  "en": "Then we just blow up the real one too! I still have fireworks left!",
+  "zh": "那把本体也炸掉就行了吧！烟花还有剩！"
+ },
+ "s0629": {
+  "en": "We need a boat to reach the lab offshore. Let's head to the island's fishing port.",
+  "zh": "要去海上的研究所得有船。去岛上的渔港吧。"
+ },
+ "s0630": {
+  "en": "The fishing port at night. Only one boat still ran, and the fuel tank sat on the far side of the cold storage.",
+  "zh": "夜晚的渔港。能动的船只有一艘，燃料罐在冷冻仓库的另一头。"
+ },
+ "s0631": {
+  "en": "I'll haul the fuel. And anything in the way—",
+  "zh": "燃料我来扛。至于碍事的家伙——"
+ },
+ "s0632": {
+  "en": "Nana will blow it away!",
+  "zh": "奈奈来炸飞！"
+ },
+ "s0633": {
+  "en": "...Sending just these two makes me even more nervous than the power room did.",
+  "zh": "……只让这两个人去，比配电室那次还让人不放心。"
+ },
+ "s0634": {
+  "en": "Muscle and firepower. A rational pairing. —Don't blow up the whole port.",
+  "zh": "力气加火力。合理的人选。——别把港口一起炸飞了。"
+ },
+ "s0635": {
+  "en": "I know, I know! Probably!",
+  "zh": "知道啦！大概吧！"
+ },
+ "s0636": {
+  "en": "Inside the cold storage, the surviving fishermen had barricaded themselves.",
+  "zh": "冷冻仓库里，幸存的渔民们正据守其中。"
+ },
+ "s0637": {
+  "en": "{} seconds to start the boat's engine! It's an old model, so even Mio needs a bit!",
+  "zh": "船的引擎发动要{}秒！是老型号，就算是澪酱也要花点时间！"
+ },
+ "s0638": {
+  "en": "{} seconds? Easy... is what I wanna say, but isn't the crowd outside kinda insane?",
+  "zh": "{}秒的话小意思……虽然很想这么说，但外面的数量是不是有点不妙？"
+ },
+ "s0639": {
+  "en": "The Fog is flowing into the port. Their numbers are only going to grow.",
+  "zh": "雾正在往港口里涌。数量只会越来越多。"
+ },
+ "s0640": {
+  "en": "We meet them at the door. No one gets inside the warehouse!",
+  "zh": "在门前迎击。谁都别想进仓库！"
+ },
+ "s0641": {
+  "en": "The lab's control signal is coming from the lighthouse antenna. Unless someone cuts it, the boat can't get close.",
+  "zh": "研究所的控制信号是从灯塔的天线发出来的。不切断的话，船就没法靠近。"
+ },
+ "s0642": {
+  "en": "Then we all go—",
+  "zh": "那就全员一起——"
+ },
+ "s0643": {
+  "en": "No. The lighthouse stairs only fit one person. Besides, I need all of you to protect the boat.",
+  "zh": "不。灯塔的楼梯只有一个人的宽度。而且，我想让大家守住船。"
+ },
+ "s0644": {
+  "en": "Yui, that's the same thing Rei said before. \"Let me go alone.\"",
+  "zh": "结衣，这不就是之前玲说过的话嘛。“让我一个人去”。"
+ },
+ "s0645": {
+  "en": "Yeah. Which is why I'm coming back too. A president can give orders to herself, you know.",
+  "zh": "嗯。所以我也一定会回来。社长命令，也可以下给自己的哦。"
+ },
+ "s0646": {
+  "en": "...Understood, President. If you don't come back, I'll never forgive you.",
+  "zh": "……收到，社长。要是你没回来，我绝不原谅你。"
+ },
+ "s0647": {
+  "en": "The lighthouse signal died, and beyond the Fog, a bridge to the lab came into view.",
+  "zh": "灯塔的信号中断了，雾的另一头，浮现出通往研究所的连接桥。"
+ },
+ "s0648": {
+  "en": "All the lab's security drones just shut down! Nice one, Yui!",
+  "zh": "研究所的警备无人机全停了！结衣，干得漂亮！"
+ },
+ "s0649": {
+  "en": "I'm back. ...Sorry to keep you all waiting.",
+  "zh": "我回来了。……让大家久等了，对不起。"
+ },
+ "s0650": {
+  "en": "Welcome back! You're late, jeez!",
+  "zh": "欢迎回来！太慢了啦！"
+ },
+ "s0651": {
+  "en": "The bridge has six sections. Some of them climb up from the sea. Keep moving.",
+  "zh": "桥有六个区块。还有从海里爬上来的个体。别停下脚步。"
+ },
+ "s0652": {
+  "en": "I'm saving my last fireworks!",
+  "zh": "最后的烟花，我先留着！"
+ },
+ "s0653": {
+  "en": "The deepest level of the lab. Before a giant tank filled with seawater stood a woman in a white coat.",
+  "zh": "研究所的最深处。在灌满海水的巨大水槽前，站着一位身穿白大褂的女性。"
+ },
+ "s0654": {
+  "en": "Director Sayoko Shiomi... My father's co-author. The one who first made the Fog drug.",
+  "zh": "潮见小夜子所长……父亲论文的共同研究者。最早制造出雾之药的人。"
+ },
+ "s0655": {
+  "en": "The woman slowly turned. From her body, the Fog poured out like a wave.",
+  "zh": "女人缓缓转过身来。雾从她的身体里，如波浪般涌了出来。"
+ },
+ "s0656": {
+  "en": "She's become the Fog itself...!",
+  "zh": "这个人，已经变成雾本身了……！"
+ },
+ "s0657": {
+  "en": "She's HUGE! Like, three times bigger than the Vice Principal!?",
+  "zh": "好大！差不多有教导主任的三倍大吧！？"
+ },
+ "s0658": {
+  "en": "I brought every last firework!",
+  "zh": "烟花，我全都带来了！"
+ },
+ "s0659": {
+  "en": "Let's end this—for real this time. —Airsoft Club, last operation of summer break: commence!",
+  "zh": "结束吧，这次一定。——生存游戏社，暑假最后的行动，开始！"
+ },
+ "s0660": {
+  "en": "The tank shattered, and morning light poured into the lab. The sea fog came undone in the salt breeze.",
+  "zh": "水槽碎裂，晨光照进了研究所。海上的雾，在海风中渐渐散开。"
+ },
+ "s0661": {
+  "en": "...All the Fog's stock solution has gone back to seawater. This time, it's really over.",
+  "zh": "……雾的原液，全部变回了海水。这一次，真的结束了。"
+ },
+ "s0662": {
+  "en": "The sound of rescue helicopters drew near. Aboard one was Rei's father, in his white coat.",
+  "zh": "救援直升机的声音越来越近。其中，有身穿白大褂的玲的父亲。"
+ },
+ "s0663": {
+  "en": "We're DONE! Okay, swimming! Right now!",
+  "zh": "结束啦——！好，去游泳！马上！"
+ },
+ "s0664": {
+  "en": "I wanna sleep first... That's two all-nighters in a row this camp...",
+  "zh": "在那之前我想先睡觉……集训连续两天通宵了啊……"
+ },
+ "s0665": {
+  "en": "Senpai, the people at the inn say they've got swimsuits ready for us \"as thanks\"!",
+  "zh": "学姐，民宿的人说“作为谢礼”，给我们准备了泳衣！"
+ },
+ "s0666": {
+  "en": "...Yeah. Just for today, club activities are canceled. Let's all go to the beach!",
+  "zh": "……嗯。就今天，社团活动休息。大家一起去海边吧！"
+ },
+ "s0667": {
+  "en": "Afterschool Deadline Part {} — The End —\nReward: Swimsuits for the whole team.",
+  "zh": "放学后的死线 第{}部 —— 完 ——\n奖励：获得了全员的泳衣。"
+ },
+ "s0668": {
+  "en": "October, after school. A gray fog descended on the town of Kirigaoka.",
+  "zh": "十月，放学后。灰色的雾，降临在雾丘的街道上。"
+ },
+ "s0669": {
+  "en": "Anyone who breathed the Fog stopped being human within thirty minutes.",
+  "zh": "吸入雾的人，三十分钟后便不再是“人”。"
+ },
+ "s0670": {
+  "en": "W-wait! Those things on the field aren't the track team, right!?",
+  "zh": "等、等一下！操场上那些，不是田径部的吧！？"
+ },
+ "s0671": {
+  "en": "Pupils dilated, no response to voice. ...They're biting. Confirmed. Zombies.",
+  "zh": "瞳孔放大，呼唤无反应。……在咬人。确定了，是僵尸。"
+ },
+ "s0672": {
+  "en": "Wow. So, do we open it? Our advisor's \"DO NOT TOUCH\" locker?",
+  "zh": "哇哦。那要不要打开那个？顾问的“绝对不许碰”储物柜。"
+ },
+ "s0673": {
+  "en": "...Forgive me, Mr. Onizuka. Just for today, the Airsoft Club is using the real thing.",
+  "zh": "……鬼冢老师，对不起。就今天，生存游戏社要用真家伙了。"
+ },
+ "s0674": {
+  "en": "Senpai! There's a bazooka in the school festival storeroom! It's labeled \"stage prop\"!",
+  "zh": "学姐！文化祭的仓库里有火箭筒！上面写着“表演道具”！"
+ },
+ "s0675": {
+  "en": "...What kind of school festival is this.",
+  "zh": "……这是什么文化祭啊。"
+ },
+ "s0676": {
+  "en": "Objective: everyone lives to see morning. —Operation start!",
+  "zh": "目标：全员活着迎来早晨。——行动开始！"
+ },
+ "s0677": {
+  "en": "The Vice Principal... right to the end, he had that \"no running in the halls\" look on his face...",
+  "zh": "教导主任……到最后都是一副“走廊上不许跑”的表情……"
+ },
+ "s0678": {
+  "en": "Fog outside the gate too. The source is toward the harbor. I can work it out backward from wind direction and density.",
+  "zh": "校门外也是雾。源头在港口方向。根据风向和浓度可以反推出来。"
+ },
+ "s0679": {
+  "en": "The harbor? That's where the Helios Pharmaceuticals lab is. Suuuper suspicious~",
+  "zh": "说到港口，不就是赫利俄斯制药的研究所嘛。可疑度满分～"
+ },
+ "s0680": {
+  "en": "A research lab probably has spare rockets too! Let's go!",
+  "zh": "研究所的话应该也有备用火箭弹吧！走吧！"
+ },
+ "s0681": {
+  "en": "The shopping street first. We'll secure food and ammo, and look for survivors.",
+  "zh": "先去商店街。确保食物和弹药，寻找幸存者。"
+ },
+ "s0682": {
+  "en": "Sakura Street... Forget a ghost town of shuttered shops—it's a zombie town now.",
+  "zh": "樱花街……别说是卷帘门商店街了，简直成了僵尸街。"
+ },
+ "s0683": {
+  "en": "That croquette shop over there—me and my little brother used to go all the time. ...Hope the brat's okay.",
+  "zh": "那边那家可乐饼店，我以前常和弟弟一起去。……那小子，没事吧。"
+ },
+ "s0684": {
+  "en": "We'll find him, Haru. That's why we're taking this detour, right?",
+  "zh": "去找吧，小春。我们绕路不就是为了这个吗。"
+ },
+ "s0685": {
+  "en": "Correction. It's not a detour. It's Mission Objective Two.",
+  "zh": "更正。不是绕路，是作战目标之二。"
+ },
+ "s0686": {
+  "en": "The butcher... he always gave me an extra croquette...",
+  "zh": "肉铺的大叔……明明每次都多送我一个可乐饼的……"
+ },
+ "s0687": {
+  "en": "Deep in the walk-in fridge were the trembling children. Among them was Haru's little brother.",
+  "zh": "冷库深处，有一群瑟瑟发抖的孩子。其中，也有小春的弟弟。"
+ },
+ "s0688": {
+  "en": "...Ngh, you idiot! Don't scare me like that!",
+  "zh": "……唔，笨蛋！别让人担心啊！"
+ },
+ "s0689": {
+  "en": "The kids are coughing. Early symptoms of the Fog. We need the antiserum from the hospital.",
+  "zh": "孩子在咳嗽。是雾的初期症状。需要医院的抗血清。"
+ },
+ "s0690": {
+  "en": "The Fog's too thick on the surface. We'll walk the subway tracks to City Hospital.",
+  "zh": "地面上的雾太浓了。沿着地铁轨道走，去市立医院吧。"
+ },
+ "s0691": {
+  "en": "Feels like the last train left a looong time ago, huh.",
+  "zh": "末班车，感觉早就开走了呢。"
+ },
+ "s0692": {
+  "en": "The Fog is heavier than air. Underground, it's... thicker than above.",
+  "zh": "雾比空气重。地下……比上面更浓。"
+ },
+ "s0693": {
+  "en": "Wait, then why'd we come underground!?",
+  "zh": "诶，那为什么还要来地下！？"
+ },
+ "s0694": {
+  "en": "Because there are three times as many zombies on the surface.",
+  "zh": "因为地面上的僵尸是这里的三倍。"
+ },
+ "s0695": {
+  "en": "Six of one, half a dozen of the other... Watch your step. Let's go.",
+  "zh": "半斤八两……注意脚下，走吧。"
+ },
+ "s0696": {
+  "en": "The conductor kept saying \"Please do not rush onto the train\" right to the end... Total commitment, huh.",
+  "zh": "列车员先生到最后都在说“请勿抢上抢下”……真是始终如一啊。"
+ },
+ "s0697": {
+  "en": "There was a log left on the conductor's terminal. On the night of the Fog, only the freight trains bound for the harbor were running.",
+  "zh": "列车员的终端里留有记录。雾夜里，只有开往港口的货运列车还在运行。"
+ },
+ "s0698": {
+  "en": "What they're carrying is... culture tanks? It's Helios Pharmaceuticals after all.",
+  "zh": "运的是……培养罐？果然是赫利俄斯制药。"
+ },
+ "s0699": {
+  "en": "Medicine first! The hospital's right above us!",
+  "zh": "先拿药！医院就在正上方！"
+ },
+ "s0700": {
+  "en": "Kirigaoka City General Hospital. Only the emergency lights lit the halls, in shades of green.",
+  "zh": "雾丘市立综合医院。只有应急灯，把走廊照成了绿色。"
+ },
+ "s0701": {
+  "en": "The antiserum's in the basement pharmacy. And—I want to check the director's records.",
+  "zh": "抗血清在地下的药剂部。还有——我想确认院长的记录。"
+ },
+ "s0702": {
+  "en": "Rei-rei, your face is kinda scary right now?",
+  "zh": "小玲，你表情好吓人哦？"
+ },
+ "s0703": {
+  "en": "...My father is a doctor here. He was on duty the night of the Fog.",
+  "zh": "……我父亲是这里的医生。雾夜那天，他在值班。"
+ },
+ "s0704": {
+  "en": "We'll look together. It's okay. You've got us.",
+  "zh": "一起找吧。没事的，有我们在。"
+ },
+ "s0705": {
+  "en": "A single note fell from the white coat of the monstrous director. It was in Rei's father's handwriting.",
+  "zh": "从变成怪物的院长的白大褂里，掉出了一张便条。是玲父亲的字迹。"
+ },
+ "s0706": {
+  "en": "\"The Fog is not a weapon. It is a failed drug. If the generator is stopped, some can still be brought back.\"",
+  "zh": "“雾不是武器，是失败的药。只要让发生炉停下，还有人能变回来。”"
+ },
+ "s0707": {
+  "en": "Brought back...!? So the people who were only bitten recently could be...!",
+  "zh": "能变回来……！？那，刚被咬没多久的人也！"
+ },
+ "s0708": {
+  "en": "It's possible. My father went to the lab. To stop it.",
+  "zh": "有这个可能。父亲去了研究所。为了阻止这一切。"
+ },
+ "s0709": {
+  "en": "Let's go. To the harbor. Three hours until dawn.",
+  "zh": "走吧，去港口。离天亮还有三个小时。"
+ },
+ "s0710": {
+  "en": "The harbor district. Helios Pharmaceuticals, Third Laboratory. The heart of the Fog.",
+  "zh": "港湾地区，赫利俄斯制药第三研究所。雾的心脏。"
+ },
+ "s0711": {
+  "en": "Leave security to Mio~ ...Annnd it's open. Total joke.",
+  "zh": "安保就交给澪酱吧～……好，开了。漏洞百出。"
+ },
+ "s0712": {
+  "en": "Look, that tower! The Fog's coming out of there!",
+  "zh": "看，那座塔！雾是从那里冒出来的！"
+ },
+ "s0713": {
+  "en": "The generator. And inside it is \"the first one.\"",
+  "zh": "发生炉。而且那里面，有“最初的那个人”。"
+ },
+ "s0714": {
+  "en": "Remaining warheads, check! I'm putting every last one into that tower!",
+  "zh": "奈奈，剩余弹头确认！全部轰进那座塔里！"
+ },
+ "s0715": {
+  "en": "Everyone, check your ammo. —This is our last club activity.",
+  "zh": "全员，确认剩余弹药。——这是最后的社团活动了。"
+ },
+ "s0716": {
+  "en": "The generator fell silent, and the tower crumbled. The Fog came undone in the morning wind.",
+  "zh": "发生炉归于沉寂，高塔崩塌。雾，在晨风中渐渐散去。"
+ },
+ "s0717": {
+  "en": "...Dad. I stopped it.",
+  "zh": "……爸爸。我阻止它了。"
+ },
+ "s0718": {
+  "en": "Beside the rubble, a man in a white coat coughed and weakly raised a hand.",
+  "zh": "瓦砾旁，一个身穿白大褂的男人一边咳嗽，一边微微举起了手。"
+ },
+ "s0719": {
+  "en": "He's alive! Rei, your dad's alive!!",
+  "zh": "他还活着！玲，你爸爸还活着！！"
+ },
+ "s0720": {
+  "en": "Look look, the sunrise. Ugh, so bright... We pulled an all-nighter.",
+  "zh": "快看快看，朝阳。哇，好刺眼……我们通宵了耶。"
+ },
+ "s0721": {
+  "en": "Ehehe... Did I maybe break the tower a little too much?",
+  "zh": "诶嘿嘿……塔是不是稍微炸过头了？"
+ },
+ "s0722": {
+  "en": "Objective complete. Everyone lived to see morning.",
+  "zh": "目标达成。全员，活着迎来了早晨。"
+ },
+ "s0723": {
+  "en": "—Airsoft Club, operation complete! ...Let's go home and sleep.",
+  "zh": "——生存游戏社，行动结束！……回家睡觉吧。"
+ },
+ "s0724": {
+  "en": "Afterschool Deadline — The End —\nOn Hard and above, and in Survival, the night of Fog goes on.",
+  "zh": "放学后的死线 —— 完 ——\n在困难以上的难度和生存模式中，雾之夜仍将继续。"
+ },
+ "s0725": {
+  "en": "...And then, summer.\nPart {}: \"Shiomi Island Seaside Camp\" is now unlocked.",
+  "zh": "……然后，夏天到了。\n第{}部“潮见岛 临海集训”已解锁。"
+ },
+ "s0726": {
+  "en": "Club Is in Session",
+  "zh": "社团活动开始"
+ },
+ "s0727": {
+  "en": "Clear stage {}-{}",
+  "zh": "通关{}-{}"
+ },
+ "s0728": {
+  "en": "First Hundred",
+  "zh": "第一个一百"
+ },
+ "s0729": {
+  "en": "Defeat {} zombies in total",
+  "zh": "累计击倒{}只僵尸"
+ },
+ "s0730": {
+  "en": "A Thousand Down",
+  "zh": "千体斩"
+ },
+ "s0731": {
+  "en": "Defeat {},{} zombies in total",
+  "zh": "累计击倒{},{}只僵尸"
+ },
+ "s0732": {
+  "en": "Fog Breaker",
+  "zh": "驱散迷雾"
+ },
+ "s0733": {
+  "en": "Living Legend",
+  "zh": "活着的传说"
+ },
+ "s0734": {
+  "en": "School's Out",
+  "zh": "放学回家"
+ },
+ "s0735": {
+  "en": "Clear Chapter {}",
+  "zh": "通关第{}章"
+ },
+ "s0736": {
+  "en": "Seconds on Croquettes",
+  "zh": "可乐饼再来一份"
+ },
+ "s0737": {
+  "en": "End of the Line",
+  "zh": "终点站"
+ },
+ "s0738": {
+  "en": "Night Shift's Over",
+  "zh": "夜班结束"
+ },
+ "s0739": {
+  "en": "Daybreak",
+  "zh": "黎明"
+ },
+ "s0740": {
+  "en": "Take Back Summer Break",
+  "zh": "夺回暑假"
+ },
+ "s0741": {
+  "en": "Part {} \"Shiomi Island\": clear all {} stages",
+  "zh": "通关第{}部「潮见岛」全部{}个关卡"
+ },
+ "s0742": {
+  "en": "Swimsuit Set",
+  "zh": "泳装套装"
+ },
+ "s0743": {
+  "en": "Morning of Prayer",
+  "zh": "祈祷之晨"
+ },
+ "s0744": {
+  "en": "Clear every stage of Part {} (Chapters {}–{}) on Normal",
+  "zh": "在普通难度下通关第{}部（第{}～{}章）全部关卡"
+ },
+ "s0745": {
+  "en": "Final Bell",
+  "zh": "全员离校"
+ },
+ "s0746": {
+  "en": "Normal, Part {}: earn ★{} on every stage",
+  "zh": "普通难度第{}部全部关卡获得★{}"
+ },
+ "s0747": {
+  "en": "Hard Mode Conquered",
+  "zh": "制霸困难模式"
+ },
+ "s0748": {
+  "en": "Clear every Part {} stage on Hard",
+  "zh": "在困难难度下通关第{}部全部关卡"
+ },
+ "s0749": {
+  "en": "Beyond the Nightmare",
+  "zh": "越过噩梦"
+ },
+ "s0750": {
+  "en": "Clear every Part {} stage on Nightmare",
+  "zh": "在噩梦难度下通关第{}部全部关卡"
+ },
+ "s0751": {
+  "en": "Hard: School's Out",
+  "zh": "困难：放学回家"
+ },
+ "s0752": {
+  "en": "Clear all of Chapter {} on Hard",
+  "zh": "在困难难度下全通第{}章"
+ },
+ "s0753": {
+  "en": "Hard: Seconds on Croquettes",
+  "zh": "困难：可乐饼再来一份"
+ },
+ "s0754": {
+  "en": "Hard: End of the Line",
+  "zh": "困难：终点站"
+ },
+ "s0755": {
+  "en": "Hard: Night Shift's Over",
+  "zh": "困难：夜班结束"
+ },
+ "s0756": {
+  "en": "Hard: Daybreak",
+  "zh": "困难：黎明"
+ },
+ "s0757": {
+  "en": "Hard: Take Back Summer Break",
+  "zh": "困难：夺回暑假"
+ },
+ "s0758": {
+  "en": "Very Hard: Take Back Summer Break",
+  "zh": "极难：夺回暑假"
+ },
+ "s0759": {
+  "en": "Clear all of Chapter {} on Very Hard",
+  "zh": "在极难难度下全通第{}章"
+ },
+ "s0760": {
+  "en": "Nightmare: Take Back Summer Break",
+  "zh": "噩梦：夺回暑假"
+ },
+ "s0761": {
+  "en": "Clear all of Chapter {} on Nightmare",
+  "zh": "在噩梦难度下全通第{}章"
+ },
+ "s0762": {
+  "en": "Very Hard: School's Out",
+  "zh": "极难：放学回家"
+ },
+ "s0763": {
+  "en": "Very Hard: Seconds on Croquettes",
+  "zh": "极难：可乐饼再来一份"
+ },
+ "s0764": {
+  "en": "Very Hard: End of the Line",
+  "zh": "极难：终点站"
+ },
+ "s0765": {
+  "en": "Very Hard: Night Shift's Over",
+  "zh": "极难：夜班结束"
+ },
+ "s0766": {
+  "en": "Very Hard: Daybreak",
+  "zh": "极难：黎明"
+ },
+ "s0767": {
+  "en": "Nightmare: School's Out",
+  "zh": "噩梦：放学回家"
+ },
+ "s0768": {
+  "en": "Nightmare: Seconds on Croquettes",
+  "zh": "噩梦：可乐饼再来一份"
+ },
+ "s0769": {
+  "en": "Nightmare: End of the Line",
+  "zh": "噩梦：终点站"
+ },
+ "s0770": {
+  "en": "Nightmare: Night Shift's Over",
+  "zh": "噩梦：夜班结束"
+ },
+ "s0771": {
+  "en": "Nightmare: Daybreak",
+  "zh": "噩梦：黎明"
+ },
+ "s0772": {
+  "en": "Boss Hunter",
+  "zh": "BOSS猎人"
+ },
+ "s0773": {
+  "en": "Defeat {} bosses in total",
+  "zh": "累计击败{}个BOSS"
+ },
+ "s0774": {
+  "en": "Masterwork",
+  "zh": "匠心之枪"
+ },
+ "s0775": {
+  "en": "Obtain a Lv{}+ weapon",
+  "zh": "获得Lv{}以上的武器"
+ },
+ "s0776": {
+  "en": "Gun Locker",
+  "zh": "枪械柜"
+ },
+ "s0777": {
+  "en": "Collect {} kinds of weapons",
+  "zh": "收集{}种武器"
+ },
+ "s0778": {
+  "en": "Gun Nut",
+  "zh": "武器狂人"
+ },
+ "s0779": {
+  "en": "Walking Arsenal",
+  "zh": "移动武器库"
+ },
+ "s0780": {
+  "en": "Collect every weapon",
+  "zh": "收集全部武器"
+ },
+ "s0781": {
+  "en": "Promising Rookie",
+  "zh": "备受期待的新人"
+ },
+ "s0782": {
+  "en": "Have any {} member reach Lv{}",
+  "zh": "任意{}名成员达到Lv{}"
+ },
+ "s0783": {
+  "en": "Ace",
+  "zh": "王牌"
+ },
+ "s0784": {
+  "en": "Everyone's a Star",
+  "zh": "人人都是主角"
+ },
+ "s0785": {
+  "en": "Get every club member to Lv{}",
+  "zh": "全体社员达到Lv{}"
+ },
+ "s0786": {
+  "en": "Long Night",
+  "zh": "漫长的夜"
+ },
+ "s0787": {
+  "en": "Reach WAVE {} in Survival",
+  "zh": "在生存模式中到达WAVE {}"
+ },
+ "s0788": {
+  "en": "Endless Night",
+  "zh": "永无止境的夜"
+ },
+ "s0789": {
+  "en": "Combo Master",
+  "zh": "连击大师"
+ },
+ "s0790": {
+  "en": "Hit a {}-hit combo",
+  "zh": "达成{}连击"
+ },
+ "s0791": {
+  "en": "Dynamic Duo",
+  "zh": "最佳拍档"
+ },
+ "s0792": {
+  "en": "Raise any pair's Bond to Lv{}",
+  "zh": "任意一对的羁绊达到Lv{}"
+ },
+ "s0793": {
+  "en": "Not a Scratch",
+  "zh": "毫发无伤"
+ },
+ "s0794": {
+  "en": "Clear a boss stage without anyone going down",
+  "zh": "在无人倒下的情况下通关BOSS关卡"
+ },
+ "s0795": {
+  "en": "Holding Fire locks your facing. Leave enemies behind you to your partner, or let go to turn around.",
+  "zh": "按住射击键时朝向会固定。背后的敌人交给搭档，或松开按键转身。"
+ },
+ "s0796": {
+  "en": "Give a girl her favorite gun type: damage +{}% and faster reloads (secondary type: +{}%).",
+  "zh": "让角色使用擅长的枪械，伤害+{}%且装弹更快（次擅长为+{}%）。"
+ },
+ "s0797": {
+  "en": "Enemies drop green crates (weapons), blue crates (gear), and red crates (Armor = max HP). Higher difficulties drop higher-level weapons and gear.",
+  "zh": "敌人掉落的绿色箱子是武器，蓝色箱子是装备，红色箱子是护甲（最大HP）。难度越高，掉落的武器和装备等级越高。"
+ },
+ "s0798": {
+  "en": "Each weapon has variants like \"Custom,\" \"SD,\" \"AP,\" and \"Kai,\" each with different stats and looks. Total: ",
+  "zh": "同一种武器也有「定制」「SD」「AP」「改」等型号，性能和外观各不相同。共有"
+ },
+ "s0799": {
+  "en": " weapons.",
+  "zh": "种。"
+ },
+ "s0800": {
+  "en": "Gear comes in color variants: same shape, different color and stats. Have fun collecting looks you like!",
+  "zh": "装备有不同配色，即使款式相同，颜色和性能也不同。尽情收集喜欢的搭配吧。"
+ },
+ "s0801": {
+  "en": "The more Armor Crates you collect, the more everyone's max HP grows (every {} Armor = +{} HP).",
+  "zh": "收集的护甲箱越多，全员的最大HP就会逐渐提升（每{}点护甲HP+{}）。"
+ },
+ "s0802": {
+  "en": "Gear has separate \"stats\" and \"appearance\" slots, so you can wear strong gear and still deploy in the outfit you like.",
+  "zh": "装备的「性能」和「外观」可以分开选择。穿着强力装备的同时，也能以喜欢的造型出击。"
+ },
+ "s0803": {
+  "en": "You move slower while shooting. SMGs let you move fast while firing; LMGs and SRs nearly stop you.",
+  "zh": "射击时移动会变慢。冲锋枪边射击也能快速移动，轻机枪和狙击步枪则几乎无法移动。"
+ },
+ "s0804": {
+  "en": "You're invincible during a Dodge step. Step right through a boss's charge.",
+  "zh": "闪避步伐期间无敌。可以用闪避穿过BOSS的冲撞。"
+ },
+ "s0805": {
+  "en": "Jump to avoid shockwaves along the ground and pools of acid.",
+  "zh": "沿地面传来的冲击波和酸液池要用跳跃躲开。"
+ },
+ "s0806": {
+  "en": "Downed teammates are revived by first aid after {} seconds. You only lose if {} of you go down at the same time.",
+  "zh": "倒下的同伴会在{}秒后经急救复活。只要不是{}人同时倒下就不会失败。"
+ },
+ "s0807": {
+  "en": "Shoot Bombers from a distance and they'll explode, taking nearby zombies with them.",
+  "zh": "在远处击中自爆僵尸，它会爆炸并波及周围的僵尸。"
+ },
+ "s0808": {
+  "en": "An Armored zombie's front plating can be pierced by AP rounds, explosions, or crits.",
+  "zh": "重甲僵尸的正面装甲可以用穿甲弹、爆炸或暴击击穿。"
+ },
+ "s0809": {
+  "en": "Deploying the same pair again and again deepens their \"Bond\" and boosts attack for those {}. At MAX Bond, you get an exclusive weapon and gear themed on that girl.",
+  "zh": "同一对搭档反复出击，「羁绊」就会加深，{}人的攻击力也会提升。羁绊达到MAX时，可获得以该角色为主题的限定武器和装备。"
+ },
+ "s0810": {
+  "en": "Some story stages are played with just {} girl, or with a set team. On solo missions, damage taken is reduced by {}%, and you can hang on through a fatal hit {} time.",
+  "zh": "由于剧情需要，有些关卡只能{}人挑战，有些关卡成员是固定的。单人任务中受到的伤害减少{}%，并能{}次撑住而不倒下。"
+ },
+ "s0811": {
+  "en": "In Sniper stages, a headshot kills in one hit. The radar at the top and the arrows on the scope's edge show where enemies are.",
+  "zh": "狙击关卡中爆头即可一击必杀。通过画面上方的雷达和瞄准镜边缘的箭头可以知道敌人的方向。"
+ },
+ "s0812": {
+  "en": "Higher difficulties unlock chapter by chapter: Normal → Hard → Very Hard → Nightmare. Clear every stage of a chapter to open the next.",
+  "zh": "高难度按章节解锁。按照普通→困难→极难→噩梦的顺序，全部通关该章后即可开启下一个难度。"
+ },
+ "s0813": {
+  "en": "The {} ★ conditions are \"Clear,\" \"No Downs,\" and \"Beat the Target Time.\" In Defend stages, star #{} is \"Defeat the Required Number.\"",
+  "zh": "★{}个的条件是「通关」「无人倒下」「在目标时间内」。防守关卡的第{}个条件为「击破规定数量」。"
+ },
+ "s0814": {
+  "en": "Red drums explode when shot. Lure zombies in close, then fire!",
+  "zh": "红色油桶被击中会爆炸。把僵尸引过来再开枪吧。"
+ },
+ "s0815": {
+  "en": "CROQUETTES",
+  "zh": "可乐饼"
+ },
+ "s0816": {
+  "en": "BUTCHER",
+  "zh": "肉铺"
+ },
+ "s0817": {
+  "en": "PHARMACY",
+  "zh": "药店"
+ },
+ "s0818": {
+  "en": "BOOKS",
+  "zh": "书店"
+ },
+ "s0819": {
+  "en": "KARAOKE",
+  "zh": "卡拉OK"
+ },
+ "s0820": {
+  "en": "RAMEN",
+  "zh": "拉面"
+ },
+ "s0821": {
+  "en": "STATIONERY",
+  "zh": "文具"
+ },
+ "s0822": {
+  "en": "PRODUCE",
+  "zh": "蔬果店"
+ },
+ "s0823": {
+  "en": "CLEANERS",
+  "zh": "洗衣店"
+ },
+ "s0824": {
+  "en": "CAFE",
+  "zh": "咖啡馆"
+ },
+ "s0825": {
+  "en": "FLOWERS",
+  "zh": "花店"
+ },
+ "s0826": {
+  "en": "GAMES",
+  "zh": "游戏"
+ },
+ "s0827": {
+  "en": "KIRIGAOKA",
+  "zh": "雾丘"
+ },
+ "s0828": {
+  "en": "EXAM ROOM",
+  "zh": "诊察室"
+ },
+ "s0829": {
+  "en": "TREATMENT",
+  "zh": "处置室"
+ },
+ "s0830": {
+  "en": "DISPENSARY",
+  "zh": "药剂科"
+ },
+ "s0831": {
+  "en": "WARD",
+  "zh": "病房"
+ },
+ "s0832": {
+  "en": "KEEP OUT",
+  "zh": "禁止入内"
+ },
+ "s0833": {
+  "en": "BEACH HUT",
+  "zh": "海之家"
+ },
+ "s0834": {
+  "en": "SHAVED ICE",
+  "zh": "刨冰"
+ },
+ "s0835": {
+  "en": "YAKISOBA",
+  "zh": "炒面"
+ },
+ "s0836": {
+  "en": "BOAT RENTAL",
+  "zh": "租船"
+ },
+ "s0837": {
+  "en": "Gear「",
+  "zh": "装备「"
+ },
+ "s0838": {
+  "en": "Nun Outfit Set",
+  "zh": "修女服套装"
+ },
+ "s0839": {
+  "en": ", ",
+  "zh": "、"
+ },
+ "s0840": {
+  "en": "Armor +",
+  "zh": "护甲 +"
+ },
+ "s0841": {
+  "en": "Back up!",
+  "zh": "复活！"
+ },
+ "s0842": {
+  "en": "held on through sheer guts! ({}x only)",
+  "zh": "凭毅力撑住了！（仅限{}次）"
+ },
+ "s0843": {
+  "en": "is down! First aid in {}s",
+  "zh": "倒下了！{}秒后经急救复活"
+ },
+ "s0844": {
+  "en": "Weapon Crate",
+  "zh": "武器箱"
+ },
+ "s0845": {
+  "en": "Gear Crate",
+  "zh": "装备箱"
+ },
+ "s0846": {
+  "en": "Armor",
+  "zh": "护甲"
+ },
+ "s0847": {
+  "en": "Left Stick to move, hold {} to fire",
+  "zh": "左摇杆移动，长按 {} 射击"
+ },
+ "s0848": {
+  "en": "Left stick to move, hold the big button on the right to fire",
+  "zh": "左侧摇杆移动，长按右侧大按钮射击"
+ },
+ "s0849": {
+  "en": "{}/{} to move, hold {} (or Left Click) to fire",
+  "zh": "{}/{}移动，长按{}（或鼠标左键）射击"
+ },
+ "s0850": {
+  "en": "Facing locks while firing. Your partner covers enemies behind you",
+  "zh": "射击时朝向固定。背后的敌人由搭档帮你打"
+ },
+ "s0851": {
+  "en": "{}: Invincible Dodge step　{}: Swap character　{}: Jump",
+  "zh": "{}：无敌闪避步伐　{}：切换操作角色　{}：跳跃"
+ },
+ "s0852": {
+  "en": "\"Dodge\" is an invincible step; \"Swap\" switches your character",
+  "zh": "「闪避」为无敌步伐，「换人」可切换操作角色"
+ },
+ "s0853": {
+  "en": "When the gauge is full, press {} for your Skill!　{}: Reload",
+  "zh": "计量槽满后按 {} 发动技能！　{}：装弹"
+ },
+ "s0854": {
+  "en": "When the gauge is full, tap \"Skill\" for a special move!",
+  "zh": "计量槽满后按「技能」释放必杀技！"
+ },
+ "s0855": {
+  "en": "approaches!",
+  "zh": "接近中"
+ },
+ "s0856": {
+  "en": "DEFEND!",
+  "zh": "防守开始"
+ },
+ "s0857": {
+  "en": "s — Survive!",
+  "zh": "秒 坚持住！"
+ },
+ "s0858": {
+  "en": "appears!",
+  "zh": "出现"
+ },
+ "s0859": {
+  "en": "You held out until dawn!",
+  "zh": "坚持到了黎明！"
+ },
+ "s0860": {
+  "en": "Mission Complete",
+  "zh": "任务结束"
+ },
+ "s0861": {
+  "en": "+Heal",
+  "zh": "+回复"
+ },
+ "s0862": {
+  "en": "goes berserk!",
+  "zh": "狂暴化了！"
+ },
+ "s0863": {
+  "en": "First Aid",
+  "zh": "急救"
+ },
+ "s0864": {
+  "en": "Solo Mission",
+  "zh": "单人任务"
+ },
+ "s0865": {
+  "en": "Downs",
+  "zh": "倒下"
+ },
+ "s0866": {
+  "en": "Until Dawn",
+  "zh": "距离黎明"
+ },
+ "s0867": {
+  "en": "Kills",
+  "zh": "击破"
+ },
+ "s0868": {
+  "en": "Drop Rate x",
+  "zh": "掉落率 x"
+ },
+ "s0869": {
+  "en": "The dawn never came...",
+  "zh": "黎明终究没有到来……"
+ },
+ "s0870": {
+  "en": "Wiped out...",
+  "zh": "全灭……"
+ },
+ "s0871": {
+  "en": "Fire",
+  "zh": "射击"
+ },
+ "s0872": {
+  "en": "Jump",
+  "zh": "跳跃"
+ },
+ "s0873": {
+  "en": "Dodge",
+  "zh": "闪避"
+ },
+ "s0874": {
+  "en": "Skill",
+  "zh": "技能"
+ },
+ "s0875": {
+  "en": "Swap",
+  "zh": "换人"
+ },
+ "s0876": {
+  "en": "Reload",
+  "zh": "装弹"
+ },
+ "s0877": {
+  "en": "Move Left",
+  "zh": "向左移动"
+ },
+ "s0878": {
+  "en": "Move Right",
+  "zh": "向右移动"
+ },
+ "s0879": {
+  "en": "Pause",
+  "zh": "暂停"
+ },
+ "s0880": {
+  "en": "D-Pad ↑",
+  "zh": "十字键↑"
+ },
+ "s0881": {
+  "en": "D-Pad ↓",
+  "zh": "十字键↓"
+ },
+ "s0882": {
+  "en": "D-Pad ←",
+  "zh": "十字键←"
+ },
+ "s0883": {
+  "en": "D-Pad →",
+  "zh": "十字键→"
+ },
+ "s0884": {
+  "en": "R-Shift",
+  "zh": "右Shift"
+ },
+ "s0885": {
+  "en": "R-Ctrl",
+  "zh": "右Ctrl"
+ },
+ "s0886": {
+  "en": "R-Alt",
+  "zh": "右Alt"
+ },
+ "s0887": {
+  "en": "Btn",
+  "zh": "按键"
+ },
+ "s0888": {
+  "en": "Helmet!",
+  "zh": "头盔！"
+ },
+ "s0889": {
+  "en": "The barricade held!",
+  "zh": "守住了路障！"
+ },
+ "s0890": {
+  "en": "Barricade",
+  "zh": "路障"
+ },
+ "s0891": {
+  "en": "Remaining",
+  "zh": "剩余"
+ },
+ "s0892": {
+  "en": "Shoot the red gas cans to blow up all the enemies around them!",
+  "zh": "击中红色燃气罐会引发爆炸，一口气消灭周围的敌人！"
+ },
+ "s0893": {
+  "en": "Left Stick to aim, {} to fire. Headshots kill in one hit! ({}: Reload　LT: Zoom)",
+  "zh": "左摇杆瞄准，{}射击。爆头一击必杀！（{}：装弹　LT：倍率）"
+ },
+ "s0894": {
+  "en": "Drag the screen to aim, tap the bottom-right button to fire. Headshots kill in one hit!",
+  "zh": "拖动画面瞄准，按右下角按钮射击。爆头一击必杀！"
+ },
+ "s0895": {
+  "en": "Aim with the mouse, click to fire. Headshots kill in one hit! ({}: Reload　{}: Zoom)",
+  "zh": "鼠标瞄准，点击射击。爆头一击必杀！（{}：装弹　{}：倍率）"
+ },
+ "s0896": {
+  "en": "The barricade has fallen...",
+  "zh": "路障被突破了……"
+ },
+ "s0897": {
+  "en": "Weapons {}/{}",
+  "zh": "武器 {}/{}"
+ },
+ "s0898": {
+  "en": "Armor +{}",
+  "zh": "护甲 +{}"
+ },
+ "s0899": {
+  "en": "◀ Back",
+  "zh": "◀ 返回"
+ },
+ "s0900": {
+  "en": "No effect",
+  "zh": "无效果"
+ },
+ "s0901": {
+  "en": "Cancel",
+  "zh": "取消"
+ },
+ "s0902": {
+  "en": "Achievement Unlocked",
+  "zh": "达成成就"
+ },
+ "s0903": {
+  "en": "Afterschool",
+  "zh": "放学后的"
+ },
+ "s0904": {
+  "en": "Deadline",
+  "zh": "死线"
+ },
+ "s0905": {
+  "en": "High School Girls × Guns × Zombies　Side-Scrolling Shooter",
+  "zh": "女高中生 × 枪 × 僵尸　横版射击"
+ },
+ "s0906": {
+  "en": "Power {}",
+  "zh": "战力 {}"
+ },
+ "s0907": {
+  "en": "Kirigaoka Girls' High School Airsoft Club",
+  "zh": "雾丘女子高中 生存游戏社"
+ },
+ "s0908": {
+  "en": "Club Room — Chapter {}: \"{}\"",
+  "zh": "社团活动室 ― 第{}章「{}」"
+ },
+ "s0909": {
+  "en": "DEPLOY",
+  "zh": "出 击"
+ },
+ "s0910": {
+  "en": "Team & Gear{}",
+  "zh": "队伍/装备{}"
+ },
+ "s0911": {
+  "en": "Collection",
+  "zh": "收藏"
+ },
+ "s0912": {
+  "en": "Achievements",
+  "zh": "成就/图鉴"
+ },
+ "s0913": {
+  "en": "Settings",
+  "zh": "设置"
+ },
+ "s0914": {
+  "en": "Bond Lv{}",
+  "zh": "羁绊 Lv{}"
+ },
+ "s0915": {
+  "en": "ATK +{}%",
+  "zh": "攻击+{}%"
+ },
+ "s0916": {
+  "en": "Survival — Endless Night",
+  "zh": "生存模式 ― 永无止境的夜"
+ },
+ "s0917": {
+  "en": "Hold off wave after wave of zombies until you fall. A boss appears every {} WAVES.",
+  "zh": "迎击汹涌而来的僵尸潮，直到倒下为止。每{}个WAVE出现一次BOSS。"
+ },
+ "s0918": {
+  "en": "The higher the WAVE you reach, the higher-level the Weapon Crates you get.",
+  "zh": "到达的WAVE越高，获得的武器箱等级越高。"
+ },
+ "s0919": {
+  "en": "Best",
+  "zh": "最高纪录"
+ },
+ "s0920": {
+  "en": "Deploy ▶",
+  "zh": "出击 ▶"
+ },
+ "s0921": {
+  "en": "Sniper Mission: {} provides cover through a scope (first-person; headshots kill in one hit)",
+  "zh": "狙击任务：{} 透过瞄准镜进行掩护（第一人称视角，爆头一击必杀）"
+ },
+ "s0922": {
+  "en": "Solo Mission: {} deploys alone, team of {} (no Swap / damage taken -{}% / survives a fatal hit {}x)",
+  "zh": "单人任务：{} {}人出击（无法换人／受到伤害-{}%，可凭毅力撑住{}次）"
+ },
+ "s0923": {
+  "en": "Fixed Team: {}",
+  "zh": "固定编队：{} 出击"
+ },
+ "s0924": {
+  "en": "Best {}",
+  "zh": "最佳 {}"
+ },
+ "s0925": {
+  "en": "Rec. Lv {}　/　Weapon Drops Lv{}–{}",
+  "zh": "推荐Lv {}　／　掉落武器 Lv{}～{}"
+ },
+ "s0926": {
+  "en": "★ Clear",
+  "zh": "★ 通关"
+ },
+ "s0927": {
+  "en": "Deploy",
+  "zh": "出击"
+ },
+ "s0928": {
+  "en": "Chapter {}",
+  "zh": "第{}章"
+ },
+ "s0929": {
+  "en": "Survival",
+  "zh": "生存模式"
+ },
+ "s0930": {
+  "en": "Slot {}",
+  "zh": "出击{}"
+ },
+ "s0931": {
+  "en": "Swap in who?",
+  "zh": "要和谁换人？"
+ },
+ "s0932": {
+  "en": "In Team: #{}",
+  "zh": "出击中 第{}位"
+ },
+ "s0933": {
+  "en": "Reorder",
+  "zh": "调换顺序"
+ },
+ "s0934": {
+  "en": "Add to Team",
+  "zh": "加入出击"
+ },
+ "s0935": {
+  "en": "Auto-Equip",
+  "zh": "自动装备"
+ },
+ "s0936": {
+  "en": "Auto-Equip All",
+  "zh": "全员自动"
+ },
+ "s0937": {
+  "en": "Status",
+  "zh": "状态"
+ },
+ "s0938": {
+  "en": "Weapons",
+  "zh": "武器"
+ },
+ "s0939": {
+  "en": "Gear",
+  "zh": "装备"
+ },
+ "s0940": {
+  "en": "Power",
+  "zh": "战力"
+ },
+ "s0941": {
+  "en": "ATK Bonus",
+  "zh": "攻击加成"
+ },
+ "s0942": {
+  "en": "Damage Taken",
+  "zh": "受到伤害"
+ },
+ "s0943": {
+  "en": "Crit Rate",
+  "zh": "暴击率"
+ },
+ "s0944": {
+  "en": "Move Speed",
+  "zh": "移动速度"
+ },
+ "s0945": {
+  "en": "Favorite Weapon",
+  "zh": "擅长武器"
+ },
+ "s0946": {
+  "en": "{} (DMG +{}% / Reload -{}%) / Secondary: {} (+{}%)",
+  "zh": "{}（伤害+{}%，装弹-{}%）／ 次擅长：{}（+{}%）"
+ },
+ "s0947": {
+  "en": "Passive",
+  "zh": "被动"
+ },
+ "s0948": {
+  "en": "Skill: {}",
+  "zh": "技能「{}」"
+ },
+ "s0949": {
+  "en": "CD {}s",
+  "zh": "冷却 {}秒"
+ },
+ "s0950": {
+  "en": "Favorite",
+  "zh": "擅长"
+ },
+ "s0951": {
+  "en": "You don't have any weapons of this type yet.",
+  "zh": "尚未拥有该类武器。"
+ },
+ "s0952": {
+  "en": "Stats",
+  "zh": "性能装备"
+ },
+ "s0953": {
+  "en": "Appearance",
+  "zh": "外观装备"
+ },
+ "s0954": {
+  "en": "Gear comes from blue Gear Crates. Gear set in \"Appearance\" only changes how she looks and does not affect stats.",
+  "zh": "装备可从蓝色的装备箱中获得。放入「外观装备」的装备只会改变外观，不影响性能。"
+ },
+ "s0955": {
+  "en": "Skill Points",
+  "zh": "技能点"
+ },
+ "s0956": {
+  "en": "Reset",
+  "zh": "重置"
+ },
+ "s0957": {
+  "en": "For every {} level gained, earn {} SP. Ranks {}–{} cost {} pt each; ranks {}–{} (tier 2) cost {} pt each. Resets are free.",
+  "zh": "等级每提升{}级获得{}技能点。第{}～{}阶段需要{}点，第{}～{}阶段（第二阶段）需要{}点。重置免费。"
+ },
+ "s0958": {
+  "en": "Team & Gear",
+  "zh": "队伍/装备"
+ },
+ "s0959": {
+  "en": "Owned",
+  "zh": "已获得"
+ },
+ "s0960": {
+  "en": "DMG {}{}　ROF {}/s　Mag {}{}",
+  "zh": "威力{}{}　射速{}/秒　弹匣{}{}"
+ },
+ "s0961": {
+  "en": "Enemies drop Weapon Crates (green), Gear Crates (blue), and Armor Crates (red). Higher-level stages drop higher-level weapons and gear. Items you already own turn into Armor (max HP).",
+  "zh": "武器箱（绿）、装备箱（蓝）、护甲箱（红）由敌人掉落。关卡等级越高，掉落的武器和装备等级越高。获得已拥有的物品时，会转化为护甲（最大HP）。"
+ },
+ "s0962": {
+  "en": "Achievements",
+  "zh": "成就"
+ },
+ "s0963": {
+  "en": "Zombie Files",
+  "zh": "僵尸图鉴"
+ },
+ "s0964": {
+  "en": "Battle Record",
+  "zh": "战绩"
+ },
+ "s0965": {
+  "en": "Kills {}",
+  "zh": "击破数 {}"
+ },
+ "s0966": {
+  "en": "Play Time",
+  "zh": "游戏时间"
+ },
+ "s0967": {
+  "en": "{}h {}m",
+  "zh": "{}小时{}分"
+ },
+ "s0968": {
+  "en": "Total Kills",
+  "zh": "总击破数"
+ },
+ "s0969": {
+  "en": "Stages Cleared",
+  "zh": "通关次数"
+ },
+ "s0970": {
+  "en": "{} times",
+  "zh": "{}次"
+ },
+ "s0971": {
+  "en": "Bosses Defeated",
+  "zh": "击败BOSS"
+ },
+ "s0972": {
+  "en": "{}",
+  "zh": "{}只"
+ },
+ "s0973": {
+  "en": "Max Combo",
+  "zh": "最大连击"
+ },
+ "s0974": {
+  "en": "Best Survival",
+  "zh": "生存模式最高"
+ },
+ "s0975": {
+  "en": "Armor",
+  "zh": "护甲值"
+ },
+ "s0976": {
+  "en": "Downs",
+  "zh": "倒下次数"
+ },
+ "s0977": {
+  "en": "Bond Levels",
+  "zh": "羁绊等级"
+ },
+ "s0978": {
+  "en": "Window",
+  "zh": "窗口"
+ },
+ "s0979": {
+  "en": "Fullscreen",
+  "zh": "全屏显示"
+ },
+ "s0980": {
+  "en": "Toggle",
+  "zh": "切换"
+ },
+ "s0981": {
+  "en": "Supported browsers only. On phones, tries to lock to landscape.",
+  "zh": "仅限支持的浏览器。手机会尝试锁定为横屏。"
+ },
+ "s0982": {
+  "en": "Copy",
+  "zh": "复制"
+ },
+ "s0983": {
+  "en": "If copying fails, long-press the code above and select all.",
+  "zh": "如果无法复制，请长按上方代码并全选。"
+ },
+ "s0984": {
+  "en": "Restore from Code",
+  "zh": "用此代码恢复"
+ },
+ "s0985": {
+  "en": "Screen Shake",
+  "zh": "画面震动"
+ },
+ "s0986": {
+  "en": "Damage Numbers",
+  "zh": "伤害数字"
+ },
+ "s0987": {
+  "en": "Display",
+  "zh": "画面"
+ },
+ "s0988": {
+  "en": "Aspect Ratio",
+  "zh": "显示比例"
+ },
+ "s0989": {
+  "en": "Fill Screen",
+  "zh": "铺满画面"
+ },
+ "s0990": {
+  "en": "Lock {}:{}",
+  "zh": "固定{}:{}"
+ },
+ "s0991": {
+  "en": "Locking to {}:{} adds black bars to the top/bottom or sides on wide screens.",
+  "zh": "固定为{}:{}后，宽屏画面的上下或左右会出现黑边。"
+ },
+ "s0992": {
+  "en": "Key Config",
+  "zh": "按键设置"
+ },
+ "s0993": {
+  "en": "Keyboard",
+  "zh": "键盘"
+ },
+ "s0994": {
+  "en": "Gamepad",
+  "zh": "手柄"
+ },
+ "s0995": {
+  "en": "Reset to Default",
+  "zh": "恢复默认"
+ },
+ "s0996": {
+  "en": "Press a button, then press the key or button you want to assign (Esc cancels on keyboard). Picking a key used by another action removes it from that action.",
+  "zh": "请先点击按钮，再按下想要分配的键或按钮（键盘按Esc取消）。如果选择了与其他操作相同的键，该操作的分配将被解除。"
+ },
+ "s0997": {
+  "en": "Controls",
+  "zh": "操作说明"
+ },
+ "s0998": {
+  "en": "Mobile",
+  "zh": "手机"
+ },
+ "s0999": {
+  "en": ": Left stick to move / Fire (hold), Jump, Dodge, Skill, Swap, and Reload buttons. You can also Swap by tapping the character display at top left.",
+  "zh": "：左摇杆移动／射击（长按）、跳跃、闪避、技能、换人、装弹按钮。点击左上角的角色显示也可换人。"
+ },
+ "s1000": {
+  "en": ": {}/{} Move　{} Jump　{}/Left Click Fire　{} Dodge　{} Skill　{} Swap　{} Reload　{}/Esc Pause",
+  "zh": "：{}/{} 移动　{} 跳跃　{}/鼠标左键 射击　{} 闪避　{} 技能　{} 换人　{} 装弹　{}/Esc 暂停"
+ },
+ "s1001": {
+  "en": ": Left Stick/D-Pad Move　{} Jump　{} Fire　{} Dodge　{} Skill　{} Swap　{} Reload　{} Pause",
+  "zh": "：左摇杆/十字键 移动　{} 跳跃　{} 射击　{} 闪避　{} 技能　{} 换人　{} 装弹　{} 暂停"
+ },
+ "s1002": {
+  "en": "In menus: D-Pad to select, A to confirm, B to go back, LB/RB to switch tabs, right stick to scroll",
+  "zh": "菜单中用十字键选择，A 确定，B 返回，LB/RB 切换标签，右摇杆滚动"
+ },
+ "s1003": {
+  "en": "Save Data",
+  "zh": "存档"
+ },
+ "s1004": {
+  "en": "Show Transfer Code",
+  "zh": "显示继承码"
+ },
+ "s1005": {
+  "en": "Restore from Code",
+  "zh": "用代码恢复"
+ },
+ "s1006": {
+  "en": "Reset Data",
+  "zh": "初始化数据"
+ },
+ "s1007": {
+  "en": "Aim: Left Stick　Fire: {}　{} Reload　LT Zoom　B Resume",
+  "zh": "瞄准：左摇杆　射击：{}　{} 装弹　LT 倍率　B 继续"
+ },
+ "s1008": {
+  "en": "Stick Move　{} Jump　{} Fire　{} Dodge　{} Skill　{} Swap　{} Reload　B Resume",
+  "zh": "摇杆 移动　{} 跳跃　{} 射击　{} 闪避　{} 技能　{} 换人　{} 装弹　B 继续"
+ },
+ "s1009": {
+  "en": "Aim: Mouse / Drag　Fire: Click / Button　{} Reload　{} Zoom",
+  "zh": "瞄准：鼠标 / 拖动　射击：点击 / 按钮　{} 装弹　{} 倍率"
+ },
+ "s1010": {
+  "en": "{}/{} Move　{} Jump　{} Fire　{} Dodge　{} Skill　{} Swap　{} Reload",
+  "zh": "{}/{} 移动　{} 跳跃　{} 射击　{} 闪避　{} 技能　{} 换人　{} 装弹"
+ },
+ "s1011": {
+  "en": "Resume",
+  "zh": "继续"
+ },
+ "s1012": {
+  "en": "Restart",
+  "zh": "重新开始"
+ },
+ "s1013": {
+  "en": "Retreat (keep half the crates)",
+  "zh": "撤退（箱子只带回一半）"
+ },
+ "s1014": {
+  "en": "Skip ▶▶",
+  "zh": "跳过 ▶▶"
+ },
+ "s1015": {
+  "en": "Change Team",
+  "zh": "更换编队"
+ },
+ "s1016": {
+  "en": "DPS {}　DMG {}{}　Mag {}　Reload {}s　ROF {}/s　Crit {}%　Range {}",
+  "zh": "DPS {}　威力{}{}　弹匣{}　装弹{}秒　射速{}/秒　暴击{}%　射程{}"
+ },
+ "s1017": {
+  "en": "Everyone: ",
+  "zh": "全员"
+ },
+ "s1018": {
+  "en": "Gear changed in ",
+  "zh": "已更换"
+ },
+ "s1019": {
+  "en": " slot(s)",
+  "zh": "处装备"
+ },
+ "s1020": {
+  "en": "Already optimal",
+  "zh": "当前装备已是最佳"
+ },
+ "s1021": {
+  "en": "Copied!",
+  "zh": "已复制"
+ },
+ "s1022": {
+  "en": "Couldn't copy. Long-press to select it.",
+  "zh": "复制失败。请长按选择。"
+ },
+ "s1023": {
+  "en": "Save data restored",
+  "zh": "存档已恢复"
+ },
+ "s1024": {
+  "en": "Invalid code",
+  "zh": "代码不正确"
+ },
+ "s1025": {
+  "en": "This will erase all save data and start over.",
+  "zh": "将删除全部存档并从头开始。"
+ },
+ "s1026": {
+  "en": "This cannot be undone.",
+  "zh": "此操作无法撤销。"
+ },
+ "s1027": {
+  "en": "Reset",
+  "zh": "初始化"
+ },
+ "s1028": {
+  "en": "Reached",
+  "zh": "到达"
+ },
+ "s1029": {
+  "en": "Accuracy / Barricade",
+  "zh": "命中率 / 耐久"
+ },
+ "s1030": {
+  "en": "Bond up to Lv{}{}!",
+  "zh": "羁绊提升至 Lv{}{}！"
+ },
+ "s1031": {
+  "en": "Bond Token",
+  "zh": "羁绊之证"
+ },
+ "s1032": {
+  "en": "obtained!",
+  "zh": "到手了！"
+ },
+ "s1033": {
+  "en": "Time",
+  "zh": "时间"
+ },
+ "s1034": {
+  "en": "Kills",
+  "zh": "击破数"
+ },
+ "s1035": {
+  "en": "Weapons x{}",
+  "zh": "武器 x{}"
+ },
+ "s1036": {
+  "en": "Gear x{}",
+  "zh": "装备 x{}"
+ },
+ "s1037": {
+  "en": "New {}",
+  "zh": "新 {}"
+ },
+ "s1038": {
+  "en": "Max HP +{} (All)",
+  "zh": "最大HP +{}（全员）"
+ },
+ "s1039": {
+  "en": "Return to Base",
+  "zh": "返回据点"
+ },
+ "s1040": {
+  "en": "Gamepad detected",
+  "zh": "已识别手柄"
+ },
+ "s1041": {
+  "en": "Cloud save data loaded",
+  "zh": "已读取云存档"
+ },
+ "s1042": {
+  "en": "Click to Start",
+  "zh": "点击开始"
+ },
+ "s1043": {
+  "en": "Tap to Start",
+  "zh": "轻触开始"
+ },
+ "s1044": {
+  "en": "Sound on　/　Enter also starts　/　F{} for fullscreen",
+  "zh": "有声音　/　也可按Enter开始　/　F{}切换全屏"
+ },
+ "s1045": {
+  "en": "Sound on　/　Play in landscape on phones",
+  "zh": "有声音　/　手机请横屏游玩"
+ },
+ "s1046": {
+  "en": "Locked",
+  "zh": "未解锁"
+ },
+ "s1047": {
+  "en": "Changes looks only. Stats still come from your Stat Gear.",
+  "zh": "只改变外观，属性仍按“属性装备”计算。"
+ },
+ "s1048": {
+  "en": "This gear counts toward your stats.",
+  "zh": "此装备会计入角色属性。"
+ },
+ "s1049": {
+  "en": "Same as Stat Gear",
+  "zh": "与属性装备相同"
+ },
+ "s1050": {
+  "en": "Looks only",
+  "zh": "仅外观"
+ },
+ "s1051": {
+  "en": " (stocked)",
+  "zh": "时上架"
+ },
+ "s1052": {
+  "en": " (earned)",
+  "zh": "时获得"
+ },
+ "s1053": {
+  "en": "+ stages, from Gear Crates",
+  "zh": "以上的关卡，装备箱掉落"
+ },
+ "s1054": {
+  "en": "Pierce",
+  "zh": "穿透"
+ },
+ "s1055": {
+  "en": "Hard or above, ",
+  "zh": "困难及以上，"
+ },
+ "s1056": {
+  "en": "+ stages, from Weapon Crates",
+  "zh": "以上的关卡，武器箱掉落"
+ },
+ "s1057": {
+  "en": "Not encountered yet.",
+  "zh": "尚未遭遇。"
+ },
+ "s1058": {
+  "en": "Press a key…",
+  "zh": "请按键…"
+ },
+ "s1059": {
+  "en": "Press a button…",
+  "zh": "请按按钮…"
+ },
+ "s1060": {
+  "en": "日本語",
+  "zh": "日本語"
+ },
+ "s1061": {
+  "en": "简体中文",
+  "zh": "简体中文"
+ },
+ "s1062": {
+  "en": "言語 / Language",
+  "zh": "言語 / Language"
+ },
+ "s1063": {
+  "en": "Sound FX",
+  "zh": "音效"
+ },
+ "s1064": {
+  "en": "Autosave: this PC",
+  "zh": "自动保存：本电脑"
+ },
+ "s1065": {
+  "en": "Progress is saved automatically on this PC. To move it to another PC, use a transfer code.",
+  "zh": "进度会自动保存在本电脑上。要转移到其他电脑，请使用继承码。"
+ },
+ "s1066": {
+  "en": "Cloud save: on",
+  "zh": "云存档：已开启"
+ },
+ "s1067": {
+  "en": "Progress is saved to your account automatically and restored on the next start even if browser data is cleared.",
+  "zh": "进度会自动保存到你的账号，即使浏览器数据被清除，下次启动时也会恢复。"
+ },
+ "s1068": {
+  "en": "Cloud save: checking…",
+  "zh": "云存档：确认中…"
+ },
+ "s1069": {
+  "en": "Progress is saved automatically in this browser.",
+  "zh": "进度会自动保存在此浏览器中。"
+ },
+ "s1070": {
+  "en": "Cloud save: unavailable",
+  "zh": "云存档：不可用"
+ },
+ "s1071": {
+  "en": "Progress is saved in this browser only. If browser data is cleared it can't be restored, so keep a transfer code.",
+  "zh": "进度只保存在此浏览器中。浏览器数据被清除后将无法恢复，请记下继承码。"
+ },
+ "s1072": {
+  "en": "Sniper Mission",
+  "zh": "狙击任务"
+ },
+ "s1073": {
+  "en": "Fixed Team",
+  "zh": "固定编队"
+ },
+ "s1074": {
+  "en": "Good with",
+  "zh": "次擅长"
+ },
+ "s1075": {
+  "en": "Equipped",
+  "zh": "装备中"
+ },
+ "s1076": {
+  "en": "(halved on failure)",
+  "zh": "（失败时减半）"
+ },
+ "s1077": {
+  "en": "Retry",
+  "zh": "再来一次"
+ },
+ "s1078": {
+  "en": "Retry",
+  "zh": "重试"
+ },
+ "s1079": {
+  "en": "Next Stage ▶",
+  "zh": "下一关 ▶"
+ },
+ "s1080": {
+  "en": "Sniper",
+  "zh": "狙击"
+ },
+ "s1081": {
+  "en": "Solo",
+  "zh": "单人"
+ },
+ "s1082": {
+  "en": "Fixed Team",
+  "zh": "固定编队"
+ },
+ "s1083": {
+  "en": "Assault",
+  "zh": "突破"
+ },
+ "s1084": {
+  "en": "Defend",
+  "zh": "防守"
+ },
+ "s1085": {
+  "en": "Weapons up to Lv",
+  "zh": "武器 最高Lv"
+ },
+ "s1086": {
+  "en": "Clear this chapter on ",
+  "zh": "本章"
+ },
+ "s1087": {
+  "en": " to unlock",
+  "zh": "通关后解锁"
+ },
+ "s1088": {
+  "en": "Done",
+  "zh": "已达成"
+ },
+ "s1089": {
+  "en": "Clear every stage in this chapter for",
+  "zh": "本章全部通关可获得"
+ },
+ "s1090": {
+  "en": "Fullscreen",
+  "zh": "全屏"
+ },
+ "s1091": {
+  "en": "Stick / D-pad",
+  "zh": "摇杆 / 十字键"
+ },
+ "s1092": {
+  "en": "✓ Autosaved",
+  "zh": "✓ 已自动保存"
+ },
+ "s1093": {
+  "en": "⚠ Couldn't save on this device (keep a transfer code from Settings)",
+  "zh": "⚠ 无法保存在此设备上（请在设置中记下“继承码”）"
+ },
+ "s1094": {
+  "en": "Clear",
+  "zh": "通关"
+ },
+ "s1095": {
+  "en": "Owned",
+  "zh": "已拥有"
+ },
+ "s1096": {
+  "en": "(bench)",
+  "zh": "（替补）"
+ },
+ "s1097": {
+  "en": "Firepower Up",
+  "zh": "火力增强"
+ },
+ "s1098": {
+  "en": "Rapid Fire",
+  "zh": "连射强化"
+ },
+ "s1099": {
+  "en": "Fire rate +{}%",
+  "zh": "射速 +{}%"
+ },
+ "s1100": {
+  "en": "Piercing Rounds",
+  "zh": "穿甲弹"
+ },
+ "s1101": {
+  "en": "Bullets pierce {} more enemy",
+  "zh": "子弹多穿透{}名敌人"
+ },
+ "s1102": {
+  "en": "Big Mags",
+  "zh": "大容量弹匣"
+ },
+ "s1103": {
+  "en": "Mag size +{}% (refilled now)",
+  "zh": "弹匣容量 +{}%（立即装满）"
+ },
+ "s1104": {
+  "en": "Toughness",
+  "zh": "体力强化"
+ },
+ "s1105": {
+  "en": "Max HP +{}% (heals the gain)",
+  "zh": "最大HP +{}%（回复增加的部分）"
+ },
+ "s1106": {
+  "en": "Regeneration",
+  "zh": "自然恢复"
+ },
+ "s1107": {
+  "en": "Recover {} HP per second",
+  "zh": "每秒恢复{}点HP"
+ },
+ "s1108": {
+  "en": "Fleet Foot",
+  "zh": "疾步"
+ },
+ "s1109": {
+  "en": "Move speed +{}%",
+  "zh": "移动速度 +{}%"
+ },
+ "s1110": {
+  "en": "Weak Spot",
+  "zh": "弱点看破"
+ },
+ "s1111": {
+  "en": "Focus",
+  "zh": "专注"
+ },
+ "s1112": {
+  "en": "Support Drone",
+  "zh": "支援无人机"
+ },
+ "s1113": {
+  "en": "Adds {} auto-firing drone",
+  "zh": "增加{}架自动射击的无人机"
+ },
+ "s1114": {
+  "en": "Chain Blast",
+  "zh": "诱爆"
+ },
+ "s1115": {
+  "en": "Defeated enemies explode, hitting those nearby (power and size grow with Lv)",
+  "zh": "被击倒的敌人会爆炸并波及周围（等级越高威力和范围越大）"
+ },
+ "s1116": {
+  "en": "Upgrades",
+  "zh": "强化"
+ },
+ "s1117": {
+  "en": "After every WAVE, pick {} upgrade card and your team grows stronger.",
+  "zh": "每过一个WAVE选择{}张强化卡，队伍会越来越强。"
+ },
+ "s1118": {
+  "en": "Choose with the D-pad, confirm with A",
+  "zh": "用十字键选择，按A确认"
+ },
+ "s1119": {
+  "en": "Click, or press {}–{} to choose",
+  "zh": "点击，或按{}～{}键选择"
+ },
+ "s1120": {
+  "en": "Choose an Upgrade",
+  "zh": "选择强化"
+ },
+ "s1121": {
+  "en": "WAVE {} cleared! Pick {} to start the next WAVE",
+  "zh": "WAVE {} 通过！选择{}项后开始下一个WAVE"
+ },
+ "s1122": {
+  "en": "Service Pistol K-{}",
+  "zh": "制式手枪 K-{}"
+ },
+ "s1123": {
+  "en": "Machine Pistol R-{}",
+  "zh": "冲锋手枪 R-{}"
+ },
+ "s1124": {
+  "en": "SAW Carbine T-{}",
+  "zh": "班用支援卡宾枪 T-{}"
+ },
+ "s1125": {
+  "en": "Bullpup B-{}",
+  "zh": "无托步枪 B-{}"
+ },
+ "s1126": {
+  "en": "Cossack KR-{}",
+  "zh": "哥萨克 KR-{}"
+ },
+ "s1127": {
+  "en": "Battle Rifle BR-{}",
+  "zh": "战斗步枪 BR-{}"
+ },
+ "s1128": {
+  "en": "Pocket Buzz PB-{}",
+  "zh": "口袋蜂鸣 PB-{}"
+ },
+ "s1129": {
+  "en": "Honeybee HB-{}",
+  "zh": "蜜蜂 HB-{}"
+ },
+ "s1130": {
+  "en": "Vortex V-{}",
+  "zh": "涡流 V-{}"
+ },
+ "s1131": {
+  "en": "Pump PS-{}",
+  "zh": "泵动 PS-{}"
+ },
+ "s1132": {
+  "en": "Auto {} Blizzard",
+  "zh": "自动{} 暴雪"
+ },
+ "s1133": {
+  "en": "Bolt-Action BA-{}",
+  "zh": "栓动 BA-{}"
+ },
+ "s1134": {
+  "en": "SAW SW-{}",
+  "zh": "班用支援机枪 SW-{}"
+ },
+ "s1135": {
+  "en": "MG GP-{} 'Buzzsaw'",
+  "zh": "机枪 GP-{}「电锯」"
+ },
+ "s1136": {
+  "en": "Grenade Launcher GL-{}",
+  "zh": "榴弹枪 GL-{}"
+ },
+ "s1137": {
+  "en": "Revolver Launcher RL-{}",
+  "zh": "转轮榴弹发射器 RL-{}"
+ },
+ "s1138": {
+  "en": "Surfrider SF-{}",
+  "zh": "冲浪者 SF-{}"
+ }
+}

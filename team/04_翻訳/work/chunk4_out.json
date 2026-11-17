@@ -1,0 +1,1294 @@
+{
+ "s0001": {
+  "en": "Handgun",
+  "zh": "手枪"
+ },
+ "s0002": {
+  "en": "Assault Rifle",
+  "zh": "突击步枪"
+ },
+ "s0003": {
+  "en": "SMG",
+  "zh": "冲锋枪"
+ },
+ "s0004": {
+  "en": "Shotgun",
+  "zh": "霰弹枪"
+ },
+ "s0005": {
+  "en": "Sniper Rifle",
+  "zh": "狙击步枪"
+ },
+ "s0006": {
+  "en": "LMG",
+  "zh": "轻机枪"
+ },
+ "s0007": {
+  "en": "Launcher",
+  "zh": "发射器"
+ },
+ "s0726": {
+  "en": "Club Is in Session",
+  "zh": "社团活动开始"
+ },
+ "s0727": {
+  "en": "Clear stage {}-{}",
+  "zh": "通关{}-{}"
+ },
+ "s0728": {
+  "en": "First Hundred",
+  "zh": "第一个一百"
+ },
+ "s0729": {
+  "en": "Defeat {} zombies in total",
+  "zh": "累计击倒{}只僵尸"
+ },
+ "s0730": {
+  "en": "A Thousand Down",
+  "zh": "千体斩"
+ },
+ "s0731": {
+  "en": "Defeat {},{} zombies in total",
+  "zh": "累计击倒{},{}只僵尸"
+ },
+ "s0732": {
+  "en": "Fog Breaker",
+  "zh": "驱散迷雾"
+ },
+ "s0733": {
+  "en": "Living Legend",
+  "zh": "活着的传说"
+ },
+ "s0734": {
+  "en": "School's Out",
+  "zh": "放学回家"
+ },
+ "s0735": {
+  "en": "Clear Chapter {}",
+  "zh": "通关第{}章"
+ },
+ "s0736": {
+  "en": "Seconds on Croquettes",
+  "zh": "可乐饼再来一份"
+ },
+ "s0737": {
+  "en": "End of the Line",
+  "zh": "终点站"
+ },
+ "s0738": {
+  "en": "Night Shift's Over",
+  "zh": "夜班结束"
+ },
+ "s0739": {
+  "en": "Daybreak",
+  "zh": "黎明"
+ },
+ "s0740": {
+  "en": "Take Back Summer Break",
+  "zh": "夺回暑假"
+ },
+ "s0741": {
+  "en": "Part {} \"Shiomi Island\": clear all {} stages",
+  "zh": "通关第{}部「潮见岛」全部{}个关卡"
+ },
+ "s0742": {
+  "en": "Swimsuit Set",
+  "zh": "泳装套装"
+ },
+ "s0743": {
+  "en": "Morning of Prayer",
+  "zh": "祈祷之晨"
+ },
+ "s0744": {
+  "en": "Clear every stage of Part {} (Chapters {}–{}) on Normal",
+  "zh": "在普通难度下通关第{}部（第{}～{}章）全部关卡"
+ },
+ "s0745": {
+  "en": "Final Bell",
+  "zh": "全员离校"
+ },
+ "s0746": {
+  "en": "Normal, Part {}: earn ★{} on every stage",
+  "zh": "普通难度第{}部全部关卡获得★{}"
+ },
+ "s0747": {
+  "en": "Hard Mode Conquered",
+  "zh": "制霸困难模式"
+ },
+ "s0748": {
+  "en": "Clear every Part {} stage on Hard",
+  "zh": "在困难难度下通关第{}部全部关卡"
+ },
+ "s0749": {
+  "en": "Beyond the Nightmare",
+  "zh": "越过噩梦"
+ },
+ "s0750": {
+  "en": "Clear every Part {} stage on Nightmare",
+  "zh": "在噩梦难度下通关第{}部全部关卡"
+ },
+ "s0751": {
+  "en": "Hard: School's Out",
+  "zh": "困难：放学回家"
+ },
+ "s0752": {
+  "en": "Clear all of Chapter {} on Hard",
+  "zh": "在困难难度下全通第{}章"
+ },
+ "s0753": {
+  "en": "Hard: Seconds on Croquettes",
+  "zh": "困难：可乐饼再来一份"
+ },
+ "s0754": {
+  "en": "Hard: End of the Line",
+  "zh": "困难：终点站"
+ },
+ "s0755": {
+  "en": "Hard: Night Shift's Over",
+  "zh": "困难：夜班结束"
+ },
+ "s0756": {
+  "en": "Hard: Daybreak",
+  "zh": "困难：黎明"
+ },
+ "s0757": {
+  "en": "Hard: Take Back Summer Break",
+  "zh": "困难：夺回暑假"
+ },
+ "s0758": {
+  "en": "Very Hard: Take Back Summer Break",
+  "zh": "极难：夺回暑假"
+ },
+ "s0759": {
+  "en": "Clear all of Chapter {} on Very Hard",
+  "zh": "在极难难度下全通第{}章"
+ },
+ "s0760": {
+  "en": "Nightmare: Take Back Summer Break",
+  "zh": "噩梦：夺回暑假"
+ },
+ "s0761": {
+  "en": "Clear all of Chapter {} on Nightmare",
+  "zh": "在噩梦难度下全通第{}章"
+ },
+ "s0762": {
+  "en": "Very Hard: School's Out",
+  "zh": "极难：放学回家"
+ },
+ "s0763": {
+  "en": "Very Hard: Seconds on Croquettes",
+  "zh": "极难：可乐饼再来一份"
+ },
+ "s0764": {
+  "en": "Very Hard: End of the Line",
+  "zh": "极难：终点站"
+ },
+ "s0765": {
+  "en": "Very Hard: Night Shift's Over",
+  "zh": "极难：夜班结束"
+ },
+ "s0766": {
+  "en": "Very Hard: Daybreak",
+  "zh": "极难：黎明"
+ },
+ "s0767": {
+  "en": "Nightmare: School's Out",
+  "zh": "噩梦：放学回家"
+ },
+ "s0768": {
+  "en": "Nightmare: Seconds on Croquettes",
+  "zh": "噩梦：可乐饼再来一份"
+ },
+ "s0769": {
+  "en": "Nightmare: End of the Line",
+  "zh": "噩梦：终点站"
+ },
+ "s0770": {
+  "en": "Nightmare: Night Shift's Over",
+  "zh": "噩梦：夜班结束"
+ },
+ "s0771": {
+  "en": "Nightmare: Daybreak",
+  "zh": "噩梦：黎明"
+ },
+ "s0772": {
+  "en": "Boss Hunter",
+  "zh": "BOSS猎人"
+ },
+ "s0773": {
+  "en": "Defeat {} bosses in total",
+  "zh": "累计击败{}个BOSS"
+ },
+ "s0774": {
+  "en": "Masterwork",
+  "zh": "匠心之枪"
+ },
+ "s0775": {
+  "en": "Obtain a Lv{}+ weapon",
+  "zh": "获得Lv{}以上的武器"
+ },
+ "s0776": {
+  "en": "Gun Locker",
+  "zh": "枪械柜"
+ },
+ "s0777": {
+  "en": "Collect {} kinds of weapons",
+  "zh": "收集{}种武器"
+ },
+ "s0778": {
+  "en": "Gun Nut",
+  "zh": "武器狂人"
+ },
+ "s0779": {
+  "en": "Walking Arsenal",
+  "zh": "移动武器库"
+ },
+ "s0780": {
+  "en": "Collect every weapon",
+  "zh": "收集全部武器"
+ },
+ "s0781": {
+  "en": "Promising Rookie",
+  "zh": "备受期待的新人"
+ },
+ "s0782": {
+  "en": "Have any {} member reach Lv{}",
+  "zh": "任意{}名成员达到Lv{}"
+ },
+ "s0783": {
+  "en": "Ace",
+  "zh": "王牌"
+ },
+ "s0784": {
+  "en": "Everyone's a Star",
+  "zh": "人人都是主角"
+ },
+ "s0785": {
+  "en": "Get every club member to Lv{}",
+  "zh": "全体社员达到Lv{}"
+ },
+ "s0786": {
+  "en": "Long Night",
+  "zh": "漫长的夜"
+ },
+ "s0787": {
+  "en": "Reach WAVE {} in Survival",
+  "zh": "在生存模式中到达WAVE {}"
+ },
+ "s0788": {
+  "en": "Endless Night",
+  "zh": "永无止境的夜"
+ },
+ "s0789": {
+  "en": "Combo Master",
+  "zh": "连击大师"
+ },
+ "s0790": {
+  "en": "Hit a {}-hit combo",
+  "zh": "达成{}连击"
+ },
+ "s0791": {
+  "en": "Dynamic Duo",
+  "zh": "最佳拍档"
+ },
+ "s0792": {
+  "en": "Raise any pair's Bond to Lv{}",
+  "zh": "任意一对的羁绊达到Lv{}"
+ },
+ "s0793": {
+  "en": "Not a Scratch",
+  "zh": "毫发无伤"
+ },
+ "s0794": {
+  "en": "Clear a boss stage without anyone going down",
+  "zh": "在无人倒下的情况下通关BOSS关卡"
+ },
+ "s0795": {
+  "en": "Holding Fire locks your facing. Leave enemies behind you to your partner, or let go to turn around.",
+  "zh": "按住射击键时朝向会固定。背后的敌人交给搭档，或松开按键转身。"
+ },
+ "s0796": {
+  "en": "Give a girl her favorite gun type: damage +{}% and faster reloads (secondary type: +{}%).",
+  "zh": "让角色使用擅长的枪械，伤害+{}%且装弹更快（次擅长为+{}%）。"
+ },
+ "s0797": {
+  "en": "Enemies drop green crates (weapons), blue crates (gear), and red crates (Armor = max HP). Higher difficulties drop higher-level weapons and gear.",
+  "zh": "敌人掉落的绿色箱子是武器，蓝色箱子是装备，红色箱子是护甲（最大HP）。难度越高，掉落的武器和装备等级越高。"
+ },
+ "s0798": {
+  "en": "Each weapon has variants like \"Custom,\" \"SD,\" \"AP,\" and \"Kai,\" each with different stats and looks. Total: ",
+  "zh": "同一种武器也有「定制」「SD」「AP」「改」等型号，性能和外观各不相同。共有"
+ },
+ "s0799": {
+  "en": " weapons.",
+  "zh": "种。"
+ },
+ "s0800": {
+  "en": "Gear comes in color variants: same shape, different color and stats. Have fun collecting looks you like!",
+  "zh": "装备有不同配色，即使款式相同，颜色和性能也不同。尽情收集喜欢的搭配吧。"
+ },
+ "s0801": {
+  "en": "The more Armor Crates you collect, the more everyone's max HP grows (every {} Armor = +{} HP).",
+  "zh": "收集的护甲箱越多，全员的最大HP就会逐渐提升（每{}点护甲HP+{}）。"
+ },
+ "s0802": {
+  "en": "Gear has separate \"stats\" and \"appearance\" slots, so you can wear strong gear and still deploy in the outfit you like.",
+  "zh": "装备的「性能」和「外观」可以分开选择。穿着强力装备的同时，也能以喜欢的造型出击。"
+ },
+ "s0803": {
+  "en": "You move slower while shooting. SMGs let you move fast while firing; LMGs and SRs nearly stop you.",
+  "zh": "射击时移动会变慢。冲锋枪边射击也能快速移动，轻机枪和狙击步枪则几乎无法移动。"
+ },
+ "s0804": {
+  "en": "You're invincible during a Dodge step. Step right through a boss's charge.",
+  "zh": "闪避步伐期间无敌。可以用闪避穿过BOSS的冲撞。"
+ },
+ "s0805": {
+  "en": "Jump to avoid shockwaves along the ground and pools of acid.",
+  "zh": "沿地面传来的冲击波和酸液池要用跳跃躲开。"
+ },
+ "s0806": {
+  "en": "Downed teammates are revived by first aid after {} seconds. You only lose if {} of you go down at the same time.",
+  "zh": "倒下的同伴会在{}秒后经急救复活。只要不是{}人同时倒下就不会失败。"
+ },
+ "s0807": {
+  "en": "Shoot Bombers from a distance and they'll explode, taking nearby zombies with them.",
+  "zh": "在远处击中自爆僵尸，它会爆炸并波及周围的僵尸。"
+ },
+ "s0808": {
+  "en": "An Armored zombie's front plating can be pierced by AP rounds, explosions, or crits.",
+  "zh": "重甲僵尸的正面装甲可以用穿甲弹、爆炸或暴击击穿。"
+ },
+ "s0809": {
+  "en": "Deploying the same pair again and again deepens their \"Bond\" and boosts attack for those {}. At MAX Bond, you get an exclusive weapon and gear themed on that girl.",
+  "zh": "同一对搭档反复出击，「羁绊」就会加深，{}人的攻击力也会提升。羁绊达到MAX时，可获得以该角色为主题的限定武器和装备。"
+ },
+ "s0810": {
+  "en": "Some story stages are played with just {} girl, or with a set team. On solo missions, damage taken is reduced by {}%, and you can hang on through a fatal hit {} time.",
+  "zh": "由于剧情需要，有些关卡只能{}人挑战，有些关卡成员是固定的。单人任务中受到的伤害减少{}%，并能{}次撑住而不倒下。"
+ },
+ "s0811": {
+  "en": "In Sniper stages, a headshot kills in one hit. The radar at the top and the arrows on the scope's edge show where enemies are.",
+  "zh": "狙击关卡中爆头即可一击必杀。通过画面上方的雷达和瞄准镜边缘的箭头可以知道敌人的方向。"
+ },
+ "s0812": {
+  "en": "Higher difficulties unlock chapter by chapter: Normal → Hard → Very Hard → Nightmare. Clear every stage of a chapter to open the next.",
+  "zh": "高难度按章节解锁。按照普通→困难→极难→噩梦的顺序，全部通关该章后即可开启下一个难度。"
+ },
+ "s0813": {
+  "en": "The {} ★ conditions are \"Clear,\" \"No Downs,\" and \"Beat the Target Time.\" In Defend stages, star #{} is \"Defeat the Required Number.\"",
+  "zh": "★{}个的条件是「通关」「无人倒下」「在目标时间内」。防守关卡的第{}个条件为「击破规定数量」。"
+ },
+ "s0814": {
+  "en": "Red drums explode when shot. Lure zombies in close, then fire!",
+  "zh": "红色油桶被击中会爆炸。把僵尸引过来再开枪吧。"
+ },
+ "s0815": {
+  "en": "CROQUETTES",
+  "zh": "可乐饼"
+ },
+ "s0816": {
+  "en": "BUTCHER",
+  "zh": "肉铺"
+ },
+ "s0817": {
+  "en": "PHARMACY",
+  "zh": "药店"
+ },
+ "s0818": {
+  "en": "BOOKS",
+  "zh": "书店"
+ },
+ "s0819": {
+  "en": "KARAOKE",
+  "zh": "卡拉OK"
+ },
+ "s0820": {
+  "en": "RAMEN",
+  "zh": "拉面"
+ },
+ "s0821": {
+  "en": "STATIONERY",
+  "zh": "文具"
+ },
+ "s0822": {
+  "en": "PRODUCE",
+  "zh": "蔬果店"
+ },
+ "s0823": {
+  "en": "CLEANERS",
+  "zh": "洗衣店"
+ },
+ "s0824": {
+  "en": "CAFE",
+  "zh": "咖啡馆"
+ },
+ "s0825": {
+  "en": "FLOWERS",
+  "zh": "花店"
+ },
+ "s0826": {
+  "en": "GAMES",
+  "zh": "游戏"
+ },
+ "s0827": {
+  "en": "KIRIGAOKA",
+  "zh": "雾丘"
+ },
+ "s0828": {
+  "en": "EXAM ROOM",
+  "zh": "诊察室"
+ },
+ "s0829": {
+  "en": "TREATMENT",
+  "zh": "处置室"
+ },
+ "s0830": {
+  "en": "DISPENSARY",
+  "zh": "药剂科"
+ },
+ "s0831": {
+  "en": "WARD",
+  "zh": "病房"
+ },
+ "s0832": {
+  "en": "KEEP OUT",
+  "zh": "禁止入内"
+ },
+ "s0833": {
+  "en": "BEACH HUT",
+  "zh": "海之家"
+ },
+ "s0834": {
+  "en": "SHAVED ICE",
+  "zh": "刨冰"
+ },
+ "s0835": {
+  "en": "YAKISOBA",
+  "zh": "炒面"
+ },
+ "s0836": {
+  "en": "BOAT RENTAL",
+  "zh": "租船"
+ },
+ "s0837": {
+  "en": "Gear「",
+  "zh": "装备「"
+ },
+ "s0838": {
+  "en": "Nun Outfit Set",
+  "zh": "修女服套装"
+ },
+ "s0839": {
+  "en": ", ",
+  "zh": "、"
+ },
+ "s0840": {
+  "en": "Armor +",
+  "zh": "护甲 +"
+ },
+ "s0841": {
+  "en": "Back up!",
+  "zh": "复活！"
+ },
+ "s0842": {
+  "en": "held on through sheer guts! ({}x only)",
+  "zh": "凭毅力撑住了！（仅限{}次）"
+ },
+ "s0843": {
+  "en": "is down! First aid in {}s",
+  "zh": "倒下了！{}秒后经急救复活"
+ },
+ "s0844": {
+  "en": "Weapon Crate",
+  "zh": "武器箱"
+ },
+ "s0845": {
+  "en": "Gear Crate",
+  "zh": "装备箱"
+ },
+ "s0846": {
+  "en": "Armor",
+  "zh": "护甲"
+ },
+ "s0847": {
+  "en": "Left Stick to move, hold {} to fire",
+  "zh": "左摇杆移动，长按 {} 射击"
+ },
+ "s0848": {
+  "en": "Left stick to move, hold the big button on the right to fire",
+  "zh": "左侧摇杆移动，长按右侧大按钮射击"
+ },
+ "s0849": {
+  "en": "{}/{} to move, hold {} (or Left Click) to fire",
+  "zh": "{}/{}移动，长按{}（或鼠标左键）射击"
+ },
+ "s0850": {
+  "en": "Facing locks while firing. Your partner covers enemies behind you",
+  "zh": "射击时朝向固定。背后的敌人由搭档帮你打"
+ },
+ "s0851": {
+  "en": "{}: Invincible Dodge step　{}: Swap character　{}: Jump",
+  "zh": "{}：无敌闪避步伐　{}：切换操作角色　{}：跳跃"
+ },
+ "s0852": {
+  "en": "\"Dodge\" is an invincible step; \"Swap\" switches your character",
+  "zh": "「闪避」为无敌步伐，「换人」可切换操作角色"
+ },
+ "s0853": {
+  "en": "When the gauge is full, press {} for your Skill!　{}: Reload",
+  "zh": "计量槽满后按 {} 发动技能！　{}：装弹"
+ },
+ "s0854": {
+  "en": "When the gauge is full, tap \"Skill\" for a special move!",
+  "zh": "计量槽满后按「技能」释放必杀技！"
+ },
+ "s0855": {
+  "en": "approaches!",
+  "zh": "接近中"
+ },
+ "s0856": {
+  "en": "DEFEND!",
+  "zh": "防守开始"
+ },
+ "s0857": {
+  "en": "s — Survive!",
+  "zh": "秒 坚持住！"
+ },
+ "s0858": {
+  "en": "appears!",
+  "zh": "出现"
+ },
+ "s0859": {
+  "en": "You held out until dawn!",
+  "zh": "坚持到了黎明！"
+ },
+ "s0860": {
+  "en": "Mission Complete",
+  "zh": "任务结束"
+ },
+ "s0861": {
+  "en": "+Heal",
+  "zh": "+回复"
+ },
+ "s0862": {
+  "en": "goes berserk!",
+  "zh": "狂暴化了！"
+ },
+ "s0863": {
+  "en": "First Aid",
+  "zh": "急救"
+ },
+ "s0864": {
+  "en": "Solo Mission",
+  "zh": "单人任务"
+ },
+ "s0865": {
+  "en": "Downs",
+  "zh": "倒下"
+ },
+ "s0866": {
+  "en": "Until Dawn",
+  "zh": "距离黎明"
+ },
+ "s0867": {
+  "en": "Kills",
+  "zh": "击破"
+ },
+ "s0868": {
+  "en": "Drop Rate x",
+  "zh": "掉落率 x"
+ },
+ "s0869": {
+  "en": "The dawn never came...",
+  "zh": "黎明终究没有到来……"
+ },
+ "s0870": {
+  "en": "Wiped out...",
+  "zh": "全灭……"
+ },
+ "s0871": {
+  "en": "Fire",
+  "zh": "射击"
+ },
+ "s0872": {
+  "en": "Jump",
+  "zh": "跳跃"
+ },
+ "s0873": {
+  "en": "Dodge",
+  "zh": "闪避"
+ },
+ "s0874": {
+  "en": "Skill",
+  "zh": "技能"
+ },
+ "s0875": {
+  "en": "Swap",
+  "zh": "换人"
+ },
+ "s0876": {
+  "en": "Reload",
+  "zh": "装弹"
+ },
+ "s0877": {
+  "en": "Move Left",
+  "zh": "向左移动"
+ },
+ "s0878": {
+  "en": "Move Right",
+  "zh": "向右移动"
+ },
+ "s0879": {
+  "en": "Pause",
+  "zh": "暂停"
+ },
+ "s0880": {
+  "en": "D-Pad ↑",
+  "zh": "十字键↑"
+ },
+ "s0881": {
+  "en": "D-Pad ↓",
+  "zh": "十字键↓"
+ },
+ "s0882": {
+  "en": "D-Pad ←",
+  "zh": "十字键←"
+ },
+ "s0883": {
+  "en": "D-Pad →",
+  "zh": "十字键→"
+ },
+ "s0884": {
+  "en": "R-Shift",
+  "zh": "右Shift"
+ },
+ "s0885": {
+  "en": "R-Ctrl",
+  "zh": "右Ctrl"
+ },
+ "s0886": {
+  "en": "R-Alt",
+  "zh": "右Alt"
+ },
+ "s0887": {
+  "en": "Btn",
+  "zh": "按键"
+ },
+ "s0888": {
+  "en": "Helmet!",
+  "zh": "头盔！"
+ },
+ "s0889": {
+  "en": "The barricade held!",
+  "zh": "守住了路障！"
+ },
+ "s0890": {
+  "en": "Barricade",
+  "zh": "路障"
+ },
+ "s0891": {
+  "en": "Remaining",
+  "zh": "剩余"
+ },
+ "s0892": {
+  "en": "Shoot the red gas cans to blow up all the enemies around them!",
+  "zh": "击中红色燃气罐会引发爆炸，一口气消灭周围的敌人！"
+ },
+ "s0893": {
+  "en": "Left Stick to aim, {} to fire. Headshots kill in one hit! ({}: Reload　LT: Zoom)",
+  "zh": "左摇杆瞄准，{}射击。爆头一击必杀！（{}：装弹　LT：倍率）"
+ },
+ "s0894": {
+  "en": "Drag the screen to aim, tap the bottom-right button to fire. Headshots kill in one hit!",
+  "zh": "拖动画面瞄准，按右下角按钮射击。爆头一击必杀！"
+ },
+ "s0895": {
+  "en": "Aim with the mouse, click to fire. Headshots kill in one hit! ({}: Reload　{}: Zoom)",
+  "zh": "鼠标瞄准，点击射击。爆头一击必杀！（{}：装弹　{}：倍率）"
+ },
+ "s0896": {
+  "en": "The barricade has fallen...",
+  "zh": "路障被突破了……"
+ },
+ "s0897": {
+  "en": "Weapons {}/{}",
+  "zh": "武器 {}/{}"
+ },
+ "s0898": {
+  "en": "Armor +{}",
+  "zh": "护甲 +{}"
+ },
+ "s0899": {
+  "en": "◀ Back",
+  "zh": "◀ 返回"
+ },
+ "s0900": {
+  "en": "No effect",
+  "zh": "无效果"
+ },
+ "s0901": {
+  "en": "Cancel",
+  "zh": "取消"
+ },
+ "s0902": {
+  "en": "Achievement Unlocked",
+  "zh": "达成成就"
+ },
+ "s0903": {
+  "en": "Afterschool",
+  "zh": "放学后的"
+ },
+ "s0904": {
+  "en": "Deadline",
+  "zh": "死线"
+ },
+ "s0905": {
+  "en": "High School Girls × Guns × Zombies　Side-Scrolling Shooter",
+  "zh": "女高中生 × 枪 × 僵尸　横版射击"
+ },
+ "s0906": {
+  "en": "Power {}",
+  "zh": "战力 {}"
+ },
+ "s0907": {
+  "en": "Kirigaoka Girls' High School Airsoft Club",
+  "zh": "雾丘女子高中 生存游戏社"
+ },
+ "s0908": {
+  "en": "Club Room — Chapter {}: \"{}\"",
+  "zh": "社团活动室 ― 第{}章「{}」"
+ },
+ "s0909": {
+  "en": "DEPLOY",
+  "zh": "出 击"
+ },
+ "s0910": {
+  "en": "Team & Gear{}",
+  "zh": "队伍/装备{}"
+ },
+ "s0911": {
+  "en": "Collection",
+  "zh": "收藏"
+ },
+ "s0912": {
+  "en": "Achievements",
+  "zh": "成就/图鉴"
+ },
+ "s0913": {
+  "en": "Settings",
+  "zh": "设置"
+ },
+ "s0914": {
+  "en": "Bond Lv{}",
+  "zh": "羁绊 Lv{}"
+ },
+ "s0915": {
+  "en": "ATK +{}%",
+  "zh": "攻击+{}%"
+ },
+ "s0916": {
+  "en": "Survival — Endless Night",
+  "zh": "生存模式 ― 永无止境的夜"
+ },
+ "s0917": {
+  "en": "Hold off wave after wave of zombies until you fall. A boss appears every {} WAVES.",
+  "zh": "迎击汹涌而来的僵尸潮，直到倒下为止。每{}个WAVE出现一次BOSS。"
+ },
+ "s0918": {
+  "en": "The higher the WAVE you reach, the higher-level the Weapon Crates you get.",
+  "zh": "到达的WAVE越高，获得的武器箱等级越高。"
+ },
+ "s0919": {
+  "en": "Best",
+  "zh": "最高纪录"
+ },
+ "s0920": {
+  "en": "Deploy ▶",
+  "zh": "出击 ▶"
+ },
+ "s0921": {
+  "en": "Sniper Mission: {} provides cover through a scope (first-person; headshots kill in one hit)",
+  "zh": "狙击任务：{} 透过瞄准镜进行掩护（第一人称视角，爆头一击必杀）"
+ },
+ "s0922": {
+  "en": "Solo Mission: {} deploys alone, team of {} (no Swap / damage taken -{}% / survives a fatal hit {}x)",
+  "zh": "单人任务：{} {}人出击（无法换人／受到伤害-{}%，可凭毅力撑住{}次）"
+ },
+ "s0923": {
+  "en": "Fixed Team: {}",
+  "zh": "固定编队：{} 出击"
+ },
+ "s0924": {
+  "en": "Best {}",
+  "zh": "最佳 {}"
+ },
+ "s0925": {
+  "en": "Rec. Lv {}　/　Weapon Drops Lv{}–{}",
+  "zh": "推荐Lv {}　／　掉落武器 Lv{}～{}"
+ },
+ "s0926": {
+  "en": "★ Clear",
+  "zh": "★ 通关"
+ },
+ "s0927": {
+  "en": "Deploy",
+  "zh": "出击"
+ },
+ "s0928": {
+  "en": "Chapter {}",
+  "zh": "第{}章"
+ },
+ "s0929": {
+  "en": "Survival",
+  "zh": "生存模式"
+ },
+ "s0930": {
+  "en": "Slot {}",
+  "zh": "出击{}"
+ },
+ "s0931": {
+  "en": "Swap in who?",
+  "zh": "要和谁换人？"
+ },
+ "s0932": {
+  "en": "In Team: #{}",
+  "zh": "出击中 第{}位"
+ },
+ "s0933": {
+  "en": "Reorder",
+  "zh": "调换顺序"
+ },
+ "s0934": {
+  "en": "Add to Team",
+  "zh": "加入出击"
+ },
+ "s0935": {
+  "en": "Auto-Equip",
+  "zh": "自动装备"
+ },
+ "s0936": {
+  "en": "Auto-Equip All",
+  "zh": "全员自动"
+ },
+ "s0937": {
+  "en": "Status",
+  "zh": "状态"
+ },
+ "s0938": {
+  "en": "Weapons",
+  "zh": "武器"
+ },
+ "s0939": {
+  "en": "Gear",
+  "zh": "装备"
+ },
+ "s0940": {
+  "en": "Power",
+  "zh": "战力"
+ },
+ "s0941": {
+  "en": "ATK Bonus",
+  "zh": "攻击加成"
+ },
+ "s0942": {
+  "en": "Damage Taken",
+  "zh": "受到伤害"
+ },
+ "s0943": {
+  "en": "Crit Rate",
+  "zh": "暴击率"
+ },
+ "s0944": {
+  "en": "Move Speed",
+  "zh": "移动速度"
+ },
+ "s0945": {
+  "en": "Favorite Weapon",
+  "zh": "擅长武器"
+ },
+ "s0946": {
+  "en": "{} (DMG +{}% / Reload -{}%) / Secondary: {} (+{}%)",
+  "zh": "{}（伤害+{}%，装弹-{}%）／ 次擅长：{}（+{}%）"
+ },
+ "s0947": {
+  "en": "Passive",
+  "zh": "被动"
+ },
+ "s0948": {
+  "en": "Skill: {}",
+  "zh": "技能「{}」"
+ },
+ "s0949": {
+  "en": "CD {}s",
+  "zh": "冷却 {}秒"
+ },
+ "s0950": {
+  "en": "Favorite",
+  "zh": "擅长"
+ },
+ "s0951": {
+  "en": "You don't have any weapons of this type yet.",
+  "zh": "尚未拥有该类武器。"
+ },
+ "s0952": {
+  "en": "Stats",
+  "zh": "性能装备"
+ },
+ "s0953": {
+  "en": "Appearance",
+  "zh": "外观装备"
+ },
+ "s0954": {
+  "en": "Gear comes from blue Gear Crates. Gear set in \"Appearance\" only changes how she looks and does not affect stats.",
+  "zh": "装备可从蓝色的装备箱中获得。放入「外观装备」的装备只会改变外观，不影响性能。"
+ },
+ "s0955": {
+  "en": "Skill Points",
+  "zh": "技能点"
+ },
+ "s0956": {
+  "en": "Reset",
+  "zh": "重置"
+ },
+ "s0957": {
+  "en": "For every {} level gained, earn {} SP. Ranks {}–{} cost {} pt each; ranks {}–{} (tier 2) cost {} pt each. Resets are free.",
+  "zh": "等级每提升{}级获得{}技能点。第{}～{}阶段需要{}点，第{}～{}阶段（第二阶段）需要{}点。重置免费。"
+ },
+ "s0958": {
+  "en": "Team & Gear",
+  "zh": "队伍/装备"
+ },
+ "s0959": {
+  "en": "Owned",
+  "zh": "已获得"
+ },
+ "s0960": {
+  "en": "DMG {}{}　ROF {}/s　Mag {}{}",
+  "zh": "威力{}{}　射速{}/秒　弹匣{}{}"
+ },
+ "s0961": {
+  "en": "Enemies drop Weapon Crates (green), Gear Crates (blue), and Armor Crates (red). Higher-level stages drop higher-level weapons and gear. Items you already own turn into Armor (max HP).",
+  "zh": "武器箱（绿）、装备箱（蓝）、护甲箱（红）由敌人掉落。关卡等级越高，掉落的武器和装备等级越高。获得已拥有的物品时，会转化为护甲（最大HP）。"
+ },
+ "s0962": {
+  "en": "Achievements",
+  "zh": "成就"
+ },
+ "s0963": {
+  "en": "Zombie Files",
+  "zh": "僵尸图鉴"
+ },
+ "s0964": {
+  "en": "Battle Record",
+  "zh": "战绩"
+ },
+ "s0965": {
+  "en": "Kills {}",
+  "zh": "击破数 {}"
+ },
+ "s0966": {
+  "en": "Play Time",
+  "zh": "游戏时间"
+ },
+ "s0967": {
+  "en": "{}h {}m",
+  "zh": "{}小时{}分"
+ },
+ "s0968": {
+  "en": "Total Kills",
+  "zh": "总击破数"
+ },
+ "s0969": {
+  "en": "Stages Cleared",
+  "zh": "通关次数"
+ },
+ "s0970": {
+  "en": "{} times",
+  "zh": "{}次"
+ },
+ "s0971": {
+  "en": "Bosses Defeated",
+  "zh": "击败BOSS"
+ },
+ "s0972": {
+  "en": "{}",
+  "zh": "{}只"
+ },
+ "s0973": {
+  "en": "Max Combo",
+  "zh": "最大连击"
+ },
+ "s0974": {
+  "en": "Best Survival",
+  "zh": "生存模式最高"
+ },
+ "s0975": {
+  "en": "Armor",
+  "zh": "护甲值"
+ },
+ "s0976": {
+  "en": "Downs",
+  "zh": "倒下次数"
+ },
+ "s0977": {
+  "en": "Bond Levels",
+  "zh": "羁绊等级"
+ },
+ "s0978": {
+  "en": "Window",
+  "zh": "窗口"
+ },
+ "s0979": {
+  "en": "Fullscreen",
+  "zh": "全屏显示"
+ },
+ "s0980": {
+  "en": "Toggle",
+  "zh": "切换"
+ },
+ "s0981": {
+  "en": "Supported browsers only. On phones, tries to lock to landscape.",
+  "zh": "仅限支持的浏览器。手机会尝试锁定为横屏。"
+ },
+ "s0982": {
+  "en": "Copy",
+  "zh": "复制"
+ },
+ "s0983": {
+  "en": "If copying fails, long-press the code above and select all.",
+  "zh": "如果无法复制，请长按上方代码并全选。"
+ },
+ "s0984": {
+  "en": "Restore from Code",
+  "zh": "用此代码恢复"
+ },
+ "s0985": {
+  "en": "Screen Shake",
+  "zh": "画面震动"
+ },
+ "s0986": {
+  "en": "Damage Numbers",
+  "zh": "伤害数字"
+ },
+ "s0987": {
+  "en": "Display",
+  "zh": "画面"
+ },
+ "s0988": {
+  "en": "Aspect Ratio",
+  "zh": "显示比例"
+ },
+ "s0989": {
+  "en": "Fill Screen",
+  "zh": "铺满画面"
+ },
+ "s0990": {
+  "en": "Lock {}:{}",
+  "zh": "固定{}:{}"
+ },
+ "s0991": {
+  "en": "Locking to {}:{} adds black bars to the top/bottom or sides on wide screens.",
+  "zh": "固定为{}:{}后，宽屏画面的上下或左右会出现黑边。"
+ },
+ "s0992": {
+  "en": "Key Config",
+  "zh": "按键设置"
+ },
+ "s0993": {
+  "en": "Keyboard",
+  "zh": "键盘"
+ },
+ "s0994": {
+  "en": "Gamepad",
+  "zh": "手柄"
+ },
+ "s0995": {
+  "en": "Reset to Default",
+  "zh": "恢复默认"
+ },
+ "s0996": {
+  "en": "Press a button, then press the key or button you want to assign (Esc cancels on keyboard). Picking a key used by another action removes it from that action.",
+  "zh": "请先点击按钮，再按下想要分配的键或按钮（键盘按Esc取消）。如果选择了与其他操作相同的键，该操作的分配将被解除。"
+ },
+ "s0997": {
+  "en": "Controls",
+  "zh": "操作说明"
+ },
+ "s0998": {
+  "en": "Mobile",
+  "zh": "手机"
+ },
+ "s0999": {
+  "en": ": Left stick to move / Fire (hold), Jump, Dodge, Skill, Swap, and Reload buttons. You can also Swap by tapping the character display at top left.",
+  "zh": "：左摇杆移动／射击（长按）、跳跃、闪避、技能、换人、装弹按钮。点击左上角的角色显示也可换人。"
+ },
+ "s1000": {
+  "en": ": {}/{} Move　{} Jump　{}/Left Click Fire　{} Dodge　{} Skill　{} Swap　{} Reload　{}/Esc Pause",
+  "zh": "：{}/{} 移动　{} 跳跃　{}/鼠标左键 射击　{} 闪避　{} 技能　{} 换人　{} 装弹　{}/Esc 暂停"
+ },
+ "s1001": {
+  "en": ": Left Stick/D-Pad Move　{} Jump　{} Fire　{} Dodge　{} Skill　{} Swap　{} Reload　{} Pause",
+  "zh": "：左摇杆/十字键 移动　{} 跳跃　{} 射击　{} 闪避　{} 技能　{} 换人　{} 装弹　{} 暂停"
+ },
+ "s1002": {
+  "en": "In menus: D-Pad to select, A to confirm, B to go back, LB/RB to switch tabs, right stick to scroll",
+  "zh": "菜单中用十字键选择，A 确定，B 返回，LB/RB 切换标签，右摇杆滚动"
+ },
+ "s1003": {
+  "en": "Save Data",
+  "zh": "存档"
+ },
+ "s1004": {
+  "en": "Show Transfer Code",
+  "zh": "显示继承码"
+ },
+ "s1005": {
+  "en": "Restore from Code",
+  "zh": "用代码恢复"
+ },
+ "s1006": {
+  "en": "Reset Data",
+  "zh": "初始化数据"
+ },
+ "s1007": {
+  "en": "Aim: Left Stick　Fire: {}　{} Reload　LT Zoom　B Resume",
+  "zh": "瞄准：左摇杆　射击：{}　{} 装弹　LT 倍率　B 继续"
+ },
+ "s1008": {
+  "en": "Stick Move　{} Jump　{} Fire　{} Dodge　{} Skill　{} Swap　{} Reload　B Resume",
+  "zh": "摇杆 移动　{} 跳跃　{} 射击　{} 闪避　{} 技能　{} 换人　{} 装弹　B 继续"
+ },
+ "s1009": {
+  "en": "Aim: Mouse / Drag　Fire: Click / Button　{} Reload　{} Zoom",
+  "zh": "瞄准：鼠标 / 拖动　射击：点击 / 按钮　{} 装弹　{} 倍率"
+ },
+ "s1010": {
+  "en": "{}/{} Move　{} Jump　{} Fire　{} Dodge　{} Skill　{} Swap　{} Reload",
+  "zh": "{}/{} 移动　{} 跳跃　{} 射击　{} 闪避　{} 技能　{} 换人　{} 装弹"
+ },
+ "s1011": {
+  "en": "Resume",
+  "zh": "继续"
+ },
+ "s1012": {
+  "en": "Restart",
+  "zh": "重新开始"
+ },
+ "s1013": {
+  "en": "Retreat (keep half the crates)",
+  "zh": "撤退（箱子只带回一半）"
+ },
+ "s1014": {
+  "en": "Skip ▶▶",
+  "zh": "跳过 ▶▶"
+ },
+ "s1015": {
+  "en": "Change Team",
+  "zh": "更换编队"
+ },
+ "s1016": {
+  "en": "DPS {}　DMG {}{}　Mag {}　Reload {}s　ROF {}/s　Crit {}%　Range {}",
+  "zh": "DPS {}　威力{}{}　弹匣{}　装弹{}秒　射速{}/秒　暴击{}%　射程{}"
+ },
+ "s1017": {
+  "en": "Everyone: ",
+  "zh": "全员"
+ },
+ "s1018": {
+  "en": "Gear changed in ",
+  "zh": "已更换"
+ },
+ "s1019": {
+  "en": " slot(s)",
+  "zh": "处装备"
+ },
+ "s1020": {
+  "en": "Already optimal",
+  "zh": "当前装备已是最佳"
+ },
+ "s1021": {
+  "en": "Copied!",
+  "zh": "已复制"
+ },
+ "s1022": {
+  "en": "Couldn't copy. Long-press to select it.",
+  "zh": "复制失败。请长按选择。"
+ },
+ "s1023": {
+  "en": "Save data restored",
+  "zh": "存档已恢复"
+ },
+ "s1024": {
+  "en": "Invalid code",
+  "zh": "代码不正确"
+ },
+ "s1025": {
+  "en": "This will erase all save data and start over.",
+  "zh": "将删除全部存档并从头开始。"
+ },
+ "s1026": {
+  "en": "This cannot be undone.",
+  "zh": "此操作无法撤销。"
+ },
+ "s1027": {
+  "en": "Reset",
+  "zh": "初始化"
+ },
+ "s1028": {
+  "en": "Reached",
+  "zh": "到达"
+ },
+ "s1029": {
+  "en": "Accuracy / Barricade",
+  "zh": "命中率 / 耐久"
+ },
+ "s1030": {
+  "en": "Bond up to Lv{}{}!",
+  "zh": "羁绊提升至 Lv{}{}！"
+ },
+ "s1031": {
+  "en": "Bond Token",
+  "zh": "羁绊之证"
+ },
+ "s1032": {
+  "en": "obtained!",
+  "zh": "到手了！"
+ },
+ "s1033": {
+  "en": "Time",
+  "zh": "时间"
+ },
+ "s1034": {
+  "en": "Kills",
+  "zh": "击破数"
+ },
+ "s1035": {
+  "en": "Weapons x{}",
+  "zh": "武器 x{}"
+ },
+ "s1036": {
+  "en": "Gear x{}",
+  "zh": "装备 x{}"
+ },
+ "s1037": {
+  "en": "New {}",
+  "zh": "新 {}"
+ },
+ "s1038": {
+  "en": "Max HP +{} (All)",
+  "zh": "最大HP +{}（全员）"
+ },
+ "s1039": {
+  "en": "Return to Base",
+  "zh": "返回据点"
+ },
+ "s1040": {
+  "en": "Gamepad detected",
+  "zh": "已识别手柄"
+ },
+ "s1041": {
+  "en": "Cloud save data loaded",
+  "zh": "已读取云存档"
+ }
+}
