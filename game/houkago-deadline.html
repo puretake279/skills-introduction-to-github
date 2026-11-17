@@ -106,7 +106,7 @@ button{font:inherit;color:inherit}
 .wrow{display:flex;gap:.5rem;align-items:center;margin-bottom:.45rem}
 .wmain{flex:1;min-width:0;display:flex;gap:.7rem;align-items:center;background:var(--p1);border:.15rem solid var(--line);border-radius:.3rem;padding:.35rem .6rem;cursor:pointer;text-align:left;position:relative;line-height:1.3}
 .wmain .gi{width:8.4rem;flex:none} .wmain .gun{width:8.4rem;height:2.6rem} .wmain .rm{min-width:0} .wmain .rm small{display:block} .wmain .lv{display:inline!important;color:var(--cyan)!important}
-.wrow.on .wmain{border-color:var(--acc);background:#2a2412} .eq{position:absolute;right:.4rem;top:.2rem;font-style:normal;font-size:.95rem;color:var(--acc)}
+.wrow.on .wmain{border-color:var(--acc);background:#2a2412} .tag.eq{background:var(--acc);color:#1a1a1a}
 .wc .wtop{display:flex;gap:1rem;align-items:center;margin:.5rem 0;line-height:1.35} .gbig{background:#0b0f17;border:.12rem solid var(--line);border-radius:.3rem;padding:.6rem .4rem;flex:none} .gbig .gun{width:15rem;height:4.64rem}
 .uprow{display:flex;justify-content:space-between;align-items:center;background:var(--p1);border:.12rem solid var(--cyan);border-radius:.3rem;padding:.4rem .8rem;margin-bottom:.5rem}
 .aslot{margin-bottom:.4rem} .arow{width:100%;display:flex;gap:.8rem;align-items:center;background:var(--p1);border:.15rem solid var(--line);border-radius:.3rem;padding:.4rem .8rem;cursor:pointer;text-align:left}
@@ -3563,7 +3563,7 @@ const UI = (() => {
   function teamMini(s) { const f = s && (s.solo || s.fixed); return f ? `<div class="tmini fix">${stageTeam(s).map(c => pv('face', c, 'face')).join('')}<small>${s.type === 'snipe' ? '狙撃任務' : s.solo ? '単独任務' : '固定編成'}</small></div>` : `<button class="tmini" data-a="go" data-to="team">${S.team.map(c => pv('face', c, 'face')).join('')}<small>編成変更</small></button>`; }
   function weaponRow(w, cid, eq) {
     const d = WEAPONS[w], ws = weaponStats(w, cid);
-    return `<div class="wrow ${eq ? 'on' : ''}"><button class="wmain" data-a="weq" data-id="${w}"><div class="gi">${pv('gun', w, 'gun')}</div><div class="rm"><b>${esc(d.name)}</b>${ws.prof === 2 ? '<span class="tag y">得意</span>' : ws.prof === 1 ? '<span class="tag">準得意</span>' : ''}<small>${wInfo(d)}</small><small>DPS ${fmt(weaponDps(ws))}　威力${ws.dmg.toFixed(1)}${ws.pellets > 1 ? 'x' + ws.pellets : ''}　装弾${ws.mag}　装填${ws.rel.toFixed(1)}秒　連射${ws.rps.toFixed(1)}/秒　会心${Math.round(ws.crit)}%　射程${Math.round(ws.range)}</small><small class="ds">${esc(d.desc || '')}</small>${wFx(d)}</div>${eq ? '<i class="eq">装備中</i>' : ''}</button></div>`;
+    return `<div class="wrow ${eq ? 'on' : ''}"><button class="wmain" data-a="weq" data-id="${w}"><div class="gi">${pv('gun', w, 'gun')}</div><div class="rm"><b>${esc(d.name)}</b>${ws.prof === 2 ? '<span class="tag y">得意</span>' : ws.prof === 1 ? '<span class="tag">準得意</span>' : ''}${eq ? '<span class="tag y eq">装備中</span>' : ''}<small>${wInfo(d)}</small><small>DPS ${fmt(weaponDps(ws))}　威力${ws.dmg.toFixed(1)}${ws.pellets > 1 ? 'x' + ws.pellets : ''}　装弾${ws.mag}　装填${ws.rel.toFixed(1)}秒　連射${ws.rps.toFixed(1)}/秒　会心${Math.round(ws.crit)}%　射程${Math.round(ws.range)}</small><small class="ds">${esc(d.desc || '')}</small>${wFx(d)}</div></button></div>`;
   }
 
   /* ---------- actions ---------- */
