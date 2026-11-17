@@ -85,18 +85,18 @@ Clear Part 1 to unlock Part 2, "Shiomi Seaside Camp," set on a remote island in 
 **Minimum**
 - Requires a 64-bit processor and operating system
 - OS: Windows 10 (64-bit)
-- Processor: Dual-core 2 GHz *(未確認)*
-- Memory: 4 GB RAM *(未確認)*
-- Graphics: DirectX 11 compatible *(未確認)*
+- Processor: Dual-core 2 GHz
+- Memory: 4 GB RAM
+- Graphics: DirectX 11 compatible (integrated graphics OK)
 - Storage: 400 MB available space
 - Additional Notes: Xbox-layout gamepad supported
 
 **Recommended**
 - Requires a 64-bit processor and operating system
 - OS: Windows 10 / 11 (64-bit)
-- Processor: Quad-core *(未確認)*
-- Memory: 8 GB RAM *(未確認)*
-- Graphics: DirectX 11 compatible *(未確認)*
+- Processor: Quad-core
+- Memory: 8 GB RAM
+- Graphics: DirectX 11 compatible
 - Storage: 400 MB available space
 
 （「未確認」の行は、オーナーのWindowsパソコンで計測してから確定し、印を外す）
